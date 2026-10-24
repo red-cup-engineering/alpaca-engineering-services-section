@@ -50,7 +50,7 @@
   "description": "Scalable customer-wallet-funded market in metered brokerage-control APIs.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/red-cup-engineering/alpaca-services-section.git"
+    "url": "git+https://github.com/red-cup-engineering/alpaca-engineering-services-section.git"
   },
   "devDependencies": {
     "@red-cup-engineering/obsmetrologia-alpha-selection-proof-service": "0.1.5",
@@ -84,7 +84,7 @@
     "./settlement-provider": "./scripts/settlement-provider.mjs",
     "./live-runtime": "./src/live-runtime.mjs"
   },
-  "name": "@red-cup-engineering/alpaca-services-section",
+  "name": "@red-cup-engineering/alpaca-engineering-services-section",
   "scripts": {
     "start:x402": "node src/market-runtime.mjs",
     "start:virtuals": "node src/virtuals-runtime.mjs",
