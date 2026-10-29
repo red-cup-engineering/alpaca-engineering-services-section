@@ -1,0 +1,37 @@
+{
+  "name": "@red-cup-engineering/signal-fusion-alpha-engine-service",
+  "version": "0.2.0",
+  "type": "module",
+  "description": "Fuses independent public signals (koios news claims, on-chain metrics, market data) into one graded, falsifier-bearing trading belief via the metrologic bilattice, measures its out-of-sample edge by purged walk-forward backtest, and sizes a bounded risk stake against the measured edge for autonomous execution.",
+  "exports": {
+    ".": "./src/backtest-edge.mjs",
+    "./signal": "./src/signal.mjs",
+    "./independence-weighting": "./src/independence-weighting.mjs",
+    "./signal-to-belief-observations": "./src/signal-to-belief-observations.mjs",
+    "./backtest-edge": "./src/backtest-edge.mjs",
+    "./risk-envelope": "./src/risk-envelope.mjs",
+    "./execution-intent": "./src/execution-intent.mjs",
+    "./multiple-testing-correction": "./src/multiple-testing-correction.mjs"
+  },
+  "dependencies": {
+    "@red-cup-engineering/trading-belief-service": "0.1.0",
+    "@red-cup-engineering/purged-walk-forward-fold-service": "0.1.0",
+    "@red-cup-engineering/transaction-cost-replay-service": "0.1.1",
+    "@red-cup-engineering/position-sizing-service": "0.2.0"
+  },
+  "scripts": {
+    "check": "node --check src/signal.mjs && node --check src/independence-weighting.mjs && node --check src/signal-to-belief-observations.mjs && node --check src/backtest-edge.mjs && node --check src/risk-envelope.mjs && node --check src/execution-intent.mjs && node --check src/multiple-testing-correction.mjs && node --check scripts/adapt-koios-news-signal.mjs && node --check scripts/adapt-market-momentum-signal.mjs && node --check scripts/adapt-onchain-funding-signal.mjs && node --check scripts/adapt-equity-price-signal.mjs && node --check scripts/adapt-volatility-regime-signal.mjs && node --check scripts/adapt-onchain-active-address-signal.mjs && node --check scripts/adapt-defi-tvl-flow-signal.mjs && node --check scripts/adapt-perp-funding-history-signal.mjs && node --check scripts/entity-koios-keyword-catalog.mjs && node --check scripts/fuse-signals-to-belief.mjs && node --check scripts/backtest-fused-signal.mjs && node --check scripts/size-position-from-edge.mjs && node --check apps/signal-fusion-alpha-engine-cli.mjs && node --check apps/signal-fusion-alpha-engine-grid-cli.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "src/",
+    "scripts/",
+    "apps/",
+    "test/",
+    "package.json"
+  ],
+  "license": "UNLICENSED"
+}

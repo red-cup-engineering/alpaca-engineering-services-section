@@ -1,0 +1,40 @@
+{
+  "name": "@red-cup-engineering/coinbase-x402-bazaar-border",
+  "version": "0.2.0",
+  "type": "module",
+  "description": "Library sold through market.561.group: product operations for research, intent, reconciliation, report-graphic rendering, divination readings, occupation-entropy readouts, and bounded agentic strategy synthesis. Carries no transport, facilitator selection, or settlement witness of its own.",
+  "exports": {
+    ".": "./src/brokerage-control-operations.mjs",
+    "./brokerage-control-operations": "./src/brokerage-control-operations.mjs",
+    "./product-providers": "./src/product-providers.mjs",
+    "./strategy-synthesis-provider": "./src/strategy-synthesis-provider.mjs"
+  },
+  "files": [
+    "src/"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@lenticule-science/divination-services-section": "0.2.3",
+    "@red-cup-engineering/a2a-services-section": "1.0.0",
+    "@red-cup-engineering/account-evidence-reconciliation-service": "0.1.4",
+    "@red-cup-engineering/alpha-portfolio-order-intent-service": "0.1.4",
+    "@red-cup-engineering/brokerage-control-api-federation": "0.1.2",
+    "@red-cup-engineering/computer-code-engineering-services-section": "0.1.0",
+    "@red-cup-engineering/computer-inference-engine": "0.1.0",
+    "@red-cup-engineering/strategy-program-synthesis-work-lot-service": "0.1.4"
+  },
+  "peerDependencies": {
+    "@lenticule-science/divination-services-section": "0.2.3",
+    "@red-cup-engineering/a2a-services-section": "1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@red-cup-engineering/a2a-services-section": {
+      "optional": true
+    },
+    "@lenticule-science/divination-services-section": {
+      "optional": true
+    }
+  }
+}
