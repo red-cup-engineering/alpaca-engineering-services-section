@@ -1,7 +1,3 @@
-[submodule "virtuals-brokerage-products-border"]
-	path = services/virtuals-brokerage-products-border
-	url = https://github.com/red-cup-engineering/virtuals-brokerage-products-border.git
-	branch = main
 [submodule "union-consideration-settlement-service"]
 	path = services/union-consideration-settlement-service
 	url = https://github.com/red-cup-engineering/union-consideration-settlement-service.git
