@@ -6,7 +6,7 @@
 - `missing-bars-refusal`: The operation must refuse a request whose `bars` is not an array of at least two ascending daily OHLCV observations. [claims: a-fold-needs-two-bars]
 - `no-holdout-leakage`: The operation must not let selection use holdout evidence; selection reads validation only. [claims: selection-reads-validation-only]
 ## Laws
-- `walk-forward-purge` | Purged walk-forward evaluation | v1 | lib/emsenn/services/561-group/services/engineering-services-section/services/financial-engineering-services-section/services/strategy-evaluation-services-section/services/purged-walk-forward-fold-service/src/folds.mjs | Applies to fold formation between train, validation, and holdout. | Chronological folds with a label purge gap between training data and the prediction point.
+- `walk-forward-purge` | Purged walk-forward evaluation | v1 | lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-economic-systems-engineering-services-section/services/computer-financial-systems-engineering-services-section/services/strategy-evaluation-services-section/services/purged-walk-forward-fold-service/src/folds.mjs | Applies to fold formation between train, validation, and holdout. | Chronological folds with a label purge gap between training data and the prediction point.
 ## Standards
 - `node-esm-operation` | Node.js | v24.2.0+ | https://nodejs.org/docs/v24/api/esm.html | Applies to the .mjs operation. | The package uses one executable ESM operation source file.
 ## Open questions
