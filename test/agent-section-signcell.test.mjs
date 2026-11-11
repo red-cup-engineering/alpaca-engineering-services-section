@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { address, knowledgeReading } from "@red-cup-engineering/signcell/cell";
-import { signCellOfSeavt } from "@red-cup-engineering/semiotic-eavt-services-section/admit-seavt-row";
+import { signCellOfSeavt } from "@red-cup-engineering/semiotic-eavt-engineering-services-section/admit-seavt-row";
 import { logOfSeavtRows } from "@red-cup-engineering/signchain/log";
 import { createAgentSectionDescentAssay } from "@red-cup-engineering/agent-section-descent-assay-service";
 import { measureSheafLaplacian } from "@red-cup-engineering/sheaf-laplacian-measurement-service";

@@ -3,7 +3,7 @@ import { createBrokerageMarketEventRecorder, createBrokerageOutcomeWitnessRecord
 import { createUnionMarketState, serveUnionBrokerageActivityPub } from "@red-cup-engineering/union-brokerage-products-market-border/activitypub-runtime";
 import { formUnionBrokerageOffer } from "@red-cup-engineering/union-brokerage-products-market-border";
 import { createUnionConsiderationSettlementProvider } from "@red-cup-engineering/alpaca-services-section/settlement-provider";
-import { put } from "@red-cup-engineering/semiotic-eavt-services-section/store";
+import { put } from "@red-cup-engineering/semiotic-eavt-engineering-services-section/store";
 import { createBrokerageProductProviders, indexBrokerageProvidersByService } from "./market-runtime.mjs";
 
 const required = (env, name) => { const value = env[name]; if (typeof value !== "string" || value.trim() === "") throw new Error(`${name} is required`); return value; };

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { put } from "@red-cup-engineering/semiotic-eavt-services-section/store";
+import { put } from "@red-cup-engineering/semiotic-eavt-engineering-services-section/store";
 
 const JOURNAL_ROOT = new URL("..", import.meta.url).pathname;
 const RECORD_TYPE = "paper-loop-deployment";
