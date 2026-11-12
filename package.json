@@ -55,7 +55,7 @@
   },
   "devDependencies": {
     "@red-cup-engineering/obsmetrologia-alpha-selection-proof-service": "0.1.5",
-    "@red-cup-engineering/computer-system-engine": "0.1.2"
+    "@red-cup-engineering/computer-engine": "^0.1.2"
   },
   "exports": {
     ".": "./src/contract-kernel.mjs",
