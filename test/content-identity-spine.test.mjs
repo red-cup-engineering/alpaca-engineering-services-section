@@ -8,7 +8,7 @@ import {
   admitJsonSemanticContent,
   identifyJsonSemanticContent,
   semanticIdOf,
-} from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/semantic-content-identity";
+} from "@red-cup-engineering/computer-code-engine/semiotic-expression-notation/semantic-content-identity";
 
 import { formPrincipalMandate } from "../src/contract-kernel.mjs";
 
