@@ -1,4 +1,4 @@
-import { EMPTY_WITNESS_ROOT, identifyJsonSemanticContent } from "@red-cup-engineering/typed-computer-code-engine/semiotic-expression-notation/semantic-content-identity";
+import { EMPTY_WITNESS_ROOT, identifyJsonSemanticContent } from "@red-cup-engineering/computer-code-engine/semiotic-expression-notation/semantic-content-identity";
 
 const ORIGIN = "https://data.alpaca.markets";
 const symbolPattern = /^[A-Z][A-Z0-9.\/-]{0,14}$/u;
