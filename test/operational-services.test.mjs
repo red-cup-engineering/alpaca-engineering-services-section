@@ -159,4 +159,4 @@ test("independent books append Virtuals boundary events without assertion", asyn
 // and end to end in market-561-group's own test suite
 // (apps/market-561-group/test/market-561-group.test.mjs), with the
 // remaining provider-composition coverage in
-// alpaca-services-section/test/market-runtime.test.mjs.
+// alpaca-engineering-services-section/test/market-runtime.test.mjs.

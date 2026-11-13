@@ -6,7 +6,7 @@ const RECORD_TYPE = "paper-loop-deployment";
 
 /**
  * Record the 2026-09-01 cold-red-gate paper-loop deployment receipt through
- * the semiotic-eavt store, in the alpaca-services-section's own custody.
+ * the semiotic-eavt store, in the alpaca-engineering-services-section's own custody.
  *
  * @returns {{id: string}} the address that holds the receipt.
  */

@@ -267,7 +267,7 @@ Bazaar** — not design a new Ring-0 product from scratch.
 
 ## House capability census (the alpaca section, measured 2026-08-31)
 
-53 service packages under `alpaca-services-section/services/`,
+53 service packages under `alpaca-engineering-services-section/services/`,
 surveyed directly by `package.json` description
 (`market-funded-strategy-improvement-service`, `strategy-evaluation-service`,
 and `alpaca-paper-account-read-service` carry no description and were
@@ -410,7 +410,7 @@ Naming this capability's thread across the five custodies, per
   `@red-cup-engineering/metrologic` (`/bilattice`), which is what "belief
   fusion" and "calibration" cash out to mathematically once the belief
   ledger exists.
-- **Engineering:** this section, `alpaca-services-section`, and its 53
+- **Engineering:** this section, `alpaca-engineering-services-section`, and its 53
   service packages — the causal/ridge/backtest stack, the strategy-
   synthesis-and-proof pipeline, the paper-only guards, and the unwired
   `coinbase-x402-bazaar-border`.
