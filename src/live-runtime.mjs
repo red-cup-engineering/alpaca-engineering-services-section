@@ -1,7 +1,7 @@
 import { createHash, randomUUID } from 'node:crypto';
 import { open, mkdir, rename, link, unlink } from 'node:fs/promises';
 import { join, isAbsolute } from 'node:path';
-import { credentialPath, forgetCredential, keepCredential } from '@red-cup-engineering/credential-custody-service/keep';
+import { credentialPath, forgetCredential, keepCredential } from '@red-cup-engineering/credential-custody-computer-data-engineering-services-section/keep';
 import { createPrincipalAlpacaBrokerageSystem } from './principal-brokerage-system.mjs';
 const digest = value => createHash('sha256').update(typeof value==='string'?value:JSON.stringify(value)).digest('hex');
 const reference = value => {if(typeof value!=='string'||!value.trim()||value.length>512)throw new TypeError('record-reference-required');return value;};

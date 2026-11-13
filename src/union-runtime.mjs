@@ -2,7 +2,7 @@ import { resolve } from "node:path";
 import { createBrokerageMarketEventRecorder, createBrokerageOutcomeWitnessRecorder } from "@red-cup-engineering/brokerage-independent-witness-and-books";
 import { createUnionMarketState, serveUnionBrokerageActivityPub } from "@red-cup-engineering/union-brokerage-products-market-border/activitypub-runtime";
 import { formUnionBrokerageOffer } from "@red-cup-engineering/union-brokerage-products-market-border";
-import { createUnionConsiderationSettlementProvider } from "@red-cup-engineering/alpaca-services-section/settlement-provider";
+import { createUnionConsiderationSettlementProvider } from "@red-cup-engineering/alpaca-engineering-services-section/settlement-provider";
 import { put } from "@red-cup-engineering/semiotic-eavt-engineering-services-section/store";
 import { createBrokerageProductProviders, indexBrokerageProvidersByService } from "./market-runtime.mjs";
 

@@ -1,7 +1,7 @@
 import { createBrokerageAuthorityCustody } from "@red-cup-engineering/brokerage-authority-custody-service";
 import { createAlpacaAdapter } from "@red-cup-engineering/pluggable-venue-adapter-service/alpaca";
-import { semanticIdOf } from "@red-cup-engineering/computer-code-engine/semiotic-expression-notation/semantic-content-identity";
-import { canonicalJson as canonical } from "@red-cup-engineering/json-services-section/canonical-json";
+import { semanticIdOf } from "@red-cup-engineering/typed-computer-code-engine/semiotic-expression-notation/semantic-content-identity";
+import { canonicalJson as canonical } from "@red-cup-engineering/json-engineering-services-section/canonical-json";
 
 const semanticId = semanticIdOf("brokerage.alpaca-paper-account-read.record");
 
