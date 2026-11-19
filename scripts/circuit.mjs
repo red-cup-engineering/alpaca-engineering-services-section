@@ -10,8 +10,8 @@ function marketSeries(barsBySymbol) {
   }))]));
 }
 
-function prepareFeatures(panelAssay, benchmark, graphWindow, patchSize, providers) {
-  const entities = panelAssay.entities, rows = panelAssay.panel;
+function prepareFeatures(panelCheck, benchmark, graphWindow, patchSize, providers) {
+  const entities = panelCheck.entities, rows = panelCheck.panel;
   const values = Object.fromEntries(entities.map((entity) => [entity, rows.map((row) => row.values[entity].value)]));
   const volumes = Object.fromEntries(entities.map((entity) => [entity, rows.map((row) => row.values[entity].auxiliary.volume)]));
   const references = Object.fromEntries(entities.map((entity) => [entity, rows.map((row) => row.values[entity].auxiliary.reference)]));
@@ -60,8 +60,8 @@ function sectionAdjustment(agentForecasts, entity, predictedAt, horizonDays, pro
       evidenceReferences: section.evidenceReferences ?? [], observedAt: section.observedAt,
     }));
   if (sections.length < 2) return Object.freeze({ multiplier: 1, uncertainty: 0, assay: null });
-  const assay = providers.assayAgentSectionDescent({ sections });
-  return Object.freeze({ multiplier: assay.confidenceMultiplier * (assay.contradictionHeld ? 0.5 : 1), uncertainty: assay.disagreementEnergy, assay });
+  const check = providers.assayAgentSectionDescent({ sections });
+  return Object.freeze({ multiplier: check.confidenceMultiplier * (check.contradictionHeld ? 0.5 : 1), uncertainty: check.disagreementEnergy, assay: check });
 }
 
 function evaluateVariant({ variant, folds, features, investable, benchmark, agentForecasts, ridge, mandate, horizon, execution, initialCapital, providers }) {
@@ -72,17 +72,17 @@ function evaluateVariant({ variant, folds, features, investable, benchmark, agen
     for (let origin = Math.max(60, fold.trainStart); origin <= fold.trainEnd; origin += 1) for (const entity of investable) {
       samples.push({ features: features.at(origin, entity, variant), target: logReturn(features.values[entity], origin, origin + horizon) - logReturn(features.values[benchmark], origin, origin + horizon) });
     }
-    const model = providers.fitDeterministicRidge({ samples, lambda: ridge }), scores = {}, uncertainty = {}, sectionAssays = {};
+    const model = providers.fitDeterministicRidge({ samples, lambda: ridge }), scores = {}, uncertainty = {}, sectionChecks = {};
     for (const entity of investable) {
       const adjustment = sectionAdjustment(agentForecasts, entity, fold.predictedAt, horizon, providers);
       scores[entity] = providers.predictDeterministicRidge(model, features.at(fold.prediction, entity, variant)) * adjustment.multiplier;
       uncertainty[entity] = adjustment.uncertainty;
-      if (adjustment.assay) sectionAssays[entity] = adjustment.assay;
+      if (adjustment.assay) sectionChecks[entity] = adjustment.assay;
     }
     const allocation = providers.allocateMandatePortfolio({ scores, uncertainty, currentWeights, mandate });
     const realizedReturns = Object.fromEntries(investable.map((entity) => [entity, features.values[entity][fold.outcome] / features.values[entity][fold.prediction] - 1]));
     const market = Object.fromEntries(investable.map((entity) => [entity, Object.freeze({ open: features.opens[entity][fold.prediction], price: features.values[entity][fold.prediction], volume: features.volumes[entity][fold.prediction] })]));
-    periods.push(Object.freeze({ at: fold.predictedAt, outcomeAt: fold.outcomeAt, trainingThrough: fold.trainingThrough, weights: allocation.weights, realizedReturns, market: Object.freeze(market), sectionAssays: Object.freeze(sectionAssays) }));
+    periods.push(Object.freeze({ at: fold.predictedAt, outcomeAt: fold.outcomeAt, trainingThrough: fold.trainingThrough, weights: allocation.weights, realizedReturns, market: Object.freeze(market), sectionAssays: Object.freeze(sectionChecks) }));
     currentWeights = allocation.weights;
   }
   const validationCount = folds.validation.length;
@@ -99,12 +99,12 @@ function formCurrentDecision({ variant, features, investable, benchmark, agentFo
   for (let origin = Math.max(60, trainEnd - trainingWindow + 1); origin <= trainEnd; origin += 1) for (const entity of investable) {
     samples.push({ features: features.at(origin, entity, variant), target: logReturn(features.values[entity], origin, origin + horizon) - logReturn(features.values[benchmark], origin, origin + horizon) });
   }
-  const model = providers.fitDeterministicRidge({ samples, lambda: ridge }), scores = {}, uncertainty = {}, sectionAssays = {};
+  const model = providers.fitDeterministicRidge({ samples, lambda: ridge }), scores = {}, uncertainty = {}, sectionChecks = {};
   for (const entity of investable) {
     const adjustment = sectionAdjustment(agentForecasts, entity, asOf, horizon, providers);
     scores[entity] = providers.predictDeterministicRidge(model, features.at(prediction, entity, variant)) * adjustment.multiplier;
     uncertainty[entity] = adjustment.uncertainty;
-    if (adjustment.assay) sectionAssays[entity] = adjustment.assay;
+    if (adjustment.assay) sectionChecks[entity] = adjustment.assay;
   }
   const allocation = providers.allocateMandatePortfolio({ scores, uncertainty, currentWeights, mandate });
   return Object.freeze({
@@ -118,7 +118,7 @@ function formCurrentDecision({ variant, features, investable, benchmark, agentFo
     targetWeights: allocation.weights,
     cashWeight: allocation.cashWeight,
     turnover: allocation.turnover,
-    sectionAssays: Object.freeze(sectionAssays),
+    sectionAssays: Object.freeze(sectionChecks),
     model: Object.freeze({ type: model.type, version: model.version, width: model.width, lambda: model.lambda, centers: model.centers, scales: model.scales, coefficients: model.coefficients }),
     outcomeResolved: false,
     effect: "target-weights-only",
@@ -188,8 +188,8 @@ export function createCausalPortfolioLearningCircuit({ recordResult, providers }
       }),
       effect: "model-evaluation-and-target-weights-only",
     });
-    const receipt = await recordResult({ type: "institutional-causal-portfolio-learning-completed", value: result, recordedAt: panel.asOf });
-    if (!receipt?.id && !receipt?.graph && !receipt?.recordReceipt) throw new TypeError("independent-result-record-receipt-required");
-    return Object.freeze({ ...result, independentRecordReceipt: receipt });
+    const record = await recordResult({ type: "institutional-causal-portfolio-learning-completed", value: result, recordedAt: panel.asOf });
+    if (!record?.id && !record?.graph && !record?.recordReceipt) throw new TypeError("independent-result-record-receipt-required");
+    return Object.freeze({ ...result, independentRecordReceipt: record });
   };
 }

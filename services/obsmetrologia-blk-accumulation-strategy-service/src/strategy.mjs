@@ -138,7 +138,7 @@ function nerve(patches, polarity) {
 function prefixCharges(patches, polarity) {
   return patches.map((_, index) => nerve(patches.slice(0, index + 1), polarity).netCharge);
 }
-function closureRegime(patches, polarity) {
+function closureMode(patches, polarity) {
   const charges = prefixCharges(patches, polarity);
   const finalPatch = patches.at(-1)[polarity];
   const previousCells = new Set(patches.slice(0, -1).flatMap((patch) => patch[polarity]));
@@ -149,7 +149,7 @@ function closureRegime(patches, polarity) {
     patches.every((patch, index) => index === 0 ||
       Date.parse(patches[index - 1].observedAt) <= Date.parse(patch.observedAt));
   const countableCofinality = new Set(charges).size <= HORIZONS.length;
-  const regime = finiteBase
+  const mode = finiteBase
     ? "strict"
     : scottContinuous
       ? "scott"
@@ -157,13 +157,13 @@ function closureRegime(patches, polarity) {
         ? "transfiniteBounded"
         : "aperiodic";
   return Object.freeze({
-    regime,
+    regime: mode,
     corner: {
       strict: "potential",
       scott: "active",
       transfiniteBounded: "stable",
       aperiodic: "absurd",
-    }[regime],
+    }[mode],
     finiteBase,
     scottContinuous,
     countableCofinality,
@@ -205,19 +205,19 @@ export function evaluateBlkAccumulationStrategy({
   const patches = evidencePatches(pairs);
   const bullishNerve = nerve(patches, "bullish");
   const bearishNerve = nerve(patches, "bearish");
-  const bullishRegime = closureRegime(patches, "bullish");
-  const bearishRegime = closureRegime(patches, "bearish");
+  const bullishMode = closureMode(patches, "bullish");
+  const bearishMode = closureMode(patches, "bearish");
   const directionalCharge = bullishNerve.netCharge - bearishNerve.netCharge;
   const volatility = annualizedVolatility(pairs, "blk");
   const drawdown = maximumDrawdownFn(pairs);
   const relative20 = patches.find(({ horizon }) => horizon === 20).relativeReturn;
   const relative60 = patches.find(({ horizon }) => horizon === 60).relativeReturn;
-  const aperiodic = bullishRegime.regime === "aperiodic" ||
-    bearishRegime.regime === "aperiodic";
-  const active = bullishRegime.regime === "scott" &&
+  const aperiodic = bullishMode.regime === "aperiodic" ||
+    bearishMode.regime === "aperiodic";
+  const active = bullishMode.regime === "scott" &&
     directionalCharge > 0 && relative20 > 0 && relative60 > 0;
   const stableHold = currentBlkMarketValue > 0 &&
-    bullishRegime.regime === "transfiniteBounded" && directionalCharge >= 0;
+    bullishMode.regime === "transfiniteBounded" && directionalCharge >= 0;
   const riskAllowed = drawdown <= maximumDrawdown && !aperiodic;
   const baseline = riskAllowed ? Math.min(cash, scheduledContribution) : 0;
   const confidence = Math.min(1, Math.max(0, directionalCharge) /
@@ -225,7 +225,7 @@ export function evaluateBlkAccumulationStrategy({
   const volScale = Math.min(1, volatilityTarget / Math.max(volatility, 0.01));
   const overlay = active && riskAllowed ? cash * maximumOrderFraction * confidence * volScale : 0;
   const notional = Math.max(0, Math.min(cash * maximumOrderFraction, baseline + overlay));
-  const disposition = notional > 0 ? "accumulate" : stableHold ? "hold" : "no-order";
+  const decision = notional > 0 ? "accumulate" : stableHold ? "hold" : "no-order";
   return identified({
     type: "ObsmetrologiaBlkAccumulationStrategyReading",
     version: 1,
@@ -236,8 +236,8 @@ export function evaluateBlkAccumulationStrategy({
     patches,
     bullishNerve,
     bearishNerve,
-    bullishRegime,
-    bearishRegime,
+    bullishRegime: bullishMode,
+    bearishRegime: bearishMode,
     directionalCharge,
     annualizedVolatility: volatility,
     trailingMaximumDrawdown: drawdown,
@@ -251,7 +251,7 @@ export function evaluateBlkAccumulationStrategy({
       volatilityTarget,
       maximumDrawdown,
     },
-    disposition,
+    disposition: decision,
     proposedNotional: notional,
     orderEffect: false,
     hypothesis: "Independent bullish topology minus cyclic contradiction predicts BLK excess return over SPY; Scott-active evidence earns an overlay while scheduled accumulation continues inside the drawdown mandate.",
@@ -274,5 +274,5 @@ function maximumDrawdownFn(pairs) {
 export const strategyInternals = Object.freeze({
   evidencePatches,
   nerve,
-  closureRegime,
+  closureRegime: closureMode,
 });

@@ -33,7 +33,7 @@ export function exactRational(value) {
   return b === 1n ? String(a) : a + "/" + b;
 }
 
-export function admitExactGraphSheafRequest(body) {
+export function validateExactGraphSheafRequest(body) {
   if (!keysAre(body, ["vertices", "edges"]) || !Array.isArray(body.vertices) || !Array.isArray(body.edges))
     throw new TypeError("exact-graph-sheaf-request-required");
   if (JSON.stringify(body).length > EXACT_GRAPH_LIMITS.maxRequestBytes)

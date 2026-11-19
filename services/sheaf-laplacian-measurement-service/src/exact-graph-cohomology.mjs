@@ -2,12 +2,12 @@
  * The existing x402 seller handles all pricing, payment and receipt custody.
  */
 import { cellularSheaf, cellularSheafCohomology } from "@red-cup-engineering/signgraph/cellular-sheaf";
-import { admitExactGraphSheafRequest } from "./exact-graph-admission.mjs";
-export { admitExactGraphSheafRequest, EXACT_GRAPH_LIMITS } from "./exact-graph-admission.mjs";
+import { validateExactGraphSheafRequest } from "./exact-graph-admission.mjs";
+export { validateExactGraphSheafRequest, EXACT_GRAPH_LIMITS } from "./exact-graph-admission.mjs";
 
 export function computeExactGraphSheafCohomology(body) {
   // Admission is pure and must also be used by the merchant BEFORE a 402 challenge.
-  const input = admitExactGraphSheafRequest(body);
+  const input = validateExactGraphSheafRequest(body);
   const source = cellularSheaf(input);
   if (source.exact !== true) throw new Error("exact-graph-sheaf-not-exact");
   const { h0, h1, rank, c0, c1 } = cellularSheafCohomology(source);

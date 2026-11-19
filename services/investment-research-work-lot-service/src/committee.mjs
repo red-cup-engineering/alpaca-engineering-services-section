@@ -37,7 +37,7 @@ export const INVESTMENT_RESEARCH_FRONTIER_ROLES = Object.freeze([
   Object.freeze({ id: "data-quality-and-adversarial-audit", objective: "Attempt to invalidate every other seat using look-ahead, corporate-action backfill, survivorship, filing-time errors, model-memory leakage, source licensing, duplicated news, fees and hidden factor exposure; withhold unsupported forecasts." }),
 ]);
 
-function admittedRoles(roles) {
+function validatedRoles(roles) {
   if (!Array.isArray(roles) || roles.length < 1 || roles.length > 24)
     throw new TypeError("bounded-research-roles-required");
   const ids = new Set();
@@ -102,13 +102,13 @@ function actorOf(result) {
 
 export function createInvestmentResearchCommittee({ contractInference, roles = ROLES } = {}) {
   if (typeof contractInference !== "function") throw new TypeError("inference-market-contract-provider-required");
-  const trustedRoles = admittedRoles(roles);
+  const trustedRoles = validatedRoles(roles);
   return async function contractCommittee(request) {
     validateRequest(request);
     const factsById = new Map(request.evidenceFacts.map(fact => [fact.id, fact]));
     const excludedProviders = [], seats = [], residues = [];
     for (const role of trustedRoles) {
-      const lot = Object.freeze({
+      const job = Object.freeze({
         workLotId: `urn:union:investment-research:${request.contextProduct.split(";")[1]}:${role.id}`,
         customer: request.customerActor,
         workType: "inquiry",
@@ -124,7 +124,7 @@ export function createInvestmentResearchCommittee({ contractInference, roles = R
         outputSchema: OUTPUT_SCHEMA,
       });
       let exchange;
-      try { exchange = await contractInference(lot); } catch (error) { residues.push(Object.freeze({ role: role.id, disposition: "transport-refusal", reason: error.message })); continue; }
+      try { exchange = await contractInference(job); } catch (error) { residues.push(Object.freeze({ role: role.id, disposition: "transport-refusal", reason: error.message })); continue; }
       const result = exchange?.result ?? exchange;
       const actor = actorOf(result);
       const candidate = result?.candidate ?? (result?.outcome?.startsWith?.("candidate-pending") ? result.candidate : null);

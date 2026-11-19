@@ -4,7 +4,7 @@ import { AsyncLocalStorage } from 'node:async_hooks';
 // capabilities without accepting broker secrets or a caller-selected mode.
 import { formAggressivePortfolioIntent } from '@red-cup-engineering/alpha-portfolio-order-intent-service';
 import { allocationsFor } from '@red-cup-engineering/mandate-portfolio-allocation-service/market-game';
-import { createBrokerageAuthorityCustody } from "@red-cup-engineering/brokerage-authority-custody-service";
+import { createBrokerageAuthorityStorage } from "@red-cup-engineering/brokerage-authority-custody-service";
 import { createAlpacaAdapter } from "@red-cup-engineering/pluggable-venue-adapter-service/alpaca";
 import {
   createLiveExecutionAndReconciliationProvider,
@@ -30,9 +30,9 @@ const modeFor = createStockBrokerageRouteSelector({
   'alpaca-trading-live': 'live',
 });
 
-function requireRecordReceipt(receipt, label) {
-  if (!receipt?.id && !receipt?.graph && !receipt?.recordReceipt) throw new TypeError(`${label}-record-receipt-required`);
-  return receipt;
+function requireRecord(record, label) {
+  if (!record?.id && !record?.graph && !record?.recordReceipt) throw new TypeError(`${label}-record-receipt-required`);
+  return record;
 }
 
 /**
@@ -44,7 +44,7 @@ function requireRecordReceipt(receipt, label) {
  * convert a paper authorization into a live order by changing a flag.
  */
 export function createPrincipalAlpacaBrokerageSystem({
-  authorityCustody,
+  authorityCustody: authorityStorage,
   transport,
   resolveAuthorityGrant,
   resolveExecutionRecords,
@@ -77,8 +77,8 @@ export function createPrincipalAlpacaBrokerageSystem({
     return resolveFor(mode)(references);
   };
 
-  const custody = createBrokerageAuthorityCustody({
-    authorityCustody,
+  const storage = createBrokerageAuthorityStorage({
+    authorityCustody: authorityStorage,
     transport,
     resolveAuthorityGrant,
     resolvePaperOperationAuthorization: activeAuthorization("paper"),
@@ -91,7 +91,7 @@ export function createPrincipalAlpacaBrokerageSystem({
     let adapter = adapters.get(mode);
     if (!adapter) {
       const product = PRODUCTS[mode];
-      adapter = createAlpacaAdapter({ product: product.product, baseUrl: product.baseUrl, authorityClient: custody, recordReceipt: recordVenueOperation });
+      adapter = createAlpacaAdapter({ product: product.product, baseUrl: product.baseUrl, authorityClient: storage, recordReceipt: recordVenueOperation });
       adapters.set(mode, adapter);
     }
     return adapter;
@@ -144,13 +144,13 @@ export function createPrincipalAlpacaBrokerageSystem({
         outcome,
         recordedAt: clock(),
       });
-      return Object.freeze({ ...outcome, executionRecord: requireRecordReceipt(executionRecord, "principal-alpaca-execution") });
+      return Object.freeze({ ...outcome, executionRecord: requireRecord(executionRecord, "principal-alpaca-execution") });
     });
   };
 
   const observe = createAlpacaPrincipalAccountReadService({
     resolveAuthorityGrant,
-    authorityCustody: custody,
+    authorityCustody: storage,
     recordObservation,
     clock,
   });
@@ -180,7 +180,7 @@ export function createPrincipalAlpacaBrokerageSystem({
           liquidityPremise:'The funded quote defines displayed quantity and the maximum limit price.',
           executionPremise:'Current contract, authority, broker account and resting orders admit this funded fleet leg.',
           scenarios:[{name:'loss-of-entire-funded-position',pnl:-notional},{name:'no-fill',pnl:0}]});
-        requireRecordReceipt(await recordIntent({contract,authorityGrant,intent}), 'fleet-intent');
+        requireRecord(await recordIntent({contract,authorityGrant,intent}), 'fleet-intent');
         try {
           const outcome = await execute({contractReference:contract.id,authorityGrantReference:authorityGrant.id,intentReference:intent.id});
           executions.push({orderId:order.id,intentReference:intent.id,outcome});
@@ -202,7 +202,7 @@ export function createPrincipalAlpacaBrokerageSystem({
       readPrincipalAccount: observe,
       executeAuthorizedIntent: async ({ contract, authorityGrant, intent }) => {
         if (typeof recordIntent !== 'function') throw new TypeError('durable-portfolio-intent-recorder-required');
-        requireRecordReceipt(await recordIntent({contract,authorityGrant,intent}), 'portfolio-intent');
+        requireRecord(await recordIntent({contract,authorityGrant,intent}), 'portfolio-intent');
         return execute({
         contractReference: contract.id,
         authorityGrantReference: authorityGrant.id,

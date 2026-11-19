@@ -14,7 +14,7 @@ function validateTournament(result, evaluations) {
 // authenticated original custody. A caller-supplied historical outcome, a
 // paper review, or a provider's claimed score is not a source-qualified read.
 // This pure consumer cannot authenticate the host, Work rights or Science.
-function originalWorkReceiving(standing, request, winner, incumbent, usedOutcomes, usedLots) {
+function originalWorkReceiving(standing, request, winner, incumbent, usedOutcomes, usedJobs) {
   if (!Array.isArray(standing) || standing.length > 10_000) throw new TypeError("original-work-standing-read-required");
   const matches = standing.filter(row => row && row.kind === "organizing.enterprise.outcome"
     && row.source === "work-discharge"
@@ -34,8 +34,8 @@ function originalWorkReceiving(standing, request, winner, incumbent, usedOutcome
       || work.reportedResult?.kind !== "skill-result") {
     return { refusal: "unqualified-original-work" };
   }
-  if (usedOutcomes.has(work.id) || usedLots.has(work.lot)) return { refusal: "original-work-already-credited" };
-  usedOutcomes.add(work.id); usedLots.add(work.lot);
+  if (usedOutcomes.has(work.id) || usedJobs.has(work.lot)) return { refusal: "original-work-already-credited" };
+  usedOutcomes.add(work.id); usedJobs.add(work.lot);
   return { received: Object.freeze({
     outcome: work.id, lot: work.lot, delivery: work.delivery,
     judge: work.judge, receiver: work.receivingAuthorizationReceipt,
@@ -51,7 +51,7 @@ export function createRecursiveStrategyProgramImprovement(providers) {
     const started = Date.now(), maximumWallClockMs = request.maximumWallClockMs ?? 3_600_000;
     if (!Number.isInteger(maximumWallClockMs) || maximumWallClockMs < 1_000 || maximumWallClockMs > 86_400_000) throw new TypeError("evolution-wall-clock-bound-invalid");
     let incumbent = Object.freeze({ ...request.incumbent }), failureHistory = [...request.failureHistory];
-    const generations = [], usedWorkOutcomes = new Set(), usedWorkLots = new Set(), receivedWork = [];
+    const generations = [], usedWorkOutcomes = new Set(), usedWorkJobs = new Set(), receivedWork = [];
     for (let generation = 0; generation < request.maximumGenerations; generation += 1) {
       if (Date.now() - started >= maximumWallClockMs) break;
       const population = await providers.synthesizePopulation({
@@ -73,15 +73,15 @@ export function createRecursiveStrategyProgramImprovement(providers) {
       const evaluations = [], residues = [...(population.residues ?? [])];
       for (const authored of population.candidates ?? []) {
         try {
-          const assay = await providers.assayProgram({ source: authored.candidate.strategySource, authorActor: authored.provider });
-          if (!assay?.admitted) { residues.push({ index: authored.index, disposition: "static-assay-refusal", assay }); continue; }
-          const replay = await providers.replayProgram({ source: authored.candidate.strategySource, staticAssay: assay, input: request.replayProbe, maximumWallClockMs: request.maximumReplayWallClockMs ?? 5_000 });
+          const check = await providers.assayProgram({ source: authored.candidate.strategySource, authorActor: authored.provider });
+          if (!check?.admitted) { residues.push({ index: authored.index, disposition: "static-assay-refusal", assay: check }); continue; }
+          const replay = await providers.replayProgram({ source: authored.candidate.strategySource, staticAssay: check, input: request.replayProbe, maximumWallClockMs: request.maximumReplayWallClockMs ?? 5_000 });
           if (replay?.type !== "DeterministicStrategyProgramReplay") { residues.push({ index: authored.index, disposition: "sandbox-replay-refusal", replay }); continue; }
           const evaluation = await providers.evaluateProgram({
-            generation, authored, assay, replay, contextProduct: request.contextProduct,
+            generation, authored, assay: check, replay, contextProduct: request.contextProduct,
             acceptanceSuite: request.acceptanceSuite, incumbent
           });
-          evaluations.push(Object.freeze({ index: authored.index, authorActor: authored.provider, authored, assay, replay, evaluation }));
+          evaluations.push(Object.freeze({ index: authored.index, authorActor: authored.provider, authored, assay: check, replay, evaluation }));
         } catch (error) {
           residues.push(Object.freeze({ index: authored.index, disposition: "candidate-evaluation-refusal", reason: error.message }));
         }
@@ -119,7 +119,7 @@ export function createRecursiveStrategyProgramImprovement(providers) {
               incumbent: incumbent.id, contextProduct: request.contextProduct,
               acceptanceSuite: request.acceptanceSuite, generation
             });
-            qualified = originalWorkReceiving(standing, request, winner, incumbent, usedWorkOutcomes, usedWorkLots);
+            qualified = originalWorkReceiving(standing, request, winner, incumbent, usedWorkOutcomes, usedWorkJobs);
           } catch (error) {
             qualified = { refusal: "original-work-source-refused", reason: String(error?.message ?? error) };
           }
@@ -150,7 +150,7 @@ export function createRecursiveStrategyProgramImprovement(providers) {
         successor: successor?.id ?? null, residues, orderEffect: false, liveEffect: false
       });
       generations.push(Object.freeze({ generation, incumbent: incumbent.id, successor: successor?.id ?? null, record: generationRecord, residues }));
-      failureHistory = failureHistory.concat(residues.map(({ disposition, reason }) => `${disposition}:${reason ?? "recorded"}`)).slice(-128);
+      failureHistory = failureHistory.concat(residues.map(({ disposition: decision, reason }) => `${decision}:${reason ?? "recorded"}`)).slice(-128);
       if (successor) incumbent = successor;
     }
     // No received replacement means no new paper promotion. Merely running

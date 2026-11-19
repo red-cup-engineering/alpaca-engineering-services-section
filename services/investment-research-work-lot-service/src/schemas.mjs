@@ -8,18 +8,18 @@ function load(name) {
 }
 
 export const INVESTMENT_RESEARCH_REQUEST_CARRIER = load("investment-research-request.schema.json");
-export const INVESTMENT_RESEARCH_REFUSAL_CARRIER = load("investment-research-refusal.schema.json");
+export const INVESTMENT_RESEARCH_REJECTION_CARRIER = load("investment-research-refusal.schema.json");
 export const INVESTMENT_RESEARCH_RESULT_CARRIER = load("investment-research-result.schema.json");
 
 const corpus = Object.freeze([
   INVESTMENT_RESEARCH_REQUEST_CARRIER.schema,
-  INVESTMENT_RESEARCH_REFUSAL_CARRIER.schema,
+  INVESTMENT_RESEARCH_REJECTION_CARRIER.schema,
   INVESTMENT_RESEARCH_RESULT_CARRIER.schema,
 ]);
 
 export const INVESTMENT_RESEARCH_CARRIER_ASSERTIONS = Object.freeze([
   INVESTMENT_RESEARCH_REQUEST_CARRIER,
-  INVESTMENT_RESEARCH_REFUSAL_CARRIER,
+  INVESTMENT_RESEARCH_REJECTION_CARRIER,
   INVESTMENT_RESEARCH_RESULT_CARRIER,
 ].flatMap(({ schema, identity }) => unfoldSchema({ schema, base: schema.$id, time: identity.ni }).assertions));
 
@@ -28,14 +28,14 @@ function validate(value, carrier) {
 }
 
 export const validateInvestmentResearchRequest = (value) => validate(value, INVESTMENT_RESEARCH_REQUEST_CARRIER);
-export const validateInvestmentResearchRefusal = (value) => validate(value, INVESTMENT_RESEARCH_REFUSAL_CARRIER);
+export const validateInvestmentResearchRejection = (value) => validate(value, INVESTMENT_RESEARCH_REJECTION_CARRIER);
 export const validateInvestmentResearchResult = (value) => validate(value, INVESTMENT_RESEARCH_RESULT_CARRIER);
 export const validateInvestmentResearchCandidate = (value) => validateSchemaInstance({ instance: value, schema: { $ref: `${INVESTMENT_RESEARCH_RESULT_CARRIER.schema.$id}#/$defs/candidate` }, schemas: corpus });
 
 export function requireValidCarrier(value, carrierName, validator) {
-  const verdict = validator(value);
-  if (!verdict.ok) {
-    const detail = verdict.errors.map(({ pointer, keyword }) => `${pointer || "/"}:${keyword}`).join(",");
+  const result = validator(value);
+  if (!result.ok) {
+    const detail = result.errors.map(({ pointer, keyword }) => `${pointer || "/"}:${keyword}`).join(",");
     throw new TypeError(`${carrierName}-invalid:${detail}`);
   }
   return value;

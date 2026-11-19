@@ -23,7 +23,7 @@ const text = (input, label) => {
  * graph-Laplacian below measures numeric disagreement on overlapping sections,
  * but is NOT a theorem that the sections form a sheaf or that alpha exists.
  */
-function assay({ sections, confidenceFloor = 0.5, asOf, agreementTolerance = null } = {}, measureSheafLaplacian) {
+function check({ sections, confidenceFloor = 0.5, asOf, agreementTolerance = null } = {}, measureSheafLaplacian) {
   if (!Array.isArray(sections) || sections.length < 2) throw new TypeError("plural-agent-sections-required");
   // A point-in-time comparison is a filtration of what could actually have
   // been known by the cutoff, not of what a model reports after the fact.
@@ -140,12 +140,12 @@ function assay({ sections, confidenceFloor = 0.5, asOf, agreementTolerance = nul
       .filter(([, owners]) => owners.size > 1).map(([id]) => id).sort();
     const fore = rows.filter((row) => row.value > 0).map(witness);
     const against = rows.filter((row) => row.value < 0).map(witness);
-    const admitted = chain?.cells({ subject: coordinate, predicate: "expected-excess-return-positive", object: true });
-    if (admitted && admitted.length > 1)
+    const validated = chain?.cells({ subject: coordinate, predicate: "expected-excess-return-positive", object: true });
+    if (validated && validated.length > 1)
       throw new TypeError("financial-evidence-must-resolve-to-one-proposition");
     // If every forecast is neutral, there are no sign tellings: FOUR is neither.
     // Without a known-at cutoff this remains an atemporal research-only assay.
-    const claim = admitted ? (admitted[0] ?? cell(coordinate, "expected-excess-return-positive", true))
+    const claim = validated ? (validated[0] ?? cell(coordinate, "expected-excess-return-positive", true))
       : cell(coordinate, "expected-excess-return-positive", true, { for: fore, against });
     const [positiveEvidence, negativeEvidence] = told(claim);
     const reading = Object.freeze({
@@ -179,8 +179,8 @@ function assay({ sections, confidenceFloor = 0.5, asOf, agreementTolerance = nul
       ...materialSources.map(at => ({ cell: at, atLeast: "potential" })),
     ], { cell: reviewTarget, reading: "potential" });
     const reviewSettlement = settleCells([claim, ...materialSources], [reviewRule]);
-    const admission = settlementAdmits(reviewSettlement);
-    if (admission.admitted !== true)
+    const validation = settlementAdmits(reviewSettlement);
+    if (validation.admitted !== true)
       throw new TypeError("market-forecast-review-settlement-not-admitted");
     // The settled valuation, not a one-step local firing, is authoritative.
     // SignCraft keeps both sides of the premise, derives the review witness
@@ -191,7 +191,7 @@ function assay({ sections, confidenceFloor = 0.5, asOf, agreementTolerance = nul
     reviewSettlements.push(Object.freeze({
       coordinate, settledAt: reviewSettlement.settledAt,
       derivationVersion: reviewSettlement.derivationVersion,
-      admitted: admission.admitted, reviewDerived: derived.length > 0,
+      admitted: validation.admitted, reviewDerived: derived.length > 0,
     }));
     coordinatePairs.push([coordinate, reading]);
   }
@@ -245,7 +245,7 @@ function assay({ sections, confidenceFloor = 0.5, asOf, agreementTolerance = nul
   });
 }
 
-export function createAgentSectionDescentAssay({ measureSheafLaplacian }) {
+export function createAgentSectionDescentCheck({ measureSheafLaplacian }) {
   if (typeof measureSheafLaplacian !== "function") throw new TypeError("laplacian-measurement-provider-required");
-  return (input) => assay(input, measureSheafLaplacian);
+  return (input) => check(input, measureSheafLaplacian);
 }

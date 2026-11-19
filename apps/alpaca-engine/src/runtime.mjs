@@ -11,13 +11,13 @@ const reference = value => {if(typeof value!=='string'||!value.trim()||value.len
  * Keys and grants are reread for each authorized operation; this constructor
  * never creates authority, seeds capital, or exposes a credential endpoint. */
 export function openProductionAlpacaBrokerage({
- stateRoot, custodyRoot, authorityCustody, fetchImpl = fetch, clock = () => new Date().toISOString(),
+ stateRoot, custodyRoot: storageRoot, authorityCustody: authorityStorage, fetchImpl = fetch, clock = () => new Date().toISOString(),
 }) {
- if (!isAbsolute(stateRoot ?? '') || (authorityCustody === undefined && !isAbsolute(custodyRoot ?? ''))) {
+ if (!isAbsolute(stateRoot ?? '') || (authorityStorage === undefined && !isAbsolute(storageRoot ?? ''))) {
   throw new TypeError('absolute-production-custody-and-state-roots-required');
  }
- if (authorityCustody !== undefined && (custodyRoot !== undefined
-  || !['retrieve', 'store', 'revoke'].every(method => typeof authorityCustody?.[method] === 'function'))) {
+ if (authorityStorage !== undefined && (storageRoot !== undefined
+  || !['retrieve', 'store', 'revoke'].every(method => typeof authorityStorage?.[method] === 'function'))) {
   throw new TypeError('exactly-one-production-custody-provider-required');
  }
  const filename=(kind,id)=>{
@@ -74,19 +74,19 @@ export function openProductionAlpacaBrokerage({
   return {status:response.status,headers:{'x-request-id':response.headers.get('x-request-id')},body:text?JSON.parse(text):null};
  };
  const system=createPrincipalAlpacaBrokerageSystem({
-  authorityCustody: authorityCustody ?? {
-   retrieve:async id=>{try{return await readFile(join(custodyRoot,digest(reference(id))+'.json'),custodyRoot);}catch(error){if(error.code==='ENOENT')return null;throw error;}},
+  authorityCustody: authorityStorage ?? {
+   retrieve:async id=>{try{return await readFile(join(storageRoot,digest(reference(id))+'.json'),storageRoot);}catch(error){if(error.code==='ENOENT')return null;throw error;}},
    store:async({provider,subject,secret})=>{
     reference(provider);reference(subject);
     if(!secret || typeof secret!=='object')throw new TypeError('private-credential-record-required');
     const id=`urn:authority:${provider}:${subject}:${randomUUID()}`;
     const bytes=encode({...secret,storedAt:clock()});
-    await ownedDirectory(custodyRoot,true);
-    const file=await open(join(custodyRoot,digest(id)+'.json'),'wx',0o600);
+    await ownedDirectory(storageRoot,true);
+    const file=await open(join(storageRoot,digest(id)+'.json'),'wx',0o600);
     try{await file.writeFile(bytes);await file.sync();}finally{await file.close();}
     return {reference:id,provider,secretBytesReturned:false};
    },
-   revoke:async id=>{const file=join(custodyRoot,digest(reference(id))+'.json');try{await ownedDirectory(custodyRoot);await rename(file,file+'.revoked-'+randomUUID());return true;}catch(error){if(error.code==='ENOENT')return false;throw error;}},
+   revoke:async id=>{const file=join(storageRoot,digest(reference(id))+'.json');try{await ownedDirectory(storageRoot);await rename(file,file+'.revoked-'+randomUUID());return true;}catch(error){if(error.code==='ENOENT')return false;throw error;}},
   },transport,fetchImpl,clock,
   resolveAuthorityGrant:id=>read('authority-grants',id),
   resolveExecutionRecords:async refs=>{

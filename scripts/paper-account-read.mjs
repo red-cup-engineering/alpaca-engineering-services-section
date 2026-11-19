@@ -1,4 +1,4 @@
-import { createBrokerageAuthorityCustody } from "@red-cup-engineering/brokerage-authority-custody-service";
+import { createBrokerageAuthorityStorage } from "@red-cup-engineering/brokerage-authority-custody-service";
 import { createAlpacaAdapter } from "@red-cup-engineering/pluggable-venue-adapter-service/alpaca";
 import { semanticIdOf } from "@red-cup-engineering/computer-code-engine/semiotic-expression-notation/semantic-content-identity";
 import { canonicalJson as canonical } from "@red-cup-engineering/json-engine/canonical-json";
@@ -31,10 +31,10 @@ export async function createAlpacaPaperAccountReadService(env = process.env, dep
   const resolveObservationAuthorization = dependencies.resolveObservationAuthorization;
   if (typeof resolveObservationAuthorization !== "function") throw new TypeError("paper-observation-authorization-resolver-required");
   if (!dependencies.authorityCustody || !["store", "retrieve", "revoke"].every((method) => typeof dependencies.authorityCustody[method] === "function")) throw new TypeError("authority-custody-actuator-required");
-  const admitted = await dependencies.authorityCustody.store({ provider: "alpaca", subject: dependencies.principal ?? "urn:principal:esther-davis", attributes: { kind: "alpaca-trading-api-key", venue: "alpaca-trading-paper", environment: "paper", accountAlias }, secret: { kind: "alpaca-trading-api-key", principal: dependencies.principal ?? "urn:principal:esther-davis", venue: "alpaca-trading-paper", environment: "paper", accountReference: accountAlias, credential: { apiKeyId: env.ALPACA_ACCOUNT_ESTHER_PAPER_TRADING_KEY, apiSecret: env.ALPACA_ACCOUNT_ESTHER_PAPER_TRADING_SECRET } } });
-  const custody = dependencies.custody ?? createBrokerageAuthorityCustody({ authorityCustody: dependencies.authorityCustody, transport: dependencies.transport ?? createPaperFetchTransport(dependencies.fetchImpl), resolvePaperObservationAuthorization: resolveObservationAuthorization, clock: now });
-  const credential = admitted.reference;
-  const adapter = dependencies.adapter ?? createAlpacaAdapter({ product: "alpaca-trading-paper", baseUrl: `${PAPER_ORIGIN}/`, authorityClient: custody });
+  const validated = await dependencies.authorityCustody.store({ provider: "alpaca", subject: dependencies.principal ?? "urn:principal:esther-davis", attributes: { kind: "alpaca-trading-api-key", venue: "alpaca-trading-paper", environment: "paper", accountAlias }, secret: { kind: "alpaca-trading-api-key", principal: dependencies.principal ?? "urn:principal:esther-davis", venue: "alpaca-trading-paper", environment: "paper", accountReference: accountAlias, credential: { apiKeyId: env.ALPACA_ACCOUNT_ESTHER_PAPER_TRADING_KEY, apiSecret: env.ALPACA_ACCOUNT_ESTHER_PAPER_TRADING_SECRET } } });
+  const storage = dependencies.custody ?? createBrokerageAuthorityStorage({ authorityCustody: dependencies.authorityCustody, transport: dependencies.transport ?? createPaperFetchTransport(dependencies.fetchImpl), resolvePaperObservationAuthorization: resolveObservationAuthorization, clock: now });
+  const credential = validated.reference;
+  const adapter = dependencies.adapter ?? createAlpacaAdapter({ product: "alpaca-trading-paper", baseUrl: `${PAPER_ORIGIN}/`, authorityClient: storage });
   const recordObservation = dependencies.recordObservation;
   if (typeof recordObservation !== "function") throw new TypeError("independent-paper-observation-recorder-required");
   const preflight = async ({ authorizationReference, at = now() }) => {
@@ -46,11 +46,11 @@ export async function createAlpacaPaperAccountReadService(env = process.env, dep
   const observeEstherPaperAccount = async ({ authorizationReference, at = now() }) => {
     const { authorization } = await preflight({ authorizationReference, at });
     const [account, positions] = await Promise.all([adapter.readAccount({ observationAuthorization: authorization, now: at }), adapter.listPositions({ observationAuthorization: authorization, now: at })]);
-    const receipt = Object.freeze(identify(scrub({ type: "PrincipalPaperAccountObservationReceipt", version: 1, authority: authorization.id, accountAlias, venue: "alpaca-trading-paper", observedAt: at,
+    const record = Object.freeze(identify(scrub({ type: "PrincipalPaperAccountObservationReceipt", version: 1, authority: authorization.id, accountAlias, venue: "alpaca-trading-paper", observedAt: at,
       account: { receiptId: account.id, venueRequestId: account.venueRequestId, payload: account.payload }, positions: { receiptId: positions.id, venueRequestId: positions.venueRequestId, payload: positions.payload }, orderEffect: false, secretBytesReturned: false })));
-    const bookReceipt = await recordObservation({ type: "principal-paper-account-observed", value: receipt, recordedAt: at });
-    if (!bookReceipt?.id && !bookReceipt?.graph && !bookReceipt?.recordReceipt) throw new TypeError("paper-observation-independent-book-receipt-required");
-    return Object.freeze({ ...receipt, independentBooksReceipt: scrub(bookReceipt) });
+    const bookRecord = await recordObservation({ type: "principal-paper-account-observed", value: record, recordedAt: at });
+    if (!bookRecord?.id && !bookRecord?.graph && !bookRecord?.recordReceipt) throw new TypeError("paper-observation-independent-book-receipt-required");
+    return Object.freeze({ ...record, independentBooksReceipt: scrub(bookRecord) });
   };
   return Object.freeze({ originatingActor: "urn:ame:alpaca-paper-account-read-service", preflight, observeEstherPaperAccount, credentialReference: credential });
 }

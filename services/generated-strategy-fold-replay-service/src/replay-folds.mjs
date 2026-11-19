@@ -10,31 +10,31 @@ function outputScores(output, symbols) {
 }
 export function createGeneratedStrategyFoldReplay({ replayProgram, allocateMandatePortfolio, replayTransactionCosts }) {
   if (![replayProgram, allocateMandatePortfolio, replayTransactionCosts].every((provider) => typeof provider === "function")) throw new TypeError("explicit-generated-replay-providers-required");
-  return async function replay({ source, staticAssay, featureSequence, folds, mandate, horizon = 5, transactionCostBps = 10, maximumReplayWallClockMs = 5_000 } = {}) {
-    if (staticAssay?.admitted !== true || featureSequence?.type !== "CausalFeatureFrameSequence" || folds?.type !== "PurgedWalkForwardFolds" || mandate?.type !== "PortfolioAllocationMandate" || !Number.isInteger(horizon) || horizon < 1) throw new TypeError("generated-fold-replay-input-invalid");
+  return async function replay({ source, staticAssay: staticCheck, featureSequence, folds, mandate, horizon = 5, transactionCostBps = 10, maximumReplayWallClockMs = 5_000 } = {}) {
+    if (staticCheck?.admitted !== true || featureSequence?.type !== "CausalFeatureFrameSequence" || folds?.type !== "PurgedWalkForwardFolds" || mandate?.type !== "PortfolioAllocationMandate" || !Number.isInteger(horizon) || horizon < 1) throw new TypeError("generated-fold-replay-input-invalid");
     const frameByIndex = new Map(featureSequence.frames.map((frame) => [frame.index, frame]));
     const symbols = featureSequence.entities.filter((entity) => entity !== featureSequence.benchmark), periods = [];
     let currentWeights = Object.fromEntries(symbols.map((symbol) => [symbol, 0]));
     for (const fold of folds.folds) {
       const frame = frameByIndex.get(fold.prediction);
       if (!frame) throw new TypeError("generated-fold-feature-frame-absent");
-      const executed = await replayProgram({ source, staticAssay, input: frame.input, maximumWallClockMs: maximumReplayWallClockMs });
+      const executed = await replayProgram({ source, staticAssay: staticCheck, input: frame.input, maximumWallClockMs: maximumReplayWallClockMs });
       if (executed?.type !== "DeterministicStrategyProgramReplay") throw new TypeError(`generated-program-replay-refused:${executed?.reason ?? "unknown"}`);
       const decision = outputScores(executed.output, symbols);
       const allocation = decision.abstain
         ? { weights: Object.freeze(Object.fromEntries(symbols.map((symbol) => [symbol, 0]))), cashWeight: 1, turnover: Object.values(currentWeights).reduce((sum, weight) => sum + Math.abs(weight), 0) }
         : allocateMandatePortfolio({ scores: decision.scores, uncertainty: {}, currentWeights, mandate });
       const realizedReturns = Object.fromEntries(symbols.map((symbol) => [symbol, featureSequence.pricesBySymbol[symbol][fold.outcome] / featureSequence.pricesBySymbol[symbol][fold.prediction] - 1]));
-      periods.push(Object.freeze({ at: fold.predictedAt, outcomeAt: fold.outcomeAt, weights: allocation.weights, realizedReturns, source: staticAssay.source }));
+      periods.push(Object.freeze({ at: fold.predictedAt, outcomeAt: fold.outcomeAt, weights: allocation.weights, realizedReturns, source: staticCheck.source }));
       currentWeights = allocation.weights;
     }
     const validationCount = folds.validation.length;
-    const latest = featureSequence.frames.at(-1), currentExecution = await replayProgram({ source, staticAssay, input: latest.input, maximumWallClockMs: maximumReplayWallClockMs });
+    const latest = featureSequence.frames.at(-1), currentExecution = await replayProgram({ source, staticAssay: staticCheck, input: latest.input, maximumWallClockMs: maximumReplayWallClockMs });
     if (currentExecution?.type !== "DeterministicStrategyProgramReplay") throw new TypeError(`generated-current-replay-refused:${currentExecution?.reason ?? "unknown"}`);
     const currentOutput = outputScores(currentExecution.output, symbols);
     const currentAllocation = currentOutput.abstain ? { weights: Object.fromEntries(symbols.map((symbol) => [symbol, 0])), cashWeight: 1, turnover: 0 } : allocateMandatePortfolio({ scores: currentOutput.scores, uncertainty: {}, currentWeights, mandate });
     return Object.freeze({
-      type: "GeneratedStrategyPurgedFoldReplay", version: 1, source: staticAssay.source,
+      type: "GeneratedStrategyPurgedFoldReplay", version: 1, source: staticCheck.source,
       validation: replayTransactionCosts({ periods: periods.slice(0, validationCount), transactionCostBps }),
       holdout: replayTransactionCosts({ periods: periods.slice(validationCount), transactionCostBps }),
       full: replayTransactionCosts({ periods, transactionCostBps }),

@@ -89,7 +89,7 @@ export function createAlpacaHistoricalBarsService(env = process.env, {
       bars[symbol].some((bar) => ![bar.open, bar.high, bar.low, bar.close].every((value) => Number.isFinite(value) && value > 0) || bar.low > bar.high || bar.close < bar.low || bar.close > bar.high))) {
       throw new TypeError("alpaca-market-data-payload-invalid");
     }
-    const receipt = identified(scrub({
+    const record = identified(scrub({
       type: "AlpacaHistoricalBarsObservation",
       version: 2,
       symbols: [...new Set(symbols)].sort(),
@@ -106,13 +106,13 @@ export function createAlpacaHistoricalBarsService(env = process.env, {
     }));
     const book = await recordObservation({
       type: "alpaca-historical-bars-observed",
-      value: receipt,
-      recordedAt: receipt.observedAt,
+      value: record,
+      recordedAt: record.observedAt,
     });
     if (!book?.id && !book?.graph && !book?.recordReceipt) {
       throw new TypeError("market-data-independent-book-receipt-required");
     }
-    return Object.freeze({ ...receipt, independentBooksReceipt: scrub(book) });
+    return Object.freeze({ ...record, independentBooksReceipt: scrub(book) });
   };
   return Object.freeze({
     originatingActor: "urn:ame:alpaca-market-data-read-service",

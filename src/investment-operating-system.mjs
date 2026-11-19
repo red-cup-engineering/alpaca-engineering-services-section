@@ -236,14 +236,14 @@ export function createPrincipalAlpacaInvestmentExecutionBridge({
         clock,
         executeIntent: executeAuthorizedIntent,
       });
-      const cycleReceipt = receipt(await recordCycle({
+      const cycleRecord = receipt(await recordCycle({
         type: "institutional-investment-decision-executed",
         decision,
         authorization,
         cycle,
         recordedAt: clock(),
       }), "principal-investment-cycle");
-      return Object.freeze({ ...cycle, cycleReceipt });
+      return Object.freeze({ ...cycle, cycleReceipt: cycleRecord });
     },
   });
 }
@@ -356,18 +356,18 @@ export function createInstitutionalInvestmentOperatingSystem({
       const programResidues = [];
       for (const member of population.candidates) {
         const source = member.candidate?.strategySource;
-        const assay = assayStrategyProgram({ source, authorActor: member.provider });
-        if (assay.admitted !== true) {
-          programResidues.push(Object.freeze({ provider: member.provider, candidate: member.index, disposition: "static-assay-refused", assay }));
+        const check = assayStrategyProgram({ source, authorActor: member.provider });
+        if (check.admitted !== true) {
+          programResidues.push(Object.freeze({ provider: member.provider, candidate: member.index, disposition: "static-assay-refused", assay: check }));
           continue;
         }
         try {
-          const result = await replayGeneratedStrategy({ ...replayInput, source, staticAssay: assay });
+          const result = await replayGeneratedStrategy({ ...replayInput, source, staticAssay: check });
           programReplays.push(Object.freeze({
             id: `urn:investment-system:generated:${member.index}:${member.provider}`,
             provider: member.provider,
             source,
-            assay,
+            assay: check,
             result,
           }));
         } catch (error) {
@@ -395,7 +395,7 @@ export function createInstitutionalInvestmentOperatingSystem({
         outcomeResolved: false,
         liveVenueEffect: false,
       });
-      const decisionReceipt = await record("institutional-portfolio-decision", {
+      const decisionRecord = await record("institutional-portfolio-decision", {
         market: market.id ?? null,
         researchAcquisition,
         research,
@@ -414,7 +414,7 @@ export function createInstitutionalInvestmentOperatingSystem({
       if (execution?.enabled === true) {
         authorization = await authorizeExecution({
           decision,
-          decisionReceipt,
+          decisionReceipt: decisionRecord,
           mandate,
           beforeAccount,
           research,
@@ -440,7 +440,7 @@ export function createInstitutionalInvestmentOperatingSystem({
         version: 1,
         asOf: market.asOf,
         decision,
-        decisionReceipt,
+        decisionReceipt: decisionRecord,
         research,
         researchAcquisition,
         strategyPopulation: population,
@@ -455,8 +455,8 @@ export function createInstitutionalInvestmentOperatingSystem({
         liveVenueEffect: executionOutcome?.liveVenueEffect === true,
         effect: execution?.enabled === true ? "authorized-broker-portfolio-cycle" : "research-and-portfolio-decision-recorded",
       });
-      const resultReceipt = await record("institutional-investment-system-cycle", result, clock());
-      return Object.freeze({ ...result, resultReceipt });
+      const resultRecord = await record("institutional-investment-system-cycle", result, clock());
+      return Object.freeze({ ...result, resultReceipt: resultRecord });
     },
   });
 }

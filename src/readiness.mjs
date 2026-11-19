@@ -1,6 +1,6 @@
 const present = (value) => typeof value === "string" && value.trim() !== "";
 
-export function assessBrokerageMarketReadiness(env = process.env, { alpacaRead, paperReadService, principalAlpacaReadProvider, authoritativeObservationResolver, independentBooks, strategyActors, computeLedger, contextAssay, replayAssay, obsmetrologiaProofBuild, obsmetrologiaPromotionProvider, paperExecutionProvider, liveExecutionProvider, liveAuthorityResolver, unionSettlementProvider, consumeUnionGrant } = {}) {
+export function assessBrokerageMarketReadiness(env = process.env, { alpacaRead, paperReadService, principalAlpacaReadProvider, authoritativeObservationResolver, independentBooks, strategyActors, computeLedger, contextAssay: contextCheck, replayAssay: replayCheck, obsmetrologiaProofBuild, obsmetrologiaPromotionProvider, paperExecutionProvider, liveExecutionProvider, liveAuthorityResolver, unionSettlementProvider, consumeUnionGrant } = {}) {
   const checks = Object.freeze({
     providerPayoutIdentity: present(env.X402_PAY_TO),
     facilitatorCredentialId: present(env.CDP_API_KEY_ID),
@@ -31,8 +31,8 @@ export function assessBrokerageMarketReadiness(env = process.env, { alpacaRead, 
     independentBooks: independentBooks === true || (present(env.FINANCIAL_BROKERAGE_DATA_ROOT) && present(env.BROKERAGE_BOOKS_ACCOUNT)),
     strategyActors: strategyActors === true,
     computeLedger: computeLedger === true,
-    contextAssay: contextAssay === true,
-    replayAssay: replayAssay === true,
+    contextAssay: contextCheck === true,
+    replayAssay: replayCheck === true,
     obsmetrologiaProofBuild: obsmetrologiaProofBuild === true,
     obsmetrologiaPromotionProvider: typeof obsmetrologiaPromotionProvider === "function",
     paperExecutionProvider: typeof paperExecutionProvider === "function",
@@ -59,7 +59,7 @@ export function assessBrokerageMarketReadiness(env = process.env, { alpacaRead, 
     type: "BrokerageMarketReadinessAssessment", version: 1, publicMarketReady, virtualsMarketReady, unionMarketReady,
     alpacaPrincipalReadReady: checks.principalAlpacaReadProvider && checks.independentBooks, paperReadReady, paperExecutionReady, strategyImprovementReady,
     liveAccountsAuthorized: checks.liveAuthorityResolver, liveReady, checks,
-    missing: Object.entries(checks).filter(([, admitted]) => !admitted).map(([name]) => name),
+    missing: Object.entries(checks).filter(([, validated]) => !validated).map(([name]) => name),
     rule: "a venue effect requires a current principal contract, a non-revoked matching authority grant, immediate account and position observations, and independent books; paper and live are selected by that contract rather than by a global process kill switch",
   });
 }

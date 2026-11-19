@@ -45,8 +45,8 @@ export function createAlpacaLiveMcp({ brokerage }) {
       }
       if (name === 'alpaca_live_observe') {
         if (typeof brokerage.observe?.preflight !== 'function') throw new TypeError('live-account-observer-unavailable');
-        const admitted = await brokerage.observe.preflight(input);
-        if (admitted.grant.venue !== 'alpaca-trading-live') throw new TypeError('live-read-authority-required');
+        const validated = await brokerage.observe.preflight(input);
+        if (validated.grant.venue !== 'alpaca-trading-live') throw new TypeError('live-read-authority-required');
         const value = await brokerage.observe(input);
         return result({content:[{type:'text',text:JSON.stringify(value)}],structuredContent:value});
       }
@@ -55,9 +55,9 @@ export function createAlpacaLiveMcp({ brokerage }) {
         const value = await brokerage.executeMarketDecision(input);
         return result({ content: [{ type: 'text', text: JSON.stringify(value) }], structuredContent: value });
       }
-      const admitted = await brokerage.preflight(input);
-      if (admitted.mode !== 'live') throw new TypeError('live-authority-required');
-      const value = name === 'alpaca_live_execute_intent' ? await brokerage.execute(input) : admitted;
+      const validated = await brokerage.preflight(input);
+      if (validated.mode !== 'live') throw new TypeError('live-authority-required');
+      const value = name === 'alpaca_live_execute_intent' ? await brokerage.execute(input) : validated;
       return result({ content: [{ type: 'text', text: JSON.stringify(value) }], structuredContent: value });
     } catch (failure) {
       return result({ isError: true, content: [{ type: 'text', text: failure instanceof Error ? failure.message : String(failure) }] });

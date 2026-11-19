@@ -13,7 +13,7 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { describeAlertEntry, readNewJournalEntries } from "../src/journal-watch.mjs";
+import { describeAlertEntry, readNewLogEntries } from "../src/journal-watch.mjs";
 import { currentlyFailedAlpacaUnits, diffFailedUnits } from "../src/failed-units-watch.mjs";
 import { postAdminAlert } from "@causeway-services/turntide-islands-services-section/admin-alert";
 import { runJavascriptNodeOperation } from "@red-cup-engineering/node-js-function-engineering-services-section/operation";
@@ -22,7 +22,7 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const SERVICES_ROOT = join(HERE, "..", "..");
 const STATE_PATH = join(HERE, "..", "data", "state", "watch-state.json");
 
-const WATCHED_JOURNALS = [
+const WATCHED_LOGS = [
   { label: "esther-loop", path: join(SERVICES_ROOT, "alpaca-esther-paper-trading-loop", "data", "journal", "decisions.ndjson") },
   { label: "redistributor-loop", path: join(SERVICES_ROOT, "alpaca-esther-paper-redistributor-loop", "data", "journal", "redistributor-decisions.ndjson") },
 ];
@@ -56,16 +56,16 @@ export async function runWatchAndAlert({
   post = (lines, options) => postAdminAlert("[ALPACA-ALERT]", lines, options),
   loadStateImpl = loadState,
   saveStateImpl = saveState,
-  journals = WATCHED_JOURNALS,
+  journals: logs = WATCHED_LOGS,
   readTripped = readLatestTrippedRecord,
   listFailedUnits = currentlyFailedAlpacaUnits,
 } = {}) {
   const state = loadStateImpl();
   const lines = [];
 
-  for (const { label, path } of journals) {
+  for (const { label, path } of logs) {
     const sinceOffset = state.journalOffsets[path] ?? 0;
-    const { entries, nextOffset } = readNewJournalEntries(path, sinceOffset);
+    const { entries, nextOffset } = readNewLogEntries(path, sinceOffset);
     state.journalOffsets[path] = nextOffset;
     for (const entry of entries) lines.push(describeAlertEntry(label, entry));
   }

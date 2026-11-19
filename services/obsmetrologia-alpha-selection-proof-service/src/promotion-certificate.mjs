@@ -127,7 +127,7 @@ const scaled = (value, direction, label) => {
   return result;
 };
 const leanList = (values) => `[${values.join(", ")}]`;
-function runtimeInstanceSource({ evaluations, incumbentsByDataset, selectionPolicy, entropyAssay }) {
+function runtimeInstanceSource({ evaluations, incumbentsByDataset, selectionPolicy, entropyAssay: entropyCheck }) {
   const incumbent = evaluations.map(({ replayDataset }) =>
     incumbentsByDataset.get(replayDataset)
   );
@@ -161,8 +161,8 @@ def reading : BrokerageControl.AlphaSelection.RuntimePromotionReading where
   minimumImprovement := ${minimumImprovement}
   candidateDrawdown := ${leanList(candidateDrawdown)}
   maximumDrawdown := ${maximumDrawdown}
-  beforeEntropyRank := ${entropyAssay.beforeEntropyRank}
-  afterEntropyRank := ${entropyAssay.afterEntropyRank}
+  beforeEntropyRank := ${entropyCheck.beforeEntropyRank}
+  afterEntropyRank := ${entropyCheck.afterEntropyRank}
   quartetActive := true
   causalBoundaryPresented := true
   noFutureLeakage := true
@@ -230,8 +230,8 @@ export async function verifyPaperPromotionCertificate({
   incumbentEvaluations,
   candidateEvaluations,
   evidenceObservations,
-  causalAssay,
-  entropyAssay,
+  causalAssay: causalCheck,
+  entropyAssay: entropyCheck,
   tournamentWitness,
   selectionPolicy,
   trustedActorKeys,
@@ -304,15 +304,15 @@ export async function verifyPaperPromotionCertificate({
     throw new RangeError("quartet-not-supported");
   }
 
-  causalAssay = verifySignedRecord(
-    causalAssay,
+  causalCheck = verifySignedRecord(
+    causalCheck,
     "CausalReplayBoundaryAssay",
     "assayerActor",
     trustedActorKeys,
     "causal-assay",
   );
-  entropyAssay = verifySignedRecord(
-    entropyAssay,
+  entropyCheck = verifySignedRecord(
+    entropyCheck,
     "EvidenceEntropyRelaxationAssay",
     "assayerActor",
     trustedActorKeys,
@@ -326,38 +326,38 @@ export async function verifyPaperPromotionCertificate({
     "tournament-witness",
   );
   distinctActors([
-    [causalAssay, "assayerActor"],
-    [entropyAssay, "assayerActor"],
+    [causalCheck, "assayerActor"],
+    [entropyCheck, "assayerActor"],
     [tournamentWitness, "witnessActor"],
   ], "promotion-witnesses");
-  const assayActors = new Set([
-    causalAssay.assayerActor,
-    entropyAssay.assayerActor,
+  const checkActors = new Set([
+    causalCheck.assayerActor,
+    entropyCheck.assayerActor,
     tournamentWitness.witnessActor,
   ]);
-  if (observations.some(({ observerActor }) => assayActors.has(observerActor))) {
+  if (observations.some(({ observerActor }) => checkActors.has(observerActor))) {
     throw new TypeError("promotion-witnesses-independence-invalid");
   }
 
   if (
-    causalAssay.candidate !== candidate.id ||
-    causalAssay.noFutureLeakage !== true ||
-    causalAssay.contractedBoundaryPresented !== true ||
-    causalAssay.noSelfReachingEvent !== true
+    causalCheck.candidate !== candidate.id ||
+    causalCheck.noFutureLeakage !== true ||
+    causalCheck.contractedBoundaryPresented !== true ||
+    causalCheck.noSelfReachingEvent !== true
   ) {
     throw new TypeError("causal-assay-binding-invalid");
   }
-  digest(causalAssay.eventOrderDigest, "causal-event-order");
-  digest(causalAssay.boundaryPresentationDigest, "causal-boundary");
+  digest(causalCheck.eventOrderDigest, "causal-event-order");
+  digest(causalCheck.boundaryPresentationDigest, "causal-boundary");
 
   if (
-    entropyAssay.candidate !== candidate.id ||
-    entropyAssay.relaxesVia !== true ||
-    !Number.isSafeInteger(entropyAssay.beforeEntropyRank) ||
-    !Number.isSafeInteger(entropyAssay.afterEntropyRank) ||
-    entropyAssay.beforeEntropyRank < 0 ||
-    entropyAssay.afterEntropyRank < 0 ||
-    entropyAssay.afterEntropyRank > entropyAssay.beforeEntropyRank
+    entropyCheck.candidate !== candidate.id ||
+    entropyCheck.relaxesVia !== true ||
+    !Number.isSafeInteger(entropyCheck.beforeEntropyRank) ||
+    !Number.isSafeInteger(entropyCheck.afterEntropyRank) ||
+    entropyCheck.beforeEntropyRank < 0 ||
+    entropyCheck.afterEntropyRank < 0 ||
+    entropyCheck.afterEntropyRank > entropyCheck.beforeEntropyRank
   ) {
     throw new TypeError("entropy-assay-binding-invalid");
   }
@@ -378,7 +378,7 @@ export async function verifyPaperPromotionCertificate({
     evaluations,
     incumbentsByDataset,
     selectionPolicy,
-    entropyAssay,
+    entropyAssay: entropyCheck,
   });
   await runLean(instanceSource);
   const instanceSourceDigest = contentDigest(instanceSource);
@@ -386,7 +386,7 @@ export async function verifyPaperPromotionCertificate({
     readFile(APPLICATION_SOURCE),
     readFile(MANIFEST_SOURCE),
   ]);
-  const generatedBuildReceipt = signRecord({
+  const generatedBuildRecord = signRecord({
     type: "ObsmetrologiaProofBuildReceipt",
     version: 2,
     builderActor: proofBuilderActor,
@@ -403,7 +403,7 @@ export async function verifyPaperPromotionCertificate({
     verified: true,
   }, proofBuilderPrivateKey);
   const build = proofBuild(
-    generatedBuildReceipt,
+    generatedBuildRecord,
     instanceSourceDigest,
     { ...trustedActorKeys, [proofBuilderActor]: createPublicKey(proofBuilderPrivateKey) },
     promotionActor,
@@ -417,8 +417,8 @@ export async function verifyPaperPromotionCertificate({
     candidateEvaluations: evaluations.map(({ id }) => id).sort(),
     evidenceObservations: observations.map(({ id }) => id).sort(),
     quartetCorner: truthTop(),
-    causalAssay: causalAssay.id,
-    entropyAssay: entropyAssay.id,
+    causalAssay: causalCheck.id,
+    entropyAssay: entropyCheck.id,
     tournamentWitness: tournamentWitness.id,
     proofBuildReceipt: build.id,
     applicationTheorem: build.applicationTheorem,

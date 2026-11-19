@@ -98,7 +98,7 @@ function day(v) {
 }
 function canonical(v) { return typeof v === 'string' && Number.isFinite(instant(v)); }
 function unavailable() { return Object.assign(new Error('Issuer revenue unavailable'), {code:'issuer-revenue-unavailable',status:503,retryable:true}); }
-function refused(reason, retryable, retryAfter) {
+function rejected(reason, retryable, retryAfter) {
   const e = Object.assign(new Error('Issuer revenue source unavailable: ' + reason), {code:'issuer-revenue-source-unavailable',status:503,retryable,reason});
   if (retryAfter !== undefined && retryAfter !== null) e.retryAfter = String(retryAfter);
   return e;
@@ -251,15 +251,15 @@ async function platformSleep(ms) {
 async function acquire(request, fetcher, clock, fixedDay) {
   let signal;
   try { signal = AbortSignal.timeout(request.timeoutMs); }
-  catch { throw refused('timeout-configuration',false); }
+  catch { throw rejected('timeout-configuration',false); }
   let response;
   try { response = await abortable(fetcher(request.url,{method:'GET',headers:request.headers,redirect:'manual',signal}),signal); }
-  catch { throw refused('network-or-timeout',true); }
+  catch { throw rejected('network-or-timeout',true); }
   const retryAfter = response?.headers?.get?.('Retry-After');
   if (response?.status !== 200) {
     try { Promise.resolve(response?.body?.cancel?.()).catch(() => {}); } catch {}
     const status = response?.status;
-    throw refused('http-' + String(status),status === 429 || (status >= 500 && status <= 599),retryAfter);
+    throw rejected('http-' + String(status),status === 429 || (status >= 500 && status <= 599),retryAfter);
   }
   let bytes;
   try {
@@ -270,18 +270,18 @@ async function acquire(request, fetcher, clock, fixedDay) {
     }
     bytes = await boundedBody(response.body,request.maximumBytes,signal);
   } catch (e) {
-    throw refused(signal.aborted ? 'network-or-timeout' : (e?.message === 'byte-overflow' ? 'byte-overflow' : 'body-unavailable'),signal.aborted || e?.message !== 'byte-overflow' && e?.message !== 'invalid-stream',retryAfter);
+    throw rejected(signal.aborted ? 'network-or-timeout' : (e?.message === 'byte-overflow' ? 'byte-overflow' : 'body-unavailable'),signal.aborted || e?.message !== 'byte-overflow' && e?.message !== 'invalid-stream',retryAfter);
   }
   const observed = instant(clock());
-  if (!Number.isFinite(observed)) throw refused('invalid-clock',false);
+  if (!Number.isFinite(observed)) throw rejected('invalid-clock',false);
   const observedAt = new Date(observed).toISOString();
-  if (observedAt.slice(0,10) !== fixedDay) throw refused('utc-day-changed',true);
+  if (observedAt.slice(0,10) !== fixedDay) throw rejected('utc-day-changed',true);
   try {
     const companyfacts = parseBytes(bytes);
     const address = await addressContent(bytes,{mediaType:'application/json'});
     if (!record(address) || address.kind !== 'semiotic-content.raw-carrier-address' || address.version !== 1 || address.algorithm !== 'sha-256' || address.size !== bytes.length || address.mediaType !== 'application/json' || !ni(address.ni) || !positive(address.size)) throw new Error('Invalid raw address');
     return {companyfacts,source:{uri:request.url,digest:address.ni,bytes:address.size,observedAt}};
-  } catch { throw refused('invalid-source',false,retryAfter); }
+  } catch { throw rejected('invalid-source',false,retryAfter); }
 }
 async function compactIssuer(request, c, fetcher, clock, asOf) {
   const {companyfacts,source} = await acquire(request,fetcher,clock,asOf);
@@ -289,11 +289,11 @@ async function compactIssuer(request, c, fetcher, clock, asOf) {
   for (const periodKind of KINDS) {
     let result;
     try { result = {...reconcileIssuerRevenueFacts({cik:request.cik,asOf,periodKind,maximumAgeDays:c.maximumAgeDays[periodKind],companyfacts}),ticker:request.ticker,source:{...source}}; }
-    catch { throw refused('invalid-source-identity',false); }
+    catch { throw rejected('invalid-source-identity',false); }
     let packet;
     try {
       packet = await formIssuerEvidencePacket({ticker:request.ticker,issuer:result.issuer,asOf,sources:[{uri:source.uri,observedAt:source.observedAt,digest:source.digest}],claims:[{statement:statement(result),sourceDigests:[source.digest]}]});
-    } catch { throw refused('packet-construction',false); }
+    } catch { throw rejected('packet-construction',false); }
     compact[periodKind] = {result,packet};
   }
   return compact;
@@ -317,23 +317,23 @@ export async function prepareIssuerRevenueCohort(configuration, adapters = {}) {
   const parts = {quarter:{issuers:[],evidencePackets:[]},annual:{issuers:[],evidencePackets:[]}};
   for (let j=0;j<plan.requests.length;j++) {
     if (j) {
-      try { await sleep(plan.minimumIntervalMs); } catch { throw refused('spacing-unavailable',true); }
+      try { await sleep(plan.minimumIntervalMs); } catch { throw rejected('spacing-unavailable',true); }
     }
     const compact = await compactIssuer(plan.requests[j],configuration,fetcher,clock,asOf);
     for (const k of KINDS) { parts[k].issuers.push(compact[k].result); parts[k].evidencePackets.push(compact[k].packet); }
   }
   let completion;
-  try { completion = instant(clock()); } catch { throw refused('invalid-clock',false); }
-  if (!Number.isFinite(completion)) throw refused('invalid-clock',false);
+  try { completion = instant(clock()); } catch { throw rejected('invalid-clock',false); }
+  if (!Number.isFinite(completion)) throw rejected('invalid-clock',false);
   const observedAt = new Date(completion).toISOString();
-  if (observedAt.slice(0,10) !== asOf) throw refused('utc-day-changed',true);
-  if (completion < start || KINDS.some(k => parts[k].issuers.some(i => instant(i.source.observedAt) > completion))) throw refused('invalid-clock',false);
+  if (observedAt.slice(0,10) !== asOf) throw rejected('utc-day-changed',true);
+  if (completion < start || KINDS.some(k => parts[k].issuers.some(i => instant(i.source.observedAt) > completion))) throw rejected('invalid-clock',false);
   const results = {};
   for (const k of KINDS) results[k] = {type:'IssuerRevenueComparison',version:1,observedAt,asOf,periodKind:k,datePolicy:'filing-date-cutoff-on-received-sources',comparability:comparability(parts[k].issuers),issuers:parts[k].issuers,evidencePackets:parts[k].evidencePackets};
   const cohort = {type:'IssuerRevenuePreparedCohort',version:1,observedAt,asOf,results};
   try {
     if (new TextEncoder().encode(JSON.stringify(cohort)).byteLength > configuration.maximumCohortBytes) throw new Error('overflow');
-  } catch { throw refused('compact-output-overflow',false); }
+  } catch { throw rejected('compact-output-overflow',false); }
   return cohort;
 }
 

@@ -12,8 +12,8 @@ const PRODUCTS = Object.freeze({
   "alpaca-trading-live": Object.freeze({ baseUrl: "https://api.alpaca.markets/", adapter: "alpaca-trading-live" }),
 });
 
-export function createAlpacaPrincipalAccountReadService({ resolveAuthorityGrant, authorityCustody, recordObservation, clock = () => new Date().toISOString() } = {}) {
-  if (typeof resolveAuthorityGrant !== "function" || typeof authorityCustody?.authorizedRequest !== "function" || typeof recordObservation !== "function") throw new TypeError("principal-read-resolver-custody-and-recorder-required");
+export function createAlpacaPrincipalAccountReadService({ resolveAuthorityGrant, authorityCustody: authorityStorage, recordObservation, clock = () => new Date().toISOString() } = {}) {
+  if (typeof resolveAuthorityGrant !== "function" || typeof authorityStorage?.authorizedRequest !== "function" || typeof recordObservation !== "function") throw new TypeError("principal-read-resolver-custody-and-recorder-required");
   const adapters = new Map();
   const preflight = async ({ authorityGrantReference, at = clock() } = {}) => {
     if (typeof authorityGrantReference !== "string" || !authorityGrantReference.trim()) throw new TypeError("authority-grant-reference-required");
@@ -29,17 +29,17 @@ export function createAlpacaPrincipalAccountReadService({ resolveAuthorityGrant,
     const { grant, product, at } = await preflight(request);
     let adapter = adapters.get(product.adapter);
     if (!adapter) {
-      adapter = createAlpacaAdapter({ product: product.adapter, baseUrl: product.baseUrl, authorityClient: authorityCustody });
+      adapter = createAlpacaAdapter({ product: product.adapter, baseUrl: product.baseUrl, authorityClient: authorityStorage });
       adapters.set(product.adapter, adapter);
     }
     const [account, positions] = await Promise.all([adapter.readAccount({ grant, now: at }), adapter.listPositions({ grant, now: at })]);
-    if (![account, positions].every(receipt => Number.isInteger(receipt.status) && receipt.status >= 200 && receipt.status < 300)) {
+    if (![account, positions].every(record => Number.isInteger(record.status) && record.status >= 200 && record.status < 300)) {
       throw new TypeError("principal-alpaca-observation-refused");
     }
     if (account.payload?.id !== grant.accountReference || !Array.isArray(positions.payload)) {
       throw new TypeError("principal-alpaca-observation-account-mismatch");
     }
-    const receipt = identify(scrub({
+    const record = identify(scrub({
       type: "PrincipalAlpacaAccountObservationReceipt", version: 1,
       principal: grant.principal, accountReference: grant.accountReference, venue: grant.venue,
       authorityGrant: grant.id, observedAt: at,
@@ -47,9 +47,9 @@ export function createAlpacaPrincipalAccountReadService({ resolveAuthorityGrant,
       positions: { receiptId: positions.id, venueRequestId: positions.venueRequestId, payload: positions.payload },
       scopesUsed: ["account:read", "positions:read"], orderEffect: false, secretBytesReturned: false,
     }));
-    const book = await recordObservation({ type: "principal-alpaca-account-observed", value: receipt, recordedAt: at });
+    const book = await recordObservation({ type: "principal-alpaca-account-observed", value: record, recordedAt: at });
     if (!book?.id && !book?.graph && !book?.recordReceipt) throw new TypeError("principal-read-independent-book-receipt-required");
-    return Object.freeze({ ...receipt, independentBooksReceipt: scrub(book) });
+    return Object.freeze({ ...record, independentBooksReceipt: scrub(book) });
   };
   Object.defineProperties(read, {
     preflight: { value: preflight, enumerable: true },
