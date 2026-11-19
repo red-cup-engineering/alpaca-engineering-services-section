@@ -1,10 +1,10 @@
 import { readFileSync } from "node:fs";
-import { admitSchema } from "@red-cup-engineering/json-schema-engineering-services-section/admit-schema";
+import { validateSchema } from "@red-cup-engineering/json-schema-engineering-services-section/admit-schema";
 import { unfoldSchema } from "@red-cup-engineering/json-schema-engineering-services-section/unfold-schema";
 import { validateSchemaInstance } from "@red-cup-engineering/json-schema-engineering-services-section/validate-schema-instance";
 import { INVESTMENT_RESEARCH_RESULT_CARRIER } from "@red-cup-engineering/investment-research-work-lot-service/schemas";
 
-const load = (name) => admitSchema({ schema: JSON.parse(readFileSync(new URL(`../schemas/${name}`, import.meta.url), "utf8")) });
+const load = (name) => validateSchema({ schema: JSON.parse(readFileSync(new URL(`../schemas/${name}`, import.meta.url), "utf8")) });
 
 export const RESEARCH_SECTION_GROUNDING_REQUEST_CARRIER = load("research-section-grounding-request.schema.json");
 export const RESEARCH_SECTION_GROUNDING_REJECTION_CARRIER = load("research-section-grounding-refusal.schema.json");

@@ -1,10 +1,10 @@
 import { readFileSync } from "node:fs";
-import { admitSchema } from "@red-cup-engineering/json-schema-engineering-services-section/admit-schema";
+import { validateSchema } from "@red-cup-engineering/json-schema-engineering-services-section/admit-schema";
 import { unfoldSchema } from "@red-cup-engineering/json-schema-engineering-services-section/unfold-schema";
 import { validateSchemaInstance } from "@red-cup-engineering/json-schema-engineering-services-section/validate-schema-instance";
 
 function load(name) {
-  return admitSchema({ schema: JSON.parse(readFileSync(new URL(`../schemas/${name}`, import.meta.url), "utf8")) });
+  return validateSchema({ schema: JSON.parse(readFileSync(new URL(`../schemas/${name}`, import.meta.url), "utf8")) });
 }
 
 export const INVESTMENT_RESEARCH_REQUEST_CARRIER = load("investment-research-request.schema.json");

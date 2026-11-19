@@ -4,7 +4,7 @@ import {
   identifyJsonSemanticContent,
 } from "@red-cup-engineering/computer-code-engine/semiotic-expression-notation/semantic-content-identity";
 import {
-  admitNormalizedSemanticContent,
+  validateNormalizedSemanticContent,
   identifyNormalizedSemanticContent,
 } from "@red-cup-engineering/computer-code-engine/semiotic-expression-notation/runtime/semantic-content-identity";
 import { inferTy } from "@red-cup-engineering/computer-code-engine/semiotic-expression-notation/typing";
@@ -226,7 +226,7 @@ export function createOccupationEntropyProvider(env = process.env) {
       signal: AbortSignal.timeout(20_000),
     });
     if (a2aResultMetadata(exchange.result).disposition !== "completion") throw new Error("occupation-entropy-readout-refused");
-    const term = admitNormalizedSemanticContent(extractSenPart(a2aResultParts(exchange.result)).bytes).envelope.settledBody;
+    const term = validateNormalizedSemanticContent(extractSenPart(a2aResultParts(exchange.result)).bytes).envelope.settledBody;
     if (!Array.isArray(term) || term[0] !== "mark") throw new Error("occupation-entropy-readout-refused:result was not one Mark term");
     return JSON.parse(term[1]);
   };
