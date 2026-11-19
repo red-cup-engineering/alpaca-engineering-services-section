@@ -1,0 +1,11 @@
+{
+  "startedAt": "2026-10-24T21:33:12.228745+00:00",
+  "finishedAt": "2026-10-24T21:47:42.140059+00:00",
+  "exitCode": 124,
+  "sourceSpecification": "ni:///sha-256;2hHQSxd-NH9ewvXLAIsZXgpyDKJOXUaSSxvlP6b37f0",
+  "includedSubscriptionProvider": true,
+  "newCashPurchase": false,
+  "nodeHeapMiB": 128,
+  "isolatedChildMemoryBytes": 536870912,
+  "maxChildRssKiB": 69432
+}

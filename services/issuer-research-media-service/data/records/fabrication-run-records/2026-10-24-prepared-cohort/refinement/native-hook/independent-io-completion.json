@@ -1,0 +1,8 @@
+{
+  "startedAt": "2026-10-24T22:15:52.578667+00:00",
+  "finishedAt": "2026-10-24T22:16:03.747521+00:00",
+  "exitCode": 1,
+  "wallSeconds": 12.68013158100075,
+  "maximumChildRssKiB": 107188,
+  "scope": "original independent producer HTTP/cache I/O fixture receiving, no inference or live network"
+}

@@ -1,0 +1,67 @@
+{
+  "type": "NativeIssuerCohortDeliveryReceiving",
+  "version": 1,
+  "observedAt": "2026-10-24T22:10:05.321674+00:00",
+  "disposition": "SOURCE_DELIVERED_NATIVE_ASSAY_UNRECEIVED",
+  "nativeRefusal": {
+    "type": "JsnodeModuleDerivationRefusal",
+    "message": "isolated host did not provide a complete bounded execution outcome"
+  },
+  "sourceSpecification": "ni:///sha-256;2hHQSxd-NH9ewvXLAIsZXgpyDKJOXUaSSxvlP6b37f0",
+  "source": {
+    "path": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/refinement/native-hook/retained-proposal.source.mjs",
+    "intendedModule": "src/prepared-cohort.mjs",
+    "bytes": 21094,
+    "sha256": "7931c7bce5d70c0dcc8275a03f1e77a0f0aedd040d946a43037823aba865fb3f",
+    "edited": false
+  },
+  "assayCaseCount": 8,
+  "deliveries": [
+    {
+      "taskClass": "code-fabrication-assays",
+      "workLot": "urn:work-lot:inference:r0iWI0gfzf_gx_FGp13GD1MbXzTiioFLeFtaVBOcEDA",
+      "provider": "urn:ame:bare-cedar-fog-codex-inference-team",
+      "configurationIdentity": "ni:///sha-256;l3k78btuNzmvmueURzT7MdqkmwlytwQnwHyX9Emsbxk",
+      "textSha256": "baed09be57ee38be3f56bd9239bae71f2d3b8d7cff5742fc25a8f7ccfb6dabe2",
+      "receipt": "ni:///sha-256;25AM1F9gtssK8TZayWh4dPVdrMcRdmqn0Mtu3d0M_r8",
+      "consideration": [
+        {
+          "kind": "credit",
+          "asset": "urn:union:consideration:provider-invocation",
+          "unit": "provider-invocation",
+          "amount": {
+            "numerator": "1",
+            "denominator": "1"
+          }
+        }
+      ],
+      "settlement": "none-direct-endpoint-lane-carries-no-signed-compact-or-chain-settlement",
+      "acceptanceScope": "delivery-to-codex-customer-office-only"
+    },
+    {
+      "taskClass": "code-fabrication",
+      "workLot": "urn:work-lot:inference:D8ipaVMUz6ewROpmXv1UCcMpXf0BHadfrH-fIXKbumc",
+      "provider": "urn:ame:bare-cedar-fog-codex-inference-team",
+      "configurationIdentity": "ni:///sha-256;l3k78btuNzmvmueURzT7MdqkmwlytwQnwHyX9Emsbxk",
+      "textSha256": "91460d8caf015089e0c28544c525f22cee99cd29b4a707e8eb2a891cb0e8bbba",
+      "receipt": "ni:///sha-256;vmpjU139ygG0Z_GiBCY2xsXq-mMlq6fBHwI6gJ3IRpA",
+      "consideration": [
+        {
+          "kind": "credit",
+          "asset": "urn:union:consideration:provider-invocation",
+          "unit": "provider-invocation",
+          "amount": {
+            "numerator": "1",
+            "denominator": "1"
+          }
+        }
+      ],
+      "settlement": "none-direct-endpoint-lane-carries-no-signed-compact-or-chain-settlement",
+      "acceptanceScope": "delivery-to-codex-customer-office-only"
+    }
+  ],
+  "newCashPurchase": false,
+  "activeProjection": false,
+  "independentIoTestsExecuted": false,
+  "nextAct": "Reuse exact deliveries through original native derivation/isolated receiver after actual operator resource placement admission. No inference, network provider call or semantic source edit."
+}

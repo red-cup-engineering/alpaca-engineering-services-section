@@ -1,0 +1,15 @@
+{
+  "type": "IssuerMonotonicStableRelease",
+  "version": 1,
+  "at": "2026-10-24T23:03:42.523Z",
+  "package": "@red-cup-engineering/issuer-research-media-service",
+  "packageVersion": "0.1.5",
+  "previousRelease": "0.1.3",
+  "previousReleaseGitHead": "76544ad0f2de13440d257ef63b98ff1cf54adf82",
+  "previousReleasePublication": "Root native named publish-landed-packages invocation tracef1ff141cf32d1e89975ba492e3b2263d, published2026-10-24T23:02:42.981Z; independent publicregistrymetadata matched",
+  "reason": "Existing registry stable0.1.4 at gitHead56271fd contains original packet exports only. Native stable composition advances monotonically;0.1.5 carries the received new API without mutating prior versions or tags.",
+  "sourceSha256": "ca5ec47a426af6f86bf53be8b8ee3a21ea83b2b4dcc983f90fe43f1d1ab21bc5",
+  "semanticSourceEdited": false,
+  "behaviorReceiving": "Node47/47 ordinary; isolated independentNode20; actualworkerd3plusfull-sourcefixturePASS",
+  "publicationObserved": false
+}

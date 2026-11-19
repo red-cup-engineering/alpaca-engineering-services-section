@@ -1,0 +1,108 @@
+{
+  "type": "IssuerPreparedCohortEdgeReceiving",
+  "version": 1,
+  "observedAt": "2026-10-24T22:55:03.771Z",
+  "sourceSha256": "ca5ec47a426af6f86bf53be8b8ee3a21ea83b2b4dcc983f90fe43f1d1ab21bc5",
+  "sourceBytes": 22768,
+  "sourceSpecification": "ni:///sha-256;2moJycjlp3Q8p4fL52Ng6iAY4iNKDl1iGIbdCKBY2Qw",
+  "sourceOrderSha256": "e63921e5c658aa9e6ac95afdfd041383ac1b8219043ea382434d0bc8e3e594be",
+  "profileSha256": "60372c8d77e5a64ced331c7058286fddfa91e6ef1d7eb5197f1863065663f22f",
+  "disposition": "SOURCE_AND_NATIVE_NODE_EDGE_BEHAVIOR_RECEIVED",
+  "nativeDerivation": {
+    "status": "JsnodeModuleProposal",
+    "exitCode": 0,
+    "receipt": "./completion.json",
+    "noNewCash": true
+  },
+  "independentNode": {
+    "passed": 20,
+    "failed": 0,
+    "receipt": "./independent-io-completion.json",
+    "nativeRawOutcome": "./independent-io/raw-outcome-1.json",
+    "sourceUnchanged": true
+  },
+  "actualEdge": {
+    "runtime": "workerd1.20261024.1",
+    "passedAcceptanceCases": 3,
+    "failedAcceptanceCases": 0,
+    "cases": [
+      "manualSourcePreparation",
+      "manualRedirectRefusal",
+      "cacheOnlyReader"
+    ],
+    "nativeStatus": 0,
+    "maximumRssKiB": 59960,
+    "receipt": "../../../worker-runtime-test-records/2026-10-24-prepared-cohort-edge/result.json"
+  },
+  "diagnostic": {
+    "case": "retryAfterIdentityObservation",
+    "input": "HTTP200, Retry-After9999999, mismatched CIK",
+    "observed": {
+      "code": "issuer-revenue-source-unavailable",
+      "status": 503,
+      "reason": "invalid-source-identity",
+      "retryable": false,
+      "retryAfter": null
+    },
+    "judgment": "Independent parent received original transport/rate/temporary-failure scope from behavior.md36 and pre-source429 case; HTTP200 downstream semantic failure header preservation is not the operative API. Explicit limitation retained; no universal header propagation claim."
+  },
+  "promotion": {
+    "projected": true,
+    "sourceSha256": "ca5ec47a426af6f86bf53be8b8ee3a21ea83b2b4dcc983f90fe43f1d1ab21bc5",
+    "deployed": false,
+    "paidCustomer": false,
+    "income": 0
+  },
+  "execution": {
+    "inferenceOnReceiving": false,
+    "networkOnReceiving": false,
+    "newCashPurchase": false,
+    "isolatedRuntimeSlotReleased": true
+  },
+  "projection": {
+    "exactNativeBytes": true,
+    "semanticEdits": false,
+    "projected": [
+      {
+        "path": "data/records/schema/plan-issuer-revenue-acquisition.input.schema.json",
+        "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "bytes": 3
+      },
+      {
+        "path": "data/records/schema/plan-issuer-revenue-acquisition.output.schema.json",
+        "sha256": "59dd9138acc693310fce4722159a02240f995b2be524301ba57548a1aa7b10fa",
+        "bytes": 23
+      },
+      {
+        "path": "data/records/schema/select-prepared-issuer-revenue-comparison.input.schema.json",
+        "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "bytes": 3
+      },
+      {
+        "path": "data/records/schema/select-prepared-issuer-revenue-comparison.output.schema.json",
+        "sha256": "59dd9138acc693310fce4722159a02240f995b2be524301ba57548a1aa7b10fa",
+        "bytes": 23
+      },
+      {
+        "path": "src/prepared-cohort.mjs",
+        "sha256": "ca5ec47a426af6f86bf53be8b8ee3a21ea83b2b4dcc983f90fe43f1d1ab21bc5",
+        "bytes": 22768
+      },
+      {
+        "path": "test/plan-issuer-revenue-acquisition-examples.test.mjs",
+        "sha256": "058fb98325c89589b4292a2177db5d9d67579e32c5b87eb8c2a3b894611dfda7",
+        "bytes": 4444
+      },
+      {
+        "path": "test/select-prepared-issuer-revenue-comparison-examples.test.mjs",
+        "sha256": "9e16601862320a4fb8e50689d441ababb5293e95f9ad860066e4920498822f83",
+        "bytes": 23292
+      },
+      {
+        "path": "test/prepared-cohort-consumer.test.mjs",
+        "sha256": "e2cdc32b11a4e5ea3c692efde8c9d1616331dd56a1ac2381b2ff41504c603f5e",
+        "bytes": 17029
+      }
+    ]
+  }
+}

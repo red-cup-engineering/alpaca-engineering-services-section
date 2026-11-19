@@ -1,0 +1,37 @@
+{
+  "name": "@red-cup-engineering/union-brokerage-products-market-border",
+  "version": "0.1.12-dev.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/union-border.mjs",
+    "./activitypub-runtime": "./src/activitypub-runtime.mjs",
+    "./src/activitypub-runtime.mjs": "./src/activitypub-runtime.mjs",
+    "./src/union-border.mjs": "./src/union-border.mjs"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "@red-cup-engineering/computer-code-engine": "^0.1.0",
+    "@red-cup-engineering/computer-content-address-engineering-services-section": "^0.3.0",
+    "@red-cup-engineering/cryptographic-computer-data-engineering-services-section": "^0.3.5",
+    "@red-cup-engineering/json-engine": "^0.5.1",
+    "@red-cup-engineering/computer-data-engineering-services-section": "^0.7.4",
+    "@red-cup-engineering/computer-code-engineering-services-section": "^0.2.1",
+    "@red-cup-engineering/activitypub-server": "^0.2.3",
+    "@red-cup-engineering/activitypub-engineering-services-section": "^0.11.13",
+    "@red-cup-engineering/computer-engine": "^0.1.2"
+  },
+  "description": "union-brokerage-products-market-border sovereign enterprise",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/alpaca-engineering-services-section.git",
+    "directory": "services/union-brokerage-products-market-border"
+  },
+  "private": false,
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
+}

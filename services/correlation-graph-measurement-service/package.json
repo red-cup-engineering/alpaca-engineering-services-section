@@ -1,0 +1,26 @@
+{
+  "name": "@red-cup-engineering/correlation-graph-measurement-service",
+  "version": "0.1.5-dev.0",
+  "private": false,
+  "type": "module",
+  "description": "Constructs a finite weighted relation from causally bounded entity-return histories.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/alpaca-engineering-services-section.git",
+    "directory": "services/correlation-graph-measurement-service"
+  },
+  "exports": {
+    ".": "./src/measure.mjs"
+  },
+  "files": [
+    "package.json",
+    "README*",
+    "LICENSE*",
+    "src"
+  ],
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
+}

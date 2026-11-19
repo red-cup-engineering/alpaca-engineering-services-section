@@ -1,0 +1,155 @@
+{
+  "type": "IssuerPreparedCohortPrimarySourceReceiving",
+  "version": 1,
+  "disposition": "NODE_PRIMARY_SOURCE_AND_ANNUAL_SELECTION_RECEIVED",
+  "startedAt": "2026-10-24T22:20:32.758Z",
+  "completedAt": "2026-10-24T22:20:35.404Z",
+  "runtime": "v24.18.0",
+  "platform": "Bare Cedar Fog native Node; not Cloudflare CPU/memory acceptance",
+  "sourceSha256": "7931c7bce5d70c0dcc8275a03f1e77a0f0aedd040d946a43037823aba865fb3f",
+  "groupConfigurationSource": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-economic-services-section/data/records/earning-operation-records/earning-loops.json",
+  "groupConfigurationSha256": "546fb81903b2959c5f203465b2b78ae26755e37f7c1aa43a8f37bb44a70b6cd6",
+  "configuration": {
+    "issuers": [
+      {
+        "cik": "0000320193",
+        "ticker": "AAPL"
+      },
+      {
+        "cik": "0000789019",
+        "ticker": "MSFT"
+      }
+    ],
+    "userAgent": "561 Group issuer evidence support@561.group",
+    "maximumIssuers": 5,
+    "maximumBytes": 8388608,
+    "timeoutMs": 10000,
+    "minimumIntervalMs": 1000,
+    "maximumAgeDays": {
+      "quarter": 150,
+      "annual": 550
+    },
+    "cacheKey": "issuer-research/current.json",
+    "maximumSnapshotAgeMs": 3600000,
+    "maximumCohortBytes": 524288,
+    "allowedPeriodKinds": [
+      "annual"
+    ],
+    "allowAmbiguousEvidence": true
+  },
+  "requests": [
+    {
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+      "startedAt": "2026-10-24T22:20:32.764Z",
+      "startedMs": 370.099056,
+      "method": "GET",
+      "redirect": "error",
+      "userAgent": "561 Group issuer evidence support@561.group",
+      "accept": "application/json",
+      "timeoutSignal": true,
+      "status": 200,
+      "headersReceivedAt": "2026-10-24T22:20:33.137Z",
+      "contentLength": "271819",
+      "serverDate": "Sat, 24 Oct 2026 22:20:31 GMT"
+    },
+    {
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+      "startedAt": "2026-10-24T22:20:34.722Z",
+      "startedMs": 2327.290676,
+      "method": "GET",
+      "redirect": "error",
+      "userAgent": "561 Group issuer evidence support@561.group",
+      "accept": "application/json",
+      "timeoutSignal": true,
+      "status": 200,
+      "headersReceivedAt": "2026-10-24T22:20:34.843Z",
+      "contentLength": "335764",
+      "serverDate": "Sat, 24 Oct 2026 22:20:33 GMT"
+    }
+  ],
+  "cohortBytes": 7582,
+  "annualBytes": 3726,
+  "wallMs": 2642.703119,
+  "cpuMs": {
+    "user": 955.128,
+    "system": 823.968
+  },
+  "processMemory": {
+    "rss": 142741504,
+    "heapTotal": 51523584,
+    "heapUsed": 28983728,
+    "external": 30295868,
+    "arrayBuffers": 21585389
+  },
+  "issuerSources": [
+    {
+      "ticker": "AAPL",
+      "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+      "digest": "ni:///sha-256;c6hsau3DH3fKwupN9fgPCzvX5utYu04BRE--3zr7nEM",
+      "bytes": 3789099,
+      "observedAt": "2026-10-24T22:20:33.461Z"
+    },
+    {
+      "ticker": "MSFT",
+      "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+      "digest": "ni:///sha-256;3QMIFJqOlkl5ie18aQtaSaAL75zq-7JGOL2kHorpON0",
+      "bytes": 4888108,
+      "observedAt": "2026-10-24T22:20:35.035Z"
+    }
+  ],
+  "annual": [
+    {
+      "ticker": "AAPL",
+      "status": "current",
+      "period": {
+        "start": "2024-09-29",
+        "end": "2025-09-27",
+        "durationDays": 364
+      },
+      "value": 416161000000,
+      "unit": "USD",
+      "revision": "none",
+      "witnesses": 1
+    },
+    {
+      "ticker": "MSFT",
+      "status": "current",
+      "period": {
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "durationDays": 365
+      },
+      "value": 331839000000,
+      "unit": "USD",
+      "revision": "none",
+      "witnesses": 1
+    }
+  ],
+  "quarter": [
+    {
+      "ticker": "AAPL",
+      "status": "current",
+      "period": {
+        "start": "2026-03-29",
+        "end": "2026-06-27",
+        "durationDays": 91
+      },
+      "value": 109417000000
+    },
+    {
+      "ticker": "MSFT",
+      "status": "stale",
+      "period": {
+        "start": "2026-01-01",
+        "end": "2026-03-31",
+        "durationDays": 90
+      },
+      "value": 82886000000
+    }
+  ],
+  "comparability": "different-periods",
+  "paidRequest": false,
+  "storageWrites": "Only typed local receiving records; no vendor cache writes",
+  "newCashPurchase": false,
+  "limits": "Exactly one native producer acquisition of each configured issuer, sequential and no automatic retry; no coordinator activation"
+}

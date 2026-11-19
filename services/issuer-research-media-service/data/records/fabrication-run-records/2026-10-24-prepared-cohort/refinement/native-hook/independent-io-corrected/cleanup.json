@@ -1,0 +1,20 @@
+{
+  "observedAt": "2026-10-24T22:17:29.377Z",
+  "observedScopes": [
+    {
+      "cgroup": "/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+      "present": false,
+      "processes": null
+    }
+  ],
+  "declaredProfileHash": "60372c8d77e5a64ced331c7058286fddfa91e6ef1d7eb5197f1863065663f22f",
+  "declaredCaps": {
+    "slice": "agent.slice",
+    "memoryBytes": 536870912,
+    "heapMiB": 128,
+    "maximumWallMs": 30000,
+    "cpuSeconds": 10,
+    "processes": 32
+  },
+  "scopeObservationMayMissFastExecution": true
+}

@@ -1,0 +1,175 @@
+{
+  "type": "IssuerRevenueComparison",
+  "version": 1,
+  "observedAt": "2026-10-24T22:20:35.395Z",
+  "asOf": "2026-10-24",
+  "periodKind": "annual",
+  "datePolicy": "filing-date-cutoff-on-received-sources",
+  "comparability": "different-periods",
+  "issuers": [
+    {
+      "type": "IssuerRevenueReconciliation",
+      "version": 1,
+      "cik": "0000320193",
+      "issuer": "Apple Inc.",
+      "asOf": "2026-10-24",
+      "periodKind": "annual",
+      "status": "current",
+      "unit": "USD",
+      "period": {
+        "start": "2024-09-29",
+        "end": "2025-09-27",
+        "durationDays": 364
+      },
+      "value": 416161000000,
+      "witnesses": [
+        {
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "start": "2024-09-29",
+          "end": "2025-09-27",
+          "durationDays": 364,
+          "value": 416161000000,
+          "unit": "USD",
+          "form": "10-K",
+          "filed": "2025-10-31",
+          "accession": "0000320193-25-000079"
+        }
+      ],
+      "conceptCoverage": [
+        {
+          "concept": "Revenues",
+          "latestEnd": "2018-09-29",
+          "count": 11
+        },
+        {
+          "concept": "SalesRevenueNet",
+          "latestEnd": "2018-06-30",
+          "count": 188
+        },
+        {
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "latestEnd": "2026-06-27",
+          "count": 117
+        }
+      ],
+      "revision": "none",
+      "ticker": "AAPL",
+      "source": {
+        "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+        "digest": "ni:///sha-256;c6hsau3DH3fKwupN9fgPCzvX5utYu04BRE--3zr7nEM",
+        "bytes": 3789099,
+        "observedAt": "2026-10-24T22:20:33.461Z"
+      }
+    },
+    {
+      "type": "IssuerRevenueReconciliation",
+      "version": 1,
+      "cik": "0000789019",
+      "issuer": "Microsoft Corporation",
+      "asOf": "2026-10-24",
+      "periodKind": "annual",
+      "status": "current",
+      "unit": "USD",
+      "period": {
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "durationDays": 365
+      },
+      "value": 331839000000,
+      "witnesses": [
+        {
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "durationDays": 365,
+          "value": 331839000000,
+          "unit": "USD",
+          "form": "10-K",
+          "filed": "2026-07-29",
+          "accession": "0001193125-26-323660"
+        }
+      ],
+      "conceptCoverage": [
+        {
+          "concept": "Revenues",
+          "latestEnd": "2010-12-31",
+          "count": 31
+        },
+        {
+          "concept": "SalesRevenueNet",
+          "latestEnd": "2018-03-31",
+          "count": 151
+        },
+        {
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "latestEnd": "2026-06-30",
+          "count": 131
+        }
+      ],
+      "revision": "none",
+      "ticker": "MSFT",
+      "source": {
+        "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+        "digest": "ni:///sha-256;3QMIFJqOlkl5ie18aQtaSaAL75zq-7JGOL2kHorpON0",
+        "bytes": 4888108,
+        "observedAt": "2026-10-24T22:20:35.035Z"
+      }
+    }
+  ],
+  "evidencePackets": [
+    {
+      "id": "ni:///sha-256;WpN96Az01-33uvVSSq_IA4srEqzD6BNMKtsQoPB7vkY",
+      "type": "IssuerEvidencePacket",
+      "version": 1,
+      "ticker": "AAPL",
+      "issuer": "Apple Inc.",
+      "asOf": "2026-10-24",
+      "sources": [
+        {
+          "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+          "observedAt": "2026-10-24T22:20:33.461Z",
+          "digest": "ni:///sha-256;c6hsau3DH3fKwupN9fgPCzvX5utYu04BRE--3zr7nEM"
+        }
+      ],
+      "claims": [
+        {
+          "statement": "Received SEC companyfacts and reconciled annual USD revenue; status=current; period=2024-09-29..2025-09-27; value=416161000000; revision=none.",
+          "sourceDigests": [
+            "ni:///sha-256;c6hsau3DH3fKwupN9fgPCzvX5utYu04BRE--3zr7nEM"
+          ]
+        }
+      ],
+      "events": [],
+      "license": "single-customer-analysis",
+      "proofStatus": "research-evidence-not-mathematical-proof",
+      "brokerageEffect": false
+    },
+    {
+      "id": "ni:///sha-256;UK6kBjJLqmn0fc9PGZsNGXI59aJycGXrUGsob0rp7eM",
+      "type": "IssuerEvidencePacket",
+      "version": 1,
+      "ticker": "MSFT",
+      "issuer": "Microsoft Corporation",
+      "asOf": "2026-10-24",
+      "sources": [
+        {
+          "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+          "observedAt": "2026-10-24T22:20:35.035Z",
+          "digest": "ni:///sha-256;3QMIFJqOlkl5ie18aQtaSaAL75zq-7JGOL2kHorpON0"
+        }
+      ],
+      "claims": [
+        {
+          "statement": "Received SEC companyfacts and reconciled annual USD revenue; status=current; period=2025-07-01..2026-06-30; value=331839000000; revision=none.",
+          "sourceDigests": [
+            "ni:///sha-256;3QMIFJqOlkl5ie18aQtaSaAL75zq-7JGOL2kHorpON0"
+          ]
+        }
+      ],
+      "events": [],
+      "license": "single-customer-analysis",
+      "proofStatus": "research-evidence-not-mathematical-proof",
+      "brokerageEffect": false
+    }
+  ]
+}

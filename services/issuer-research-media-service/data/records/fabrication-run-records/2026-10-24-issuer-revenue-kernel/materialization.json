@@ -1,0 +1,24 @@
+{
+  "type": "native-source-projection-materialization",
+  "sourceSpecification": "ni:///sha-256;kIcXlfmaNu4HYEf4YKlKrIk6x6hjvdfqfE4uA0KJI5s",
+  "products": [
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/services/issuer-research-media-service/data/records/schema/reconcile-issuer-revenue-facts.input.schema.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/services/issuer-research-media-service/data/records/schema/reconcile-issuer-revenue-facts.output.schema.json",
+      "sha256": "59dd9138acc693310fce4722159a02240f995b2be524301ba57548a1aa7b10fa"
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/services/issuer-research-media-service/src/issuer-revenue-reconciliation.mjs",
+      "sha256": "603fe0d654e3b899f785c51ad9d00c2ca028237ca16988f344aa39e749e9e298"
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/services/issuer-research-media-service/test/reconcile-issuer-revenue-facts-examples.test.mjs",
+      "sha256": "cd6f469d88f45bb52be226001762a5ccd3f0732b46957d377f24b0ffd9b7e138"
+    }
+  ],
+  "sourceBytesChanged": false,
+  "independentReceiving": "pending"
+}

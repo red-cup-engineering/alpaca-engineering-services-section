@@ -1,0 +1,63 @@
+{
+  "type": "NativeJsnodeRetainedDeliveryReplayPlan",
+  "version": 1,
+  "status": "READY_WAITING_OPERATOR_RESOURCE_PLACEMENT_RECEIPT",
+  "scope": "Replay/receiving of exact newly delivered corrected source and original assays, not a new provider lot or purchase.",
+  "nativeModuleAPI": "@red-cup-engineering/jsnode-package-engineering-services-section/derive-jsnode-package-from-closure#deriveJsnodeModules",
+  "hostAPI": "computer-code-development-engine/src/fabrication/isolated-module-assay.mjs#createIsolatedModuleAssayExecutor",
+  "candidate": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/refinement/artifact.candidate.json",
+  "candidateSha256": "b6077869ae9f167d611f9237312acfea25c6c2ed2700e9cab8a0e0f240dc8a9e",
+  "sourceOrder": "specifications/prepared-cohort.work-order.md",
+  "sourceOrderSha256": "440ffd4a2ab57731a33d0142fd3a2278704896c4b7a8792a178c3e0a2fb36e2b",
+  "sourceSpecification": "ni:///sha-256;2hHQSxd-NH9ewvXLAIsZXgpyDKJOXUaSSxvlP6b37f0",
+  "retainedNativeReceipt": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/refinement/native-hook/stdout.json",
+  "sourceSha256": "7931c7bce5d70c0dcc8275a03f1e77a0f0aedd040d946a43037823aba865fb3f",
+  "deliverySequence": [
+    {
+      "taskClass": "code-fabrication-assays",
+      "workLot": "urn:work-lot:inference:r0iWI0gfzf_gx_FGp13GD1MbXzTiioFLeFtaVBOcEDA",
+      "provider": "urn:ame:bare-cedar-fog-codex-inference-team",
+      "configurationIdentity": "ni:///sha-256;l3k78btuNzmvmueURzT7MdqkmwlytwQnwHyX9Emsbxk",
+      "textSha256": "baed09be57ee38be3f56bd9239bae71f2d3b8d7cff5742fc25a8f7ccfb6dabe2",
+      "receipt": "ni:///sha-256;25AM1F9gtssK8TZayWh4dPVdrMcRdmqn0Mtu3d0M_r8",
+      "consideration": [
+        {
+          "kind": "credit",
+          "asset": "urn:union:consideration:provider-invocation",
+          "unit": "provider-invocation",
+          "amount": {
+            "numerator": "1",
+            "denominator": "1"
+          }
+        }
+      ],
+      "settlement": "none-direct-endpoint-lane-carries-no-signed-compact-or-chain-settlement",
+      "acceptanceScope": "delivery-to-codex-customer-office-only"
+    },
+    {
+      "taskClass": "code-fabrication",
+      "workLot": "urn:work-lot:inference:D8ipaVMUz6ewROpmXv1UCcMpXf0BHadfrH-fIXKbumc",
+      "provider": "urn:ame:bare-cedar-fog-codex-inference-team",
+      "configurationIdentity": "ni:///sha-256;l3k78btuNzmvmueURzT7MdqkmwlytwQnwHyX9Emsbxk",
+      "textSha256": "91460d8caf015089e0c28544c525f22cee99cd29b4a707e8eb2a891cb0e8bbba",
+      "receipt": "ni:///sha-256;vmpjU139ygG0Z_GiBCY2xsXq-mMlq6fBHwI6gJ3IRpA",
+      "consideration": [
+        {
+          "kind": "credit",
+          "asset": "urn:union:consideration:provider-invocation",
+          "unit": "provider-invocation",
+          "amount": {
+            "numerator": "1",
+            "denominator": "1"
+          }
+        }
+      ],
+      "settlement": "none-direct-endpoint-lane-carries-no-signed-compact-or-chain-settlement",
+      "acceptanceScope": "delivery-to-codex-customer-office-only"
+    }
+  ],
+  "transport": "For exactly the original two native taskClass requests, return retained delivery text and its complete original lot; reject a third/unexpected request. Local judgment receiving only. Do not import/call inference dispatch, market or provider, and do not edit source.",
+  "dependencies": "Same exact selected issuer packet/kernel, ContentAddress and URI source interfaces; no installs or whole source tree copy.",
+  "hostPolicy": "Pending independently received parent-agent.slice selection; original heap128/512MiB/noSwap/network-off/CPU/process/wall limits remain unchanged.",
+  "independentReceiving": "Preauthored complete async fixture/stream/cache suite, then original kernel/packet compatibility tests and actual source/DO/HTTP consumer receiving."
+}

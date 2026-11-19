@@ -1,0 +1,7 @@
+[Unit]
+Description=Alpaca engine portfolio mandate (%i)
+
+[Service]
+Type=oneshot
+EnvironmentFile=%h/.config/alpaca-engine/%i.env
+ExecStart=%h/.local/bin/alpaca-engine --state-root ${ALPACA_STATE_ROOT} --custody-root ${ALPACA_CUSTODY_ROOT} --mandate ${ALPACA_MANDATE_REFERENCE}

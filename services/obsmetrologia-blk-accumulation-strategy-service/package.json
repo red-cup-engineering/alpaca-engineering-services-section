@@ -1,0 +1,32 @@
+{
+  "name": "@red-cup-engineering/obsmetrologia-blk-accumulation-strategy-service",
+  "version": "0.1.9-dev.0",
+  "private": false,
+  "type": "module",
+  "description": "Causal topological BLK accumulation strategy benchmarked to SPY.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/alpaca-engineering-services-section.git",
+    "directory": "services/obsmetrologia-blk-accumulation-strategy-service"
+  },
+  "exports": {
+    ".": "./src/strategy.mjs",
+    "./src/strategy.mjs": "./src/strategy.mjs"
+  },
+  "dependencies": {
+    "@red-cup-engineering/computer-code-engine": "^0.1.0",
+    "@red-cup-engineering/computer-content-address-engineering-services-section": "^0.3.0",
+    "@red-cup-engineering/computer-data-engineering-services-section": "^0.7.4"
+  },
+  "files": [
+    "package.json",
+    "README*",
+    "LICENSE*",
+    "src"
+  ],
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
+}

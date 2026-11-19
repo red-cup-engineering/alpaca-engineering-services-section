@@ -1,0 +1,20 @@
+{
+  "outcome": {
+    "isolated": true,
+    "status": 0,
+    "signal": null,
+    "stdout": "TAP version 13\n# Subtest: plan-issuer-revenue-acquisition: configured official source plan, synthetic fixture identifiers\nok 1 - plan-issuer-revenue-acquisition: configured official source plan, synthetic fixture identifiers\n  ---\n  duration_ms: 16.654366\n  type: 'test'\n  ...\n# Subtest: plan-issuer-revenue-acquisition: clause assay Preserve reversed issuer order, structural User-Agent, minimum spacing and ignored host metadata\nok 2 - plan-issuer-revenue-acquisition: clause assay Preserve reversed issuer order, structural User-Agent, minimum spacing and ignored host metadata\n  ---\n  duration_ms: 1.207852\n  type: 'test'\n  ...\n# Subtest: plan-issuer-revenue-acquisition: clause assay Reject duplicate configured CIKs\nok 3 - plan-issuer-revenue-acquisition: clause assay Reject duplicate configured CIKs\n  ---\n  duration_ms: 4.330657\n  type: 'test'\n  ...\n# Subtest: plan-issuer-revenue-acquisition: clause assay Reject header newline despite literal at sign\nok 4 - plan-issuer-revenue-acquisition: clause assay Reject header newline despite literal at sign\n  ---\n  duration_ms: 0.952937\n  type: 'test'\n  ...\n# Subtest: select-prepared-issuer-revenue-comparison: current annual prepared fixture unchanged\nok 5 - select-prepared-issuer-revenue-comparison: current annual prepared fixture unchanged\n  ---\n  duration_ms: 19.789235\n  type: 'test'\n  ...\n# Subtest: select-prepared-issuer-revenue-comparison: clause assay Reject public cache override before examining missing cohort or invalid clock\nok 6 - select-prepared-issuer-revenue-comparison: clause assay Reject public cache override before examining missing cohort or invalid clock\n  ---\n  duration_ms: 0.599699\n  type: 'test'\n  ...\n# Subtest: select-prepared-issuer-revenue-comparison: clause assay Reject unconfigured quarter before cohort selection\nok 7 - select-prepared-issuer-revenue-comparison: clause assay Reject unconfigured quarter before cohort selection\n  ---\n  duration_ms: 0.773282\n  type: 'test'\n  ...\n# Subtest: select-prepared-issuer-revenue-comparison: clause assay Reject noncanonical explicit clock\nok 8 - select-prepared-issuer-revenue-comparison: clause assay Reject noncanonical explicit clock\n  ---\n  duration_ms: 0.554303\n  type: 'test'\n  ...\n# Subtest: select-prepared-issuer-revenue-comparison: clause assay Missing prepared cohort throws cache Error\nok 9 - select-prepared-issuer-revenue-comparison: clause assay Missing prepared cohort throws cache Error\n  ---\n  duration_ms: 0.682646\n  type: 'test'\n  ...\n# Subtest: select-prepared-issuer-revenue-comparison: clause assay Return configured quarter unchanged at snapshot age boundary retaining earlier differing filing and original packet IDs\nok 10 - select-prepared-issuer-revenue-comparison: clause assay Return configured quarter unchanged at snapshot age boundary retaining earlier differing filing and original packet IDs\n  ---\n  duration_ms: 1.177339\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 3191.958875\n",
+    "stderr": "",
+    "truncated": false,
+    "timedOut": false
+  },
+  "fieldTypes": {
+    "isolated": "boolean",
+    "status": "number",
+    "signal": "object",
+    "stdout": "string",
+    "stderr": "string",
+    "truncated": "boolean",
+    "timedOut": "boolean"
+  }
+}

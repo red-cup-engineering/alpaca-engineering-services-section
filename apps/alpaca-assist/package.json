@@ -1,0 +1,24 @@
+{
+  "name": "@red-cup-engineering/alpaca-assist",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "description": "Authenticated Alpaca ASSIST application over the consolidated brokerage engine.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/alpaca-engineering-services-section.git",
+    "directory": "apps/alpaca-assist"
+  },
+  "exports": {
+    ".": "./src/application.mjs"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "@red-cup-engineering/alpaca-engine": "0.1.1",
+    "@red-cup-engineering/assist": "0.9.0",
+    "@red-cup-engineering/tufte": "0.21.0"
+  }
+}

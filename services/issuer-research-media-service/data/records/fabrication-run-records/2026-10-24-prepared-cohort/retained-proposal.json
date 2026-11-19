@@ -1,0 +1,31 @@
+{
+  "type": "RetainedIssuerCohortSourceProposal",
+  "version": 1,
+  "status": "REFUSED",
+  "sourceSpecification": "ni:///sha-256;zbn4SQ9WNdZOfYKUijH2WcQ_G-RV5xB3nLt4i4nqdEk",
+  "originalReceipt": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/native-fabrication.stdout.json",
+  "refusal": "isolated module assay: invalid exact dependencies",
+  "sourceCapture": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/retained-proposal.source.mjs",
+  "sourceSha256": "7b21ee4c4e6b879358e858b149b2fdb6fd70326f88dd4aca73acf543a8103e73",
+  "sourceBytes": 23172,
+  "sourceWorkLot": "urn:work-lot:inference:KUZ5CTg6v_pUltf5W-6NijUrrKcXnYIVwOJKoGwaBJM",
+  "assayWorkLot": "urn:work-lot:inference:7RT6o7XmdLGe8a7J1arn6M2g5BiAxOYheq2FiV1VyCQ",
+  "cases": 8,
+  "newInferenceForRecall": false,
+  "activeSource": false,
+  "refusals": [
+    {
+      "phase": "native-isolated-host-admission",
+      "reason": "stable-only dependency regex refused valid exact prerelease; no composition execution occurred"
+    },
+    {
+      "phase": "independent-source-receiving",
+      "reason": "current value may contradict latest witnesses; latest conflicts may be hidden as current; declared packet statement may contradict structured metadata",
+      "counterexamples": "data/logs/native-consumer-assay-logs/2026-10-24-prepared-cohort/prepared-cohort-consumer.test.mjs",
+      "execution": "pending actual host resource admission"
+    }
+  ],
+  "originalOrderCapture": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/admitted-order-before-value-receiving.md",
+  "livingContract": "specifications/prepared-cohort.work-order.md",
+  "livingContractStatus": "corrected requirements not requalified; no new inference allocation"
+}

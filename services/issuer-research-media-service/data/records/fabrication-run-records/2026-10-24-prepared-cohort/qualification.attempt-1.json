@@ -1,0 +1,11 @@
+{
+  "type": "MarkdownJsnodeOperationPackageSpecificationTranslationRefusal",
+  "version": 1,
+  "code": "INVALID_TRACE",
+  "message": "Traceability must use - `requirement-id` -> projection `projection-id`; acceptance `obligation-id`; constraints `constraint-id`, ...",
+  "sourceSpan": {
+    "type": "ArtifactFabricationSourceSpan",
+    "startLine": 49,
+    "endLine": 49
+  }
+}

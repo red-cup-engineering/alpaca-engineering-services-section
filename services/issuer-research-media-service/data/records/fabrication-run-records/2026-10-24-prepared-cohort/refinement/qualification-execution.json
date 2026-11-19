@@ -1,0 +1,11 @@
+{
+  "startedAt": "2026-10-24T21:25:28.633986+00:00",
+  "finishedAt": "2026-10-24T21:25:29.373944+00:00",
+  "exitCode": 0,
+  "providerPurchase": false,
+  "sourceExecution": false,
+  "nodeHeapMiB": 128,
+  "wallSeconds": 45,
+  "maxChildRssKiB": 70460,
+  "nativeController": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/agent-harness-computer-system-engineering-services-section/src/host-resource-hook.mjs"
+}

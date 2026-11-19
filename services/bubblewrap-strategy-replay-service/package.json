@@ -1,0 +1,29 @@
+{
+  "name": "@red-cup-engineering/bubblewrap-strategy-replay-service",
+  "version": "0.1.5-dev.0",
+  "type": "module",
+  "files": [
+    "src/"
+  ],
+  "description": "Executes an admitted generated strategy module twice in a networkless bubblewrap sandbox under a hard wall-clock bound.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/alpaca-engineering-services-section.git",
+    "directory": "services/bubblewrap-strategy-replay-service"
+  },
+  "exports": {
+    ".": "./src/replay.mjs"
+  },
+  "dependencies": {
+    "@red-cup-engineering/computer-code-engineering-services-section": "^0.2.4",
+    "@red-cup-engineering/computer-code-engine": "^0.1.4"
+  },
+  "scripts": {
+    "check": "node --check src/replay.mjs && node --check src/runner.mjs"
+  },
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
+}

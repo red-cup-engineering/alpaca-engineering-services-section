@@ -1,0 +1,34 @@
+{
+  "type": "IssuerProducerRuntimeSpecificationCorrection",
+  "version": 1,
+  "observedAt": "2026-10-24T22:35:27.886795+00:00",
+  "previousSource": {
+    "sha256": "7931c7bce5d70c0dcc8275a03f1e77a0f0aedd040d946a43037823aba865fb3f",
+    "status": "Node 10 native +19 independent cases and actual2SECreceiving passed; edge unreceived and actual redirect:error construction unsupported. Bytes preserved, no hand patch."
+  },
+  "previousSourceOrderSha256": "440ffd4a2ab57731a33d0142fd3a2278704896c4b7a8792a178c3e0a2fb36e2b",
+  "correctedSourceOrderSha256": "e63921e5c658aa9e6ac95afdfd041383ac1b8219043ea382434d0bc8e3e594be",
+  "primaryStandard": {
+    "url": "https://developers.cloudflare.com/workers/runtime-apis/request/",
+    "received": "2026-10-24",
+    "location": "Request init redirect lines645-646 and property771-772",
+    "meaning": "Workers rejects error at Request construction including fetch(url,init); manual returns3xx as-is."
+  },
+  "runtimeCounterexample": {
+    "runtime": "workerd1.20261024.1",
+    "receivedFrom": "reconcile_earning_sources nativeconsumer",
+    "owner": "red-cup-engineering/earning-loop-worker-service",
+    "receipt": "data/records/fabrication-run-records/2026-10-24-private-sqlite-cache/edge-refinement/runtime-specification-refusal.json",
+    "exitCode": 1,
+    "wallSeconds": 0.16,
+    "maximumRssKiB": 55536
+  },
+  "correction": "Manual no-follow request construction plus explicit reject all non200 including3xx without following Location. Existing failure codes, no partial storage, no retry, source/kernel/packet invariants unchanged.",
+  "mandatoryReceiving": [
+    "Original native plan/selector checks",
+    "20 independent Node HTTP/stream/cache cases retaining all previous counterexamples",
+    "Real workerd positive source preparation and3xx no-follow rejection before edge promotion"
+  ],
+  "sourceHandEdited": false,
+  "newInferenceAuthorizedByThisRecord": false
+}

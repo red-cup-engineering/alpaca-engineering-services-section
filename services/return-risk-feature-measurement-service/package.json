@@ -1,0 +1,26 @@
+{
+  "name": "@red-cup-engineering/return-risk-feature-measurement-service",
+  "version": "0.1.4-dev.0",
+  "private": false,
+  "type": "module",
+  "description": "Measures causal return, relative-return, volatility, drawdown, volume, and price-reference features.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/alpaca-engineering-services-section.git",
+    "directory": "services/return-risk-feature-measurement-service"
+  },
+  "exports": {
+    ".": "./src/measure.mjs"
+  },
+  "files": [
+    "package.json",
+    "README*",
+    "LICENSE*",
+    "src"
+  ],
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
+}

@@ -1,0 +1,2127 @@
+{
+  "specification": {
+    "type": "ArtifactFabricationSpecification",
+    "version": 2,
+    "source": {
+      "type": "ArtifactFabricationSource",
+      "version": 1,
+      "identity": {
+        "type": "ArtifactFabricationSourceIdentity",
+        "id": "issuer-revenue-prepared-cohort"
+      },
+      "provenance": {
+        "type": "ArtifactFabricationSourceProvenance",
+        "locator": "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/services/issuer-research-media-service/specifications/prepared-cohort.work-order.md",
+        "digest": "sha256:e63921e5c658aa9e6ac95afdfd041383ac1b8219043ea382434d0bc8e3e594be",
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 1,
+          "endLine": 64
+        }
+      }
+    },
+    "artifact": {
+      "type": "FabricatedArtifactIdentity",
+      "version": 1,
+      "id": "issuer-revenue-prepared-cohort",
+      "kind": "jsnode-modules"
+    },
+    "claims": [
+      {
+        "type": "ArtifactFabricationClaim",
+        "version": 1,
+        "id": "bounded-operation",
+        "kind": "world",
+        "statement": "The independently selected business operation bounds the supplier and distinguishes pure plan/selector tests from independently received source/storage effects and commercial acceptance",
+        "status": "derived",
+        "quantity": null,
+        "basis": {
+          "type": "ArtifactFabricationDerivedBasis",
+          "premises": [
+            {
+              "type": "ArtifactFabricationPremise",
+              "kind": "constraint",
+              "ref": "source-demand"
+            },
+            {
+              "type": "ArtifactFabricationPremise",
+              "kind": "constraint",
+              "ref": "native-fabrication"
+            }
+          ],
+          "derivation": "Carry the declared full module contracts into source-free derivation, preserve refusals and original source identities, and make no revenue or fleet quota inference."
+        },
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 35,
+          "endLine": 35
+        },
+        "groundedOn": []
+      },
+      {
+        "type": "ArtifactFabricationClaim",
+        "version": 1,
+        "id": "minimum-issuers",
+        "kind": "world",
+        "statement": "The bounded comparison operation requires at least two configured issuers",
+        "status": "derived",
+        "quantity": {
+          "type": "ArtifactFabricationQuantity",
+          "value": 2,
+          "unit": "issuer"
+        },
+        "basis": {
+          "type": "ArtifactFabricationDerivedBasis",
+          "premises": [
+            {
+              "type": "ArtifactFabricationPremise",
+              "kind": "constraint",
+              "ref": "source-demand"
+            }
+          ],
+          "derivation": "A comparison needs the selected plural cohort; the first actual business instance fixes Apple and Microsoft."
+        },
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 36,
+          "endLine": 36
+        },
+        "groundedOn": []
+      },
+      {
+        "type": "ArtifactFabricationClaim",
+        "version": 1,
+        "id": "maximum-issuers",
+        "kind": "world",
+        "statement": "The reusable operating profile caps configured issuer sets at five",
+        "status": "derived",
+        "quantity": {
+          "type": "ArtifactFabricationQuantity",
+          "value": 5,
+          "unit": "issuer"
+        },
+        "basis": {
+          "type": "ArtifactFabricationDerivedBasis",
+          "premises": [
+            {
+              "type": "ArtifactFabricationPremise",
+              "kind": "constraint",
+              "ref": "source-demand"
+            }
+          ],
+          "derivation": "This is an explicit resource restriction selected by the source-owned operation, not an empirical market capacity claim."
+        },
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 37,
+          "endLine": 37
+        },
+        "groundedOn": []
+      },
+      {
+        "type": "ArtifactFabricationClaim",
+        "version": 1,
+        "id": "minimum-interval-ms",
+        "kind": "world",
+        "statement": "The reusable source acquisition plan enforces at least this interval, while actual instance is slower and fleet coordinator must be received",
+        "status": "derived",
+        "quantity": {
+          "type": "ArtifactFabricationQuantity",
+          "value": 100,
+          "unit": "millisecond"
+        },
+        "basis": {
+          "type": "ArtifactFabricationDerivedBasis",
+          "premises": [
+            {
+              "type": "ArtifactFabricationPremise",
+              "kind": "constraint",
+              "ref": "sec-source"
+            },
+            {
+              "type": "ArtifactFabricationPremise",
+              "kind": "constraint",
+              "ref": "source-demand"
+            }
+          ],
+          "derivation": "The operation preserves SEC fair access with bounded issuer count, sequential effects and independently received single coordinator; local spacing is not a fleet proof."
+        },
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 38,
+          "endLine": 38
+        },
+        "groundedOn": []
+      },
+      {
+        "type": "ArtifactFabricationClaim",
+        "version": 1,
+        "id": "dependency-self",
+        "kind": "dependency",
+        "statement": "@red-cup-engineering/issuer-research-media-service@0.1.3-dev.1 is the actual unpublished canonical source candidate; original packet and kernel faces remain the received a48f453 implementations, and the current manifest adds the Node-received prepared face; this is not a registry publication claim",
+        "status": "measured",
+        "quantity": null,
+        "basis": {
+          "type": "ArtifactFabricationMeasuredBasis",
+          "locator": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/services/issuer-research-media-service/package.json",
+          "digest": "sha256:5c4e45a81b39265fc1c44c7db87cb148b188410dfdbca2664ebf461c361d9d63",
+          "derivation": "Read actual selected package metadata and named source exports; exact source-candidate/native installed context, not inferred registry receipt."
+        },
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 39,
+          "endLine": 39
+        },
+        "groundedOn": []
+      },
+      {
+        "type": "ArtifactFabricationClaim",
+        "version": 1,
+        "id": "dependency-address",
+        "kind": "dependency",
+        "statement": "@red-cup-engineering/computer-content-address-engineering-services-section@0.2.0 exposes the inspected addressContent raw-byte NI supplier",
+        "status": "measured",
+        "quantity": null,
+        "basis": {
+          "type": "ArtifactFabricationMeasuredBasis",
+          "locator": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/node_modules/@red-cup-engineering/computer-content-address-engineering-services-section/package.json",
+          "digest": "sha256:48fc7fccbd53b3af849bf2a9d4e38f1362e167dea3fee5e342eb453e9b83cd05",
+          "derivation": "Read actual selected package metadata and named source exports; exact source-candidate/native installed context, not inferred registry receipt."
+        },
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 40,
+          "endLine": 40
+        },
+        "groundedOn": []
+      },
+      {
+        "type": "ArtifactFabricationClaim",
+        "version": 1,
+        "id": "dependency-uri",
+        "kind": "dependency",
+        "statement": "@red-cup-engineering/uri-engineering-services-section@0.1.3 exposes isNiUri",
+        "status": "measured",
+        "quantity": null,
+        "basis": {
+          "type": "ArtifactFabricationMeasuredBasis",
+          "locator": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/node_modules/@red-cup-engineering/uri-engineering-services-section/package.json",
+          "digest": "sha256:f06c71cdb7216556d5308a5de7b887e0c19c3cf5f15b881db0b6a930083fae81",
+          "derivation": "Read actual selected package metadata and named source exports; exact source-candidate/native installed context, not inferred registry receipt."
+        },
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 41,
+          "endLine": 41
+        },
+        "groundedOn": []
+      },
+      {
+        "type": "ArtifactFabricationClaim",
+        "version": 1,
+        "id": "quarter-minimum-days",
+        "kind": "world",
+        "statement": "Received kernel quarter minimum inclusive calendar-day duration bound",
+        "status": "measured",
+        "quantity": {
+          "type": "ArtifactFabricationQuantity",
+          "value": 70,
+          "unit": "day"
+        },
+        "basis": {
+          "type": "ArtifactFabricationMeasuredBasis",
+          "locator": "./src/issuer-revenue-reconciliation.mjs",
+          "digest": "sha256:603fe0d654e3b899f785c51ad9d00c2ca028237ca16988f344aa39e749e9e298",
+          "derivation": "Read the received source and its independently received kernel duration-domain contract; UTC end minus start plus one."
+        },
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 42,
+          "endLine": 42
+        },
+        "groundedOn": []
+      },
+      {
+        "type": "ArtifactFabricationClaim",
+        "version": 1,
+        "id": "quarter-maximum-days",
+        "kind": "world",
+        "statement": "Received kernel quarter maximum inclusive calendar-day duration bound",
+        "status": "measured",
+        "quantity": {
+          "type": "ArtifactFabricationQuantity",
+          "value": 110,
+          "unit": "day"
+        },
+        "basis": {
+          "type": "ArtifactFabricationMeasuredBasis",
+          "locator": "./src/issuer-revenue-reconciliation.mjs",
+          "digest": "sha256:603fe0d654e3b899f785c51ad9d00c2ca028237ca16988f344aa39e749e9e298",
+          "derivation": "Read the received source and its independently received kernel duration-domain contract; UTC end minus start plus one."
+        },
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 43,
+          "endLine": 43
+        },
+        "groundedOn": []
+      },
+      {
+        "type": "ArtifactFabricationClaim",
+        "version": 1,
+        "id": "annual-minimum-days",
+        "kind": "world",
+        "statement": "Received kernel annual minimum inclusive calendar-day duration bound",
+        "status": "measured",
+        "quantity": {
+          "type": "ArtifactFabricationQuantity",
+          "value": 330,
+          "unit": "day"
+        },
+        "basis": {
+          "type": "ArtifactFabricationMeasuredBasis",
+          "locator": "./src/issuer-revenue-reconciliation.mjs",
+          "digest": "sha256:603fe0d654e3b899f785c51ad9d00c2ca028237ca16988f344aa39e749e9e298",
+          "derivation": "Read the received source and its independently received kernel duration-domain contract; UTC end minus start plus one."
+        },
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 44,
+          "endLine": 44
+        },
+        "groundedOn": []
+      },
+      {
+        "type": "ArtifactFabricationClaim",
+        "version": 1,
+        "id": "annual-maximum-days",
+        "kind": "world",
+        "statement": "Received kernel annual maximum inclusive calendar-day duration bound",
+        "status": "measured",
+        "quantity": {
+          "type": "ArtifactFabricationQuantity",
+          "value": 380,
+          "unit": "day"
+        },
+        "basis": {
+          "type": "ArtifactFabricationMeasuredBasis",
+          "locator": "./src/issuer-revenue-reconciliation.mjs",
+          "digest": "sha256:603fe0d654e3b899f785c51ad9d00c2ca028237ca16988f344aa39e749e9e298",
+          "derivation": "Read the received source and its independently received kernel duration-domain contract; UTC end minus start plus one."
+        },
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 45,
+          "endLine": 45
+        },
+        "groundedOn": []
+      }
+    ],
+    "requirements": [
+      {
+        "type": "ArtifactFabricationRequirement",
+        "version": 2,
+        "id": "configuration",
+        "statement": "Validate the complete trusted configuration before effects: issuers is an array with at least {{minimum-issuers}} and at most maximumIssuers unique ten-digit CIKs and nonempty tickers; maximumIssuers is an integer between {{minimum-issuers}} and {{maximum-issuers}}; userAgent is a string whose trim is nonempty, contains no CR or LF and includes literal @; this exact trusted-header structural predicate does not establish mailbox grammar, deliverability or truthful operator identity, which the actual operator independently receives; maximumBytes, timeoutMs, maximumSnapshotAgeMs, maximumCohortBytes and both maximumAgeDays values are positive safe integers. minimumIntervalMs is an integer at least {{minimum-interval-ms}}. cacheKey is a nonempty string. allowedPeriodKinds is a nonempty unique subset of quarter/annual; allowAmbiguousEvidence is boolean. Invalid configuration throws TypeError before any acquisition/cache read. Configuration is host-owned, never granted by public request. Additional host metadata fields are allowed and ignored; only the enumerated supplier fields affect this module. In particular enabled/resourceAdmission are admission controls of the actual coordinator, not interpreted or granted by this supplier.",
+        "parameters": [
+          {
+            "type": "ArtifactFabricationParameter",
+            "version": 1,
+            "name": "minimum-issuers",
+            "value": 2,
+            "unit": "issuer",
+            "claimId": "minimum-issuers",
+            "exact": null
+          },
+          {
+            "type": "ArtifactFabricationParameter",
+            "version": 1,
+            "name": "maximum-issuers",
+            "value": 5,
+            "unit": "issuer",
+            "claimId": "maximum-issuers",
+            "exact": null
+          },
+          {
+            "type": "ArtifactFabricationParameter",
+            "version": 1,
+            "name": "minimum-interval-ms",
+            "value": 100,
+            "unit": "millisecond",
+            "claimId": "minimum-interval-ms",
+            "exact": null
+          }
+        ],
+        "claimIds": [
+          "maximum-issuers",
+          "minimum-interval-ms",
+          "minimum-issuers"
+        ],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 3,
+          "endLine": 3
+        }
+      },
+      {
+        "type": "ArtifactFabricationRequirement",
+        "version": 2,
+        "id": "acquisition-plan",
+        "statement": "planIssuerRevenueAcquisition(configuration) returns exactly the demonstrated IssuerRevenueAcquisitionPlan shape, retaining configured issuer order, CIK/ticker, fixed HTTPS data.sec.gov companyfacts URL derived solely from each CIK, User-Agent and Accept headers, per-request timeout/maximumBytes, minimumIntervalMs and maximumCohortBytes. No arbitrary URI/redirect/provider from the customer. Planning is pure and grants no execution or quota.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 4,
+          "endLine": 4
+        }
+      },
+      {
+        "type": "ArtifactFabricationRequirement",
+        "version": 2,
+        "id": "public-request",
+        "statement": "validateIssuerRevenueComparisonRequest(body,configuration) validates configuration and accepts exactly a record containing only periodKind that is in configuration.allowedPeriodKinds, returns a fresh {periodKind}; otherwise throws TypeError with no I/O. The first actual offer permits annual only; reusable code preserves other explicitly configured period kinds. No body-supplied issuers, dates, cache keys, buckets, source or config.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 5,
+          "endLine": 5
+        }
+      },
+      {
+        "type": "ArtifactFabricationRequirement",
+        "version": 2,
+        "id": "selector-input",
+        "statement": "selectPreparedIssuerRevenueComparison receives {body,configuration,cohort,now}. now is a canonical UTC ISO millisecond instant string or finite integer epoch milliseconds; invalid now throws TypeError. Validate public request first. An inadmissible cohort/readiness condition throws Error with code issuer-revenue-unavailable, status equal to `503`, retryable true. Every malformed or unavailable cache condition uses that same cache error; only invalid request/configuration/explicit-now arguments use TypeError. It never returns an unavailable JSON value as paid fulfillment.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 6,
+          "endLine": 6
+        }
+      },
+      {
+        "type": "ArtifactFabricationRequirement",
+        "version": 2,
+        "id": "cohort-boundary",
+        "statement": "A prepared object has type IssuerRevenuePreparedCohort, version `1`, canonical UTC observedAt, real YYYY-MM-DD asOf equal to observedAt's UTC day, and results with quarter/annual properties. It must not be future-dated; now minus cohort observedAt must not exceed maximumSnapshotAgeMs. The selected result has type IssuerRevenueComparison, version `1`, same asOf/observedAt and requested periodKind, datePolicy filing-date-cutoff-on-received-sources. No date precision beyond the received snapshot is asserted.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 7,
+          "endLine": 7
+        }
+      },
+      {
+        "type": "ArtifactFabricationRequirement",
+        "version": 2,
+        "id": "configured-cohort",
+        "statement": "Selected issuers and evidencePackets are arrays exactly matching configured count and order. Each issuer result has type IssuerRevenueReconciliation, version `1`, matching configured cik/ticker and asOf/periodKind, nonempty issuer, USD unit, valid source {uri,digest,bytes,observedAt}. URI is the fixed configured CIK URL; digest is admitted by existing isNiUri; bytes is a positive safe integer no greater than maximumBytes; source observation is no later than cohort and no older than maximumSnapshotAgeMs relative to now. Reject mismatched, duplicate, missing or extra issuers.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 8,
+          "endLine": 8
+        }
+      },
+      {
+        "type": "ArtifactFabricationRequirement",
+        "version": 2,
+        "id": "financial-freshness",
+        "statement": "Selected status must be current or, only with allowAmbiguousEvidence true, ambiguous. Missing or stale refuses. Current has finite value, valid nonnull actual period and nonempty witnesses. Ambiguous has null value and nonempty witnesses; it may have a null period when multiple starts share its latest end. Every selected witness has valid actual start/end, matching declared durationDays, start no later than end and end no later than asOf, requested duration class (quarter inclusive {{quarter-minimum-days}} through {{quarter-maximum-days}} days; annual inclusive {{annual-minimum-days}} through {{annual-maximum-days}} days), finite value, USD unit, form exactly one of `10-Q`, `10-Q/A`, `10-K`, `10-K/A`, filed no later than asOf and nonempty accession/concept. Check period end against actual now UTC day and configured maximumAgeDays even for ambiguity; kernel ambiguity precedence never licenses ancient conflicting evidence. Do not recompute raw facts or choose among conflicts.",
+        "parameters": [
+          {
+            "type": "ArtifactFabricationParameter",
+            "version": 1,
+            "name": "quarter-minimum-days",
+            "value": 70,
+            "unit": "day",
+            "claimId": "quarter-minimum-days",
+            "exact": null
+          },
+          {
+            "type": "ArtifactFabricationParameter",
+            "version": 1,
+            "name": "quarter-maximum-days",
+            "value": 110,
+            "unit": "day",
+            "claimId": "quarter-maximum-days",
+            "exact": null
+          },
+          {
+            "type": "ArtifactFabricationParameter",
+            "version": 1,
+            "name": "annual-minimum-days",
+            "value": 330,
+            "unit": "day",
+            "claimId": "annual-minimum-days",
+            "exact": null
+          },
+          {
+            "type": "ArtifactFabricationParameter",
+            "version": 1,
+            "name": "annual-maximum-days",
+            "value": 380,
+            "unit": "day",
+            "claimId": "annual-maximum-days",
+            "exact": null
+          }
+        ],
+        "claimIds": [
+          "annual-maximum-days",
+          "annual-minimum-days",
+          "quarter-maximum-days",
+          "quarter-minimum-days"
+        ],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 9,
+          "endLine": 9
+        }
+      },
+      {
+        "type": "ArtifactFabricationRequirement",
+        "version": 2,
+        "id": "prepared-packets",
+        "statement": "Each original evidence packet has type IssuerEvidencePacket/version `1`, ticker equal to String(configured ticker).toUpperCase(), same issuer/asOf, nonempty id admitted by existing isNiUri, brokerageEffect false, sources exactly one matching that issuer's URI/digest/observedAt, and exactly one claim with sourceDigests exactly [that digest] and statement exactly the producer contract's literal reconciliation statement derived from the selected structured issuer result: 'Received SEC companyfacts and reconciled '+periodKind+' USD revenue; status='+status+'; period='+(period?start+'..'+end:'none')+'; value='+String(value)+'; revision='+revision+'.'. Reject a packet statement that disagrees with structured status, period, value or revision even when its source citation is valid. This compares declared content only and never regenerates or verifies packet identity. This is trusted cache boundary validation, not cryptographic recertification: do not regenerate packet identities on the paid path. No contrary packet/source can pass.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 10,
+          "endLine": 10
+        }
+      },
+      {
+        "type": "ArtifactFabricationRequirement",
+        "version": 2,
+        "id": "return-unchanged",
+        "statement": "For an admitted complete selected result return that exact result unchanged. Its comparability is aligned-periods only when all statuses current and their exact start/end align, different-periods when all current but starts/ends differ, otherwise unresolved. Reject inconsistent comparability or date metadata. For period/value metadata, current requires finite numeric value and nonnull valid period whose start/end/duration match every witness. Within each witness concept, identify its greatest filed date; every witness at that concept's greatest filed date must equal the reported current value. Distinct concepts with different latest values, or same-concept latest-date conflicts, cannot pass as current. Earlier filing witnesses may legitimately differ and must remain retained, so do not require all historical values equal. This compact consistency check consumes the received witness set, never rescans raw companyfacts or chooses a conflicting value; ambiguous requires value exactly null and revision ambiguous, with either a valid nonnull period matching every witness and more than one distinct latest-per-concept value, or a null period whose witnesses share one end but have multiple starts. This is compact typed-boundary validation, not a second raw-facts kernel. No ranking, prediction, investment instruction, automatic quote conversion or claim of earned revenue.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 11,
+          "endLine": 11
+        }
+      }
+    ],
+    "prohibitions": [
+      {
+        "type": "ArtifactFabricationProhibition",
+        "version": 2,
+        "id": "no-request-override",
+        "statement": "The selector must not accept body fields other than periodKind or accept a periodKind outside configuration.allowedPeriodKinds; reject every such input with TypeError before cohort selection.",
+        "parameters": [],
+        "claimIds": [
+          "bounded-operation"
+        ],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 13,
+          "endLine": 13
+        }
+      }
+    ],
+    "openQuestions": [],
+    "constraints": [
+      {
+        "type": "ArtifactFabricationConstraint",
+        "version": 2,
+        "id": "source-integrity",
+        "kind": "law",
+        "authority": "Data source custody",
+        "revision": "raw-carrier RFC6920",
+        "locator": "https://www.rfc-editor.org/rfc/rfc6920",
+        "applicability": "Applies to addressContent provenance and packet citations.",
+        "statement": "Address the actual source bytes; observation and reporting dates are distinct; packet identity remains the received original constructor.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 15,
+          "endLine": 15
+        }
+      },
+      {
+        "type": "ArtifactFabricationConstraint",
+        "version": 2,
+        "id": "source-demand",
+        "kind": "standard",
+        "authority": "Red Cup Engineering",
+        "revision": "a48f45313af1e7525041d17ac3ff9a7ccdf24580",
+        "locator": "./behavior.md",
+        "applicability": "Applies to this actual independent issuer owner and its prepared-cohort supplier.",
+        "statement": "Requirements, architecture, design and behavior carry Science's real paid stale-SEC-tag buyer study and scoped companyfacts observations; original Group business opportunity and Coesite operation configure annual fixed AAPL/MSFT comparison without a USD20/day forecast.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 17,
+          "endLine": 17
+        }
+      },
+      {
+        "type": "ArtifactFabricationConstraint",
+        "version": 2,
+        "id": "sec-source",
+        "kind": "standard",
+        "authority": "US SEC",
+        "revision": "current API and fair access docs",
+        "locator": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+        "applicability": "Applies to fixed official companyfacts acquisition.",
+        "statement": "Official companyfacts source, self-identifying User-Agent and aggregate fair access apply. Actual single coordinator admission is separately received, never inferred from one function's spacing.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 18,
+          "endLine": 18
+        }
+      },
+      {
+        "type": "ArtifactFabricationConstraint",
+        "version": 2,
+        "id": "native-fabrication",
+        "kind": "standard",
+        "authority": "Red Cup Engineering",
+        "revision": "computer-systems-fabrication-engine v0.4.14; jsnode-package v0.5.1-dev.1 source d1e4905",
+        "locator": "https://github.com/red-cup-engineering/computer-systems-fabrication-engineering-services-section",
+        "applicability": "Applies to source-free fullmodule derivation and accurately scoped preassay.",
+        "statement": "The actual native deriveJsnodeModules permits additional named exports; declared JSON operation examples/preassay cover pure plan and selector only. Meaning-complete additional interfaces are stated below and require independent I/O receiving; no fake fixture mode or handwritten semantic source.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 19,
+          "endLine": 19
+        }
+      },
+      {
+        "type": "ArtifactFabricationConstraint",
+        "version": 2,
+        "id": "async-contract-1",
+        "kind": "standard",
+        "authority": "Issuer research Engineering",
+        "revision": "prepared-cohort design",
+        "locator": "./behavior.md",
+        "applicability": "Applies to complete additional named async module interfaces, with independent I/O acceptance.",
+        "statement": "prepareIssuerRevenueCohort(configuration,adapters={}) validates configuration/clock first and follows the pure acquisition plan. adapters.fetch defaults to globalThis.fetch, adapters.now defaults to Date.now and returns integer milliseconds or canonical UTC ISO instant, adapters.sleep defaults to ordinary bounded platform timer. It is a trusted background interface never bound to public input. Capture a fixed UTC day at preparation start; refuse with unavailable/utc-day-changed if an observed source or completion changes that UTC day. Execute configured sources sequentially, waiting minimumIntervalMs between completed acquisitions and the next fetch. Exactly one GET per issuer, fixed headers, redirect:manual, AbortSignal.timeout(timeoutMs), no automatic retry. Never follow a Location header or issue another GET for a redirect; reject every status other than 200, including all 3xx, through the documented source-unavailable result before consuming it as facts. Redirect HTTP failures are nonretryable; an ordinary network/timeout failure remains retryable. Native operator must ensure single EarningClock coordinator; this module cannot establish fleet-global rate admission.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 20,
+          "endLine": 20
+        }
+      },
+      {
+        "type": "ArtifactFabricationConstraint",
+        "version": 2,
+        "id": "async-contract-2",
+        "kind": "standard",
+        "authority": "Issuer research Engineering",
+        "revision": "prepared-cohort design",
+        "locator": "./behavior.md",
+        "applicability": "Applies to complete additional named async module interfaces, with independent I/O acceptance.",
+        "statement": "Accept only HTTP status `200`. Treat network/timeout/`429`/server errors as retryable unavailable; preserve retryAfter header when present. Other HTTP refusal, oversized response, malformed UTF8/JSON, invalid source identity, packet-construction failure or compact-output overflow is unavailable with retryable false and no false complete report. All producer refusal errors use code issuer-revenue-source-unavailable/status503; UTC-day-changed uses reason utc-day-changed and retryable true. Preserve Retry-After literally as a string without truncating or claiming an interval bound; the actual coordinator owns retry scheduling. Error code issuer-revenue-source-unavailable, status `503`, retryable boolean and reason are stable; configuration TypeError occurs before egress. Read Response.body using its standard Uint8Array reader and bound actual bytes, not only Content-Length; cancel on excess. Apply the timeout through complete fetch/body acquisition, decode UTF-8 fatally and parse with ordinary platform JSON.parse. Reject malformed source/CIK identity via the existing kernel. No credential reads and no external origin selection.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 21,
+          "endLine": 21
+        }
+      },
+      {
+        "type": "ArtifactFabricationConstraint",
+        "version": 2,
+        "id": "async-contract-3",
+        "kind": "standard",
+        "authority": "Issuer research Engineering",
+        "revision": "prepared-cohort design",
+        "locator": "./behavior.md",
+        "applicability": "Applies to complete additional named async module interfaces, with independent I/O acceptance.",
+        "statement": "For each source derive the RFC6920 raw carrier address with addressContent(bytes,{mediaType:'application/json'}): accepts Uint8Array/ArrayBuffer and returns {kind:'semiotic-content.raw-carrier-address',version:1,algorithm:'sha-256',size,mediaType,ni}; .ni names exact bytes without JSON normalization. Reuse .ni as source.digest and size as source.bytes; retain actual source observation instant after full acquisition. Kernel reconcileIssuerRevenueFacts({cik,asOf,periodKind,maximumAgeDays,companyfacts}) is synchronous and yields IssuerRevenueReconciliation exactly as demonstrated in the fixture, or throws TypeError for invalid envelope/CIK. Its actual duration bounds are inclusive quarter {{quarter-minimum-days}} through {{quarter-maximum-days}} days, annual {{annual-minimum-days}} through {{annual-maximum-days}} days; duration is UTC end-day minus start-day plus one. Eligible forms are exactly 10-Q, 10-Q/A, 10-K, 10-K/A. Concepts are exactly Revenues, SalesRevenueNet, RevenueFromContractWithCustomerExcludingAssessedTax under us-gaap USD. It does not use filing-context fy/fp as fact dates. Build both quarter/annual for one source before releasing its large bytes/object and acquiring the next; retain only compact issuer results/packets, never both full companyfacts in retained arrays.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 22,
+          "endLine": 22
+        }
+      },
+      {
+        "type": "ArtifactFabricationConstraint",
+        "version": 2,
+        "id": "async-contract-4",
+        "kind": "standard",
+        "authority": "Issuer research Engineering",
+        "revision": "prepared-cohort design",
+        "locator": "./behavior.md",
+        "applicability": "Applies to complete additional named async module interfaces, with independent I/O acceptance.",
+        "statement": "For each period result, extend kernel output with configured ticker and source:{uri,digest,bytes,observedAt}. Reuse formIssuerEvidencePacket({ticker,issuer,asOf,sources:[{uri,observedAt,digest}],claims:[{statement,sourceDigests:[digest]}]}); existing constructor preserves original ID semantics and default license/events, uppercase ticker, proofStatus and brokerageEffect. asOf is the explicit date string. statement is exactly 'Received SEC companyfacts and reconciled '+periodKind+' USD revenue; status='+status+'; period='+(period?start+'..'+end:'none')+'; value='+String(value)+'; revision='+revision+'.'. This is a scoped result claim, not exhaustive SEC truth.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 23,
+          "endLine": 23
+        }
+      },
+      {
+        "type": "ArtifactFabricationConstraint",
+        "version": 2,
+        "id": "async-contract-5",
+        "kind": "standard",
+        "authority": "Issuer research Engineering",
+        "revision": "prepared-cohort design",
+        "locator": "./behavior.md",
+        "applicability": "Applies to complete additional named async module interfaces, with independent I/O acceptance.",
+        "statement": "On complete preparation set one canonical completion observedAt and asOf and produce {type:'IssuerRevenuePreparedCohort',version:1,observedAt,asOf,results:{quarter,annual}}. Each result is {type:'IssuerRevenueComparison',version:1,observedAt,asOf,periodKind,datePolicy:'filing-date-cutoff-on-received-sources',comparability,issuers,evidencePackets}. Comparability uses the exact rule in return-unchanged. Missing/ambiguous/stale kernel results remain explicit in the prepared object; public selector decides sale readiness. Bound actual UTF8 JSON.stringify(cohort) byte length by maximumCohortBytes or refuse. Return cohort only, perform no R2 write. Single existing controller atomically puts it only after success; partial/refused preparation preserves its last complete object.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 24,
+          "endLine": 24
+        }
+      },
+      {
+        "type": "ArtifactFabricationConstraint",
+        "version": 2,
+        "id": "async-contract-6",
+        "kind": "standard",
+        "authority": "Issuer research Engineering",
+        "revision": "prepared-cohort design",
+        "locator": "./behavior.md",
+        "applicability": "Applies to complete additional named async module interfaces, with independent I/O acceptance.",
+        "statement": "readPreparedIssuerRevenueComparison(body,env,configuration) validates configuration/body before any storage access, requires env.ISSUER_EVIDENCE.get, and calls get exactly once with configuration.cacheKey. A missing binding/get function, null/failed read, invalid stream, malformed UTF8/JSON or byte overflow is issuer-revenue-unavailable status503/retryable true; do not fetch SEC. Read the standard R2ObjectBody.body stream with the same actual-byte bound maximumCohortBytes (R2 size is an additional early bound); decode/parse once, call selectPreparedIssuerRevenueComparison({body,configuration,cohort,now:Date.now()}) and return unchanged selected result. Never use public cache key/bucket, implicit source fallback, raw fact parsing or rehash/reissue packets. This interface has no R2 write.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 25,
+          "endLine": 25
+        }
+      },
+      {
+        "type": "ArtifactFabricationConstraint",
+        "version": 2,
+        "id": "async-contract-7",
+        "kind": "standard",
+        "authority": "Issuer research Engineering",
+        "revision": "prepared-cohort design",
+        "locator": "./behavior.md",
+        "applicability": "Applies to complete additional named async module interfaces, with independent I/O acceptance.",
+        "statement": "Independent I/O receiving precedes commercial promotion: actual configured headers/URL/redirect/signal under Node AND the selected real workerd runtime; request construction must accept redirect:manual, and a 3xx Location must produce one nonretryable source refusal with no redirected or second-issuer fetch; both GETs plus spacing; source failure/malformed/oversize/timeout/midnight without partial cache; source byte NI matches original representation; native kernel/packet reuse; compact output bound and private bytes absence; R2 read key/count/actual bytes; expired/missing/unready cache nonsettled unavailable; actual ordinary controller atomic storage/budget/global coordinator; edge/DO CPU and deployment closure. JSON preassay proves none of those effects.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 26,
+          "endLine": 26
+        }
+      },
+      {
+        "type": "ArtifactFabricationConstraint",
+        "version": 2,
+        "id": "source-module-interfaces",
+        "kind": "standard",
+        "authority": "Issuer research Engineering",
+        "revision": "full module source contract",
+        "locator": "./design.md",
+        "applicability": "Mandatory generated source constraint independently received under io-receiving; outside the JSON case-ID assay scope.",
+        "statement": "Derive one portable ESM module src/prepared-cohort.mjs, exporting pure planIssuerRevenueAcquisition and selectPreparedIssuerRevenueComparison, plus the fully specified named interfaces validateIssuerRevenueComparisonRequest(body,configuration), prepareIssuerRevenueCohort(configuration,adapters={}), and readPreparedIssuerRevenueComparison(body,env,configuration). Additional interfaces' actual I/O behavior is independently received under io-receiving; JSON plan/selector assays do not certify effects. Native fullmodule derivation is authorized, not supplied-source materialization.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 27,
+          "endLine": 27
+        }
+      },
+      {
+        "type": "ArtifactFabricationConstraint",
+        "version": 2,
+        "id": "source-supplier-closure",
+        "kind": "standard",
+        "authority": "Issuer research Engineering",
+        "revision": "full module source contract",
+        "locator": "./design.md",
+        "applicability": "Mandatory generated source constraint independently received under io-receiving; outside the JSON case-ID assay scope.",
+        "statement": "Reuse the already received packet via @red-cup-engineering/issuer-research-media-service and kernel via that package's /revenue-reconciliation self-reference. Reuse addressContent from @red-cup-engineering/computer-content-address-engineering-services-section/content-address on actual received Uint8Array, and isNiUri from @red-cup-engineering/uri-engineering-services-section/ni-uri. All signatures and forms are declared in this order. Self-reference is native package exports, not a package.json self-dependency or duplicate source.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 28,
+          "endLine": 28
+        }
+      },
+      {
+        "type": "ArtifactFabricationConstraint",
+        "version": 2,
+        "id": "source-pure-effects",
+        "kind": "standard",
+        "authority": "Issuer research Engineering",
+        "revision": "full module source contract",
+        "locator": "./design.md",
+        "applicability": "Mandatory generated source constraint independently received under io-receiving; outside the JSON case-ID assay scope.",
+        "statement": "The two declared JSON operations are pure: no clock, network, filesystem, env, credentials, inference, payment, R2 write or mutation. Every freshness input is explicit. Actual effects are confined to separately specified named async interfaces.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 29,
+          "endLine": 29
+        }
+      },
+      {
+        "type": "ArtifactFabricationConstraint",
+        "version": 2,
+        "id": "source-no-substitutes",
+        "kind": "standard",
+        "authority": "Issuer research Engineering",
+        "revision": "full module source contract",
+        "locator": "./design.md",
+        "applicability": "Mandatory generated source constraint independently received under io-receiving; outside the JSON case-ID assay scope.",
+        "statement": "No generic parser, packet identity, canonical JSON, revenue kernel, broker, rate-limit platform or duplicate implementation. No fake JSON test mode, implicit paid procurement, hidden retries, changed original packet IDs, copied full companyfacts into the paid cache, or false proof of USD20/day.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 30,
+          "endLine": 30
+        }
+      },
+      {
+        "type": "ArtifactFabricationConstraint",
+        "version": 2,
+        "id": "source-request-redirect",
+        "kind": "standard",
+        "authority": "Cloudflare",
+        "revision": "Workers Request runtime API received 2026-10-24 and installed workerd 1.20261024.1",
+        "locator": "https://developers.cloudflare.com/workers/runtime-apis/request/",
+        "applicability": "Applies to source GET construction and no-follow policy on actual Workers.",
+        "statement": "Workers does not implement redirect:error and rejects it at Request construction before egress; redirect:manual returns 3xx without following. Use manual with explicit status===200 admission and reject redirects without another fetch. Actual real-workerd positive and redirect-refusal receiving is mandatory; Node mocks and JSON assays do not qualify edge runtime compatibility.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 31,
+          "endLine": 31
+        }
+      }
+    ],
+    "projections": [
+      {
+        "type": "ArtifactFabricationProjection",
+        "version": 1,
+        "id": "jsnode-modules",
+        "target": "@red-cup-engineering/jsnode-package-engineering-services-section/derive-jsnode-package-from-closure",
+        "configuration": {
+          "operations": [
+            {
+              "name": "plan-issuer-revenue-acquisition",
+              "module": "src/prepared-cohort.mjs",
+              "exportName": "planIssuerRevenueAcquisition",
+              "description": "Pure complete trusted config validation and exact bounded official-source acquisition plan; full additional named async interfaces are required by source constraints and independently received.",
+              "inputSchema": {},
+              "outputSchema": {
+                "type": "object"
+              }
+            },
+            {
+              "name": "select-prepared-issuer-revenue-comparison",
+              "module": "src/prepared-cohort.mjs",
+              "exportName": "selectPreparedIssuerRevenueComparison",
+              "description": "Pure configured-cohort, source, packet, period, financial/snapshot freshness and allowed-public-request admission; return exact prepared result or unavailable Error.",
+              "inputSchema": {},
+              "outputSchema": {
+                "type": "object"
+              }
+            }
+          ],
+          "examples": [
+            {
+              "name": "configured official source plan, synthetic fixture identifiers",
+              "operation": "plan-issuer-revenue-acquisition",
+              "input": {
+                "issuers": [
+                  {
+                    "cik": "0000000001",
+                    "ticker": "ONE"
+                  },
+                  {
+                    "cik": "0000000002",
+                    "ticker": "TWO"
+                  }
+                ],
+                "userAgent": "Fixture issuer research test@example.invalid",
+                "maximumIssuers": 5,
+                "maximumBytes": 8388608,
+                "timeoutMs": 10000,
+                "minimumIntervalMs": 1000,
+                "maximumAgeDays": {
+                  "quarter": 150,
+                  "annual": 550
+                },
+                "cacheKey": "issuer-research/current.json",
+                "maximumSnapshotAgeMs": 3600000,
+                "maximumCohortBytes": 524288,
+                "allowedPeriodKinds": [
+                  "annual"
+                ],
+                "allowAmbiguousEvidence": true
+              },
+              "output": {
+                "type": "IssuerRevenueAcquisitionPlan",
+                "version": 1,
+                "minimumIntervalMs": 1000,
+                "maximumCohortBytes": 524288,
+                "requests": [
+                  {
+                    "cik": "0000000001",
+                    "ticker": "ONE",
+                    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000000001.json",
+                    "headers": {
+                      "User-Agent": "Fixture issuer research test@example.invalid",
+                      "Accept": "application/json"
+                    },
+                    "timeoutMs": 10000,
+                    "maximumBytes": 8388608
+                  },
+                  {
+                    "cik": "0000000002",
+                    "ticker": "TWO",
+                    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000000002.json",
+                    "headers": {
+                      "User-Agent": "Fixture issuer research test@example.invalid",
+                      "Accept": "application/json"
+                    },
+                    "timeoutMs": 10000,
+                    "maximumBytes": 8388608
+                  }
+                ]
+              }
+            },
+            {
+              "name": "current annual prepared fixture unchanged",
+              "operation": "select-prepared-issuer-revenue-comparison",
+              "input": {
+                "body": {
+                  "periodKind": "annual"
+                },
+                "configuration": {
+                  "issuers": [
+                    {
+                      "cik": "0000000001",
+                      "ticker": "ONE"
+                    },
+                    {
+                      "cik": "0000000002",
+                      "ticker": "TWO"
+                    }
+                  ],
+                  "userAgent": "Fixture issuer research test@example.invalid",
+                  "maximumIssuers": 5,
+                  "maximumBytes": 8388608,
+                  "timeoutMs": 10000,
+                  "minimumIntervalMs": 1000,
+                  "maximumAgeDays": {
+                    "quarter": 150,
+                    "annual": 550
+                  },
+                  "cacheKey": "issuer-research/current.json",
+                  "maximumSnapshotAgeMs": 3600000,
+                  "maximumCohortBytes": 524288,
+                  "allowedPeriodKinds": [
+                    "annual"
+                  ],
+                  "allowAmbiguousEvidence": true
+                },
+                "cohort": {
+                  "type": "IssuerRevenuePreparedCohort",
+                  "version": 1,
+                  "observedAt": "2026-10-24T12:00:00.000Z",
+                  "asOf": "2026-10-24",
+                  "results": {
+                    "quarter": {
+                      "type": "IssuerRevenueComparison",
+                      "version": 1,
+                      "observedAt": "2026-10-24T12:00:00.000Z",
+                      "asOf": "2026-10-24",
+                      "periodKind": "quarter",
+                      "datePolicy": "filing-date-cutoff-on-received-sources",
+                      "comparability": "aligned-periods",
+                      "issuers": [
+                        {
+                          "type": "IssuerRevenueReconciliation",
+                          "version": 1,
+                          "cik": "0000000001",
+                          "issuer": "Fixture issuer ONE",
+                          "asOf": "2026-10-24",
+                          "periodKind": "quarter",
+                          "status": "current",
+                          "unit": "USD",
+                          "period": {
+                            "start": "2026-04-01",
+                            "end": "2026-06-30",
+                            "durationDays": 91
+                          },
+                          "value": 30,
+                          "witnesses": [
+                            {
+                              "concept": "Revenues",
+                              "start": "2026-04-01",
+                              "end": "2026-06-30",
+                              "durationDays": 91,
+                              "value": 30,
+                              "unit": "USD",
+                              "form": "10-Q",
+                              "filed": "2026-07-01",
+                              "accession": "fixture-quarter-ONE"
+                            }
+                          ],
+                          "conceptCoverage": [
+                            {
+                              "concept": "Revenues",
+                              "latestEnd": "2026-06-30",
+                              "count": 2
+                            },
+                            {
+                              "concept": "SalesRevenueNet",
+                              "latestEnd": null,
+                              "count": 0
+                            },
+                            {
+                              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                              "latestEnd": null,
+                              "count": 0
+                            }
+                          ],
+                          "revision": "none",
+                          "ticker": "ONE",
+                          "source": {
+                            "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000000001.json",
+                            "digest": "ni:///sha-256;MkvyA65d5RjSzklIn8d2s4cnUEXMTFvzZKoY-cLdEz0",
+                            "bytes": 326,
+                            "observedAt": "2026-10-24T12:00:00.000Z"
+                          }
+                        },
+                        {
+                          "type": "IssuerRevenueReconciliation",
+                          "version": 1,
+                          "cik": "0000000002",
+                          "issuer": "Fixture issuer TWO",
+                          "asOf": "2026-10-24",
+                          "periodKind": "quarter",
+                          "status": "current",
+                          "unit": "USD",
+                          "period": {
+                            "start": "2026-04-01",
+                            "end": "2026-06-30",
+                            "durationDays": 91
+                          },
+                          "value": 60,
+                          "witnesses": [
+                            {
+                              "concept": "Revenues",
+                              "start": "2026-04-01",
+                              "end": "2026-06-30",
+                              "durationDays": 91,
+                              "value": 60,
+                              "unit": "USD",
+                              "form": "10-Q",
+                              "filed": "2026-07-01",
+                              "accession": "fixture-quarter-TWO"
+                            }
+                          ],
+                          "conceptCoverage": [
+                            {
+                              "concept": "Revenues",
+                              "latestEnd": "2026-06-30",
+                              "count": 2
+                            },
+                            {
+                              "concept": "SalesRevenueNet",
+                              "latestEnd": null,
+                              "count": 0
+                            },
+                            {
+                              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                              "latestEnd": null,
+                              "count": 0
+                            }
+                          ],
+                          "revision": "none",
+                          "ticker": "TWO",
+                          "source": {
+                            "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000000002.json",
+                            "digest": "ni:///sha-256;evTmrsvr4OBrxePjrnoREKgGyzUdcOnXZd6tsfmVpR0",
+                            "bytes": 326,
+                            "observedAt": "2026-10-24T12:00:00.000Z"
+                          }
+                        }
+                      ],
+                      "evidencePackets": [
+                        {
+                          "id": "ni:///sha-256;tcEwz_CNjTNBwrBCaxFqaFMvAe30qQb1K6NiTt6Pw3M",
+                          "type": "IssuerEvidencePacket",
+                          "version": 1,
+                          "ticker": "ONE",
+                          "issuer": "Fixture issuer ONE",
+                          "asOf": "2026-10-24",
+                          "sources": [
+                            {
+                              "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000000001.json",
+                              "observedAt": "2026-10-24T12:00:00.000Z",
+                              "digest": "ni:///sha-256;MkvyA65d5RjSzklIn8d2s4cnUEXMTFvzZKoY-cLdEz0"
+                            }
+                          ],
+                          "claims": [
+                            {
+                              "statement": "Received SEC companyfacts and reconciled quarter USD revenue; status=current; period=2026-04-01..2026-06-30; value=30; revision=none.",
+                              "sourceDigests": [
+                                "ni:///sha-256;MkvyA65d5RjSzklIn8d2s4cnUEXMTFvzZKoY-cLdEz0"
+                              ]
+                            }
+                          ],
+                          "events": [],
+                          "license": "single-customer-analysis",
+                          "proofStatus": "research-evidence-not-mathematical-proof",
+                          "brokerageEffect": false
+                        },
+                        {
+                          "id": "ni:///sha-256;KTZXuEC7MLhnbvx4MQMW_du8vdaEwy4iO35Xcpzv6nQ",
+                          "type": "IssuerEvidencePacket",
+                          "version": 1,
+                          "ticker": "TWO",
+                          "issuer": "Fixture issuer TWO",
+                          "asOf": "2026-10-24",
+                          "sources": [
+                            {
+                              "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000000002.json",
+                              "observedAt": "2026-10-24T12:00:00.000Z",
+                              "digest": "ni:///sha-256;evTmrsvr4OBrxePjrnoREKgGyzUdcOnXZd6tsfmVpR0"
+                            }
+                          ],
+                          "claims": [
+                            {
+                              "statement": "Received SEC companyfacts and reconciled quarter USD revenue; status=current; period=2026-04-01..2026-06-30; value=60; revision=none.",
+                              "sourceDigests": [
+                                "ni:///sha-256;evTmrsvr4OBrxePjrnoREKgGyzUdcOnXZd6tsfmVpR0"
+                              ]
+                            }
+                          ],
+                          "events": [],
+                          "license": "single-customer-analysis",
+                          "proofStatus": "research-evidence-not-mathematical-proof",
+                          "brokerageEffect": false
+                        }
+                      ]
+                    },
+                    "annual": {
+                      "type": "IssuerRevenueComparison",
+                      "version": 1,
+                      "observedAt": "2026-10-24T12:00:00.000Z",
+                      "asOf": "2026-10-24",
+                      "periodKind": "annual",
+                      "datePolicy": "filing-date-cutoff-on-received-sources",
+                      "comparability": "aligned-periods",
+                      "issuers": [
+                        {
+                          "type": "IssuerRevenueReconciliation",
+                          "version": 1,
+                          "cik": "0000000001",
+                          "issuer": "Fixture issuer ONE",
+                          "asOf": "2026-10-24",
+                          "periodKind": "annual",
+                          "status": "current",
+                          "unit": "USD",
+                          "period": {
+                            "start": "2025-01-01",
+                            "end": "2025-12-31",
+                            "durationDays": 365
+                          },
+                          "value": 100,
+                          "witnesses": [
+                            {
+                              "concept": "Revenues",
+                              "start": "2025-01-01",
+                              "end": "2025-12-31",
+                              "durationDays": 365,
+                              "value": 100,
+                              "unit": "USD",
+                              "form": "10-K",
+                              "filed": "2026-02-01",
+                              "accession": "fixture-annual-ONE"
+                            }
+                          ],
+                          "conceptCoverage": [
+                            {
+                              "concept": "Revenues",
+                              "latestEnd": "2026-06-30",
+                              "count": 2
+                            },
+                            {
+                              "concept": "SalesRevenueNet",
+                              "latestEnd": null,
+                              "count": 0
+                            },
+                            {
+                              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                              "latestEnd": null,
+                              "count": 0
+                            }
+                          ],
+                          "revision": "none",
+                          "ticker": "ONE",
+                          "source": {
+                            "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000000001.json",
+                            "digest": "ni:///sha-256;MkvyA65d5RjSzklIn8d2s4cnUEXMTFvzZKoY-cLdEz0",
+                            "bytes": 326,
+                            "observedAt": "2026-10-24T12:00:00.000Z"
+                          }
+                        },
+                        {
+                          "type": "IssuerRevenueReconciliation",
+                          "version": 1,
+                          "cik": "0000000002",
+                          "issuer": "Fixture issuer TWO",
+                          "asOf": "2026-10-24",
+                          "periodKind": "annual",
+                          "status": "current",
+                          "unit": "USD",
+                          "period": {
+                            "start": "2025-01-01",
+                            "end": "2025-12-31",
+                            "durationDays": 365
+                          },
+                          "value": 200,
+                          "witnesses": [
+                            {
+                              "concept": "Revenues",
+                              "start": "2025-01-01",
+                              "end": "2025-12-31",
+                              "durationDays": 365,
+                              "value": 200,
+                              "unit": "USD",
+                              "form": "10-K",
+                              "filed": "2026-02-01",
+                              "accession": "fixture-annual-TWO"
+                            }
+                          ],
+                          "conceptCoverage": [
+                            {
+                              "concept": "Revenues",
+                              "latestEnd": "2026-06-30",
+                              "count": 2
+                            },
+                            {
+                              "concept": "SalesRevenueNet",
+                              "latestEnd": null,
+                              "count": 0
+                            },
+                            {
+                              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                              "latestEnd": null,
+                              "count": 0
+                            }
+                          ],
+                          "revision": "none",
+                          "ticker": "TWO",
+                          "source": {
+                            "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000000002.json",
+                            "digest": "ni:///sha-256;evTmrsvr4OBrxePjrnoREKgGyzUdcOnXZd6tsfmVpR0",
+                            "bytes": 326,
+                            "observedAt": "2026-10-24T12:00:00.000Z"
+                          }
+                        }
+                      ],
+                      "evidencePackets": [
+                        {
+                          "id": "ni:///sha-256;2vAABVR8yuDKCZMXbdEEZ31mQilO23nBAPpCiRCh_kM",
+                          "type": "IssuerEvidencePacket",
+                          "version": 1,
+                          "ticker": "ONE",
+                          "issuer": "Fixture issuer ONE",
+                          "asOf": "2026-10-24",
+                          "sources": [
+                            {
+                              "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000000001.json",
+                              "observedAt": "2026-10-24T12:00:00.000Z",
+                              "digest": "ni:///sha-256;MkvyA65d5RjSzklIn8d2s4cnUEXMTFvzZKoY-cLdEz0"
+                            }
+                          ],
+                          "claims": [
+                            {
+                              "statement": "Received SEC companyfacts and reconciled annual USD revenue; status=current; period=2025-01-01..2025-12-31; value=100; revision=none.",
+                              "sourceDigests": [
+                                "ni:///sha-256;MkvyA65d5RjSzklIn8d2s4cnUEXMTFvzZKoY-cLdEz0"
+                              ]
+                            }
+                          ],
+                          "events": [],
+                          "license": "single-customer-analysis",
+                          "proofStatus": "research-evidence-not-mathematical-proof",
+                          "brokerageEffect": false
+                        },
+                        {
+                          "id": "ni:///sha-256;tVwnjNJrF3yqshUTKiIwDspJ8MIoXDNxgaUBKXtIcU8",
+                          "type": "IssuerEvidencePacket",
+                          "version": 1,
+                          "ticker": "TWO",
+                          "issuer": "Fixture issuer TWO",
+                          "asOf": "2026-10-24",
+                          "sources": [
+                            {
+                              "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000000002.json",
+                              "observedAt": "2026-10-24T12:00:00.000Z",
+                              "digest": "ni:///sha-256;evTmrsvr4OBrxePjrnoREKgGyzUdcOnXZd6tsfmVpR0"
+                            }
+                          ],
+                          "claims": [
+                            {
+                              "statement": "Received SEC companyfacts and reconciled annual USD revenue; status=current; period=2025-01-01..2025-12-31; value=200; revision=none.",
+                              "sourceDigests": [
+                                "ni:///sha-256;evTmrsvr4OBrxePjrnoREKgGyzUdcOnXZd6tsfmVpR0"
+                              ]
+                            }
+                          ],
+                          "events": [],
+                          "license": "single-customer-analysis",
+                          "proofStatus": "research-evidence-not-mathematical-proof",
+                          "brokerageEffect": false
+                        }
+                      ]
+                    }
+                  }
+                },
+                "now": "2026-10-24T12:15:00.000Z"
+              },
+              "output": {
+                "type": "IssuerRevenueComparison",
+                "version": 1,
+                "observedAt": "2026-10-24T12:00:00.000Z",
+                "asOf": "2026-10-24",
+                "periodKind": "annual",
+                "datePolicy": "filing-date-cutoff-on-received-sources",
+                "comparability": "aligned-periods",
+                "issuers": [
+                  {
+                    "type": "IssuerRevenueReconciliation",
+                    "version": 1,
+                    "cik": "0000000001",
+                    "issuer": "Fixture issuer ONE",
+                    "asOf": "2026-10-24",
+                    "periodKind": "annual",
+                    "status": "current",
+                    "unit": "USD",
+                    "period": {
+                      "start": "2025-01-01",
+                      "end": "2025-12-31",
+                      "durationDays": 365
+                    },
+                    "value": 100,
+                    "witnesses": [
+                      {
+                        "concept": "Revenues",
+                        "start": "2025-01-01",
+                        "end": "2025-12-31",
+                        "durationDays": 365,
+                        "value": 100,
+                        "unit": "USD",
+                        "form": "10-K",
+                        "filed": "2026-02-01",
+                        "accession": "fixture-annual-ONE"
+                      }
+                    ],
+                    "conceptCoverage": [
+                      {
+                        "concept": "Revenues",
+                        "latestEnd": "2026-06-30",
+                        "count": 2
+                      },
+                      {
+                        "concept": "SalesRevenueNet",
+                        "latestEnd": null,
+                        "count": 0
+                      },
+                      {
+                        "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                        "latestEnd": null,
+                        "count": 0
+                      }
+                    ],
+                    "revision": "none",
+                    "ticker": "ONE",
+                    "source": {
+                      "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000000001.json",
+                      "digest": "ni:///sha-256;MkvyA65d5RjSzklIn8d2s4cnUEXMTFvzZKoY-cLdEz0",
+                      "bytes": 326,
+                      "observedAt": "2026-10-24T12:00:00.000Z"
+                    }
+                  },
+                  {
+                    "type": "IssuerRevenueReconciliation",
+                    "version": 1,
+                    "cik": "0000000002",
+                    "issuer": "Fixture issuer TWO",
+                    "asOf": "2026-10-24",
+                    "periodKind": "annual",
+                    "status": "current",
+                    "unit": "USD",
+                    "period": {
+                      "start": "2025-01-01",
+                      "end": "2025-12-31",
+                      "durationDays": 365
+                    },
+                    "value": 200,
+                    "witnesses": [
+                      {
+                        "concept": "Revenues",
+                        "start": "2025-01-01",
+                        "end": "2025-12-31",
+                        "durationDays": 365,
+                        "value": 200,
+                        "unit": "USD",
+                        "form": "10-K",
+                        "filed": "2026-02-01",
+                        "accession": "fixture-annual-TWO"
+                      }
+                    ],
+                    "conceptCoverage": [
+                      {
+                        "concept": "Revenues",
+                        "latestEnd": "2026-06-30",
+                        "count": 2
+                      },
+                      {
+                        "concept": "SalesRevenueNet",
+                        "latestEnd": null,
+                        "count": 0
+                      },
+                      {
+                        "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                        "latestEnd": null,
+                        "count": 0
+                      }
+                    ],
+                    "revision": "none",
+                    "ticker": "TWO",
+                    "source": {
+                      "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000000002.json",
+                      "digest": "ni:///sha-256;evTmrsvr4OBrxePjrnoREKgGyzUdcOnXZd6tsfmVpR0",
+                      "bytes": 326,
+                      "observedAt": "2026-10-24T12:00:00.000Z"
+                    }
+                  }
+                ],
+                "evidencePackets": [
+                  {
+                    "id": "ni:///sha-256;2vAABVR8yuDKCZMXbdEEZ31mQilO23nBAPpCiRCh_kM",
+                    "type": "IssuerEvidencePacket",
+                    "version": 1,
+                    "ticker": "ONE",
+                    "issuer": "Fixture issuer ONE",
+                    "asOf": "2026-10-24",
+                    "sources": [
+                      {
+                        "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000000001.json",
+                        "observedAt": "2026-10-24T12:00:00.000Z",
+                        "digest": "ni:///sha-256;MkvyA65d5RjSzklIn8d2s4cnUEXMTFvzZKoY-cLdEz0"
+                      }
+                    ],
+                    "claims": [
+                      {
+                        "statement": "Received SEC companyfacts and reconciled annual USD revenue; status=current; period=2025-01-01..2025-12-31; value=100; revision=none.",
+                        "sourceDigests": [
+                          "ni:///sha-256;MkvyA65d5RjSzklIn8d2s4cnUEXMTFvzZKoY-cLdEz0"
+                        ]
+                      }
+                    ],
+                    "events": [],
+                    "license": "single-customer-analysis",
+                    "proofStatus": "research-evidence-not-mathematical-proof",
+                    "brokerageEffect": false
+                  },
+                  {
+                    "id": "ni:///sha-256;tVwnjNJrF3yqshUTKiIwDspJ8MIoXDNxgaUBKXtIcU8",
+                    "type": "IssuerEvidencePacket",
+                    "version": 1,
+                    "ticker": "TWO",
+                    "issuer": "Fixture issuer TWO",
+                    "asOf": "2026-10-24",
+                    "sources": [
+                      {
+                        "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000000002.json",
+                        "observedAt": "2026-10-24T12:00:00.000Z",
+                        "digest": "ni:///sha-256;evTmrsvr4OBrxePjrnoREKgGyzUdcOnXZd6tsfmVpR0"
+                      }
+                    ],
+                    "claims": [
+                      {
+                        "statement": "Received SEC companyfacts and reconciled annual USD revenue; status=current; period=2025-01-01..2025-12-31; value=200; revision=none.",
+                        "sourceDigests": [
+                          "ni:///sha-256;evTmrsvr4OBrxePjrnoREKgGyzUdcOnXZd6tsfmVpR0"
+                        ]
+                      }
+                    ],
+                    "events": [],
+                    "license": "single-customer-analysis",
+                    "proofStatus": "research-evidence-not-mathematical-proof",
+                    "brokerageEffect": false
+                  }
+                ]
+              }
+            }
+          ],
+          "dependencies": {
+            "@red-cup-engineering/issuer-research-media-service": "0.1.3-dev.1",
+            "@red-cup-engineering/computer-content-address-engineering-services-section": "0.2.0",
+            "@red-cup-engineering/uri-engineering-services-section": "0.1.3"
+          }
+        },
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 47,
+          "endLine": 49
+        }
+      }
+    ],
+    "acceptanceObligations": [
+      {
+        "type": "ArtifactFabricationAcceptanceObligation",
+        "version": 2,
+        "id": "pure-receiving",
+        "kind": "assay",
+        "statement": "Independently derive/run JSON plan+selector positive, invalid request/config, fresh/expired/future/mismatched/missing/stale/ambiguous, period-age and packet citation counterexamples; no effects and unchanged ready result.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 51,
+          "endLine": 53
+        }
+      },
+      {
+        "type": "ArtifactFabricationAcceptanceObligation",
+        "version": 2,
+        "id": "io-receiving",
+        "kind": "assay",
+        "statement": "Actual additional named exports require separately predeclared native source/storage consumer tests and runtime receiving: fixed source URL/UA/redirect/timeout, sequential acquisitions, byte bounds, raw NI, no partial preparation, original kernel/packet identity, bounded compact result, exact R2 key and unchanged return, unavailable result cancels settlement, actual single coordinator/budgets/atomic write, deployment CPU/source closure and independent outside customer acceptance. Pure tests do not discharge these.",
+        "parameters": [],
+        "claimIds": [],
+        "sourceSpan": {
+          "type": "ArtifactFabricationSourceSpan",
+          "startLine": 51,
+          "endLine": 53
+        }
+      }
+    ],
+    "traceability": [
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "configuration",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "acquisition-plan",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "public-request",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "selector-input",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "cohort-boundary",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "configured-cohort",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "financial-freshness",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "prepared-packets",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "return-unchanged",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "no-request-override",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      }
+    ],
+    "specificationDigest": "ni:///sha-256;2moJycjlp3Q8p4fL52Ng6iAY4iNKDl1iGIbdCKBY2Qw"
+  },
+  "plan": {
+    "type": "ArtifactFabricationRealizationPlan",
+    "version": 1,
+    "artifactId": "issuer-revenue-prepared-cohort",
+    "specificationDigest": "ni:///sha-256;2moJycjlp3Q8p4fL52Ng6iAY4iNKDl1iGIbdCKBY2Qw",
+    "projectionIds": [
+      "jsnode-modules"
+    ],
+    "acceptanceObligationIds": [
+      "io-receiving",
+      "pure-receiving"
+    ],
+    "traceability": [
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "configuration",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "acquisition-plan",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "public-request",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "selector-input",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "cohort-boundary",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "configured-cohort",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "financial-freshness",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "prepared-packets",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "return-unchanged",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "no-request-override",
+        "constraintIds": [
+          "async-contract-1",
+          "async-contract-2",
+          "async-contract-3",
+          "async-contract-4",
+          "async-contract-5",
+          "async-contract-6",
+          "async-contract-7",
+          "native-fabrication",
+          "sec-source",
+          "source-demand",
+          "source-integrity",
+          "source-module-interfaces",
+          "source-no-substitutes",
+          "source-pure-effects",
+          "source-request-redirect",
+          "source-supplier-closure"
+        ],
+        "projectionIds": [
+          "jsnode-modules"
+        ],
+        "acceptanceObligationIds": [
+          "pure-receiving"
+        ]
+      }
+    ]
+  }
+}

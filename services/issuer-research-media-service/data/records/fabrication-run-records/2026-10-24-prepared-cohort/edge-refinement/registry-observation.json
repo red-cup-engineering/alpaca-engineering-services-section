@@ -1,0 +1,28 @@
+{
+  "type": "IssuerRegistryVersionObservation",
+  "version": 1,
+  "observedAt": "2026-10-24T23:02:52.807Z",
+  "url": "https://registry.561.group/@red-cup-engineering%2Fissuer-research-media-service",
+  "status": 200,
+  "packageName": "@red-cup-engineering/issuer-research-media-service",
+  "distTags": {
+    "latest": "0.1.4",
+    "dev": "0.1.3-dev.19"
+  },
+  "versionObserved": {
+    "name": "@red-cup-engineering/issuer-research-media-service",
+    "version": "0.1.3",
+    "gitHead": "76544ad0f2de13440d257ef63b98ff1cf54adf82",
+    "dependencies": {
+      "@red-cup-engineering/computer-data-engineering-services-section": "0.2.0",
+      "@red-cup-engineering/json-engineering-services-section": "0.4.0",
+      "@red-cup-engineering/computer-content-address-engineering-services-section": "0.2.0",
+      "@red-cup-engineering/uri-engineering-services-section": "0.1.3"
+    },
+    "dist": {
+      "shasum": "53cf4652ea0983f14fa97ce890ec8006330417d3",
+      "integrity": "sha512-y2XWRidZHKrAwdPUDEEyAeGuaWsSMJdprJUbnOgR3k1lsVzl+xTty9ZXw787mqtxX5DuwhOO/TUFz5jHj5yPrg==",
+      "tarball": "https://registry.561.group/@red-cup-engineering/issuer-research-media-service/-/issuer-research-media-service-0.1.3.tgz"
+    }
+  }
+}

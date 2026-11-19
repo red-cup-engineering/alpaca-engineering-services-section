@@ -1,0 +1,37 @@
+{
+  "name": "@red-cup-engineering/principal-brokerage-interface",
+  "version": "0.1.9-dev.0",
+  "type": "module",
+  "files": [
+    "src/"
+  ],
+  "exports": {
+    ".": "./src/principal-contract.mjs",
+    "./onboarding-circuit": "./src/onboarding-circuit.mjs",
+    "./src/onboarding-circuit.mjs": "./src/onboarding-circuit.mjs"
+  },
+  "scripts": {
+    "check": "node --check src/principal-contract.mjs && node --check src/onboarding-circuit.mjs"
+  },
+  "description": "principal-brokerage-interface sovereign enterprise",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/alpaca-engineering-services-section.git",
+    "directory": "services/principal-brokerage-interface"
+  },
+  "dependencies": {
+    "@red-cup-engineering/computer-code-engine": "^0.1.0",
+    "@red-cup-engineering/json-engine": "^0.5.1",
+    "@red-cup-engineering/computer-content-address-engineering-services-section": "^0.3.0",
+    "@red-cup-engineering/computer-data-engineering-services-section": "^0.7.4",
+    "@red-cup-engineering/computer-code-engineering-services-section": "^0.2.1",
+    "@red-cup-engineering/computer-engine": "^0.1.2",
+    "@red-cup-engineering/financial-brokerage-engine": "^0.1.0"
+  },
+  "private": false,
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
+}

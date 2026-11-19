@@ -1,0 +1,15 @@
+{
+  "startedAt": "2026-10-24T22:00:40.682926+00:00",
+  "finishedAt": "2026-10-24T22:06:01.096894+00:00",
+  "wallSeconds": 334.92131287899974,
+  "exitCode": 1,
+  "sourceSpecification": "ni:///sha-256;2hHQSxd-NH9ewvXLAIsZXgpyDKJOXUaSSxvlP6b37f0",
+  "selectedPolicy": "existing-included-subscription",
+  "newCashPurchase": false,
+  "nodeHeapMiB": 128,
+  "isolatedChildMemoryBytes": 536870912,
+  "maximumFamilyChildRssKiB": 795688,
+  "stdoutBytes": 186465,
+  "stderrBytes": 0,
+  "extraManualContainment": false
+}

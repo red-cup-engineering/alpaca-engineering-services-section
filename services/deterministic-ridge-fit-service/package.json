@@ -1,0 +1,26 @@
+{
+  "name": "@red-cup-engineering/deterministic-ridge-fit-service",
+  "version": "0.1.5-dev.0",
+  "private": false,
+  "type": "module",
+  "description": "Fits and applies a deterministic standardized ridge model to bounded numeric samples.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/alpaca-engineering-services-section.git",
+    "directory": "services/deterministic-ridge-fit-service"
+  },
+  "exports": {
+    ".": "./src/ridge.mjs"
+  },
+  "files": [
+    "package.json",
+    "README*",
+    "LICENSE*",
+    "src"
+  ],
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
+}

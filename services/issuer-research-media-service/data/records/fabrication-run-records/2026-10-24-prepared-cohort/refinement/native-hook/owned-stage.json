@@ -1,0 +1,51 @@
+{
+  "observedAt": "2026-10-24T22:01:44.390916+00:00",
+  "ownedLineage": [
+    {
+      "pid": 427124,
+      "depth": 0,
+      "state": "S (sleeping)",
+      "rss": "2104 kB",
+      "waitChannel": "sigsuspend",
+      "cmd": "timeout --kill-after=10s 900s /gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 /home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-code-development-system-services-section/apps/computer-code-development-engine/scripts/fabricate-jsnode-closure.mjs --order /home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platfor",
+      "cgroup": "0::/non-systemd",
+      "children": [
+        427125
+      ]
+    },
+    {
+      "pid": 427125,
+      "depth": 1,
+      "state": "R (running)",
+      "rss": "774280 kB",
+      "waitChannel": "0",
+      "cmd": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 /home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-code-development-system-services-section/apps/computer-code-development-engine/scripts/fabricate-jsnode-closure.mjs --order /home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/we",
+      "cgroup": "0::/non-systemd",
+      "children": [
+        429559
+      ]
+    },
+    {
+      "pid": 429559,
+      "depth": 2,
+      "state": "S (sleeping)",
+      "rss": "2028 kB",
+      "waitChannel": "do_wait",
+      "cmd": "flock --exclusive /home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-inference-system-services-section/apps/computer-inference-engine/data/state/provider-capacity-state/codex-request-slot.lock /gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node -e process.stdout.write(\"ready\\n\"); process.stdin.resume(); ",
+      "cgroup": "0::/non-systemd",
+      "children": [
+        429560
+      ]
+    },
+    {
+      "pid": 429560,
+      "depth": 3,
+      "state": "S (sleeping)",
+      "rss": "47324 kB",
+      "waitChannel": "do_epoll_wait",
+      "cmd": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node -e process.stdout.write(\"ready\\n\"); process.stdin.resume(); ",
+      "cgroup": "0::/non-systemd",
+      "children": []
+    }
+  ]
+}

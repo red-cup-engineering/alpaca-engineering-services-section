@@ -1,0 +1,223 @@
+{
+  "type": "IssuerPreparedCohortSourceHandoff",
+  "version": 1,
+  "observedAt": "2026-10-24T19:46:36.307880+00:00",
+  "owner": "red-cup-engineering/issuer-research-media-service",
+  "ownerRoot": "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/services/issuer-research-media-service",
+  "localBranch": "main",
+  "localHeadBeforeReceivingRecord": "a48f45313af1e7525041d17ac3ff9a7ccdf24580",
+  "remoteMainLastObserved": "a48f45313af1e7525041d17ac3ff9a7ccdf24580",
+  "remoteMainObservation": "git ls-remote --heads origin main observed same exact SHA this turn; no refs/remotes/origin/main exists locally",
+  "activePreparedCohortExport": false,
+  "activePreparedCohortSourceExists": false,
+  "activeSourceChanges": [],
+  "scopedOwnedChanges": [
+    {
+      "status": " M",
+      "path": "data/records/fabrication-run-records/2026-10-24-issuer-revenue-kernel/packet-normalization.json"
+    },
+    {
+      "status": " M",
+      "path": "specifications/behavior.md"
+    },
+    {
+      "status": " M",
+      "path": "specifications/design.md"
+    },
+    {
+      "status": "??",
+      "path": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/admitted-order-before-value-receiving.md"
+    },
+    {
+      "status": "??",
+      "path": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/native-fabrication.stderr.context-refusal.log"
+    },
+    {
+      "status": "??",
+      "path": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/native-fabrication.stderr.log"
+    },
+    {
+      "status": "??",
+      "path": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/native-fabrication.stderr.open-question.log"
+    },
+    {
+      "status": "??",
+      "path": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/native-fabrication.stderr.user-agent-refusal.log"
+    },
+    {
+      "status": "??",
+      "path": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/native-fabrication.stdout.context-refusal.json"
+    },
+    {
+      "status": "??",
+      "path": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/native-fabrication.stdout.json"
+    },
+    {
+      "status": "??",
+      "path": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/native-fabrication.stdout.open-question.json"
+    },
+    {
+      "status": "??",
+      "path": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/native-fabrication.stdout.user-agent-refusal.json"
+    },
+    {
+      "status": "??",
+      "path": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/retained-proposal.source.mjs"
+    },
+    {
+      "status": "??",
+      "path": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/translation.attempt-1.json"
+    },
+    {
+      "status": "??",
+      "path": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/translation.context-before-uri-advance.json"
+    },
+    {
+      "status": "??",
+      "path": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/translation.json"
+    },
+    {
+      "status": "??",
+      "path": "data/logs/native-consumer-assay-logs/2026-10-24-prepared-cohort/prepared-cohort-consumer.test.mjs"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-issuer-revenue-kernel/primary-source-receiving.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/artifact.candidate.before-value-receiving.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/artifact.candidate.context-before-uri-advance.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/artifact.candidate.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/artifact.candidate.open-question.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/artifact.candidate.user-agent-refusal.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/completion.context-refusal.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/completion.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/completion.open-question.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/completion.user-agent-refusal.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/invocation.context-refusal.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/invocation.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/invocation.open-question.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/invocation.user-agent-refusal.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/qualification.attempt-1.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/qualification.before-value-receiving.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/qualification.context-before-uri-advance.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/qualification.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/qualification.open-question.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/qualification.user-agent-refusal.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/retained-proposal.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/retained-replay-plan.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/specification-preflight.json"
+    },
+    {
+      "status": "??",
+      "path": "data/records/native-consumer-assay-records/2026-10-24-prepared-cohort.json"
+    },
+    {
+      "status": "??",
+      "path": "specifications/prepared-cohort.work-order.md"
+    }
+  ],
+  "preservationOnlyUntrackedRawSources": [
+    "data/logs/procurement-logs/2026-10-24-kernel-receiving/AAPL.companyfacts.json",
+    "data/logs/procurement-logs/2026-10-24-kernel-receiving/MSFT.companyfacts.json"
+  ],
+  "supplierMainAlreadyReceived": {
+    "issuer": "a48f45313af1e7525041d17ac3ff9a7ccdf24580",
+    "alpaca": "80d0a6eb27ed411b13c50055f94fbb36132fea17",
+    "meaning": "native pure period/revision kernel and unchanged live packet at rightful issuer owner; Alpaca legacy face delegates through exact child dependency"
+  },
+  "retainedProposal": {
+    "status": "REFUSED",
+    "sourceSha256": "7b21ee4c4e6b879358e858b149b2fdb6fd70326f88dd4aca73acf543a8103e73",
+    "specification": "ni:///sha-256;zbn4SQ9WNdZOfYKUijH2WcQ_G-RV5xB3nLt4i4nqdEk",
+    "details": "retained-proposal.json"
+  },
+  "livingContract": {
+    "path": "specifications/prepared-cohort.work-order.md",
+    "sha256": "440ffd4a2ab57731a33d0142fd3a2278704896c4b7a8792a178c3e0a2fb36e2b",
+    "status": "corrected value/packet invariants; not requalified and no new inference allocated"
+  },
+  "consumerAssays": {
+    "path": "data/logs/native-consumer-assay-logs/2026-10-24-prepared-cohort/prepared-cohort-consumer.test.mjs",
+    "intendedActivationPath": "test/prepared-cohort-consumer.test.mjs",
+    "status": "not executed; includes independent numeric/packet counterexamples plus legitimate historical revision and actual ambiguity positives"
+  },
+  "executionHold": {
+    "reason": "actual native host resource admission unreceived",
+    "observationsFromIntegration": "global PSI some82.12/full71.17%; user.slice at4.286GB/4.295GB high; cumulativeOOMkill1; shared host namespace test timed out30s",
+    "prohibitedWhileUnreceived": [
+      "inference",
+      "replay",
+      "tests",
+      "public activation",
+      "R2 writes"
+    ]
+  },
+  "nextTransition": "Recover actual native resource admission, then exact original-delivery replay through retained-replay-plan.json; receive old candidate counterexamples; qualify corrected living contract before separately allocated whole-unit refinement, original consumers, publication and deployment receiving. Original income/public delivery objective remains unfinished.",
+  "incomeObservedUsd": 0,
+  "noClaimOfContinuousZeroIncrementalExpense": true
+}

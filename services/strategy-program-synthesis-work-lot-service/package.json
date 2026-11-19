@@ -1,0 +1,44 @@
+{
+  "name": "@red-cup-engineering/strategy-program-synthesis-work-lot-service",
+  "version": "0.1.10-dev.0",
+  "type": "module",
+  "description": "Contracts provider-distinct inference workers to generate bounded executable strategy programs and falsification tests from an exact evidence context.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/alpaca-engineering-services-section.git",
+    "directory": "services/strategy-program-synthesis-work-lot-service"
+  },
+  "exports": {
+    ".": "./src/synthesis.mjs",
+    "./inference-market-runtime": "./src/inference-market-runtime.mjs",
+    "./strategy-program-candidate-assay": "./src/strategy-program-candidate-assay.mjs",
+    "./src/inference-market-runtime.mjs": "./src/inference-market-runtime.mjs",
+    "./src/synthesis.mjs": "./src/synthesis.mjs",
+    "./schemas": "./src/schemas.mjs"
+  },
+  "files": [
+    "schemas/",
+    "src/"
+  ],
+  "dependencies": {
+    "@red-cup-engineering/computer-inference-engine": "^0.2.13",
+    "@red-cup-engineering/jsnode-syntax-service": "^0.1.0",
+    "@red-cup-engineering/json-schema-engineering-services-section": "^0.5.7",
+    "@red-cup-engineering/uri-engineering-services-section": "^0.1.7",
+    "@red-cup-engineering/semiotic-content-address-system": "^0.1.5"
+  },
+  "peerDependenciesMeta": {
+    "@red-cup-engineering/inference-work-lot-service": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "check": "node --check src/synthesis.mjs && node --check src/inference-market-runtime.mjs && node --check src/strategy-program-candidate-assay.mjs"
+  },
+  "private": false,
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
+}
