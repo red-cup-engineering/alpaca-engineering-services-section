@@ -27,7 +27,8 @@
     "@red-cup-engineering/computer-data-engineering-services-section": "^0.7.4",
     "@red-cup-engineering/computer-content-address-engineering-services-section": "^0.3.0",
     "@red-cup-engineering/computer-code-engineering-services-section": "^0.2.1",
-    "@red-cup-engineering/strategy-evaluation-service": "^0.1.7"
+    "@red-cup-engineering/strategy-evaluation-service": "^0.1.7",
+    "@red-cup-engineering/computer-file-engineering-services-section": "^0.8.16"
   },
   "private": false,
   "license": "MIT",

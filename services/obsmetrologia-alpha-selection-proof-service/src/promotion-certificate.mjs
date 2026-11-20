@@ -1,9 +1,10 @@
+import { makeTemporaryDirectory } from "@red-cup-engineering/computer-file-engineering-services-section/temporary-directory";
 import { spawn } from "node:child_process";
 import { createPublicKey } from "node:crypto";
 import { EMPTY_WITNESS_ROOT, identifyJsonSemanticContent } from "@red-cup-engineering/computer-code-engine/semiotic-expression-notation/semantic-content-identity";
 import { isTruthTop, readingOfSides, truthTop } from "@red-cup-engineering/metrologic/four";
-import { mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
-import { tmpdir } from "node:os";
+import { readFile, rm, writeFile } from "node:fs/promises";
+
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
@@ -193,7 +194,9 @@ async function runLean(source) {
     child.on("error", reject);
     child.on("close", (code) => { clearTimeout(timer); if (code !== 0) reject(new Error(`lean-project-build-refused:${output}`)); else resolve(); });
   });
-  const temporaryRoot = await mkdtemp(join(tmpdir(), "obsmetrologia-promotion-"));
+  const temporaryDirectory = makeTemporaryDirectory("obsmetrologia-promotion");
+  try {
+const temporaryRoot = temporaryDirectory.path;
   const sourcePath = join(temporaryRoot, "RuntimeInstance.lean");
   await writeFile(sourcePath, source, { encoding: "utf8", mode: 0o600 });
   try {
@@ -222,6 +225,10 @@ async function runLean(source) {
     });
   } finally {
     await rm(temporaryRoot, { recursive: true, force: true });
+  }
+
+  } finally {
+    temporaryDirectory.remove();
   }
 }
 

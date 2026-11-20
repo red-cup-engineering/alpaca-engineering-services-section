@@ -1,7 +1,8 @@
+import { makeTemporaryDirectory } from "@red-cup-engineering/computer-file-engineering-services-section/temporary-directory";
 import { spawn } from "node:child_process";
 import { EMPTY_WITNESS_ROOT, identifyJsonSemanticContent } from "@red-cup-engineering/computer-code-engine/semiotic-expression-notation/semantic-content-identity";
-import { mkdtemp, rm, writeFile } from "node:fs/promises";
-import { tmpdir } from "node:os";
+import { rm, writeFile } from "node:fs/promises";
+
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -21,7 +22,9 @@ export function createBubblewrapStrategyReplay({ bubblewrap = "/usr/bin/bwrap", 
     if (containsCredential(input)) throw new TypeError("credential-bearing-replay-input-refused");
     const inputBytes = JSON.stringify(input);
     if (Buffer.byteLength(inputBytes) > 1_000_000) throw new RangeError("replay-input-too-large");
-    const root = await mkdtemp(join(tmpdir(), "strategy-replay-")), strategy = join(root, "strategy.mjs");
+    const temporaryDirectory = makeTemporaryDirectory("strategy-replay");
+    try {
+const root = temporaryDirectory.path, strategy = join(root, "strategy.mjs");
     try {
       await writeFile(strategy, source, { flag: "wx", mode: 0o400 });
       const args = ["--unshare-all", "--die-with-parent", "--new-session", "--ro-bind", "/usr", "/usr", "--ro-bind", "/lib", "/lib", "--ro-bind", "/lib64", "/lib64", "--proc", "/proc", "--dev", "/dev", "--tmpfs", "/tmp", "--dir", "/work", "--ro-bind", strategy, "/work/strategy.mjs", "--ro-bind", RUNNER, "/work/runner.mjs", "--chdir", "/work", node, "/work/runner.mjs"];
@@ -40,5 +43,9 @@ export function createBubblewrapStrategyReplay({ bubblewrap = "/usr/bin/bwrap", 
     } finally {
       await rm(root, { recursive: true, force: true });
     }
-  };
+  
+    } finally {
+      temporaryDirectory.remove();
+    }
+};
 }
