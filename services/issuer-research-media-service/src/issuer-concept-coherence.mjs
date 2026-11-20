@@ -1,3 +1,4 @@
+import { compareText } from "@red-cup-engineering/semiotic-content-address-system";
 /**
  * @packageDocumentation
  *
@@ -22,14 +23,14 @@ export const SEC_USER_AGENT = "561 Group group@561.group";
 
 const CONCEPT = /^[A-Za-z][A-Za-z0-9]{1,199}$/;
 const TICKER = /^[A-Za-z][A-Za-z0-9.-]{0,9}$/;
-const lexical = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
+
 const cellOf = (unit, fact) => `${unit}|${fact.start ?? ""}..${fact.end}`;
 const recordOf = (fact) => `${fact.form} ${fact.accn}`;
 const inputError = (message) => Object.assign(new TypeError(message), { status: 400, code: "invalid-request" });
 
 /** One certificate per value change of a cell, in filing order. */
 function transitions(facts) {
-  const ordered = [...facts].sort((a, b) => lexical(a.filed, b.filed) || lexical(a.accn, b.accn));
+  const ordered = [...facts].sort((a, b) => compareText(a.filed, b.filed) || compareText(a.accn, b.accn));
   const changes = [];
   for (let i = 1; i < ordered.length; i += 1) {
     if (String(ordered[i].val) !== String(ordered[i - 1].val)) changes.push([ordered[i - 1], ordered[i]]);
@@ -99,7 +100,7 @@ export async function issuerConceptCoherence(document, { observedAt, source } = 
   }
   const certificates = [];
   let sharedCells = 0;
-  for (const [cell, facts] of [...cells].sort(([a], [b]) => lexical(a, b))) {
+  for (const [cell, facts] of [...cells].sort(([a], [b]) => compareText(a, b))) {
     if (new Set(facts.map((fact) => fact.accn)).size > 1) sharedCells += 1;
     for (const [left, right] of transitions(facts)) {
       if (!obstructs(cell, left, right, code)) continue;
@@ -117,7 +118,7 @@ export async function issuerConceptCoherence(document, { observedAt, source } = 
   const borders = certificates.filter((certificate) => certificate.kind === "border");
   const largest = [...borders]
     .filter((certificate) => certificate.relativeChange !== null)
-    .sort((a, b) => Math.abs(b.relativeChange) - Math.abs(a.relativeChange) || lexical(a.cell, b.cell))
+    .sort((a, b) => Math.abs(b.relativeChange) - Math.abs(a.relativeChange) || compareText(a.cell, b.cell))
     .slice(0, 5)
     .map(({ cell, left, right, relativeChange: change }) => ({ cell, from: left.value, to: right.value, relativeChange: change, revisedBy: right.record }));
   const sheet = {

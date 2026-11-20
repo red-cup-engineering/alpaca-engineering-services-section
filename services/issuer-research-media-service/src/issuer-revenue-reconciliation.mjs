@@ -1,3 +1,4 @@
+import { compareText } from "@red-cup-engineering/semiotic-content-address-system";
 import { isRecord } from "@red-cup-engineering/signcell/values";
 /*
  * issuer-revenue-period-reconciliation; selected module: src/issuer-revenue-reconciliation.mjs.
@@ -42,7 +43,7 @@ import { isRecord } from "@red-cup-engineering/signcell/values";
 const CONCEPTS = Object.freeze(['Revenues', 'SalesRevenueNet', 'RevenueFromContractWithCustomerExcludingAssessedTax']);
 const DAY = 86400000;
 
-const lexical = (a, b) => a < b ? -1 : a > b ? 1 : 0;
+
 
 function calendarDay(value) {
   if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return null;
@@ -58,9 +59,9 @@ function validIdentity(value, requested) {
 }
 
 function compareWitnesses(a, b) {
-  return lexical(a.concept, b.concept) || lexical(a.filed, b.filed) ||
-    lexical(a.accession, b.accession) || (a.value < b.value ? -1 : a.value > b.value ? 1 : 0) ||
-    lexical(a.start, b.start) || lexical(a.form, b.form);
+  return compareText(a.concept, b.concept) || compareText(a.filed, b.filed) ||
+    compareText(a.accession, b.accession) || (a.value < b.value ? -1 : a.value > b.value ? 1 : 0) ||
+    compareText(a.start, b.start) || compareText(a.form, b.form);
 }
 
 function equalWitness(a, b) {
