@@ -124,12 +124,12 @@ export function createAlpacaNewsReadService(env = process.env, {
       orderEffect: false,
       secretBytesReturned: false,
     });
-    const record = identified(body);
-    const independentBooksRecord = await recordObservation({ type: "alpaca-news-observed", value: record, recordedAt: record.observedAt });
-    if (!independentBooksRecord?.id && !independentBooksRecord?.graph && !independentBooksRecord?.recordReceipt) {
+    const receipt = identified(body);
+    const independentBooksReceipt = await recordObservation({ type: "alpaca-news-observed", value: receipt, recordedAt: receipt.observedAt });
+    if (!independentBooksReceipt?.id && !independentBooksReceipt?.graph && !independentBooksReceipt?.recordReceipt) {
       throw new TypeError("news-independent-book-receipt-required");
     }
-    return Object.freeze({ ...record, independentBooksReceipt: scrub(independentBooksRecord) });
+    return Object.freeze({ ...receipt, independentBooksReceipt: scrub(independentBooksReceipt) });
   };
 
   return Object.freeze({ originatingActor: "urn:ame:alpaca-news-read-service", readNews });

@@ -15,9 +15,9 @@ function containsCredential(value, seen = new Set()) {
 }
 
 export function createBubblewrapStrategyReplay({ bubblewrap = "/usr/bin/bwrap", node = "/usr/bin/node" } = {}) {
-  return async function replay({ source, staticAssay: staticCheck, input, maximumWallClockMs = 5_000 } = {}) {
-    if (staticCheck?.type !== "StrategyProgramStaticAssay" || staticCheck.admitted !== true || typeof source !== "string" || !Number.isInteger(maximumWallClockMs) || maximumWallClockMs < 100 || maximumWallClockMs > 60_000) throw new TypeError("admitted-program-and-bound-required");
-    if (staticCheck.source !== sourceId(source)) throw new TypeError("static-assay-source-binding-invalid");
+  return async function replay({ source, staticAssay, input, maximumWallClockMs = 5_000 } = {}) {
+    if (staticAssay?.type !== "StrategyProgramStaticAssay" || staticAssay.admitted !== true || typeof source !== "string" || !Number.isInteger(maximumWallClockMs) || maximumWallClockMs < 100 || maximumWallClockMs > 60_000) throw new TypeError("admitted-program-and-bound-required");
+    if (staticAssay.source !== sourceId(source)) throw new TypeError("static-assay-source-binding-invalid");
     if (containsCredential(input)) throw new TypeError("credential-bearing-replay-input-refused");
     const inputBytes = JSON.stringify(input);
     if (Buffer.byteLength(inputBytes) > 1_000_000) throw new RangeError("replay-input-too-large");
@@ -32,11 +32,11 @@ export function createBubblewrapStrategyReplay({ bubblewrap = "/usr/bin/bwrap", 
       child.stdout.on("data", (chunk) => { stdout += chunk; if (stdout.length > 1_000_000) { exceeded = true; child.kill("SIGKILL"); } });
       child.stderr.on("data", (chunk) => { stderr += chunk; if (stderr.length > 64_000) child.kill("SIGKILL"); });
       const status = await new Promise((accept, reject) => { child.once("error", reject); child.once("close", (code, signal) => accept({ code, signal })); });
-      if (exceeded) return Object.freeze({ type: "StrategyProgramReplayRefusal", version: 1, source: staticCheck.source, reason: "sandbox-output-too-large", admitted: false });
-      if (status.code !== 0) return Object.freeze({ type: "StrategyProgramReplayRefusal", version: 1, source: staticCheck.source, reason: status.signal ? `terminated:${status.signal}` : `sandbox-exit:${status.code}`, diagnostic: stderr.slice(0, 1_000), admitted: false });
+      if (exceeded) return Object.freeze({ type: "StrategyProgramReplayRefusal", version: 1, source: staticAssay.source, reason: "sandbox-output-too-large", admitted: false });
+      if (status.code !== 0) return Object.freeze({ type: "StrategyProgramReplayRefusal", version: 1, source: staticAssay.source, reason: status.signal ? `terminated:${status.signal}` : `sandbox-exit:${status.code}`, diagnostic: stderr.slice(0, 1_000), admitted: false });
       let output;
       try { output = JSON.parse(stdout); } catch { throw new TypeError("sandbox-output-invalid"); }
-      return Object.freeze({ type: "DeterministicStrategyProgramReplay", version: 1, source: staticCheck.source, output, network: false, hostWrites: false, deterministicDoubleRun: true, maximumWallClockMs, executionEffect: "sandbox-only" });
+      return Object.freeze({ type: "DeterministicStrategyProgramReplay", version: 1, source: staticAssay.source, output, network: false, hostWrites: false, deterministicDoubleRun: true, maximumWallClockMs, executionEffect: "sandbox-only" });
     } finally {
       await rm(root, { recursive: true, force: true });
     }

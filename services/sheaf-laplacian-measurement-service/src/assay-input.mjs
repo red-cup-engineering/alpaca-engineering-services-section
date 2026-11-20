@@ -41,7 +41,7 @@ function matrix(value, rows, cols, label) {
 }
 /** Pure prepayment admission. Restrict sizes before allocating matrix or running
  * rational elimination. This is a deliberately narrow 1-skeleton over Q. */
-export function validateFiniteCellularSheaf(input) {
+export function admitFiniteCellularSheaf(input) {
   object(input, "sheaf input", ["vertices", "edges", "observations", "state", "metrics"]);
   if (!Array.isArray(input.vertices) || input.vertices.length > MAX_VERTICES ||
       !Array.isArray(input.edges) || input.edges.length > MAX_EDGES)

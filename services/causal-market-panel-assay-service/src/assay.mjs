@@ -7,7 +7,7 @@ const numeric = (value, label) => {
   return number;
 };
 
-export function checkCausalPanel({ seriesByEntity, asOf, minimumEntities = 2, minimumObservations = 3 } = {}) {
+export function assayCausalPanel({ seriesByEntity, asOf, minimumEntities = 2, minimumObservations = 3 } = {}) {
   const cutoff = Date.parse(asOf);
   if (!Number.isFinite(cutoff) || !seriesByEntity || typeof seriesByEntity !== "object" || Array.isArray(seriesByEntity) ||
       !Number.isSafeInteger(minimumEntities) || minimumEntities < 1 ||

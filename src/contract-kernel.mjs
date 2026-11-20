@@ -74,7 +74,7 @@ export function formWalletRoleGrant(input) {
   return Object.freeze({ id: digest("brokerage-control.wallet-role-grant", grant), ...grant });
 }
 
-export function validateMeteredComputePurchase({ walletGrant, quote, alreadySpent = 0 }) {
+export function admitMeteredComputePurchase({ walletGrant, quote, alreadySpent = 0 }) {
   assertNonCredential({ walletGrant, quote });
   if (walletGrant?.role !== "compute-payment") throw new TypeError("compute-payment-wallet-grant-required");
   const amount = positive(quote?.price?.amount, "quote-price");
@@ -97,7 +97,7 @@ export function formAggressiveOrderIntent({ mandate, evidence, symbol, side, not
   return Object.freeze({ id: digest("brokerage-control.aggressive-order-intent", intent), ...intent });
 }
 
-export function validateVenueOperation({ mandate, authorityGrant, operation }) {
+export function admitVenueOperation({ mandate, authorityGrant, operation }) {
   assertNonCredential({ mandate, authorityGrant, operation });
   if (authorityGrant?.mandate !== mandate?.id || authorityGrant?.revoked === true) throw new TypeError("current-mandate-authority-grant-required");
   if (!BROKERAGE_CONTROL_PRODUCT_CLASS.venueAdapters.includes(authorityGrant.adapter)) throw new TypeError("unsupported-venue-adapter");
@@ -107,8 +107,8 @@ export function validateVenueOperation({ mandate, authorityGrant, operation }) {
     const notional = positive(operation.notional, "operation-notional");
     if (notional > mandate.risk.maximumOrderNotional) throw new RangeError("live-order-notional-exceeds-mandate");
   }
-  const validation = { type: "VenueOperationAdmission", mandate: mandate.id, authorityGrant: authorityGrant.id, adapter: authorityGrant.adapter, operationDigest: digest("brokerage-control.venue-operation", operation), credentialReference: text(authorityGrant.credentialReference, "credential-reference"), rule: "reference crosses; credential bytes remain inside venue adapter" };
-  return Object.freeze({ id: digest("brokerage-control.venue-operation-admission", validation), ...validation });
+  const admission = { type: "VenueOperationAdmission", mandate: mandate.id, authorityGrant: authorityGrant.id, adapter: authorityGrant.adapter, operationDigest: digest("brokerage-control.venue-operation", operation), credentialReference: text(authorityGrant.credentialReference, "credential-reference"), rule: "reference crosses; credential bytes remain inside venue adapter" };
+  return Object.freeze({ id: digest("brokerage-control.venue-operation-admission", admission), ...admission });
 }
 
 export function x402DiscoveryOffer({ service, provider, price, network, inputSchema, outputSchema }) {

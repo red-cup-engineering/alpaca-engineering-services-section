@@ -20,12 +20,12 @@ export function createStrategySynthesisProvider(env = process.env, dependencies 
   };
   const provider = async (request) => {
     const output = await (await resolveMarket())(bounded(request));
-    const result = validateStrategyProgramSynthesisResult(output);
-    if (!result.ok) throw new TypeError(`strategy-program-synthesis-result-invalid:${result.errors.map(({ pointer, keyword }) => `${pointer || "/"}:${keyword}`).join(",")}`);
+    const verdict = validateStrategyProgramSynthesisResult(output);
+    if (!verdict.ok) throw new TypeError(`strategy-program-synthesis-result-invalid:${verdict.errors.map(({ pointer, keyword }) => `${pointer || "/"}:${keyword}`).join(",")}`);
     const candidates = Object.freeze(output.candidates.map((candidate) => {
-      const staticCheck = assayStrategyProgram({ source: candidate.candidate.strategySource, authorActor: candidate.provider });
-      if (!staticCheck.admitted) throw new TypeError(`strategy-program-static-assay-refused:${staticCheck.problems?.join(",") ?? staticCheck.reason}`);
-      return Object.freeze({ ...candidate, staticAssay: staticCheck });
+      const staticAssay = assayStrategyProgram({ source: candidate.candidate.strategySource, authorActor: candidate.provider });
+      if (!staticAssay.admitted) throw new TypeError(`strategy-program-static-assay-refused:${staticAssay.problems?.join(",") ?? staticAssay.reason}`);
+      return Object.freeze({ ...candidate, staticAssay });
     }));
     const assayed = Object.freeze({ ...output, candidates });
     return Object.freeze({ id: semanticId(assayed), ...assayed });

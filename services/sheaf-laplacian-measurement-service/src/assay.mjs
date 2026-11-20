@@ -1,18 +1,18 @@
 import { cellularSheaf, cellularSheafCohomology, extendCellularSheafSection,
   sheafLaplacian, weightedSheafLaplacian, weightedSheafDirichlet,
   coboundary, apply } from "@red-cup-engineering/signgraph/cellular-sheaf";
-import { validateFiniteCellularSheaf } from "./assay-input.mjs";
+import { admitFiniteCellularSheaf } from "./assay-input.mjs";
 
 const SOURCE = "@red-cup-engineering/signgraph/cellular-sheaf";
-function exactRecord(input) {
-  const validated = validateFiniteCellularSheaf(input);
-  const sheaf = cellularSheaf(validated);
+function exactReceipt(input) {
+  const admitted = admitFiniteCellularSheaf(input);
+  const sheaf = cellularSheaf(admitted);
   // Exact rational rank and lifted/obstructed section are computed by the
   // original SignGraph owner. No independent or floating-point rank estimate.
   const cohomology = cellularSheafCohomology(sheaf);
-  const extension = validated.observations.length
-    ? extendCellularSheafSection(sheaf, validated.observations) : null;
-  return { admitted: validated, sheaf, receipt: {
+  const extension = admitted.observations.length
+    ? extendCellularSheafSection(sheaf, admitted.observations) : null;
+  return { admitted, sheaf, receipt: {
     recordType: "561-group.finite-cellular-sheaf-assay.v1",
     mathematicalCarrier: "finite graph (1-dimensional CW complex), rational vector stalks",
     coefficientField: "Q", sourceOperation: SOURCE,
@@ -20,41 +20,41 @@ function exactRecord(input) {
     dimensions: { c0: sheaf.c0, c1: sheaf.c1, vertices: sheaf.vertices.length, edges: sheaf.edges.length },
     cohomology: { h0: cohomology.h0, h1: cohomology.h1, rankD0: cohomology.rank },
     extension,
-    limits: validated.bounds,
+    limits: admitted.bounds,
   } };
 }
 /** Finite 1-skeleton rational H0/H1 and optional source-indexed extension witness. */
-export function checkFiniteCellularSheaf(input) {
-  return exactRecord(input).receipt;
+export function assayFiniteCellularSheaf(input) {
+  return exactReceipt(input).receipt;
 }
 /** Floating-point Laplacian, explicitly separated from exact rational H0/H1.
  * An SPD metric is admitted by the original SignGraph math engine. */
-export function checkFiniteSheafLaplacian(input) {
-  const { admitted: validated, sheaf, receipt: record } = exactRecord(input);
-  const weighted = validated.metrics !== undefined;
+export function assayFiniteSheafLaplacian(input) {
+  const { admitted, sheaf, receipt } = exactReceipt(input);
+  const weighted = admitted.metrics !== undefined;
   const laplacian = weighted
-    ? weightedSheafLaplacian(sheaf, validated.metrics)
+    ? weightedSheafLaplacian(sheaf, admitted.metrics)
     : sheafLaplacian(sheaf);
   const numerical = {
     qualification: "IEEE-754 floating-point approximation, NOT an exact proof or certified spectrum",
     operator: weighted ? "delta-transpose W delta (SPD metrics)" : "delta-transpose delta",
     matrix: laplacian,
   };
-  if (validated.state !== undefined) {
-    const delta = coboundary(sheaf), residual = apply(delta, validated.state);
+  if (admitted.state !== undefined) {
+    const delta = coboundary(sheaf), residual = apply(delta, admitted.state);
     const identityMetrics = sheaf.edges.map(edge =>
       Array.from({ length: edge.dim }, (_, i) =>
         Array.from({ length: edge.dim }, (_, j) => Number(i === j))));
-    const energy = weightedSheafDirichlet(sheaf, validated.metrics ?? identityMetrics, validated.state);
-    numerical.state = validated.state;
+    const energy = weightedSheafDirichlet(sheaf, admitted.metrics ?? identityMetrics, admitted.state);
+    numerical.state = admitted.state;
     numerical.residual = residual;
-    numerical.laplacianImage = apply(laplacian, validated.state);
+    numerical.laplacianImage = apply(laplacian, admitted.state);
     numerical.dirichlet = energy;
   }
-  return { ...record, recordType: "561-group.finite-sheaf-laplacian-assay.v1", numerical };
+  return { ...receipt, recordType: "561-group.finite-sheaf-laplacian-assay.v1", numerical };
 }
 /** Fail closed before x402 verification, charge or supplier invocation. */
-export { validateFiniteCellularSheaf } from "./assay-input.mjs";
+export { admitFiniteCellularSheaf } from "./assay-input.mjs";
 
 /** Native x402 Autosell's ONE source-owned operation contract. Its package
  * declaration supplies only commerce terms; input/output come from here. */
@@ -95,8 +95,8 @@ const laplacianOutputSchema = { type: "object", required: ["recordType", "cohomo
 export const catalog = Object.freeze({ operations: Object.freeze({
   "finite-sheaf-cohomology": Object.freeze({ name: "finite-sheaf-cohomology",
     description: "Exact rational H0/H1 and source-indexed extension/obstruction for a bounded finite one-dimensional cellular sheaf. Not kernel-certified Lean proof.",
-    inputSchema, outputSchema: exactOutputSchema, operation: checkFiniteCellularSheaf }),
+    inputSchema, outputSchema: exactOutputSchema, operation: assayFiniteCellularSheaf }),
   "finite-sheaf-laplacian": Object.freeze({ name: "finite-sheaf-laplacian",
     description: "IEEE-754 sheaf Laplacian and optional Dirichlet energy with separately exact rational H0/H1. Numerical results are not proof certificates.",
-    inputSchema, outputSchema: laplacianOutputSchema, operation: checkFiniteSheafLaplacian }),
+    inputSchema, outputSchema: laplacianOutputSchema, operation: assayFiniteSheafLaplacian }),
 }) });

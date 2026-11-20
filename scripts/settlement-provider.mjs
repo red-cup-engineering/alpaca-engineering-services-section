@@ -29,10 +29,10 @@ export function createUnionConsiderationSettlementProvider({ consumeGrant, recor
       grant: grant.id, customer: contract.customer, beneficiary: contract.provider, asset: grant.asset, unit: grant.unit, amount: String(grant.amount),
       output: output.id, independentWitness: witness.id, consumptionReceipt: consumed.receipt, consumedAt: consumed.consumedAt,
       conversionRate: null, customerBrokerageAssetAuthority: false, paymentCredentialCustody: false };
-    const record = Object.freeze(identify(body));
-    const recorded = await recordSettlement(record);
+    const receipt = Object.freeze(identify(body));
+    const recorded = await recordSettlement(receipt);
     if (!recorded?.id && !recorded?.graph && !recorded?.recordReceipt) throw new TypeError("union-settlement-independent-record-receipt-required");
-    return Object.freeze({ success: true, contract: contract.id, receipt: record.id, settlement: record, independentRecord: recorded.id ?? recorded.graph ?? recorded.recordReceipt });
+    return Object.freeze({ success: true, contract: contract.id, receipt: receipt.id, settlement: receipt, independentRecord: recorded.id ?? recorded.graph ?? recorded.recordReceipt });
   };
   Object.defineProperties(settle, { originatingActor: { value: settlementActor, enumerable: true }, witnessActor: { value: witnessActor, enumerable: true } });
   return Object.freeze(settle);

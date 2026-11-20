@@ -23,7 +23,7 @@ function factAvailableAt(fact, citedReferences, observedAt) {
   return true;
 }
 
-export function checkResearchSections({ committee, allowedEvidenceReferences, evidenceFacts, universe, horizonDays, observedAt, maximumAbsoluteExpectedReturn = 0.1 } = {}) {
+export function assayResearchSections({ committee, allowedEvidenceReferences, evidenceFacts, universe, horizonDays, observedAt, maximumAbsoluteExpectedReturn = 0.1 } = {}) {
   const request = { committee, allowedEvidenceReferences, evidenceFacts, universe, horizonDays, observedAt, maximumAbsoluteExpectedReturn };
   requireValidGroundingCarrier(request, "research-section-grounding-request", validateResearchSectionGroundingRequest);
   const facts = new Map();
@@ -32,7 +32,7 @@ export function checkResearchSections({ committee, allowedEvidenceReferences, ev
     if (facts.has(fact.id)) throw new TypeError("duplicate-research-fact-id");
     facts.set(fact.id, fact);
   }
-  const evidence = new Set(allowedEvidenceReferences), providers = new Set(), validated = [], residues = [];
+  const evidence = new Set(allowedEvidenceReferences), providers = new Set(), admitted = [], residues = [];
   for (const seat of committee.seats) {
     if (providers.has(seat.provider)) { residues.push({ role: seat.role, provider: seat.provider, reason: "repeated-provider" }); continue; }
     providers.add(seat.provider);
@@ -44,10 +44,10 @@ export function checkResearchSections({ committee, allowedEvidenceReferences, ev
         return factAvailableAt(fact, section.evidenceReferences, observedAt);
       });
       if (!valid) { residues.push({ role: seat.role, provider: seat.provider, symbol: section.symbol, reason: "grounding-or-plausibility-refused" }); continue; }
-      validated.push(Object.freeze({ provider: seat.provider, role: seat.role, symbol: section.symbol, horizonDays, expectedExcessReturn: Number(section.expectedExcessReturn), confidence: Number(section.confidence), observedAt: new Date(observedAt).toISOString(), evidenceReferences: Object.freeze([...section.evidenceReferences]), basisFactIds: Object.freeze([...section.basisFactIds]), status: "model-judgment-admitted-for-descent-not-truth" }));
+      admitted.push(Object.freeze({ provider: seat.provider, role: seat.role, symbol: section.symbol, horizonDays, expectedExcessReturn: Number(section.expectedExcessReturn), confidence: Number(section.confidence), observedAt: new Date(observedAt).toISOString(), evidenceReferences: Object.freeze([...section.evidenceReferences]), basisFactIds: Object.freeze([...section.basisFactIds]), status: "model-judgment-admitted-for-descent-not-truth" }));
     }
   }
-  const result = { type: "ResearchSectionGroundingAssay", version: 1, admittedSections: Object.freeze(validated), residues: Object.freeze(residues), four: Object.freeze({ positiveEvidence: validated.length > 0, negativeEvidence: residues.length > 0 || committee.residues.length > 0 }), truthEstablished: false, allocationEstablished: false, executionEstablished: false, effect: "assay-only" };
+  const result = { type: "ResearchSectionGroundingAssay", version: 1, admittedSections: Object.freeze(admitted), residues: Object.freeze(residues), four: Object.freeze({ positiveEvidence: admitted.length > 0, negativeEvidence: residues.length > 0 || committee.residues.length > 0 }), truthEstablished: false, allocationEstablished: false, executionEstablished: false, effect: "assay-only" };
   requireValidGroundingCarrier(result, "research-section-grounding-result", validateResearchSectionGroundingResult);
   return Object.freeze(result);
 }

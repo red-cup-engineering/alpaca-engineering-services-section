@@ -36,7 +36,7 @@ import {
 // naming these three fixed ni:///sha-256 identifiers directly.
 const DIVINATION_PRECONDITION = "ni:///sha-256;ntxOpkBcnbGVC6NeD1y4X54yLK7GmBmNf2ul7IhJV2I";
 const DIVINATION_POSTCONDITION = "ni:///sha-256;am0o7fpff-A8Q_SdJFQDw0zJYBdAr8Q8EQEw4V0dWj4";
-const DIVINATION_REJECTION = "ni:///sha-256;IebXWZ-MmX6I7pLllQ4vNRHP9SdWr32AE_pC-w15YMk";
+const DIVINATION_REFUSAL = "ni:///sha-256;IebXWZ-MmX6I7pLllQ4vNRHP9SdWr32AE_pC-w15YMk";
 const DEFAULT_DIVINATION_BASE_URL = "http://127.0.0.1:8798";
 const termContent = (term, objectKind) => identifyNormalizedSemanticContent({ objectKind, semanticType: inferTy([], term), term, witnessRoot: EMPTY_WITNESS_ROOT });
 const termId = (term, objectKind) => termContent(term, objectKind).token;
@@ -45,7 +45,7 @@ function divinationProposalEnvelope(date, tradition, callerAccount) {
   const operation = ["pair", ["mark", date], ["mark", tradition]];
   const cell = Object.freeze({
     law: DIVINATION_CONTRACT, caller: callerAccount, provider: DIVINATION_ACCOUNT,
-    precondition: DIVINATION_PRECONDITION, operation: termId(operation, "divination.daily-reading-operation"), postcondition: DIVINATION_POSTCONDITION, refusal: DIVINATION_REJECTION,
+    precondition: DIVINATION_PRECONDITION, operation: termId(operation, "divination.daily-reading-operation"), postcondition: DIVINATION_POSTCONDITION, refusal: DIVINATION_REFUSAL,
     evidenceRoot: termId(["mark", "proposal-at-four-bottom"], "brokerage-control.evidence-root"), outcome: { positiveEvidence: false, negativeEvidence: false },
     measures: Object.freeze([
       { dimension: "asset", quantity: "0", unit: "none" }, { dimension: "compute", quantity: "1", unit: "daily-reading" },

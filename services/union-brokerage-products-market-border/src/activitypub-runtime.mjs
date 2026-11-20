@@ -37,7 +37,7 @@ export function createUnionMarketState({ stateRoot, now = () => new Date().toISO
     receipt(id) { const path = join(contractRoot(id), "receipt.json"); return existsSync(path) ? read(path) : null; },
     work(id) { const path = join(contractRoot(id), "work.json"); return existsSync(path) ? read(path) : null; },
     recordWork(id, work) { const path = join(contractRoot(id), "work.json"); if (createOnly(path, work)) return work; const existing = read(path); if (canonical(existing) !== canonical(work)) throw new TypeError("union-market-work-conflict"); return existing; },
-    recordReceipt(id, record) { const path = join(contractRoot(id), "receipt.json"); if (createOnly(path, record)) return record; const existing = read(path); if (canonical(existing) !== canonical(record)) throw new TypeError("union-market-receipt-conflict"); return existing; },
+    recordReceipt(id, receipt) { const path = join(contractRoot(id), "receipt.json"); if (createOnly(path, receipt)) return receipt; const existing = read(path); if (canonical(existing) !== canonical(receipt)) throw new TypeError("union-market-receipt-conflict"); return existing; },
     response(id, kind, create) { const path = join(contractRoot(id), `${kind}-response.json`); if (existsSync(path)) return Object.freeze({ value: read(path), created: false }); const value = create(); if (!createOnly(path, value)) return Object.freeze({ value: read(path), created: false }); return Object.freeze({ value, created: true }); },
     confirmedEffect(id, effect) { const path = join(contractRoot(id), `${effect}-confirmation.json`); return existsSync(path) ? read(path) : null; },
     async effect(id, effect, payload, perform) { const directory = contractRoot(id), attemptPath = join(directory, `${effect}-attempt.json`), confirmationPath = join(directory, `${effect}-confirmation.json`), payloadDigest = semanticId(payload);
@@ -70,16 +70,16 @@ export function createUnionBrokerageActivityPubCallbacks({ origin, identifier, a
         const contract = await contractUnionBrokerageOffer({ offer, customer: remoteActor, request: purchase.request, considerationGrant: purchase.considerationGrant, acceptedAt: purchase.acceptedAt, provider });
         state.claim(contract, sourceActivity, response); const prior = state.receipt(contract.id); let prepared = state.work(contract.id);
         if (!prior && !prepared) { const output = await provider(contract.request), recorded = await recordDelivery({ originatingActor: provider.originatingActor, inputs: [contract.request], output, externalEvidence: provider.externalEvidence(contract.request, output) }); prepared = state.recordWork(contract.id, { output, witness: recorded.witness ?? recorded }); }
-        const record = prior ?? await deliverUnionBrokerageContract({ contract, provider, prepared, settle: (input) => state.effect(contract.id, "settlement", { contract: contract.id, output: input.output.id, witness: input.witness.id }, async () => settle(input)).then((confirmation) => confirmation.result) });
-        state.recordReceipt(contract.id, record); const accepted = state.response(contract.id, "accept", () => ({ type: "UnionBrokerageActivityPubAcceptance", version: 1, contract: contract.id, sourceActivity, deliveryReceipt: record, recordedAt: new Date().toISOString() }));
-        committed = { contract: contract.id, receipt: record.id, acceptance: accepted.value };
-        if (!prior) await recordEvent({ type: "union-brokerage-purchase-delivered", sourceActivity, contract: contract.id, receipt: record.id, recordedAt: accepted.value.recordedAt });
+        const receipt = prior ?? await deliverUnionBrokerageContract({ contract, provider, prepared, settle: (input) => state.effect(contract.id, "settlement", { contract: contract.id, output: input.output.id, witness: input.witness.id }, async () => settle(input)).then((confirmation) => confirmation.result) });
+        state.recordReceipt(contract.id, receipt); const accepted = state.response(contract.id, "accept", () => ({ type: "UnionBrokerageActivityPubAcceptance", version: 1, contract: contract.id, sourceActivity, deliveryReceipt: receipt, recordedAt: new Date().toISOString() }));
+        committed = { contract: contract.id, receipt: receipt.id, acceptance: accepted.value };
+        if (!prior) await recordEvent({ type: "union-brokerage-purchase-delivered", sourceActivity, contract: contract.id, receipt: receipt.id, recordedAt: accepted.value.recordedAt });
         await deliverTyped("Accept", response, accepted.value);
-        return Object.freeze({ disposition: "accepted", contract: contract.id, receipt: record.id });
+        return Object.freeze({ disposition: "accepted", contract: contract.id, receipt: receipt.id });
       } catch (error) {
         if (committed) return Object.freeze({ disposition: "accepted-response-pending", contract: committed.contract, receipt: committed.receipt, reason: error.message });
-        const rejected = state.response(sourceActivity, "reject", () => ({ type: "UnionBrokerageActivityPubRefusal", version: 1, sourceActivity, reason: error.message, recordedAt: new Date().toISOString() }));
-        if (rejected.created) await recordEvent(rejected.value); if (response) await deliverTyped("Reject", response, rejected.value); return Object.freeze({ disposition: "rejected", reason: rejected.value.reason });
+        const refused = state.response(sourceActivity, "reject", () => ({ type: "UnionBrokerageActivityPubRefusal", version: 1, sourceActivity, reason: error.message, recordedAt: new Date().toISOString() }));
+        if (refused.created) await recordEvent(refused.value); if (response) await deliverTyped("Reject", response, refused.value); return Object.freeze({ disposition: "rejected", reason: refused.value.reason });
       }
     },
   });

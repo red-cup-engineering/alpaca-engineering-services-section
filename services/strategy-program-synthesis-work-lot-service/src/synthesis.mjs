@@ -29,7 +29,7 @@ export function createStrategyProgramSynthesisMarket({ contractInference }) {
     validateStrategyProgramSynthesisRequest(request);
     const candidates = [], residues = [], excludedProviders = [];
     for (let index = 0; index < request.populationSize; index += 1) {
-      const job = Object.freeze({
+      const lot = Object.freeze({
         workLotId: `urn:union:strategy-program-synthesis:${request.contextProduct.split(";")[1]}:${index}`,
         customer: request.customerActor,
         workType: "software-engineering",
@@ -59,7 +59,7 @@ export function createStrategyProgramSynthesisMarket({ contractInference }) {
         enforceProviderSchema: true,
       });
       let exchange;
-      try { exchange = await contractInference(job); } catch (error) { residues.push(Object.freeze({ index, disposition: "transport-refusal", reason: error.message })); continue; }
+      try { exchange = await contractInference(lot); } catch (error) { residues.push(Object.freeze({ index, disposition: "transport-refusal", reason: error.message })); continue; }
       const result = exchange?.result ?? exchange, provider = actorOf(result);
       const candidate = result?.candidate ?? (result?.outcome?.startsWith?.("candidate-pending") ? result.candidate : null);
       if (!provider || !candidate) {

@@ -240,14 +240,14 @@ export function createMandatedPortfolioService({ resolveMandate, readPrincipalAc
           contract: boundContract, authorityGrant: boundGrant, intent,
         }),
       });
-      const record = await recordCycle({
+      const recordReceipt = await recordCycle({
         type: "mandated-portfolio-cycle-completed", mandate: mandate.id ?? null,
         observation: rawObservation.id, cycle, recordedAt: clock(),
       });
-      if (!record?.id && !record?.graph && !record?.recordReceipt) {
+      if (!recordReceipt?.id && !recordReceipt?.graph && !recordReceipt?.recordReceipt) {
         throw new TypeError("mandated-portfolio-cycle-record-receipt-required");
       }
-      return Object.freeze({ ...cycle, observation: rawObservation.id, recordReceipt: record });
+      return Object.freeze({ ...cycle, observation: rawObservation.id, recordReceipt });
     },
   });
 }

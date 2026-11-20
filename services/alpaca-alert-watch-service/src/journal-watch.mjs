@@ -16,7 +16,7 @@ function readBytes(path) {
   return readFileSync(path);
 }
 
-const FAILURE_DECISIONS = new Set([
+const FAILURE_DISPOSITIONS = new Set([
   "clock-read-error",
   "clock-read-refused",
   "positions-read-refused",
@@ -29,7 +29,7 @@ const FAILURE_DECISIONS = new Set([
 export function isAlertWorthyEntry(entry) {
   if (entry === null || typeof entry !== "object") return false;
   if (entry.guard === "refused" || entry.guard === "error") return true;
-  if (entry.guard === "passed" && FAILURE_DECISIONS.has(entry.disposition)) return true;
+  if (entry.guard === "passed" && FAILURE_DISPOSITIONS.has(entry.disposition)) return true;
   if (entry.guard === "passed" && entry.order !== null && entry.order !== undefined) {
     const status = entry.response?.status;
     if (!(Number.isInteger(status) && status >= 200 && status < 300)) return true;
@@ -38,11 +38,11 @@ export function isAlertWorthyEntry(entry) {
 }
 
 /** Human-readable one-line summary of an alert-worthy entry, for a Discord message body. */
-export function describeAlertEntry(logLabel, entry) {
+export function describeAlertEntry(journalLabel, entry) {
   const bits = [entry.disposition ?? entry.guard, entry.reason].filter(Boolean);
   const status = entry.response?.status;
   if (status !== undefined) bits.push(`venue-status=${status}`);
-  return `[${logLabel}] ${entry.timestamp ?? "unknown-time"}: ${bits.join(" -- ")}`;
+  return `[${journalLabel}] ${entry.timestamp ?? "unknown-time"}: ${bits.join(" -- ")}`;
 }
 
 /**
@@ -53,7 +53,7 @@ export function describeAlertEntry(logLabel, entry) {
  * Missing files are treated as "nothing new" rather than an error, since a
  * loop that has never run yet has no journal.
  */
-export function readNewLogEntries(path, sinceOffset = 0) {
+export function readNewJournalEntries(path, sinceOffset = 0) {
   if (!Number.isSafeInteger(sinceOffset) || sinceOffset < 0) throw new TypeError("journal offset must be a nonnegative safe integer");
   let bytes;
   try {

@@ -3,10 +3,10 @@ import { mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { createAgentSectionDescentCheck } from "@red-cup-engineering/agent-section-descent-assay-service";
+import { createAgentSectionDescentAssay } from "@red-cup-engineering/agent-section-descent-assay-service";
 import { createAlpacaHistoricalBarsService } from "./historical-bars.mjs";
 import { createMarketEventRecorder } from "@red-cup-engineering/financial-brokerage-engine";
-import { checkCausalPanel } from "@red-cup-engineering/causal-market-panel-assay-service";
+import { assayCausalPanel } from "@red-cup-engineering/causal-market-panel-assay-service";
 import { createCausalPortfolioLearningCircuit } from "./circuit.mjs";
 import { measureCausalPatchNovelty } from "@red-cup-engineering/causal-tiling-novelty-measurement-service";
 import { measureCorrelationGraph } from "@red-cup-engineering/correlation-graph-measurement-service";
@@ -66,9 +66,9 @@ async function readAccountState() {
   });
 }
 
-const witnessLog = await startSeavtDocumentProvider({ root: process.env.SEAVT_DOCUMENT_ROOT ?? process.env.WITNESS_JOURNAL_ROOT, port: Number(process.env.SEAVT_DOCUMENT_PORT ?? process.env.WITNESS_JOURNAL_LOCAL_PORT ?? 0) });
+const witnessJournal = await startSeavtDocumentProvider({ root: process.env.SEAVT_DOCUMENT_ROOT ?? process.env.WITNESS_JOURNAL_ROOT, port: Number(process.env.SEAVT_DOCUMENT_PORT ?? process.env.WITNESS_JOURNAL_LOCAL_PORT ?? 0) });
 try {
-  const env = { ...runtimeEnv, SEAVT_DOCUMENT_AGENT: witnessLog.agentCardUrl };
+  const env = { ...runtimeEnv, SEAVT_DOCUMENT_AGENT: witnessJournal.agentCardUrl };
   const recordMarketManifest = createMarketEventRecorder({ originatingActor: "urn:ame:alpaca-market-data-read-service", nodeId: "alpaca-market-data-read-service" }, env);
   const datasetStore = createContentAddressedDatasetStore({ root: env.BROKERAGE_DATASET_STORE_ROOT });
   const marketRecorder = async (event) => {
@@ -85,8 +85,8 @@ try {
   if (!Number.isFinite(years) || years < 2 || years > 10) throw new Error("BROKERAGE_SHADOW_HISTORY_YEARS must be between 2 and 10");
   const start = new Date(Date.parse(asOf) - years * 365.25 * 86_400_000).toISOString();
   const observation = await marketData.readDailyBars({ symbols, start, end: asOf, feed: process.env.BROKERAGE_SHADOW_FEED ?? "iex", adjustment: "all" });
-  const checkAgentSectionDescent = createAgentSectionDescentCheck({ measureSheafLaplacian });
-  const providers = { assayAgentSectionDescent: checkAgentSectionDescent, assayCausalPanel: checkCausalPanel, measureCausalPatchNovelty, measureCorrelationGraph, fitDeterministicRidge, predictDeterministicRidge, allocateMandatePortfolio, selectModelCandidate, formPurgedWalkForwardFolds, measureReturnRiskFeatures, measureTechnicalAnalysisFeatures, measureSheafLaplacian, simulateEventDrivenExecution };
+  const assayAgentSectionDescent = createAgentSectionDescentAssay({ measureSheafLaplacian });
+  const providers = { assayAgentSectionDescent, assayCausalPanel, measureCausalPatchNovelty, measureCorrelationGraph, fitDeterministicRidge, predictDeterministicRidge, allocateMandatePortfolio, selectModelCandidate, formPurgedWalkForwardFolds, measureReturnRiskFeatures, measureTechnicalAnalysisFeatures, measureSheafLaplacian, simulateEventDrivenExecution };
   const circuit = createCausalPortfolioLearningCircuit({ providers, recordResult: resultRecorder });
   const result = await circuit({
     barsBySymbol: observation.bars,
@@ -133,5 +133,5 @@ try {
     orderEffect: false,
   }, null, 2));
 } finally {
-  await witnessLog.close();
+  await witnessJournal.close();
 }
