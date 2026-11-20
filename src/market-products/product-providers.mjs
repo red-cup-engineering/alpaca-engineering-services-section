@@ -14,7 +14,7 @@ import { extractSenPart, userSenMessage } from "@red-cup-engineering/a2a-engine/
 import { a2aResultMetadata, a2aResultParts } from "@red-cup-engineering/a2a-engine/v1-core";
 import { sendSenTask } from "@red-cup-engineering/a2a-client/sen-part";
 import { SOVEREIGN_CIRCUIT_INTERFACE_EXTENSION } from "@red-cup-engineering/a2a-engine/circuit-interface";
-import { normalizeDeltaPacket, renderDeterministicReportGraphic } from "@red-cup-engineering/deterministic-report-graphic-service/renderer";
+import { normalizeDeltaPacket, renderDeterministicReportGraphic } from "./report-graphic/deterministic-report-graphic.mjs";
 import { formIssuerEvidencePacket, validateIssuerEvidenceRequest } from "@red-cup-engineering/issuer-research-media-service";
 import { formAggressivePortfolioIntent, validateAggressivePortfolioIntentRequest } from "@red-cup-engineering/alpha-portfolio-order-intent-service";
 import { normalizeAlpacaSnapshot, reconcileSnapshots } from "@red-cup-engineering/account-evidence-reconciliation-service";

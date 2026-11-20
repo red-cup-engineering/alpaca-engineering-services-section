@@ -46,7 +46,6 @@
     "@red-cup-engineering/agent-section-descent-assay-service": "^0.1.3",
     "@red-cup-engineering/strategy-program-synthesis-work-lot-service": "^0.1.7",
     "@red-cup-engineering/issuer-research-media-service": "^0.2.0",
-    "@red-cup-engineering/deterministic-report-graphic-service": "^0.1.5",
     "@red-cup-engineering/strategy-program-candidate-assay-service": "^0.1.3",
     "@red-cup-engineering/a2a-engine": "^0.1.3",
     "@red-cup-engineering/a2a-client": "^0.2.0",
