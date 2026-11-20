@@ -1,3 +1,4 @@
+import { isRecord } from "@red-cup-engineering/signcell/values";
 /*
  * issuer-revenue-period-reconciliation; selected module: src/issuer-revenue-reconciliation.mjs.
  * Source: issuer-research-media-service/specifications/issuer-revenue-kernel.work-order.md,
@@ -40,7 +41,7 @@
 
 const CONCEPTS = Object.freeze(['Revenues', 'SalesRevenueNet', 'RevenueFromContractWithCustomerExcludingAssessedTax']);
 const DAY = 86400000;
-const record = value => value !== null && typeof value === 'object' && !Array.isArray(value);
+
 const lexical = (a, b) => a < b ? -1 : a > b ? 1 : 0;
 
 function calendarDay(value) {
@@ -77,25 +78,25 @@ function equalWitness(a, b) {
  * @throws {TypeError} If the envelope or issuer identity is invalid.
  */
 export function reconcileIssuerRevenueFacts(input) {
-  if (!record(input)) throw new TypeError('Invalid input envelope');
+  if (!isRecord(input)) throw new TypeError('Invalid input envelope');
   const { cik, asOf, periodKind, maximumAgeDays, companyfacts } = input;
   const asOfDay = calendarDay(asOf);
   if (typeof cik !== 'string' || !/^\d{10}$/.test(cik) || asOfDay === null ||
       (periodKind !== 'quarter' && periodKind !== 'annual') ||
       !Number.isInteger(maximumAgeDays) || maximumAgeDays <= 0 ||
-      !record(companyfacts) || !validIdentity(companyfacts.cik, cik) ||
+      !isRecord(companyfacts) || !validIdentity(companyfacts.cik, cik) ||
       typeof companyfacts.entityName !== 'string' || companyfacts.entityName.trim().length === 0 ||
-      !record(companyfacts.facts)) throw new TypeError('Invalid input envelope or issuer identity');
+      !isRecord(companyfacts.facts)) throw new TypeError('Invalid input envelope or issuer identity');
 
   const eligible = [];
   const conceptCoverage = [];
   const taxonomy = companyfacts.facts['us-gaap'];
   for (const concept of CONCEPTS) {
-    const entry = record(taxonomy) ? taxonomy[concept] : undefined;
-    const observations = record(entry) && record(entry.units) && Array.isArray(entry.units.USD) ? entry.units.USD : [];
+    const entry = isRecord(taxonomy) ? taxonomy[concept] : undefined;
+    const observations = isRecord(entry) && isRecord(entry.units) && Array.isArray(entry.units.USD) ? entry.units.USD : [];
     const witnesses = [];
     for (const observation of observations) {
-      if (!record(observation) || typeof observation.val !== 'number' || !Number.isFinite(observation.val) ||
+      if (!isRecord(observation) || typeof observation.val !== 'number' || !Number.isFinite(observation.val) ||
           typeof observation.accn !== 'string' || observation.accn.trim().length === 0 ||
           !['10-Q', '10-Q/A', '10-K', '10-K/A'].includes(observation.form)) continue;
       const startDay = calendarDay(observation.start);

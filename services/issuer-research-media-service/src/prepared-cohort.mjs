@@ -1,3 +1,4 @@
+import { isRecord } from "@red-cup-engineering/signcell/values";
 import { formIssuerEvidencePacket } from '@red-cup-engineering/issuer-research-media-service';
 import { reconcileIssuerRevenueFacts } from '@red-cup-engineering/issuer-research-media-service/revenue-reconciliation';
 import { addressContent } from '@red-cup-engineering/computer-content-address-engineering-services-section/content-address';
@@ -65,22 +66,22 @@ import { isNiUri } from '@red-cup-engineering/uri-engineering-services-section/n
 
 const KINDS = ['quarter', 'annual'];
 const DAY = 86400000;
-const record = x => x !== null && typeof x === 'object' && !Array.isArray(x);
+
 const text = x => typeof x === 'string' && x.trim().length > 0;
 const positive = x => Number.isSafeInteger(x) && x > 0;
 const urlFor = cik => 'https://data.sec.gov/api/xbrl/companyfacts/CIK' + cik + '.json';
 function config(c) {
   const bad = () => { throw new TypeError('Invalid issuer revenue configuration'); };
-  if (!record(c) || !Number.isInteger(c.maximumIssuers) || c.maximumIssuers < 2 || c.maximumIssuers > 5) bad();
+  if (!isRecord(c) || !Number.isInteger(c.maximumIssuers) || c.maximumIssuers < 2 || c.maximumIssuers > 5) bad();
   if (!Array.isArray(c.issuers) || c.issuers.length < 2 || c.issuers.length > c.maximumIssuers) bad();
   const seen = new Set();
   for (const i of c.issuers) {
-    if (!record(i) || typeof i.cik !== 'string' || !/^\d{10}$/.test(i.cik) || !text(i.ticker) || seen.has(i.cik)) bad();
+    if (!isRecord(i) || typeof i.cik !== 'string' || !/^\d{10}$/.test(i.cik) || !text(i.ticker) || seen.has(i.cik)) bad();
     seen.add(i.cik);
   }
   if (!text(c.userAgent) || /[\r\n]/.test(c.userAgent) || !c.userAgent.includes('@')) bad();
   for (const k of ['maximumBytes','timeoutMs','maximumSnapshotAgeMs','maximumCohortBytes']) if (!positive(c[k])) bad();
-  if (!record(c.maximumAgeDays) || !KINDS.every(k => positive(c.maximumAgeDays[k]))) bad();
+  if (!isRecord(c.maximumAgeDays) || !KINDS.every(k => positive(c.maximumAgeDays[k]))) bad();
   if (!Number.isInteger(c.minimumIntervalMs) || c.minimumIntervalMs < 100 || !text(c.cacheKey)) bad();
   if (!Array.isArray(c.allowedPeriodKinds) || !c.allowedPeriodKinds.length || !c.allowedPeriodKinds.every(k => KINDS.includes(k)) || new Set(c.allowedPeriodKinds).size !== c.allowedPeriodKinds.length || typeof c.allowAmbiguousEvidence !== 'boolean') bad();
   return c;
@@ -130,11 +131,11 @@ export function planIssuerRevenueAcquisition(configuration) {
  */
 export function validateIssuerRevenueComparisonRequest(body, configuration) {
   const c = config(configuration);
-  if (!record(body) || Reflect.ownKeys(body).length !== 1 || !Object.hasOwn(body,'periodKind') || !c.allowedPeriodKinds.includes(body.periodKind)) throw new TypeError('Invalid issuer revenue comparison request');
+  if (!isRecord(body) || Reflect.ownKeys(body).length !== 1 || !Object.hasOwn(body,'periodKind') || !c.allowedPeriodKinds.includes(body.periodKind)) throw new TypeError('Invalid issuer revenue comparison request');
   return {periodKind:body.periodKind};
 }
 function periodValid(p, kind, asOf, nowDay, maxAge) {
-  if (!record(p)) return false;
+  if (!isRecord(p)) return false;
   const start = day(p.start), end = day(p.end);
   const length = (end - start) / DAY + 1;
   const [lo,hi] = kind === 'quarter' ? [70,110] : [330,380];
@@ -145,7 +146,7 @@ function financial(r, kind, c, asOf, today) {
   need(Array.isArray(r.witnesses) && r.witnesses.length > 0);
   const latest = new Map();
   for (const w of r.witnesses) {
-    need(record(w) && periodValid(w,kind,asOf,today,c.maximumAgeDays[kind]));
+    need(isRecord(w) && periodValid(w,kind,asOf,today,c.maximumAgeDays[kind]));
     need(Number.isFinite(w.value) && w.unit === 'USD' && ['10-Q','10-Q/A','10-K','10-K/A'].includes(w.form) && Number.isFinite(day(w.filed)) && w.filed <= asOf && text(w.accession) && text(w.concept));
     const old = latest.get(w.concept);
     if (!old || w.filed > old.filed) latest.set(w.concept,{filed:w.filed,values:[w.value]});
@@ -178,26 +179,26 @@ export function selectPreparedIssuerRevenueComparison(input) {
   if (!Number.isFinite(n)) throw new TypeError('Invalid explicit now');
   const c = configuration;
   try {
-    need(record(cohort) && cohort.type === 'IssuerRevenuePreparedCohort' && cohort.version === 1 && canonical(cohort.observedAt));
+    need(isRecord(cohort) && cohort.type === 'IssuerRevenuePreparedCohort' && cohort.version === 1 && canonical(cohort.observedAt));
     const observed = instant(cohort.observedAt);
     need(Number.isFinite(day(cohort.asOf)) && cohort.asOf === cohort.observedAt.slice(0,10) && observed <= n && n - observed <= c.maximumSnapshotAgeMs);
-    need(record(cohort.results) && Object.hasOwn(cohort.results,'quarter') && Object.hasOwn(cohort.results,'annual'));
+    need(isRecord(cohort.results) && Object.hasOwn(cohort.results,'quarter') && Object.hasOwn(cohort.results,'annual'));
     const r = cohort.results[periodKind];
-    need(record(r) && r.type === 'IssuerRevenueComparison' && r.version === 1 && r.observedAt === cohort.observedAt && r.asOf === cohort.asOf && r.periodKind === periodKind && r.datePolicy === 'filing-date-cutoff-on-received-sources');
+    need(isRecord(r) && r.type === 'IssuerRevenueComparison' && r.version === 1 && r.observedAt === cohort.observedAt && r.asOf === cohort.asOf && r.periodKind === periodKind && r.datePolicy === 'filing-date-cutoff-on-received-sources');
     need(Array.isArray(r.issuers) && Array.isArray(r.evidencePackets) && r.issuers.length === c.issuers.length && r.evidencePackets.length === c.issuers.length);
     const today = day(new Date(n).toISOString().slice(0,10));
     for (let j=0;j<c.issuers.length;j++) {
       const i = r.issuers[j], expected = c.issuers[j], p = r.evidencePackets[j];
-      need(record(i) && i.type === 'IssuerRevenueReconciliation' && i.version === 1 && i.cik === expected.cik && i.ticker === expected.ticker && i.asOf === r.asOf && i.periodKind === periodKind && text(i.issuer) && i.unit === 'USD');
+      need(isRecord(i) && i.type === 'IssuerRevenueReconciliation' && i.version === 1 && i.cik === expected.cik && i.ticker === expected.ticker && i.asOf === r.asOf && i.periodKind === periodKind && text(i.issuer) && i.unit === 'USD');
       const s = i.source;
-      need(record(s) && s.uri === urlFor(expected.cik) && ni(s.digest) && positive(s.bytes) && s.bytes <= c.maximumBytes && canonical(s.observedAt));
+      need(isRecord(s) && s.uri === urlFor(expected.cik) && ni(s.digest) && positive(s.bytes) && s.bytes <= c.maximumBytes && canonical(s.observedAt));
       const sn = instant(s.observedAt);
       need(sn <= observed && n-sn <= c.maximumSnapshotAgeMs);
       financial(i,periodKind,c,r.asOf,today);
-      need(record(p) && p.type === 'IssuerEvidencePacket' && p.version === 1 && p.ticker === String(expected.ticker).toUpperCase() && p.issuer === i.issuer && p.asOf === r.asOf && ni(p.id) && p.brokerageEffect === false);
-      need(Array.isArray(p.sources) && p.sources.length === 1 && record(p.sources[0]));
+      need(isRecord(p) && p.type === 'IssuerEvidencePacket' && p.version === 1 && p.ticker === String(expected.ticker).toUpperCase() && p.issuer === i.issuer && p.asOf === r.asOf && ni(p.id) && p.brokerageEffect === false);
+      need(Array.isArray(p.sources) && p.sources.length === 1 && isRecord(p.sources[0]));
       need(p.sources[0].uri === s.uri && p.sources[0].digest === s.digest && p.sources[0].observedAt === s.observedAt);
-      need(Array.isArray(p.claims) && p.claims.length === 1 && record(p.claims[0]));
+      need(Array.isArray(p.claims) && p.claims.length === 1 && isRecord(p.claims[0]));
       const claim = p.claims[0];
       need(Array.isArray(claim.sourceDigests) && claim.sourceDigests.length === 1 && claim.sourceDigests[0] === s.digest && claim.statement === statement(i));
     }
@@ -223,7 +224,7 @@ async function boundedBody(stream, limit, signal) {
   try {
     for (;;) {
       const part = await abortable(reader.read(),signal);
-      if (!record(part)) throw new Error('invalid-stream');
+      if (!isRecord(part)) throw new Error('invalid-stream');
       if (part.done) { complete = true; break; }
       if (!(part.value instanceof Uint8Array)) throw new Error('invalid-stream');
       total += part.value.byteLength;
@@ -279,7 +280,7 @@ async function acquire(request, fetcher, clock, fixedDay) {
   try {
     const companyfacts = parseBytes(bytes);
     const address = await addressContent(bytes,{mediaType:'application/json'});
-    if (!record(address) || address.kind !== 'semiotic-content.raw-carrier-address' || address.version !== 1 || address.algorithm !== 'sha-256' || address.size !== bytes.length || address.mediaType !== 'application/json' || !ni(address.ni) || !positive(address.size)) throw new Error('Invalid raw address');
+    if (!isRecord(address) || address.kind !== 'semiotic-content.raw-carrier-address' || address.version !== 1 || address.algorithm !== 'sha-256' || address.size !== bytes.length || address.mediaType !== 'application/json' || !ni(address.ni) || !positive(address.size)) throw new Error('Invalid raw address');
     return {companyfacts,source:{uri:request.url,digest:address.ni,bytes:address.size,observedAt}};
   } catch { throw refused('invalid-source',false,retryAfter); }
 }
@@ -306,7 +307,7 @@ async function compactIssuer(request, c, fetcher, clock, asOf) {
  */
 export async function prepareIssuerRevenueCohort(configuration, adapters = {}) {
   const plan = planIssuerRevenueAcquisition(configuration);
-  if (!record(adapters)) throw new TypeError('Invalid adapters');
+  if (!isRecord(adapters)) throw new TypeError('Invalid adapters');
   const clock = adapters.now === undefined ? Date.now : adapters.now;
   const fetcher = adapters.fetch === undefined ? globalThis.fetch : adapters.fetch;
   const sleep = adapters.sleep === undefined ? platformSleep : adapters.sleep;
