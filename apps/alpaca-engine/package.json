@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/alpaca-engine",
-  "version": "0.1.1",
+  "version": "0.1.1-dev.0",
   "type": "module",
   "license": "MIT",
   "description": "Custody-bound Alpaca observation, mandate-limited actuation and recorded reconciliation through the shared venue providers.",
@@ -12,7 +12,8 @@
   "files": [
     "src",
     "package.json",
-    "content/deployment"
+    "content/deployment",
+    "test"
   ],
   "exports": {
     ".": "./src/runtime.mjs",
@@ -28,9 +29,9 @@
     "@red-cup-engineering/exact-number-codec": "0.1.0",
     "@red-cup-engineering/computer-content-address-engineering-services-section": "0.3.1",
     "@red-cup-engineering/computer-data-engineering-services-section": "0.7.5",
-    "@red-cup-engineering/alpha-portfolio-order-intent-service": "0.1.12",
-    "@red-cup-engineering/brokerage-authority-custody-service": "0.1.8",
-    "@red-cup-engineering/brokerage-execution-transport-service": "0.1.12",
+    "@red-cup-engineering/alpha-portfolio-order-intent-service": "0.1.12-dev.0 || ^0.1.12",
+    "@red-cup-engineering/brokerage-authority-custody-service": "0.1.8-dev.0 || ^0.1.8",
+    "@red-cup-engineering/brokerage-execution-transport-service": "0.1.12-dev.0 || ^0.1.12",
     "@red-cup-engineering/pluggable-venue-adapter-service": "0.1.12",
     "@red-cup-engineering/mandate-portfolio-allocation-service": "0.2.6",
     "@red-cup-engineering/stock-brokerage-engine": "0.1.0"
@@ -46,5 +47,21 @@
   },
   "devDependencies": {
     "@red-cup-engineering/gaming": "0.2.11"
-  }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.561.group/"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "receivingTests": [
+    "test/account-halt.test.mjs",
+    "test/assist-account.test.mjs",
+    "test/assist-binding-runtime.test.mjs",
+    "test/execution-system.test.mjs",
+    "test/mandate-runtime.test.mjs",
+    "test/portfolio-cent-bounds.test.mjs",
+    "test/production-record-custody.test.mjs"
+  ]
 }
