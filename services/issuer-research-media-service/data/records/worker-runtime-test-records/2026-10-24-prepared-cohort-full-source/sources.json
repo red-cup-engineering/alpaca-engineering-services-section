@@ -1,0 +1,16 @@
+[
+  {
+    "ticker": "AAPL",
+    "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/services/issuer-research-media-service/data/logs/procurement-logs/2026-10-24-kernel-receiving/AAPL.companyfacts.json",
+    "bytes": 3789099,
+    "sha256": "73a86c6aedc31f77cac2ea4df5f80f0b3bd7e6eb58bb4e01444fbedf3afb9c43",
+    "module": "aapl-source"
+  },
+  {
+    "ticker": "MSFT",
+    "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/services/issuer-research-media-service/data/logs/procurement-logs/2026-10-24-kernel-receiving/MSFT.companyfacts.json",
+    "bytes": 4888108,
+    "sha256": "dd0308149a8e96497989ed7c690b5a49a00bef9ceafbb24638bda41e8ae938dd",
+    "module": "msft-source"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "scope": "source-compatible normalization of preexisting duplicate private packet supplier",
+  "source": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/services/issuer-research-media-service/src/evidence-packet.mjs",
+  "originalSha256": "9fadb89adf0010dd33dce02f01ed11e8cdcce55122ce8409bced46cc7a6389da",
+  "normalizedSha256": "6d7806530addaf61ed391e3dac751f255d11ac5839d2da4aa97c970426a123bb",
+  "authoritativeSupplier": "../../../scripts/evidence-packet.mjs",
+  "invariant": "existing request, evidence content identity, Unicode normalization and unknown-source refusal stay authoritative at original supplier; old private import forwards identical named exports",
+  "construction": "Code applyExactSourceEdits exact source hash and original span; no new semantic implementation",
+  "receiving": {
+    "exitCode": 0,
+    "cases": 4,
+    "passed": 4,
+    "scope": "original and old private imports are identical function references; valid source-bound packet, Unicode identity and unknown citation refusal",
+    "supplierSourceTests": {
+      "file": "test/issuer-research-media-canonical-identity.test.mjs",
+      "cases": 3,
+      "passed": 3,
+      "originalFirstAttempt": "missing Data package import; integration owner restored declared resolution and test reran because closure changed"
+    }
+  },
+  "status": "superseded-proposal",
+  "supersededBy": "source-owner-reconciliation.json",
+  "currentCustody": "Live packet constructor now belongs to this independent issuer package; Alpaca delegates through its declared child dependency. The historical child-to-parent relative import described above is not the selected source."
+}

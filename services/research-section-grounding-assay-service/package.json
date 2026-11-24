@@ -1,0 +1,31 @@
+{
+  "name": "@red-cup-engineering/research-section-grounding-assay-service",
+  "version": "0.1.4-dev.0",
+  "type": "module",
+  "description": "Deterministically admits only provider-distinct forecast sections bound to supplied evidence references and typed fact identifiers.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/alpaca-engineering-services-section.git",
+    "directory": "services/research-section-grounding-assay-service"
+  },
+  "exports": {
+    ".": "./src/assay.mjs",
+    "./schemas": "./src/schemas.mjs"
+  },
+  "files": [
+    "schemas/",
+    "src/"
+  ],
+  "dependencies": {
+    "@red-cup-engineering/json-schema-engineering-services-section": "^0.5.7",
+    "@red-cup-engineering/investment-research-work-lot-service": "workspace:*"
+  },
+  "scripts": {
+    "check": "node --check src/*.mjs"
+  },
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
+}

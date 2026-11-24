@@ -1,0 +1,828 @@
+{
+  "type": "ArtifactFabricationSpecificationCandidate",
+  "version": 2,
+  "source": {
+    "type": "ArtifactFabricationSource",
+    "version": 1,
+    "identity": {
+      "type": "ArtifactFabricationSourceIdentity",
+      "id": "issuer-revenue-period-reconciliation"
+    },
+    "provenance": {
+      "type": "ArtifactFabricationSourceProvenance",
+      "locator": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/services/issuer-research-media-service/specifications/issuer-revenue-kernel.work-order.md",
+      "digest": "sha256:c03a3d1ae9ba66b341f63bb864abcf9bb59c0f42837f22be8af44dbb71360cf0",
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 1,
+        "endLine": 55
+      }
+    }
+  },
+  "artifact": {
+    "type": "FabricatedArtifactIdentity",
+    "version": 1,
+    "id": "issuer-revenue-period-reconciliation",
+    "kind": "jsnode-modules"
+  },
+  "claims": [
+    {
+      "type": "ArtifactFabricationClaim",
+      "version": 1,
+      "id": "bounded-product-contract",
+      "kind": "world",
+      "statement": "The source-owned behavior and detailed design explicitly select this bounded date/duration, concept, witness and output contract without claiming that heuristic durations are universal accounting periods",
+      "status": "derived",
+      "quantity": null,
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 27,
+        "endLine": 27
+      },
+      "basis": {
+        "type": "ArtifactFabricationDerivedBasis",
+        "premises": [
+          {
+            "type": "ArtifactFabricationPremise",
+            "kind": "constraint",
+            "ref": "source-design"
+          },
+          {
+            "type": "ArtifactFabricationPremise",
+            "kind": "constraint",
+            "ref": "period-law"
+          }
+        ],
+        "derivation": "Implement the authored bounded comparison contract and keep excluded, ambiguous and missing evidence explicit; no market demand or income conclusion follows from its implementation."
+      }
+    },
+    {
+      "type": "ArtifactFabricationClaim",
+      "version": 1,
+      "id": "quarter-minimum-days",
+      "kind": "world",
+      "statement": "The supplier behavior selects this minimum duration for its bounded quarterly comparison candidate set",
+      "status": "derived",
+      "quantity": {
+        "type": "ArtifactFabricationQuantity",
+        "value": 70,
+        "unit": "day"
+      },
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 28,
+        "endLine": 28
+      },
+      "basis": {
+        "type": "ArtifactFabricationDerivedBasis",
+        "premises": [
+          {
+            "type": "ArtifactFabricationPremise",
+            "kind": "constraint",
+            "ref": "source-design"
+          }
+        ],
+        "derivation": "This is an explicit product input-domain restriction, not an empirical claim that every quarterly revenue fact has this duration."
+      }
+    },
+    {
+      "type": "ArtifactFabricationClaim",
+      "version": 1,
+      "id": "quarter-maximum-days",
+      "kind": "world",
+      "statement": "The supplier behavior selects this maximum duration for its bounded quarterly comparison candidate set",
+      "status": "derived",
+      "quantity": {
+        "type": "ArtifactFabricationQuantity",
+        "value": 110,
+        "unit": "day"
+      },
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 29,
+        "endLine": 29
+      },
+      "basis": {
+        "type": "ArtifactFabricationDerivedBasis",
+        "premises": [
+          {
+            "type": "ArtifactFabricationPremise",
+            "kind": "constraint",
+            "ref": "source-design"
+          }
+        ],
+        "derivation": "Restrict the bounded operation and expose excluded data rather than convert a longer duration into a quarter."
+      }
+    },
+    {
+      "type": "ArtifactFabricationClaim",
+      "version": 1,
+      "id": "annual-minimum-days",
+      "kind": "world",
+      "statement": "The supplier behavior selects this minimum duration for its bounded annual comparison candidate set",
+      "status": "derived",
+      "quantity": {
+        "type": "ArtifactFabricationQuantity",
+        "value": 330,
+        "unit": "day"
+      },
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 30,
+        "endLine": 30
+      },
+      "basis": {
+        "type": "ArtifactFabricationDerivedBasis",
+        "premises": [
+          {
+            "type": "ArtifactFabricationPremise",
+            "kind": "constraint",
+            "ref": "source-design"
+          }
+        ],
+        "derivation": "This explicit product restriction excludes shortened periods from this operation without denying their existence."
+      }
+    },
+    {
+      "type": "ArtifactFabricationClaim",
+      "version": 1,
+      "id": "annual-maximum-days",
+      "kind": "world",
+      "statement": "The supplier behavior selects this maximum duration for its bounded annual comparison candidate set",
+      "status": "derived",
+      "quantity": {
+        "type": "ArtifactFabricationQuantity",
+        "value": 380,
+        "unit": "day"
+      },
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 31,
+        "endLine": 31
+      },
+      "basis": {
+        "type": "ArtifactFabricationDerivedBasis",
+        "premises": [
+          {
+            "type": "ArtifactFabricationPremise",
+            "kind": "constraint",
+            "ref": "source-design"
+          }
+        ],
+        "derivation": "This explicit product restriction excludes long transition periods without turning them into annual facts."
+      }
+    }
+  ],
+  "requirements": [
+    {
+      "type": "ArtifactFabricationRequirement",
+      "version": 2,
+      "id": "input-envelope",
+      "statement": "reconcileIssuerRevenueFacts receives one object {cik,asOf,periodKind,maximumAgeDays,companyfacts}; cik is exactly ten decimal digits, asOf a real calendar date YYYY-MM-DD periodKind quarter or annual, maximumAgeDays a positive integer, companyfacts an object whose numeric/string cik denotes same requested integer and whose entityName is a nonempty string and facts object exists. Return TypeError for invalid envelope or malformed identity. Do not mutate inputs.",
+      "parameters": [],
+      "claimIds": [],
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 3,
+        "endLine": 3
+      }
+    },
+    {
+      "type": "ArtifactFabricationRequirement",
+      "version": 2,
+      "id": "date-domain",
+      "statement": "Parse exact UTC calendar days and reject rollover dates. Eligible observations have finite numeric val, valid start,end,filed day with start<=end<=asOf and filed<=asOf, nonempty accn and form in `10-Q`,`10-Q/A`,`10-K`,`10-K/A`. An invalid observation is excluded, not repaired. fy/fp/frame are not used as dates or duration.",
+      "parameters": [],
+      "claimIds": [],
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 4,
+        "endLine": 4
+      }
+    },
+    {
+      "type": "ArtifactFabricationRequirement",
+      "version": 2,
+      "id": "concept-domain",
+      "statement": "Inspect only facts.us-gaap concepts in this fixed order: Revenues, SalesRevenueNet, RevenueFromContractWithCustomerExcludingAssessedTax. Inspect only each units.USD array; absent concept/units/array contributes no facts. Never merge USD with shares or another unit.",
+      "parameters": [],
+      "claimIds": [],
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 5,
+        "endLine": 5
+      }
+    },
+    {
+      "type": "ArtifactFabricationRequirement",
+      "version": 2,
+      "id": "duration-domain",
+      "statement": "DurationDays is inclusive UTC end-start calendar days. Requested quarter accepts {{quarter-minimum-days}} through {{quarter-maximum-days}} inclusive days, annual {{annual-minimum-days}} through {{annual-maximum-days}} inclusive days. Exclude nine-month/YTD facts from quarter; never derive Q4 or convert currencies.",
+      "parameters": [
+        {
+          "type": "ArtifactFabricationParameter",
+          "version": 1,
+          "name": "quarter-minimum-days",
+          "value": 70,
+          "unit": "day",
+          "claimId": "quarter-minimum-days",
+          "exact": null
+        },
+        {
+          "type": "ArtifactFabricationParameter",
+          "version": 1,
+          "name": "quarter-maximum-days",
+          "value": 110,
+          "unit": "day",
+          "claimId": "quarter-maximum-days",
+          "exact": null
+        },
+        {
+          "type": "ArtifactFabricationParameter",
+          "version": 1,
+          "name": "annual-minimum-days",
+          "value": 330,
+          "unit": "day",
+          "claimId": "annual-minimum-days",
+          "exact": null
+        },
+        {
+          "type": "ArtifactFabricationParameter",
+          "version": 1,
+          "name": "annual-maximum-days",
+          "value": 380,
+          "unit": "day",
+          "claimId": "annual-maximum-days",
+          "exact": null
+        }
+      ],
+      "claimIds": [
+        "annual-maximum-days",
+        "annual-minimum-days",
+        "quarter-maximum-days",
+        "quarter-minimum-days"
+      ],
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 6,
+        "endLine": 6
+      }
+    },
+    {
+      "type": "ArtifactFabricationRequirement",
+      "version": 2,
+      "id": "selection",
+      "statement": "Eligible facts for coverage need not match requested duration. For selected period consider only eligible requested-duration facts, choose greatest actual end date. If two starts share that greatest end then status ambiguous, period null, value null and keep all candidate witnesses sharing greatest end. Do not use array order, fy or fp for selection.",
+      "parameters": [],
+      "claimIds": [],
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 7,
+        "endLine": 7
+      }
+    },
+    {
+      "type": "ArtifactFabricationRequirement",
+      "version": 2,
+      "id": "witnesses",
+      "statement": "A witness has exactly concept,start,end,durationDays,value,unit USD,form,filed,accession fields. Convert source val to value and accn to accession; preserve numbers exactly. Deduplicate only exact equal witness objects; sort witnesses by concept lexical, then filed lexical, then accession lexical, then value numeric, then start lexical. Selected witnesses are ALL eligible requested-duration facts at the selected exact start/end, including older filing witnesses.",
+      "parameters": [],
+      "claimIds": [],
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 8,
+        "endLine": 8
+      }
+    },
+    {
+      "type": "ArtifactFabricationRequirement",
+      "version": 2,
+      "id": "conflict",
+      "statement": "For a single selected start/end, within EACH concept take greatest filed date and ALL witnesses on that date. If the union of these latest per-concept witnesses has more than one distinct numeric value, status ambiguous,value null,revision ambiguous. No sum or concept precedence resolves conflict.",
+      "parameters": [],
+      "claimIds": [],
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 9,
+        "endLine": 9
+      }
+    },
+    {
+      "type": "ArtifactFabricationRequirement",
+      "version": 2,
+      "id": "revision",
+      "statement": "For unambiguous selected value, if an earlier-filed witness has a different value revision is changed-reported-value. Otherwise if multiple distinct accession strings occur revision is equal-value-rereport, otherwise none. These labels do not assert an audited accounting restatement. Multiple-start ambiguity has revision ambiguous.",
+      "parameters": [],
+      "claimIds": [],
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 10,
+        "endLine": 10
+      }
+    },
+    {
+      "type": "ArtifactFabricationRequirement",
+      "version": 2,
+      "id": "staleness",
+      "statement": "For unambiguous period/value, UTC day difference asOf minus period end greater than maximumAgeDays gives status stale, otherwise current. Preserve stale period/value and witnesses. No candidates gives status missing,period null,value null,witnesses empty,revision none. Ambiguity takes precedence over stale.",
+      "parameters": [],
+      "claimIds": [],
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 11,
+        "endLine": 11
+      }
+    },
+    {
+      "type": "ArtifactFabricationRequirement",
+      "version": 2,
+      "id": "coverage",
+      "statement": "conceptCoverage is an array in fixed concept order; each element has exactly concept,latestEnd,count, where count is number of deduplicated eligible witnesses of ALL durations for this concept and latestEnd maximum eligible end or null. This is scoped to inspected USD concepts and date cutoff, not a claim of exhaustive latest SEC filing.",
+      "parameters": [],
+      "claimIds": [],
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 12,
+        "endLine": 12
+      }
+    },
+    {
+      "type": "ArtifactFabricationRequirement",
+      "version": 2,
+      "id": "output",
+      "statement": "Return exactly `{type:\"IssuerRevenueReconciliation\",version:1,cik,issuer:companyfacts.entityName,asOf,periodKind,status,unit:\"USD\",period,value,witnesses,conceptCoverage,revision}`. A nonnull period has exactly start,end,durationDays. Preserve requested cik string/asOf/periodKind; no ranking or investment recommendation.",
+      "parameters": [],
+      "claimIds": [],
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 13,
+        "endLine": 13
+      }
+    },
+    {
+      "type": "ArtifactFabricationRequirement",
+      "version": 2,
+      "id": "api",
+      "statement": "Export reconcileIssuerRevenueFacts from src/issuer-revenue-reconciliation.mjs as the reusable pure semantic kernel. Other procurement, source identity, original evidence packet constructor, market binding, commercial receiving and deployment remain separate original Work obligations.",
+      "parameters": [],
+      "claimIds": [],
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 14,
+        "endLine": 14
+      }
+    }
+  ],
+  "prohibitions": [
+    {
+      "type": "ArtifactFabricationProhibition",
+      "version": 2,
+      "id": "no-effects",
+      "statement": "No network, clock, filesystem, process, credentials, inference, broker, payment, environment access or retained writes; no dependency imports required. All source facts and dates arrive explicitly as data.",
+      "parameters": [],
+      "claimIds": [
+        "bounded-product-contract"
+      ],
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 16,
+        "endLine": 16
+      }
+    },
+    {
+      "type": "ArtifactFabricationProhibition",
+      "version": 2,
+      "id": "no-guesses",
+      "statement": "Do not fabricate facts, use filing fy/fp for actual period, choose a legacy tag by precedence, average conflicting values, calculate a missing quarter, or count a schema/test outcome as outside revenue.",
+      "parameters": [],
+      "claimIds": [
+        "bounded-product-contract"
+      ],
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 17,
+        "endLine": 17
+      }
+    },
+    {
+      "type": "ArtifactFabricationProhibition",
+      "version": 2,
+      "id": "no-identity-duplication",
+      "statement": "Do not implement or replace packet identity, canonical JSON, generic parsers or the original formIssuerEvidencePacket. This kernel emits factual data only, for the existing packet constructor's later composition.",
+      "parameters": [],
+      "claimIds": [
+        "bounded-product-contract"
+      ],
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 18,
+        "endLine": 18
+      }
+    }
+  ],
+  "openQuestions": [],
+  "constraints": [
+    {
+      "type": "ArtifactFabricationConstraint",
+      "version": 2,
+      "id": "period-law",
+      "kind": "law",
+      "authority": "SEC",
+      "revision": "companyfacts and primary observations",
+      "locator": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+      "applicability": "Applies to source fiscal-period interpretation.",
+      "statement": "Facts carry actual start/end and filing context separately; a filing fiscal year does not identify every comparative fact's actual year.",
+      "parameters": [],
+      "claimIds": [],
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 20,
+        "endLine": 20
+      }
+    },
+    {
+      "type": "ArtifactFabricationConstraint",
+      "version": 2,
+      "id": "source-design",
+      "kind": "standard",
+      "authority": "Red Cup Engineering",
+      "revision": "2026-10-24",
+      "locator": "./requirements.md",
+      "applicability": "Applies to the bounded pure kernel, not full product acceptance.",
+      "statement": "Requirements, behavior, architecture and design in this directory retain the complete supplier/business boundaries. Science's 2026-10-24 autonomous-agent-service-demand literature measurement carries the AAPL/MSFT primary observations and real paid stale-tag buyer study.",
+      "parameters": [],
+      "claimIds": [],
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 22,
+        "endLine": 22
+      }
+    },
+    {
+      "type": "ArtifactFabricationConstraint",
+      "version": 2,
+      "id": "node-esm",
+      "kind": "standard",
+      "authority": "Node.js",
+      "revision": "v24",
+      "locator": "https://nodejs.org/api/esm.html",
+      "applicability": "Applies to named module consumer.",
+      "statement": "Use ordinary ESM named export with no dependencies; no implicit ambient effects.",
+      "parameters": [],
+      "claimIds": [],
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 23,
+        "endLine": 23
+      }
+    }
+  ],
+  "projections": [
+    {
+      "type": "ArtifactFabricationProjection",
+      "version": 1,
+      "id": "jsnode-modules",
+      "target": "@red-cup-engineering/jsnode-package-engineering-services-section/derive-jsnode-package-from-closure",
+      "configuration": {
+        "operations": [
+          {
+            "name": "reconcile-issuer-revenue-facts",
+            "module": "src/issuer-revenue-reconciliation.mjs",
+            "exportName": "reconcileIssuerRevenueFacts",
+            "description": "Pure exact period, concept, staleness and revision reconciliation over received SEC companyfacts. All detailed requirements and prohibitions in this source order apply.",
+            "inputSchema": {},
+            "outputSchema": {
+              "type": "object"
+            }
+          }
+        ],
+        "examples": [
+          {
+            "name": "missing revenue concepts is scoped absence",
+            "operation": "reconcile-issuer-revenue-facts",
+            "input": {
+              "cik": "0000320193",
+              "asOf": "2026-10-24",
+              "periodKind": "quarter",
+              "maximumAgeDays": 180,
+              "companyfacts": {
+                "cik": 320193,
+                "entityName": "Apple Inc.",
+                "facts": {}
+              }
+            },
+            "output": {
+              "type": "IssuerRevenueReconciliation",
+              "version": 1,
+              "cik": "0000320193",
+              "issuer": "Apple Inc.",
+              "asOf": "2026-10-24",
+              "periodKind": "quarter",
+              "status": "missing",
+              "unit": "USD",
+              "period": null,
+              "value": null,
+              "witnesses": [],
+              "conceptCoverage": [
+                {
+                  "concept": "Revenues",
+                  "latestEnd": null,
+                  "count": 0
+                },
+                {
+                  "concept": "SalesRevenueNet",
+                  "latestEnd": null,
+                  "count": 0
+                },
+                {
+                  "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                  "latestEnd": null,
+                  "count": 0
+                }
+              ],
+              "revision": "none"
+            }
+          }
+        ],
+        "dependencies": {}
+      },
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 33,
+        "endLine": 35
+      }
+    }
+  ],
+  "acceptanceObligations": [
+    {
+      "type": "ArtifactFabricationAcceptanceObligation",
+      "version": 2,
+      "parameters": [],
+      "claimIds": [],
+      "id": "kernel-receiving",
+      "kind": "assay",
+      "statement": "A distinct receiver exercises latest legacy/successor concepts, historical fy context, quarter versus YTD/annual, equal and changed rereports, same-date and crossconcept conflicts, stale and missing facts, date cutoff and invalid input; inspect output for no effects, no ranking and exact witness retention.",
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 37,
+        "endLine": 39
+      }
+    },
+    {
+      "type": "ArtifactFabricationAcceptanceObligation",
+      "version": 2,
+      "parameters": [],
+      "claimIds": [],
+      "id": "operation-receiving",
+      "kind": "review",
+      "statement": "Source proposal only: acquisition with actual aggregate SEC quota, bytes/time/UA/refusals; original packet identity; native app build/mainline integration; public paid acceptance and cost remain separately required. No pure-kernel preassay may certify these outcomes.",
+      "sourceSpan": {
+        "type": "ArtifactFabricationSourceSpan",
+        "startLine": 37,
+        "endLine": 39
+      }
+    }
+  ],
+  "traceability": [
+    {
+      "type": "ArtifactFabricationTrace",
+      "version": 1,
+      "requirementId": "input-envelope",
+      "projectionIds": [
+        "jsnode-modules"
+      ],
+      "acceptanceObligationIds": [
+        "kernel-receiving"
+      ],
+      "constraintIds": [
+        "period-law",
+        "source-design",
+        "node-esm"
+      ]
+    },
+    {
+      "type": "ArtifactFabricationTrace",
+      "version": 1,
+      "requirementId": "date-domain",
+      "projectionIds": [
+        "jsnode-modules"
+      ],
+      "acceptanceObligationIds": [
+        "kernel-receiving"
+      ],
+      "constraintIds": [
+        "period-law",
+        "source-design",
+        "node-esm"
+      ]
+    },
+    {
+      "type": "ArtifactFabricationTrace",
+      "version": 1,
+      "requirementId": "concept-domain",
+      "projectionIds": [
+        "jsnode-modules"
+      ],
+      "acceptanceObligationIds": [
+        "kernel-receiving"
+      ],
+      "constraintIds": [
+        "period-law",
+        "source-design",
+        "node-esm"
+      ]
+    },
+    {
+      "type": "ArtifactFabricationTrace",
+      "version": 1,
+      "requirementId": "duration-domain",
+      "projectionIds": [
+        "jsnode-modules"
+      ],
+      "acceptanceObligationIds": [
+        "kernel-receiving"
+      ],
+      "constraintIds": [
+        "period-law",
+        "source-design",
+        "node-esm"
+      ]
+    },
+    {
+      "type": "ArtifactFabricationTrace",
+      "version": 1,
+      "requirementId": "selection",
+      "projectionIds": [
+        "jsnode-modules"
+      ],
+      "acceptanceObligationIds": [
+        "kernel-receiving"
+      ],
+      "constraintIds": [
+        "period-law",
+        "source-design",
+        "node-esm"
+      ]
+    },
+    {
+      "type": "ArtifactFabricationTrace",
+      "version": 1,
+      "requirementId": "witnesses",
+      "projectionIds": [
+        "jsnode-modules"
+      ],
+      "acceptanceObligationIds": [
+        "kernel-receiving"
+      ],
+      "constraintIds": [
+        "period-law",
+        "source-design",
+        "node-esm"
+      ]
+    },
+    {
+      "type": "ArtifactFabricationTrace",
+      "version": 1,
+      "requirementId": "conflict",
+      "projectionIds": [
+        "jsnode-modules"
+      ],
+      "acceptanceObligationIds": [
+        "kernel-receiving"
+      ],
+      "constraintIds": [
+        "period-law",
+        "source-design",
+        "node-esm"
+      ]
+    },
+    {
+      "type": "ArtifactFabricationTrace",
+      "version": 1,
+      "requirementId": "revision",
+      "projectionIds": [
+        "jsnode-modules"
+      ],
+      "acceptanceObligationIds": [
+        "kernel-receiving"
+      ],
+      "constraintIds": [
+        "period-law",
+        "source-design",
+        "node-esm"
+      ]
+    },
+    {
+      "type": "ArtifactFabricationTrace",
+      "version": 1,
+      "requirementId": "staleness",
+      "projectionIds": [
+        "jsnode-modules"
+      ],
+      "acceptanceObligationIds": [
+        "kernel-receiving"
+      ],
+      "constraintIds": [
+        "period-law",
+        "source-design",
+        "node-esm"
+      ]
+    },
+    {
+      "type": "ArtifactFabricationTrace",
+      "version": 1,
+      "requirementId": "coverage",
+      "projectionIds": [
+        "jsnode-modules"
+      ],
+      "acceptanceObligationIds": [
+        "kernel-receiving"
+      ],
+      "constraintIds": [
+        "period-law",
+        "source-design",
+        "node-esm"
+      ]
+    },
+    {
+      "type": "ArtifactFabricationTrace",
+      "version": 1,
+      "requirementId": "output",
+      "projectionIds": [
+        "jsnode-modules"
+      ],
+      "acceptanceObligationIds": [
+        "kernel-receiving"
+      ],
+      "constraintIds": [
+        "period-law",
+        "source-design",
+        "node-esm"
+      ]
+    },
+    {
+      "type": "ArtifactFabricationTrace",
+      "version": 1,
+      "requirementId": "api",
+      "projectionIds": [
+        "jsnode-modules"
+      ],
+      "acceptanceObligationIds": [
+        "kernel-receiving"
+      ],
+      "constraintIds": [
+        "period-law",
+        "source-design",
+        "node-esm"
+      ]
+    },
+    {
+      "type": "ArtifactFabricationTrace",
+      "version": 1,
+      "requirementId": "no-effects",
+      "projectionIds": [
+        "jsnode-modules"
+      ],
+      "acceptanceObligationIds": [
+        "kernel-receiving"
+      ],
+      "constraintIds": [
+        "period-law",
+        "source-design",
+        "node-esm"
+      ]
+    },
+    {
+      "type": "ArtifactFabricationTrace",
+      "version": 1,
+      "requirementId": "no-guesses",
+      "projectionIds": [
+        "jsnode-modules"
+      ],
+      "acceptanceObligationIds": [
+        "kernel-receiving"
+      ],
+      "constraintIds": [
+        "period-law",
+        "source-design",
+        "node-esm"
+      ]
+    },
+    {
+      "type": "ArtifactFabricationTrace",
+      "version": 1,
+      "requirementId": "no-identity-duplication",
+      "projectionIds": [
+        "jsnode-modules"
+      ],
+      "acceptanceObligationIds": [
+        "kernel-receiving"
+      ],
+      "constraintIds": [
+        "period-law",
+        "source-design",
+        "node-esm"
+      ]
+    }
+  ]
+}

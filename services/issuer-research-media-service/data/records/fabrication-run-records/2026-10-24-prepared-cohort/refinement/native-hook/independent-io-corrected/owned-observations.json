@@ -1,0 +1,1908 @@
+[
+  {
+    "observedAt": "2026-10-24T22:17:21.204Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "67692 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:22.632Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "91152 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:22.850Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "91816 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:23.350Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "106872 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:23.550Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105144 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:23.753Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105192 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:23.954Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105200 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:24.154Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105228 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:24.355Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105228 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:24.556Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105232 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:24.756Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105232 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:24.959Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105388 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "R (running)",
+        "rss": "7496 kB",
+        "waitChannel": "0",
+        "command": "/usr/bin/systemd-run --user --scope --quiet --collect --slice=agent.slice --property=MemoryMax=536870912 --property=MemorySwapMax=0 --property=TasksMax=32 --property=CPUQuota=100% --property=RuntimeMaxSec=31s -- /usr/bin/prlimit --as=1073741824 --cpu=10 --fsize=8388608 -- /usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h",
+        "cgroup": "0::/non-systemd"
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:25.163Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105388 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "1138688",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "R (running)",
+        "rss": "1336 kB",
+        "waitChannel": "0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "1138688",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:25.366Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105388 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "4767744",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "4767744",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "S (sleeping)",
+        "rss": "21388 kB",
+        "waitChannel": "futex_do_wait",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "4767744",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:25.562Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105388 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "9846784",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "9846784",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "R (running)",
+        "rss": "33176 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "10108928",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:25.763Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105380 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "12496896",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "12496896",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "R (running)",
+        "rss": "44944 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "12496896",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:25.964Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105380 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "24899584",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "25161728",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "S (sleeping)",
+        "rss": "48072 kB",
+        "waitChannel": "do_epoll_wait",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "25161728",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471391,
+        "depth": 4,
+        "state": "R (running)",
+        "rss": "34876 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --test-coverage-functions=0 --test-concurrency=0 --inspect-publish-uid=stderr,http --inspect-port=127.0.0.1:9229 --report-signal=SIGUSR2 --test-coverage-lines=0 --test-isolation=process --heap-prof-interval=524288 --cpu-prof-interval=1000 --v8-pool-size=4 --trace-event-file-pattern=node_trace.${rotation}.log --secure-heap-min=2 --network-family-autoselection-attempt-timeout=250 --tls-cipher-list=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA --use-largepages=off --secure-heap=0 --watch-kill-signal=SIGTERM --test-coverage-branches=0 --max-http-header-size=16384 --test-timeout=0 --node-snapshot --stack-trace-limit=10 --heapsnapshot-near-heap-limit=0 --jitless --max-old-space-size=128 --max-semi-space-size=8 __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "25161728",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:26.170Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105380 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "29155328",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "29417472",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "S (sleeping)",
+        "rss": "48072 kB",
+        "waitChannel": "do_epoll_wait",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "29417472",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471391,
+        "depth": 4,
+        "state": "R (running)",
+        "rss": "49596 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --test-coverage-functions=0 --test-concurrency=0 --inspect-publish-uid=stderr,http --inspect-port=127.0.0.1:9229 --report-signal=SIGUSR2 --test-coverage-lines=0 --test-isolation=process --heap-prof-interval=524288 --cpu-prof-interval=1000 --v8-pool-size=4 --trace-event-file-pattern=node_trace.${rotation}.log --secure-heap-min=2 --network-family-autoselection-attempt-timeout=250 --tls-cipher-list=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA --use-largepages=off --secure-heap=0 --watch-kill-signal=SIGTERM --test-coverage-branches=0 --max-http-header-size=16384 --test-timeout=0 --node-snapshot --stack-trace-limit=10 --heapsnapshot-near-heap-limit=0 --jitless --max-old-space-size=128 --max-semi-space-size=8 __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "29417472",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:26.367Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105380 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "33554432",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "33554432",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "S (sleeping)",
+        "rss": "48072 kB",
+        "waitChannel": "do_epoll_wait",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "33554432",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471391,
+        "depth": 4,
+        "state": "R (running)",
+        "rss": "54572 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --test-coverage-functions=0 --test-concurrency=0 --inspect-publish-uid=stderr,http --inspect-port=127.0.0.1:9229 --report-signal=SIGUSR2 --test-coverage-lines=0 --test-isolation=process --heap-prof-interval=524288 --cpu-prof-interval=1000 --v8-pool-size=4 --trace-event-file-pattern=node_trace.${rotation}.log --secure-heap-min=2 --network-family-autoselection-attempt-timeout=250 --tls-cipher-list=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA --use-largepages=off --secure-heap=0 --watch-kill-signal=SIGTERM --test-coverage-branches=0 --max-http-header-size=16384 --test-timeout=0 --node-snapshot --stack-trace-limit=10 --heapsnapshot-near-heap-limit=0 --jitless --max-old-space-size=128 --max-semi-space-size=8 __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "33816576",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:26.568Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105380 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "38273024",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "38273024",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "S (sleeping)",
+        "rss": "48072 kB",
+        "waitChannel": "do_epoll_wait",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "38273024",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471391,
+        "depth": 4,
+        "state": "R (running)",
+        "rss": "58836 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --test-coverage-functions=0 --test-concurrency=0 --inspect-publish-uid=stderr,http --inspect-port=127.0.0.1:9229 --report-signal=SIGUSR2 --test-coverage-lines=0 --test-isolation=process --heap-prof-interval=524288 --cpu-prof-interval=1000 --v8-pool-size=4 --trace-event-file-pattern=node_trace.${rotation}.log --secure-heap-min=2 --network-family-autoselection-attempt-timeout=250 --tls-cipher-list=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA --use-largepages=off --secure-heap=0 --watch-kill-signal=SIGTERM --test-coverage-branches=0 --max-http-header-size=16384 --test-timeout=0 --node-snapshot --stack-trace-limit=10 --heapsnapshot-near-heap-limit=0 --jitless --max-old-space-size=128 --max-semi-space-size=8 __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "38273024",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:26.774Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105380 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "39337984",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "39337984",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "S (sleeping)",
+        "rss": "48072 kB",
+        "waitChannel": "do_epoll_wait",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "39337984",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471391,
+        "depth": 4,
+        "state": "R (running)",
+        "rss": "60044 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --test-coverage-functions=0 --test-concurrency=0 --inspect-publish-uid=stderr,http --inspect-port=127.0.0.1:9229 --report-signal=SIGUSR2 --test-coverage-lines=0 --test-isolation=process --heap-prof-interval=524288 --cpu-prof-interval=1000 --v8-pool-size=4 --trace-event-file-pattern=node_trace.${rotation}.log --secure-heap-min=2 --network-family-autoselection-attempt-timeout=250 --tls-cipher-list=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA --use-largepages=off --secure-heap=0 --watch-kill-signal=SIGTERM --test-coverage-branches=0 --max-http-header-size=16384 --test-timeout=0 --node-snapshot --stack-trace-limit=10 --heapsnapshot-near-heap-limit=0 --jitless --max-old-space-size=128 --max-semi-space-size=8 __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "39337984",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:26.990Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105380 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "44290048",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "44290048",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "S (sleeping)",
+        "rss": "48072 kB",
+        "waitChannel": "do_epoll_wait",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "44290048",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471391,
+        "depth": 4,
+        "state": "R (running)",
+        "rss": "64700 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --test-coverage-functions=0 --test-concurrency=0 --inspect-publish-uid=stderr,http --inspect-port=127.0.0.1:9229 --report-signal=SIGUSR2 --test-coverage-lines=0 --test-isolation=process --heap-prof-interval=524288 --cpu-prof-interval=1000 --v8-pool-size=4 --trace-event-file-pattern=node_trace.${rotation}.log --secure-heap-min=2 --network-family-autoselection-attempt-timeout=250 --tls-cipher-list=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA --use-largepages=off --secure-heap=0 --watch-kill-signal=SIGTERM --test-coverage-branches=0 --max-http-header-size=16384 --test-timeout=0 --node-snapshot --stack-trace-limit=10 --heapsnapshot-near-heap-limit=0 --jitless --max-old-space-size=128 --max-semi-space-size=8 __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "44290048",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:27.178Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105380 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "48234496",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "48234496",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "S (sleeping)",
+        "rss": "48072 kB",
+        "waitChannel": "do_epoll_wait",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "48234496",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471391,
+        "depth": 4,
+        "state": "R (running)",
+        "rss": "68884 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --test-coverage-functions=0 --test-concurrency=0 --inspect-publish-uid=stderr,http --inspect-port=127.0.0.1:9229 --report-signal=SIGUSR2 --test-coverage-lines=0 --test-isolation=process --heap-prof-interval=524288 --cpu-prof-interval=1000 --v8-pool-size=4 --trace-event-file-pattern=node_trace.${rotation}.log --secure-heap-min=2 --network-family-autoselection-attempt-timeout=250 --tls-cipher-list=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA --use-largepages=off --secure-heap=0 --watch-kill-signal=SIGTERM --test-coverage-branches=0 --max-http-header-size=16384 --test-timeout=0 --node-snapshot --stack-trace-limit=10 --heapsnapshot-near-heap-limit=0 --jitless --max-old-space-size=128 --max-semi-space-size=8 __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "48234496",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:27.382Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105380 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "48263168",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "48263168",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "S (sleeping)",
+        "rss": "48072 kB",
+        "waitChannel": "do_epoll_wait",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "48263168",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471391,
+        "depth": 4,
+        "state": "R (running)",
+        "rss": "69168 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --test-coverage-functions=0 --test-concurrency=0 --inspect-publish-uid=stderr,http --inspect-port=127.0.0.1:9229 --report-signal=SIGUSR2 --test-coverage-lines=0 --test-isolation=process --heap-prof-interval=524288 --cpu-prof-interval=1000 --v8-pool-size=4 --trace-event-file-pattern=node_trace.${rotation}.log --secure-heap-min=2 --network-family-autoselection-attempt-timeout=250 --tls-cipher-list=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA --use-largepages=off --secure-heap=0 --watch-kill-signal=SIGTERM --test-coverage-branches=0 --max-http-header-size=16384 --test-timeout=0 --node-snapshot --stack-trace-limit=10 --heapsnapshot-near-heap-limit=0 --jitless --max-old-space-size=128 --max-semi-space-size=8 __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "48263168",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:27.579Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105380 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "48787456",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "48787456",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "S (sleeping)",
+        "rss": "48072 kB",
+        "waitChannel": "do_epoll_wait",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "48787456",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471391,
+        "depth": 4,
+        "state": "R (running)",
+        "rss": "69656 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --test-coverage-functions=0 --test-concurrency=0 --inspect-publish-uid=stderr,http --inspect-port=127.0.0.1:9229 --report-signal=SIGUSR2 --test-coverage-lines=0 --test-isolation=process --heap-prof-interval=524288 --cpu-prof-interval=1000 --v8-pool-size=4 --trace-event-file-pattern=node_trace.${rotation}.log --secure-heap-min=2 --network-family-autoselection-attempt-timeout=250 --tls-cipher-list=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA --use-largepages=off --secure-heap=0 --watch-kill-signal=SIGTERM --test-coverage-branches=0 --max-http-header-size=16384 --test-timeout=0 --node-snapshot --stack-trace-limit=10 --heapsnapshot-near-heap-limit=0 --jitless --max-old-space-size=128 --max-semi-space-size=8 __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "48787456",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:27.781Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105380 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "51929088",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "51929088",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "S (sleeping)",
+        "rss": "48072 kB",
+        "waitChannel": "do_epoll_wait",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "51929088",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471391,
+        "depth": 4,
+        "state": "R (running)",
+        "rss": "72340 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --test-coverage-functions=0 --test-concurrency=0 --inspect-publish-uid=stderr,http --inspect-port=127.0.0.1:9229 --report-signal=SIGUSR2 --test-coverage-lines=0 --test-isolation=process --heap-prof-interval=524288 --cpu-prof-interval=1000 --v8-pool-size=4 --trace-event-file-pattern=node_trace.${rotation}.log --secure-heap-min=2 --network-family-autoselection-attempt-timeout=250 --tls-cipher-list=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA --use-largepages=off --secure-heap=0 --watch-kill-signal=SIGTERM --test-coverage-branches=0 --max-http-header-size=16384 --test-timeout=0 --node-snapshot --stack-trace-limit=10 --heapsnapshot-near-heap-limit=0 --jitless --max-old-space-size=128 --max-semi-space-size=8 __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "51929088",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:27.983Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105380 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "53465088",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "53465088",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "S (sleeping)",
+        "rss": "48072 kB",
+        "waitChannel": "do_epoll_wait",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "53465088",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471391,
+        "depth": 4,
+        "state": "R (running)",
+        "rss": "74424 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --test-coverage-functions=0 --test-concurrency=0 --inspect-publish-uid=stderr,http --inspect-port=127.0.0.1:9229 --report-signal=SIGUSR2 --test-coverage-lines=0 --test-isolation=process --heap-prof-interval=524288 --cpu-prof-interval=1000 --v8-pool-size=4 --trace-event-file-pattern=node_trace.${rotation}.log --secure-heap-min=2 --network-family-autoselection-attempt-timeout=250 --tls-cipher-list=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA --use-largepages=off --secure-heap=0 --watch-kill-signal=SIGTERM --test-coverage-branches=0 --max-http-header-size=16384 --test-timeout=0 --node-snapshot --stack-trace-limit=10 --heapsnapshot-near-heap-limit=0 --jitless --max-old-space-size=128 --max-semi-space-size=8 __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "53465088",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:28.190Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105380 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "53731328",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "53731328",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "S (sleeping)",
+        "rss": "48072 kB",
+        "waitChannel": "do_epoll_wait",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "53731328",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471391,
+        "depth": 4,
+        "state": "R (running)",
+        "rss": "76912 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --test-coverage-functions=0 --test-concurrency=0 --inspect-publish-uid=stderr,http --inspect-port=127.0.0.1:9229 --report-signal=SIGUSR2 --test-coverage-lines=0 --test-isolation=process --heap-prof-interval=524288 --cpu-prof-interval=1000 --v8-pool-size=4 --trace-event-file-pattern=node_trace.${rotation}.log --secure-heap-min=2 --network-family-autoselection-attempt-timeout=250 --tls-cipher-list=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA --use-largepages=off --secure-heap=0 --watch-kill-signal=SIGTERM --test-coverage-branches=0 --max-http-header-size=16384 --test-timeout=0 --node-snapshot --stack-trace-limit=10 --heapsnapshot-near-heap-limit=0 --jitless --max-old-space-size=128 --max-semi-space-size=8 __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "53731328",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:28.395Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105380 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "55033856",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "55033856",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "S (sleeping)",
+        "rss": "48072 kB",
+        "waitChannel": "do_epoll_wait",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "55033856",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471391,
+        "depth": 4,
+        "state": "R (running)",
+        "rss": "80084 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --test-coverage-functions=0 --test-concurrency=0 --inspect-publish-uid=stderr,http --inspect-port=127.0.0.1:9229 --report-signal=SIGUSR2 --test-coverage-lines=0 --test-isolation=process --heap-prof-interval=524288 --cpu-prof-interval=1000 --v8-pool-size=4 --trace-event-file-pattern=node_trace.${rotation}.log --secure-heap-min=2 --network-family-autoselection-attempt-timeout=250 --tls-cipher-list=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA --use-largepages=off --secure-heap=0 --watch-kill-signal=SIGTERM --test-coverage-branches=0 --max-http-header-size=16384 --test-timeout=0 --node-snapshot --stack-trace-limit=10 --heapsnapshot-near-heap-limit=0 --jitless --max-old-space-size=128 --max-semi-space-size=8 __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "55033856",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:28.591Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105380 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "58175488",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "58175488",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "R (running)",
+        "rss": "48960 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "58175488",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471391,
+        "depth": 4,
+        "state": "R (running)",
+        "rss": "81448 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --test-coverage-functions=0 --test-concurrency=0 --inspect-publish-uid=stderr,http --inspect-port=127.0.0.1:9229 --report-signal=SIGUSR2 --test-coverage-lines=0 --test-isolation=process --heap-prof-interval=524288 --cpu-prof-interval=1000 --v8-pool-size=4 --trace-event-file-pattern=node_trace.${rotation}.log --secure-heap-min=2 --network-family-autoselection-attempt-timeout=250 --tls-cipher-list=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA --use-largepages=off --secure-heap=0 --watch-kill-signal=SIGTERM --test-coverage-branches=0 --max-http-header-size=16384 --test-timeout=0 --node-snapshot --stack-trace-limit=10 --heapsnapshot-near-heap-limit=0 --jitless --max-old-space-size=128 --max-semi-space-size=8 __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "58175488",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:28.794Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105380 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "57724928",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "57724928",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "S (sleeping)",
+        "rss": "49040 kB",
+        "waitChannel": "do_epoll_wait",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "57724928",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471391,
+        "depth": 4,
+        "state": "R (running)",
+        "rss": "81500 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --test-coverage-functions=0 --test-concurrency=0 --inspect-publish-uid=stderr,http --inspect-port=127.0.0.1:9229 --report-signal=SIGUSR2 --test-coverage-lines=0 --test-isolation=process --heap-prof-interval=524288 --cpu-prof-interval=1000 --v8-pool-size=4 --trace-event-file-pattern=node_trace.${rotation}.log --secure-heap-min=2 --network-family-autoselection-attempt-timeout=250 --tls-cipher-list=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA --use-largepages=off --secure-heap=0 --watch-kill-signal=SIGTERM --test-coverage-branches=0 --max-http-header-size=16384 --test-timeout=0 --node-snapshot --stack-trace-limit=10 --heapsnapshot-near-heap-limit=0 --jitless --max-old-space-size=128 --max-semi-space-size=8 __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "57724928",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:29.018Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105380 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "57229312",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "57229312",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "S (sleeping)",
+        "rss": "49040 kB",
+        "waitChannel": "do_epoll_wait",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "57229312",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471391,
+        "depth": 4,
+        "state": "R (running)",
+        "rss": "81640 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --test-coverage-functions=0 --test-concurrency=0 --inspect-publish-uid=stderr,http --inspect-port=127.0.0.1:9229 --report-signal=SIGUSR2 --test-coverage-lines=0 --test-isolation=process --heap-prof-interval=524288 --cpu-prof-interval=1000 --v8-pool-size=4 --trace-event-file-pattern=node_trace.${rotation}.log --secure-heap-min=2 --network-family-autoselection-attempt-timeout=250 --tls-cipher-list=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES256-SHA384:ECDHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA256:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!SRP:!CAMELLIA --use-largepages=off --secure-heap=0 --watch-kill-signal=SIGTERM --test-coverage-branches=0 --max-http-header-size=16384 --test-timeout=0 --node-snapshot --stack-trace-limit=10 --heapsnapshot-near-heap-limit=0 --jitless --max-old-space-size=128 --max-semi-space-size=8 __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "57229312",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:29.218Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105380 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      },
+      {
+        "pid": 471295,
+        "depth": 1,
+        "state": "S (sleeping)",
+        "rss": "2192 kB",
+        "waitChannel": "poll_schedule_timeout.constprop.0",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "15953920",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471320,
+        "depth": 2,
+        "state": "S (sleeping)",
+        "rss": "1612 kB",
+        "waitChannel": "do_wait",
+        "command": "/usr/bin/bwrap --die-with-parent --new-session --unshare-all --ro-bind / / --tmpfs / --dev /dev --proc /proc --size 8388608 --tmpfs /tmp --ro-bind /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 /gnu/store/r05d71x0z7dnll324cynx9sxzq99gaxz-nss-certs-3.112.5 --ro-bind /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs /gnu/store/2nv5hsb2rn8nfrxxdlz1vijncydwpjsb-nss-certs --ro-bind /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 /gnu/store/xrn61xr82qjnd2m1zwvzmpcnvms9jnbc-bash-static-5.2.37 --ro-bind /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 /gnu/store/vpankxryi0sjfv5rggm38f71cqnwdczh-readline-8.2.13 --ro-bind /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 /gnu/store/iy5mr27rgi7a6xccqyy1c1bd1qzl45f0-expat-2.7.1 --ro-bind /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 /gnu/store/gziyc8kh2wd5gq3ah8vjvpr73my4cgam-xz-5.4.5 --ro-bind /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 /gnu/store/b769xis704c3h67y764hlnq0j3lb6asg-sqlite-3.39.3 --ro-bind /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 /gnu/store/86sk9r1phlaq9kfhsxwa2y9qllabqjxp-gdbm-1.25 --ro-bind /gnu/store/6qy3h42q3dn2ilcn2kw7rvlxgrw1jkvw-bzip2-1.0",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "15953920",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471357,
+        "depth": 3,
+        "state": "R (running)",
+        "rss": "49052 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --jitless --max-old-space-size=128 --max-semi-space-size=8 --test --test-reporter=tap -- __561_assay_host__/runner.test.mjs ",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "15953920",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      },
+      {
+        "pid": 471391,
+        "depth": 4,
+        "state": "Z (zombie)",
+        "waitChannel": "0",
+        "command": "",
+        "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/agent.slice/run-rfaf47d574ca745b382d42bf0530129ff.scope",
+        "observedLimits": {
+          "memory.current": "15953920",
+          "memory.high": "max",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+        }
+      }
+    ]
+  },
+  {
+    "observedAt": "2026-10-24T22:17:29.375Z",
+    "rows": [
+      {
+        "pid": 470780,
+        "depth": 0,
+        "state": "R (running)",
+        "rss": "105408 kB",
+        "waitChannel": "0",
+        "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node --max-old-space-size=128 --input-type=module - ",
+        "cgroup": "0::/non-systemd"
+      }
+    ]
+  }
+]

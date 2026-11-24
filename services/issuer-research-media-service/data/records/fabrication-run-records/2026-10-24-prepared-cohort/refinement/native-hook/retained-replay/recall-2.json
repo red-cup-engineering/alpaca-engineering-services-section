@@ -1,0 +1,7 @@
+{
+  "scope": "original delivery replay, not inference",
+  "taskClass": "code-fabrication",
+  "originalWorkLot": "urn:work-lot:inference:D8ipaVMUz6ewROpmXv1UCcMpXf0BHadfrH-fIXKbumc",
+  "textSha256": "91460d8caf015089e0c28544c525f22cee99cd29b4a707e8eb2a891cb0e8bbba",
+  "messagesSha256": "a8bfd451eb8173d6ecd82516c1c1fa6023251ecb576e180aa5d1a68095fcef0a"
+}

@@ -1,0 +1,36 @@
+{
+  "type": "NativeIssuerCohortDerivationReceiving",
+  "version": 1,
+  "observedAt": "2026-10-24T21:48:42.410884+00:00",
+  "disposition": "HOST_TIMEOUT_NO_DELIVERY",
+  "sourceSpecification": "ni:///sha-256;2hHQSxd-NH9ewvXLAIsZXgpyDKJOXUaSSxvlP6b37f0",
+  "completion": "./completion.json",
+  "stageObservation": "./stage-observation.json",
+  "containmentObservation": "./containment-observation.json",
+  "observed": {
+    "exitCode": 124,
+    "stdoutBytes": 0,
+    "stderrBytes": 0,
+    "maximumChildRssKiB": 69432,
+    "providerChildObserved": false,
+    "isolatedAssayChildObserved": false,
+    "sourceProposalReceived": false,
+    "nativeCostReceiptReceived": false,
+    "newCashPurchase": false
+  },
+  "interpretation": "The selected policy was existing included subscription. No provider invocation or completed exchange was observed during the owned-process observations; absence of a terminal native procurement receipt is not a fabricated zero-cost receipt. The actual factory was repeatedly waiting in __mem_cgroup_handle_over_high before a provider or isolated child existed. Its agent-work.slice soft limit was exceeded while the newly qualified parent user.slice soft limit was not.",
+  "preservation": {
+    "originalRetainedProposal": "REFUSED and unchanged",
+    "newActiveSourceMaterialized": false,
+    "independentConsumerTestsExecuted": false,
+    "publicReadinessClaim": false
+  },
+  "nextAct": "After serialized provider release, reuse the exact qualified full contract, exact selected supplier interfaces and original native entrance with actual Codex hook admission and no extra manual parent containment. Receive the original bounded isolated assay outcome; retain any delivered source if that later assay fails.",
+  "causeAttribution": {
+    "type": "OrchestrationPlacementError",
+    "sharedControllerRule": "host-resource-hook.mjs decide() applies automatic containedCommand only for provider claude; Codex allow with no heavy serialization returns unchanged.",
+    "mistake": "The caller manually added containedCommand despite actual Codex allow, moving the factory parent into already throttled agent-work.slice.",
+    "correction": "Use the actual Codex classify/decide result without an extra parent containment layer. Native isolated assay memory, process, network and time bounds remain unchanged.",
+    "limits": "This observation does not establish that the native factory or included provider is defective; neither produced a terminal source or procurement receipt."
+  }
+}

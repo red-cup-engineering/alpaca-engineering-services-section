@@ -1,0 +1,39 @@
+{
+  "kind": "native-fabrication-task-invocation/v1",
+  "executable": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+  "arguments": [
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-code-development-system-services-section/apps/computer-code-development-engine/scripts/fabricate-jsnode-closure.mjs",
+    "--order",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/services/issuer-research-media-service/specifications/prepared-cohort.work-order.md",
+    "--specification",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/services/issuer-research-media-service/data/records/fabrication-run-records/2026-10-24-prepared-cohort/artifact.candidate.json",
+    "--assay-host",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/bare-cedar-fog-services-section/data/records/fabrication-host-records/bare-cedar-fog.json",
+    "--project",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section",
+    "--inference-source",
+    "local",
+    "--inference-data-root",
+    "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-inference-system-services-section/apps/computer-inference-engine/data/state/inference-work-lot-state",
+    "--inference-policy",
+    "subscription",
+    "--inference-provider",
+    "urn:ame:bare-cedar-fog-codex-inference-team"
+  ],
+  "environment": {
+    "INFERENCE_ALLOWANCE_LEDGER_FILE": "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-inference-system-services-section/apps/computer-inference-engine/data/state/allowance-ledger-state/allowance-ledger.sqlite",
+    "CODEX_CAPACITY_LOCK": "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-inference-system-services-section/apps/computer-inference-engine/data/state/provider-capacity-state/codex-request-slot.lock",
+    "CODEX_BIN": "/mnt/c/Users/emsen/.codex/bin/wsl/5e047c57d18ce7ed/codex",
+    "CODEX_HOME": "/home/emsenn/.codex",
+    "XDG_STATE_HOME": "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-inference-system-services-section/apps/computer-inference-engine/data/state",
+    "TMPDIR": "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-inference-system-services-section/apps/computer-inference-engine/data/state/inference-cache-state"
+  },
+  "sourceSpecification": "ni:///sha-256;zbn4SQ9WNdZOfYKUijH2WcQ_G-RV5xB3nLt4i4nqdEk",
+  "scope": "whole source-free module; native JSON preassay covers pureplan/selector only, additional named async interfaces require independent predeclared I/O receiving",
+  "sourceOwner": "red-cup-engineering/issuer-research-media-service",
+  "selectedExistingSource": "a48f45313af1e7525041d17ac3ff9a7ccdf24580",
+  "specificationIndependentlyReceived": true,
+  "policyPreserved": true,
+  "resolvedContextRefusal": "Declared URI version now parsed actual canonical0.1.3 at a1fd901; original wrong0.1.1 copied from old consumer pin, actual manifest digest unchanged. Source interfaces and full behavior unchanged.",
+  "resolvedOpenQuestion": "Literal @ trusted-UA structural predicate received by parent; complete predicate/error preflight retained specification-preflight.json. Async/supplier/effect restrictions remain mandatory, independently received source constraints."
+}

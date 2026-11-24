@@ -1,0 +1,785 @@
+{
+  "inputs": {
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/typeEncoderMap.js": {
+      "bytes": 2218,
+      "imports": [],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/constants.js": {
+      "bytes": 4640,
+      "imports": [],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/sorts.js": {
+      "bytes": 2977,
+      "imports": [],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/writer.js": {
+      "bytes": 10703,
+      "imports": [],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/tag.js": {
+      "bytes": 7555,
+      "imports": [],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/box.js": {
+      "bytes": 6358,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/constants.js",
+          "kind": "import-statement",
+          "original": "./constants.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/tag.js",
+          "kind": "import-statement",
+          "original": "./tag.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/float.js": {
+      "bytes": 31156,
+      "imports": [],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/errors.js": {
+      "bytes": 365,
+      "imports": [],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/const.js": {
+      "bytes": 297,
+      "imports": [],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/decode.js": {
+      "bytes": 5467,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/const.js",
+          "kind": "import-statement",
+          "original": "./const.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/errors.js",
+          "kind": "import-statement",
+          "original": "./errors.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/encode.js": {
+      "bytes": 2181,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/const.js",
+          "kind": "import-statement",
+          "original": "./const.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/decodeStream.js": {
+      "bytes": 1087,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/decode.js",
+          "kind": "import-statement",
+          "original": "./decode.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/encodeStream.js": {
+      "bytes": 1645,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/const.js",
+          "kind": "import-statement",
+          "original": "./const.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/encode.js",
+          "kind": "import-statement",
+          "original": "./encode.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/index.js": {
+      "bytes": 239,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/errors.js",
+          "kind": "import-statement",
+          "original": "./errors.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/decode.js",
+          "kind": "import-statement",
+          "original": "./decode.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/encode.js",
+          "kind": "import-statement",
+          "original": "./encode.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/decodeStream.js",
+          "kind": "import-statement",
+          "original": "./decodeStream.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/encodeStream.js",
+          "kind": "import-statement",
+          "original": "./encodeStream.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/utils.js": {
+      "bytes": 13231,
+      "imports": [],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/encoder.js": {
+      "bytes": 42757,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/typeEncoderMap.js",
+          "kind": "import-statement",
+          "original": "./typeEncoderMap.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/constants.js",
+          "kind": "import-statement",
+          "original": "./constants.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/sorts.js",
+          "kind": "import-statement",
+          "original": "./sorts.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/writer.js",
+          "kind": "import-statement",
+          "original": "./writer.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/box.js",
+          "kind": "import-statement",
+          "original": "./box.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/float.js",
+          "kind": "import-statement",
+          "original": "./float.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/index.js",
+          "kind": "import-statement",
+          "original": "@cto.af/wtf8"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/simple.js": {
+      "bytes": 3222,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/constants.js",
+          "kind": "import-statement",
+          "original": "./constants.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/encoder.js",
+          "kind": "import-statement",
+          "original": "./encoder.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/decodeStream.js": {
+      "bytes": 23038,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/constants.js",
+          "kind": "import-statement",
+          "original": "./constants.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/simple.js",
+          "kind": "import-statement",
+          "original": "./simple.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/float.js",
+          "kind": "import-statement",
+          "original": "./float.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/options.js": {
+      "bytes": 1178,
+      "imports": [],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/container.js": {
+      "bytes": 32188,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/constants.js",
+          "kind": "import-statement",
+          "original": "./constants.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/options.js",
+          "kind": "import-statement",
+          "original": "./options.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/sorts.js",
+          "kind": "import-statement",
+          "original": "./sorts.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/float.js",
+          "kind": "import-statement",
+          "original": "./float.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/box.js",
+          "kind": "import-statement",
+          "original": "./box.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/encoder.js",
+          "kind": "import-statement",
+          "original": "./encoder.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/decodeStream.js",
+          "kind": "import-statement",
+          "original": "./decodeStream.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/simple.js",
+          "kind": "import-statement",
+          "original": "./simple.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/tag.js",
+          "kind": "import-statement",
+          "original": "./tag.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/decoder.js": {
+      "bytes": 11035,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/decodeStream.js",
+          "kind": "import-statement",
+          "original": "./decodeStream.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/container.js",
+          "kind": "import-statement",
+          "original": "./container.js"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/constants.js",
+          "kind": "import-statement",
+          "original": "./constants.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/cryptographic-computer-data-engineering-services-section/src/portable-sha256.mjs": {
+      "bytes": 3595,
+      "imports": [],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/json-engineering-services-section/src/json-byte-carrier.mjs": {
+      "bytes": 3658,
+      "imports": [],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/uri-engineering-services-section/src/ni-uri.mjs": {
+      "bytes": 5749,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/cryptographic-computer-data-engineering-services-section/src/portable-sha256.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/portable-sha256"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/json-engineering-services-section/src/json-byte-carrier.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/json-engineering-services-section/json-byte-carrier"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/cryptographic-computer-data-engineering-services-section/src/portable-bytes.mjs": {
+      "bytes": 2650,
+      "imports": [],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/cbor-engineering-services-section/src/cbor.mjs": {
+      "bytes": 8363,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/encoder.js",
+          "kind": "import-statement",
+          "original": "cbor2/encoder"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/decoder.js",
+          "kind": "import-statement",
+          "original": "cbor2/decoder"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/writer.js",
+          "kind": "import-statement",
+          "original": "cbor2/writer"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/tag.js",
+          "kind": "import-statement",
+          "original": "cbor2/tag"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/uri-engineering-services-section/src/ni-uri.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/uri-engineering-services-section/ni-uri"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/cryptographic-computer-data-engineering-services-section/src/portable-bytes.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/portable-bytes"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-content-address-engineering-services-section/src/semiotic-content-address-system.mjs": {
+      "bytes": 9144,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/cbor-engineering-services-section/src/cbor.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/cbor-engineering-services-section"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/uri-engineering-services-section/src/ni-uri.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/uri-engineering-services-section/ni-uri"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/cryptographic-computer-data-engineering-services-section/src/portable-sha256.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/portable-sha256"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/cryptographic-computer-data-engineering-services-section/src/portable-bytes.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/portable-bytes"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/cryptographic-computer-data-engineering-services-section/src/portable-bytes.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/portable-bytes"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/notation/forms.mjs": {
+      "bytes": 1570,
+      "imports": [],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/notation/schema.mjs": {
+      "bytes": 1271,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/notation/forms.mjs",
+          "kind": "import-statement",
+          "original": "./forms.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/notation/validator.mjs": {
+      "bytes": 250,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/notation.mjs",
+          "kind": "import-statement",
+          "original": "../notation.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/four.mjs": {
+      "bytes": 29436,
+      "imports": [],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/notation.mjs": {
+      "bytes": 18110,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/notation/schema.mjs",
+          "kind": "import-statement",
+          "original": "./notation/schema.mjs"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/notation/validator.mjs",
+          "kind": "import-statement",
+          "original": "./notation/validator.mjs"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/notation/forms.mjs",
+          "kind": "import-statement",
+          "original": "./notation/forms.mjs"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/notation/forms.mjs",
+          "kind": "import-statement",
+          "original": "./notation/forms.mjs"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/four.mjs",
+          "kind": "import-statement",
+          "original": "../four.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/json-codec.mjs": {
+      "bytes": 24054,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/notation.mjs",
+          "kind": "import-statement",
+          "original": "./notation.mjs"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/cbor-engineering-services-section/src/cbor.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/cbor-engineering-services-section"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/typing.mjs": {
+      "bytes": 11605,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-content-address-engineering-services-section/src/semiotic-content-address-system.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/computer-content-address-engineering-services-section/semiotic-content-address-system"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/notation.mjs",
+          "kind": "import-statement",
+          "original": "./notation.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/semantic-content-identity.mjs": {
+      "bytes": 16528,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-content-address-engineering-services-section/src/semiotic-content-address-system.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/computer-content-address-engineering-services-section/semiotic-content-address-system"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/uri-engineering-services-section/src/ni-uri.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/uri-engineering-services-section/ni-uri"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/json-codec.mjs",
+          "kind": "import-statement",
+          "original": "./json-codec.mjs"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/typing.mjs",
+          "kind": "import-statement",
+          "original": "./typing.mjs"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/json-engineering-services-section/src/json-byte-carrier.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/json-engineering-services-section/json-byte-carrier"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/json-engineering-services-section/scripts/canonical-json.mjs": {
+      "bytes": 19693,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/evidence-packet.mjs": {
+      "bytes": 1965,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/semantic-content-identity.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/semantic-content-identity"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/json-engineering-services-section/scripts/canonical-json.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/json-engineering-services-section/canonical-json"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/issuer-revenue-reconciliation.mjs": {
+      "bytes": 9376,
+      "imports": [],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../computer-data-engineering-services-section/services/cryptographic-computer-data-engineering-services-section/src/portable-sha256.mjs": {
+      "bytes": 3595,
+      "imports": [],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-serialized-content-engineering-services-section/services/json-engineering-services-section/src/json-byte-carrier.mjs": {
+      "bytes": 3658,
+      "imports": [],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-content-address-engineering-services-section/services/uri-engineering-services-section/src/ni-uri.mjs": {
+      "bytes": 7456,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../computer-data-engineering-services-section/services/cryptographic-computer-data-engineering-services-section/src/portable-sha256.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/portable-sha256"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-serialized-content-engineering-services-section/services/json-engineering-services-section/src/json-byte-carrier.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/json-engineering-services-section/json-byte-carrier"
+        }
+      ],
+      "format": "esm"
+    },
+    "../../../../../../../../../../../../../../../computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-content-address-engineering-services-section/src/content-address.mjs": {
+      "bytes": 1861,
+      "imports": [
+        {
+          "path": "../../../../../../../../../../../../../../../computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-content-address-engineering-services-section/services/uri-engineering-services-section/src/ni-uri.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/uri-engineering-services-section/ni-uri"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/prepared-cohort.mjs": {
+      "bytes": 22768,
+      "imports": [
+        {
+          "path": "src/evidence-packet.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/issuer-research-media-service"
+        },
+        {
+          "path": "src/issuer-revenue-reconciliation.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/issuer-research-media-service/revenue-reconciliation"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-content-address-engineering-services-section/src/content-address.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/computer-content-address-engineering-services-section/content-address"
+        },
+        {
+          "path": "../../../../../../../../../../../../../../../computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-content-address-engineering-services-section/services/uri-engineering-services-section/src/ni-uri.mjs",
+          "kind": "import-statement",
+          "original": "@red-cup-engineering/uri-engineering-services-section/ni-uri"
+        }
+      ],
+      "format": "esm"
+    },
+    "<stdin>": {
+      "bytes": 2563,
+      "imports": [
+        {
+          "path": "aapl-source",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "msft-source",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/prepared-cohort.mjs",
+          "kind": "import-statement",
+          "original": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/services/issuer-research-media-service/src/prepared-cohort.mjs"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "stdin.js": {
+      "imports": [
+        {
+          "path": "aapl-source",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "msft-source",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "exports": [
+        "fullCompanyfactsPreparation"
+      ],
+      "entryPoint": "<stdin>",
+      "inputs": {
+        "<stdin>": {
+          "bytesInOutput": 2179
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/typeEncoderMap.js": {
+          "bytesInOutput": 1096
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/constants.js": {
+          "bytesInOutput": 1612
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/sorts.js": {
+          "bytesInOutput": 272
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/writer.js": {
+          "bytesInOutput": 3292
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/tag.js": {
+          "bytesInOutput": 3456
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/box.js": {
+          "bytesInOutput": 504
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/float.js": {
+          "bytesInOutput": 10311
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/index.js": {
+          "bytesInOutput": 0
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/const.js": {
+          "bytesInOutput": 51
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@cto.af/wtf8/lib/encode.js": {
+          "bytesInOutput": 1657
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/utils.js": {
+          "bytesInOutput": 2877
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/encoder.js": {
+          "bytesInOutput": 8223
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/simple.js": {
+          "bytesInOutput": 1067
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/decodeStream.js": {
+          "bytesInOutput": 8120
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/options.js": {
+          "bytesInOutput": 292
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/cbor2/lib/container.js": {
+          "bytesInOutput": 11781
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/cryptographic-computer-data-engineering-services-section/src/portable-sha256.mjs": {
+          "bytesInOutput": 2939
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/uri-engineering-services-section/src/ni-uri.mjs": {
+          "bytesInOutput": 1282
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/cryptographic-computer-data-engineering-services-section/src/portable-bytes.mjs": {
+          "bytesInOutput": 699
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/cbor-engineering-services-section/src/cbor.mjs": {
+          "bytesInOutput": 2713
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-content-address-engineering-services-section/src/semiotic-content-address-system.mjs": {
+          "bytesInOutput": 4381
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/notation/forms.mjs": {
+          "bytesInOutput": 726
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/notation/schema.mjs": {
+          "bytesInOutput": 1170
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/notation.mjs": {
+          "bytesInOutput": 9269
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/four.mjs": {
+          "bytesInOutput": 8911
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/json-codec.mjs": {
+          "bytesInOutput": 4824
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/typing.mjs": {
+          "bytesInOutput": 8609
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/computer-data-engineering-services-section/src/semiotic-expression-notation/semantic-content-identity.mjs": {
+          "bytesInOutput": 5831
+        },
+        "../../../../../../../../../../../../../../../../../github-engineering-services-section/node_modules/@red-cup-engineering/json-engineering-services-section/scripts/canonical-json.mjs": {
+          "bytesInOutput": 9535
+        },
+        "src/evidence-packet.mjs": {
+          "bytesInOutput": 1736
+        },
+        "src/issuer-revenue-reconciliation.mjs": {
+          "bytesInOutput": 5696
+        },
+        "../../../../../../../../../../../../../../../computer-data-engineering-services-section/services/cryptographic-computer-data-engineering-services-section/src/portable-sha256.mjs": {
+          "bytesInOutput": 2960
+        },
+        "../../../../../../../../../../../../../../../computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-content-address-engineering-services-section/services/uri-engineering-services-section/src/ni-uri.mjs": {
+          "bytesInOutput": 829
+        },
+        "../../../../../../../../../../../../../../../computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/computer-content-address-engineering-services-section/src/content-address.mjs": {
+          "bytesInOutput": 961
+        },
+        "src/prepared-cohort.mjs": {
+          "bytesInOutput": 16533
+        }
+      },
+      "bytes": 151727
+    }
+  }
+}

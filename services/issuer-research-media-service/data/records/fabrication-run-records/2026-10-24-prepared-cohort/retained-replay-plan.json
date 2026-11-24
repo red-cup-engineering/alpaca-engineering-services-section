@@ -1,0 +1,37 @@
+{
+  "type": "NativeJsnodeRetainedDeliveryReplayPlan",
+  "version": 1,
+  "status": "NOT_EXECUTED_RESOURCE_ADMISSION_UNRECEIVED",
+  "scope": "receiving/replay of exact original deliveries, not a new provider lot or source derivation purchase",
+  "executable": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+  "cliArguments": [
+    "--input-type=module"
+  ],
+  "nativeModuleAPI": "@red-cup-engineering/jsnode-package-engineering-services-section/derive-jsnode-package-from-closure#deriveJsnodeModules",
+  "hostAPI": "computer-code-development-engine/src/fabrication/isolated-module-assay.mjs#createIsolatedModuleAssayExecutor",
+  "originalCandidate": "data/records/fabrication-run-records/2026-10-24-prepared-cohort/artifact.candidate.before-value-receiving.json",
+  "originalSourceSpecification": "ni:///sha-256;zbn4SQ9WNdZOfYKUijH2WcQ_G-RV5xB3nLt4i4nqdEk",
+  "originalOrderCapture": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/admitted-order-before-value-receiving.md",
+  "originalOrderSha256": "e75971efd344abd8b712d549f3b3a0c7185c8554ac0557c9f2a8a3990c2b4098",
+  "sourceProposalSha256": "7b21ee4c4e6b879358e858b149b2fdb6fd70326f88dd4aca73acf543a8103e73",
+  "retainedDeliveriesReceipt": "data/logs/fabrication-logs/2026-10-24-prepared-cohort/native-fabrication.stdout.json",
+  "originalSourceWorkLot": "urn:work-lot:inference:KUZ5CTg6v_pUltf5W-6NijUrrKcXnYIVwOJKoGwaBJM",
+  "originalAssayWorkLot": "urn:work-lot:inference:7RT6o7XmdLGe8a7J1arn6M2g5BiAxOYheq2FiV1VyCQ",
+  "inMemoryTransport": "Return exactly the retained assay/source delivery texts and original lots to native deriveJsnodeModules; reject unexpected requests. No provider/inference dispatch and no mutation of retained texts. Preserve original refusal. Native admission, misfold, installed-context inspection, isolation and projection rerun.",
+  "hostPolicy": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/bare-cedar-fog-services-section/data/records/fabrication-host-records/bare-cedar-fog.json",
+  "dependencyProjectRoot": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section",
+  "sharedHostRepair": {
+    "repository": "red-cup-engineering/computer-systems-fabrication-engineering-services-section",
+    "pullRequest": 87,
+    "head": "4e62dab96c0d42073cb1e7deea02206b0c47c2f2",
+    "status": "grammar received, native namespace runtime timed out under actual memory saturation; main receipt belongs to integration/root"
+  },
+  "receivingAfterReplay": [
+    "Original HTTP/R2 consumer suite, including numeric counterexamples and legitimate historical revision case; exact old proposal is expected to be refused",
+    "Qualify corrected living contract and receive meaning before any separately allocated whole-unit refinement",
+    "No hand edits to generated source; no src/prepared-cohort.mjs is active; no public enablement or R2 writes"
+  ],
+  "nativeCLIStatus": "Existing fabricate-jsnode-closure.mjs is the provider-purchase CLI and has no retained-delivery recall flag. Do not invent one or rerun it as replay.",
+  "nativeModuleSource": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-code-development-system-services-section/apps/computer-code-development-engine/node_modules/@red-cup-engineering/jsnode-package-engineering-services-section/src/derive-jsnode-package-from-closure.mjs",
+  "hostModuleSource": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-code-development-system-services-section/apps/computer-code-development-engine/src/fabrication/isolated-module-assay.mjs"
+}

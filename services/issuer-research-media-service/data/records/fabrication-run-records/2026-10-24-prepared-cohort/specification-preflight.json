@@ -1,0 +1,34 @@
+{
+  "type": "IssuerPreparedCohortSpecificationPreflight",
+  "version": 1,
+  "specificationDigest": "ni:///sha-256;zbn4SQ9WNdZOfYKUijH2WcQ_G-RV5xB3nLt4i4nqdEk",
+  "status": "SUPERSEDED_AFTER_INDEPENDENT_SOURCE_REFUSAL",
+  "sourceExists": false,
+  "previousResults": [
+    "URI context guard refused before inference; corrected copied version pin to actual0.1.3",
+    "OPEN_QUESTION: explicit kernel bounds/forms and honest JSON assay scope; closed by received source constants and full source-constraint partition",
+    "OPEN_QUESTION: contact email marker syntax; closed by independently judged literal @ structural predicate"
+  ],
+  "reviewedPredicates": {
+    "configuration": "2..5 unique CIKs; nonempty tickers; positive safe bounds; min interval; explicit allowed periods; extra host controls ignored",
+    "userAgent": "trim-nonempty string, no CR/LF, literal @; neither mailbox syntax nor contact truth",
+    "calendar": "canonical UTC snapshot instants; actual valid calendar days; inclusive kernel70..110/330..380 and four exact SEC forms; no fy/fp inference",
+    "selectedBoundary": "fixed cohort/order/CIK/source NI/byte bounds; source/snapshot ages; current or explicitly permitted ambiguity; old conflicting witnesses refuse; explicit period/value metadata",
+    "packet": "original constructor, uppercase ticker, same issuer/date/source; nonempty claims/citations; paid read does not rehash",
+    "effects": "one fixed source GET at a time, declared headers/redirect:error/signal, bounded actual bytes, timeout through body, raw-byte NI; no retries or storage writes",
+    "failures": "network/timeout/429/5xx/UTC-day-change retryable; parser/identity/otherHTTP/bytes/compact-output nonretryable; literal Retry-After preserved; actual redirect:error fetch rejection classified as network; no partial return",
+    "cache": "validate body before one configured get; all binding/read/missing/malformed/oversize cache failures use cache503/retryable true; no SEC or paid-path source/identity recomputation",
+    "scope": "native JSON assay only plan/selector observable IDs; complete mandatory async/source/effect constraints retained with independently predeclared I/O obligations"
+  },
+  "notReceived": [
+    "semantic source proposal",
+    "HTTP/R2 consumer execution",
+    "edge/DO CPU and storage operation",
+    "registry/installed consumer",
+    "public delivery and outside revenue",
+    "continuous zero incremental cash capacity"
+  ],
+  "correction": "Preflight shape/period expansion omitted numeric value agreement with latest witnesses and packet-statement consistency. Living contract now restores these original business invariants; it is not yet requalified.",
+  "currentLivingOrderSha256": "440ffd4a2ab57731a33d0142fd3a2278704896c4b7a8792a178c3e0a2fb36e2b",
+  "nextExecution": "No inference, replay or tests until actual native resource admission; exact retained original deliveries remain refused."
+}

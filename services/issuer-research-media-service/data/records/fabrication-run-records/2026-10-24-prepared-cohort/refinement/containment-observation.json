@@ -1,0 +1,52 @@
+{
+  "type": "OwnedNativeFabricationContainmentObservation",
+  "version": 1,
+  "observedAt": "2026-10-24T21:47:19.681976+00:00",
+  "pid": 350672,
+  "cgroup": "/user.slice/user-1000.slice/user@1000.service/agent.slice/agent-work.slice/run-rf6ed2cddc0bf4a0880776784076aa65a.scope",
+  "state": "__mem_cgroup_handle_over_high",
+  "groups": [
+    {
+      "path": "user.slice/user-1000.slice/user@1000.service/agent.slice/agent-work.slice/run-rf6ed2cddc0bf4a0880776784076aa65a.scope",
+      "memory.current": "30281728",
+      "memory.high": "max",
+      "memory.max": "max",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+    },
+    {
+      "path": "user.slice/user-1000.slice/user@1000.service/agent.slice/agent-work.slice",
+      "memory.current": "2174332928",
+      "memory.high": "1932525568",
+      "memory.max": "2576351232",
+      "memory.events": "low 0\nhigh 12529749\nmax 247\noom 34707\noom_kill 1\noom_group_kill 0"
+    },
+    {
+      "path": "user.slice/user-1000.slice/user@1000.service/agent.slice",
+      "memory.current": "2836729856",
+      "memory.high": "max",
+      "memory.max": "max",
+      "memory.events": "low 4225\nhigh 12529751\nmax 247\noom 34707\noom_kill 1\noom_group_kill 0"
+    },
+    {
+      "path": "user.slice/user-1000.slice/user@1000.service",
+      "memory.current": "4423880704",
+      "memory.high": "max",
+      "memory.max": "max",
+      "memory.events": "low 4225\nhigh 15814578\nmax 247\noom 34707\noom_kill 1\noom_group_kill 0"
+    },
+    {
+      "path": "user.slice/user-1000.slice",
+      "memory.current": "4423921664",
+      "memory.high": "max",
+      "memory.max": "max",
+      "memory.events": "low 4225\nhigh 15814579\nmax 247\noom 34707\noom_kill 1\noom_group_kill 0"
+    },
+    {
+      "path": "user.slice",
+      "memory.current": "4423954432",
+      "memory.high": "4429185024",
+      "memory.max": "7516192768",
+      "memory.events": "low 4225\nhigh 39013471\nmax 247\noom 34707\noom_kill 1\noom_group_kill 0"
+    }
+  ]
+}

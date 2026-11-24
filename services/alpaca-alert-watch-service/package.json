@@ -1,0 +1,37 @@
+{
+  "name": "@red-cup-engineering/alpaca-alert-watch-service",
+  "version": "0.2.3-dev.0",
+  "type": "module",
+  "description": "Read-only watch over both Alpaca paper loops' NDJSON decision journals, the kill switch's tripped-record, and alpaca systemd --user unit failures. Posts one batched [ALPACA-ALERT] message per run into the TTI Discord admin channel via turntide-islands' own Discord REST transport when anything new is found. Runs on its own 15-minute market-hours timer.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/alpaca-engineering-services-section.git",
+    "directory": "services/alpaca-alert-watch-service"
+  },
+  "exports": {
+    "./journal-watch": "./src/journal-watch.mjs",
+    "./failed-units-watch": "./src/failed-units-watch.mjs"
+  },
+  "bin": {
+    "alpaca-watch-and-alert": "./scripts/watch-and-alert.mjs"
+  },
+  "scripts": {
+    "watch": "node scripts/watch-and-alert.mjs"
+  },
+  "dependencies": {
+    "@red-cup-engineering/node-js-function-engineering-services-section": "^0.5.1",
+    "@causeway-services/turntide-islands-services-section": "^0.1.0"
+  },
+  "engines": {
+    "node": ">=24.2.0"
+  },
+  "files": [
+    "src",
+    "scripts"
+  ],
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
+}

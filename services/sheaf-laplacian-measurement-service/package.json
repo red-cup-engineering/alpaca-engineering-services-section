@@ -1,0 +1,207 @@
+{
+  "name": "@red-cup-engineering/sheaf-laplacian-measurement-service",
+  "version": "0.2.3",
+  "private": false,
+  "type": "module",
+  "description": "Source-qualified finite rational cellular-sheaf cohomology/obstruction receipts and explicitly approximate sheaf Laplacians.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/alpaca-engineering-services-section.git",
+    "directory": "services/sheaf-laplacian-measurement-service"
+  },
+  "exports": {
+    ".": "./src/measure.mjs",
+    "./assay": "./src/assay.mjs",
+    "./assay-input": "./src/assay-input.mjs"
+  },
+  "scripts": {
+    "check": "node --check src/measure.mjs && node --check src/assay-input.mjs && node --check src/assay.mjs"
+  },
+  "dependencies": {
+    "@red-cup-engineering/signgraph": "^0.10.2"
+  },
+  "files": [
+    "package.json",
+    "README*",
+    "LICENSE*",
+    "src"
+  ],
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  },
+  "x-market": {
+    "gateway": "sheaf-mathematics",
+    "offers": [
+      {
+        "operation": "finite-sheaf-cohomology",
+        "subpath": "./assay",
+        "export": "assayFiniteCellularSheaf",
+        "route": "/v1/mathematics/sheaf/cohomology",
+        "method": "POST",
+        "price": {
+          "amount": "$0.05"
+        },
+        "framings": [
+          {
+            "key": "default",
+            "title": "Exact finite cellular sheaf cohomology",
+            "description": "Compute bounded rational H0/H1 and source-indexed local-section extension or obstruction; neither external observations nor kernel proof admission is asserted.",
+            "tags": [
+              "sheaf",
+              "cohomology",
+              "exact",
+              "obstruction"
+            ],
+            "serviceName": "finite-sheaf-cohomology"
+          }
+        ],
+        "ledgerAccount": "Income:Sales:X402",
+        "markets": [
+          "x402-bazaar",
+          "402index",
+          "house-capability-market",
+          "house-seller-catalog"
+        ],
+        "saleStatus": "held",
+        "listed": false,
+        "seller": {
+          "enterprise": "engineering"
+        },
+        "category": "mathematics",
+        "runtime": "node",
+        "recoverable": false,
+        "requestMaxBytes": 65536,
+        "resources": [
+          "bounded finite cellular-sheaf arithmetic (16 vertices, 32 edges, 48 coordinates)"
+        ],
+        "examples": {
+          "input": {
+            "vertices": [
+              {
+                "id": "p",
+                "dim": 1
+              }
+            ],
+            "edges": []
+          },
+          "output": {
+            "recordType": "561-group.finite-cellular-sheaf-assay.v1",
+            "mathematicalCarrier": "finite graph (1-dimensional CW complex), rational vector stalks",
+            "coefficientField": "Q",
+            "sourceOperation": "@red-cup-engineering/signgraph/cellular-sheaf",
+            "qualification": "exact rational computation; independent machine-proof/kernel replay not established by this receipt",
+            "dimensions": {
+              "c0": 1,
+              "c1": 0,
+              "vertices": 1,
+              "edges": 0
+            },
+            "cohomology": {
+              "h0": 1,
+              "h1": 0,
+              "rankD0": 0
+            },
+            "extension": null,
+            "limits": {
+              "vertices": 16,
+              "edges": 32,
+              "coordinates": 48
+            }
+          }
+        }
+      },
+      {
+        "operation": "finite-sheaf-laplacian",
+        "subpath": "./assay",
+        "export": "assayFiniteSheafLaplacian",
+        "route": "/v1/mathematics/sheaf/laplacian",
+        "method": "POST",
+        "price": {
+          "amount": "$0.08"
+        },
+        "framings": [
+          {
+            "key": "default",
+            "title": "Finite sheaf Laplacian and Dirichlet energy",
+            "description": "Compute a bounded sheaf Laplacian with floating-point qualification and separately exact rational H0/H1; no invented certified spectrum or physical interpretation.",
+            "tags": [
+              "sheaf",
+              "laplacian",
+              "hodge",
+              "matrix"
+            ],
+            "serviceName": "finite-sheaf-laplacian"
+          }
+        ],
+        "ledgerAccount": "Income:Sales:X402",
+        "markets": [
+          "x402-bazaar",
+          "402index",
+          "house-capability-market",
+          "house-seller-catalog"
+        ],
+        "saleStatus": "held",
+        "listed": false,
+        "seller": {
+          "enterprise": "engineering"
+        },
+        "category": "mathematics",
+        "runtime": "node",
+        "recoverable": false,
+        "requestMaxBytes": 65536,
+        "resources": [
+          "bounded finite cellular-sheaf arithmetic (16 vertices, 32 edges, 48 coordinates)"
+        ],
+        "examples": {
+          "input": {
+            "vertices": [
+              {
+                "id": "p",
+                "dim": 1
+              }
+            ],
+            "edges": []
+          },
+          "output": {
+            "recordType": "561-group.finite-sheaf-laplacian-assay.v1",
+            "mathematicalCarrier": "finite graph (1-dimensional CW complex), rational vector stalks",
+            "coefficientField": "Q",
+            "sourceOperation": "@red-cup-engineering/signgraph/cellular-sheaf",
+            "qualification": "exact rational computation; independent machine-proof/kernel replay not established by this receipt",
+            "dimensions": {
+              "c0": 1,
+              "c1": 0,
+              "vertices": 1,
+              "edges": 0
+            },
+            "cohomology": {
+              "h0": 1,
+              "h1": 0,
+              "rankD0": 0
+            },
+            "extension": null,
+            "limits": {
+              "vertices": 16,
+              "edges": 32,
+              "coordinates": 48
+            },
+            "numerical": {
+              "qualification": "IEEE-754 floating-point approximation, NOT an exact proof or certified spectrum",
+              "operator": "delta-transpose delta",
+              "matrix": {
+                "kind": "signgraph.sparseMatrix",
+                "rows": 1,
+                "cols": 1,
+                "entries": [
+                  []
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

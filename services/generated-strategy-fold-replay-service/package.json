@@ -1,0 +1,30 @@
+{
+  "name": "@red-cup-engineering/generated-strategy-fold-replay-service",
+  "version": "0.1.4-dev.0",
+  "private": false,
+  "type": "module",
+  "description": "Replays one statically admitted generated strategy over causal frames in an isolated worker and returns validation, untouched holdout, and current decisions.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/alpaca-engineering-services-section.git",
+    "directory": "services/generated-strategy-fold-replay-service"
+  },
+  "exports": {
+    ".": "./src/replay-folds.mjs"
+  },
+  "scripts": {
+    "check": "node --check src/replay-folds.mjs",
+    "verify": "npm run check"
+  },
+  "files": [
+    "package.json",
+    "README*",
+    "LICENSE*",
+    "src"
+  ],
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
+}

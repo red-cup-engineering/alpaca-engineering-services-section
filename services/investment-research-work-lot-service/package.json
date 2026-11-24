@@ -1,0 +1,39 @@
+{
+  "name": "@red-cup-engineering/investment-research-work-lot-service",
+  "version": "0.2.7-dev.0",
+  "type": "module",
+  "description": "Contracts provider-distinct bounded institutional research roles and returns untrusted typed forecast sections or explicit seat residues.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/alpaca-engineering-services-section.git",
+    "directory": "services/investment-research-work-lot-service"
+  },
+  "exports": {
+    ".": "./src/committee.mjs",
+    "./inference-market-runtime": "./src/inference-market-runtime.mjs",
+    "./schemas": "./src/schemas.mjs"
+  },
+  "files": [
+    "schemas/",
+    "src/"
+  ],
+  "dependencies": {
+    "@red-cup-engineering/json-schema-engineering-services-section": "^0.5.8",
+    "@red-cup-engineering/computer-inference-engine": "^0.2.13"
+  },
+  "peerDependencies": {},
+  "peerDependenciesMeta": {
+    "@red-cup-engineering/inference-work-lot-service": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "check": "node --check src/*.mjs"
+  },
+  "private": false,
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
+}

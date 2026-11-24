@@ -1,0 +1,37 @@
+{
+  "type": "issuer-source-owner-reconciliation",
+  "actualOwners": {
+    "alpaca": {
+      "repository": "red-cup-engineering/alpaca-engineering-services-section",
+      "base": "60905bf4b23eec28c058ac8503dff49c5a04d0b3"
+    },
+    "issuer": {
+      "repository": "red-cup-engineering/issuer-research-media-service",
+      "base": "873ed5d"
+    }
+  },
+  "originalCandidate": "computer-web-engineering-services-section@4cf329604072afbb78b83c17f65904f408e7257c",
+  "packet": {
+    "sourceSha256": "bdccad350041793b6fc00cd3c0d2949b5be415fdf8285bcd91dd20754945c2d8",
+    "constructorMovedWithoutSemanticEdit": true,
+    "rootToChildDelegation": true,
+    "cases": 4,
+    "passed": 4,
+    "oldLiveFixtureId": "ni:///sha-256;L2vC6rKUcdeexx-zPFYJom8F9QRN-cZus8mq--jzKcs",
+    "newLiveFixtureId": "ni:///sha-256;L2vC6rKUcdeexx-zPFYJom8F9QRN-cZus8mq--jzKcs",
+    "legacyChild": {
+      "importRefusal": "ERR_PACKAGE_PATH_NOT_EXPORTED",
+      "subpath": "@red-cup-engineering/computer-content-address-engineering-services-section/semantic-content-identity",
+      "observedOldId": null,
+      "oldIdParity": "unverified; baseline did not load",
+      "bodyContract": "same fields, default license and request refusals in source"
+    }
+  },
+  "materializedNativeSuite": {
+    "cases": 17,
+    "passed": 17,
+    "scope": "14 kernel+3 old public packet cases after proper owner/caller migration",
+    "registryPublication": false
+  },
+  "nativeGitCustody": "canonical source trees and their proper parent .git/modules stores; no extra candidate checkout"
+}

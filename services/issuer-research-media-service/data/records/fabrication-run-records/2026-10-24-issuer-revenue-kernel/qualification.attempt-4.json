@@ -1,0 +1,7 @@
+{
+  "type": "ArtifactFabricationSpecificationRefusal",
+  "version": 1,
+  "code": "RESTRICTION_WITHOUT_CLAIM",
+  "message": "prohibitions[0] refuses, narrows or constrains work and must name the claims it rests on",
+  "path": "prohibitions[0]"
+}

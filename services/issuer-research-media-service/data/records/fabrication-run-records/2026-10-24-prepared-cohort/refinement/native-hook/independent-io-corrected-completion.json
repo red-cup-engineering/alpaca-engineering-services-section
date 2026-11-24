@@ -1,0 +1,8 @@
+{
+  "startedAt": "2026-10-24T22:17:20.073981+00:00",
+  "finishedAt": "2026-10-24T22:17:29.443692+00:00",
+  "exitCode": 0,
+  "wallSeconds": 9.369653290996212,
+  "maximumChildRssKiB": 105840,
+  "scope": "same original I/O assertions with original packet selected through its actual declared package; no semantic source change/inference/network"
+}

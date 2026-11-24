@@ -1,0 +1,11 @@
+{
+  "type": "MarkdownJsnodeOperationPackageSpecificationTranslationRefusal",
+  "version": 1,
+  "code": "MISSING_CLAIMS",
+  "message": "a work order states the claims its clauses rest on in a ## Claims section (candidate version 1 is retired)",
+  "sourceSpan": {
+    "type": "ArtifactFabricationSourceSpan",
+    "startLine": 1,
+    "endLine": 1
+  }
+}

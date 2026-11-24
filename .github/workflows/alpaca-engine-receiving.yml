@@ -1,0 +1,19 @@
+name: Receive the consolidated Alpaca engine
+on:
+  pull_request:
+    paths:
+      - 'apps/alpaca-engine/**'
+      - '.github/workflows/alpaca-engine-receiving.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'apps/alpaca-engine/**'
+      - '.github/workflows/alpaca-engine-receiving.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  installed-engine:
+    uses: red-cup-engineering/jsnode-package-engineering-services-section/.github/workflows/receive-installed-package.yml@43738d731795fa04e79f14b3557d90638b7ed6cd
+    with:
+      package-directory: apps/alpaca-engine

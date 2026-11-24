@@ -1,0 +1,7 @@
+{
+  "classification": {
+    "action": "allow"
+  },
+  "command": "\"/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-economic-systems-engineering-services-section/services/computer-business-systems-engineering-services-section/services/earning-loop-worker-service/node_modules/@cloudflare/workerd-linux-64/bin/workerd\" test \"/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/services/issuer-research-media-service/data/records/worker-runtime-test-records/2026-10-24-prepared-cohort-edge/config.capnp\"",
+  "scope": "107-file 632KB existing exact supplier closure; workerd four finite fixture cases, no network, 30s deadline, no inference"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "@red-cup-engineering/issuer-research-media-service",
+  "version": "0.2.3-dev.0",
+  "private": false,
+  "type": "module",
+  "exports": {
+    ".": "./src/evidence-packet.mjs",
+    "./src/evidence-packet.mjs": "./src/evidence-packet.mjs",
+    "./revenue-reconciliation": "./src/issuer-revenue-reconciliation.mjs",
+    "./prepared-cohort": "./src/prepared-cohort.mjs",
+    "./issuer-concept-coherence": "./src/issuer-concept-coherence.mjs"
+  },
+  "scripts": {
+    "check": "node --check src/evidence-packet.mjs"
+  },
+  "description": "Source-bound issuer evidence, fiscal-period/revision reconciliation and prepared-cohort acquisition/selection.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/alpaca-engineering-services-section.git",
+    "directory": "services/issuer-research-media-service"
+  },
+  "dependencies": {
+    "@red-cup-engineering/computer-code-engine": "^0.1.0",
+    "@red-cup-engineering/computer-content-address-engineering-services-section": "^0.3.0",
+    "@red-cup-engineering/computer-data-engineering-services-section": "^0.7.4",
+    "@red-cup-engineering/json-engine": "^0.5.1",
+    "@red-cup-engineering/metrologic": "^0.22.4",
+    "@red-cup-engineering/uri-engineering-services-section": "^0.1.7",
+    "@red-cup-engineering/signcell": "^0.18.0 || 0.18.1-dev.0",
+    "@red-cup-engineering/semiotic-content-address-system": "^0.1.7 || 0.1.8-dev.0"
+  },
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  },
+  "files": [
+    "src",
+    "data/records/schema"
+  ]
+}

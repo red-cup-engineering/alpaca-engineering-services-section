@@ -1,0 +1,39 @@
+{
+  "type": "NativeFabricationStageObservation",
+  "version": 1,
+  "observedAt": "2026-10-24T21:41:12.771629+00:00",
+  "scope": "run-rf6ed2cddc0bf4a0880776784076aa65a.scope",
+  "sourceSpecification": "ni:///sha-256;2hHQSxd-NH9ewvXLAIsZXgpyDKJOXUaSSxvlP6b37f0",
+  "factory": {
+    "pid": 350672,
+    "state": "D (disk sleep)",
+    "rss": "60896 kB",
+    "waitChannel": "__mem_cgroup_handle_over_high"
+  },
+  "stage": "factory-host-before-provider-or-isolated-child",
+  "evidence": {
+    "ownedScopePids": [
+      350395,
+      350645,
+      350672
+    ],
+    "providerCapacityLockKernelOwnerObserved": false,
+    "nativeProviderExchangeDirectoryObserved": false,
+    "stdoutBytes": 0,
+    "stderrBytes": 0
+  },
+  "cost": {
+    "newCashPurchaseAuthorized": false,
+    "selectedPolicy": "existing-included-subscription",
+    "providerInvocationObserved": false,
+    "completedExchangeObserved": false,
+    "cashExpenseObserved": false,
+    "interpretation": "No provider child or completed exchange exists in this observation; final native procurement record remains required."
+  },
+  "bounds": {
+    "orchestrationHeapMiB": 128,
+    "isolatedChildMemoryMiB": 512,
+    "outerDeadlineSeconds": 900
+  },
+  "action": "Preserve original invocation/deadline. No new inference, global policy change, lock bypass or foreign-process termination."
+}

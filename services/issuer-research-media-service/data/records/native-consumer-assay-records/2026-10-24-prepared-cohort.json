@@ -1,0 +1,294 @@
+{
+  "type": "IssuerPreparedCohortNativeConsumerAssayCases",
+  "version": 1,
+  "sourceOrder": "specifications/prepared-cohort.work-order.md",
+  "scope": "Predeclared independent named-interface/HTTP/cache/controller receiving; actual execution and outputs remain pending. Native JSON plan/selector preassay does not discharge these.",
+  "fixturePolicy": {
+    "source": "synthetic SEC companyfacts; no outside claims or payments",
+    "clock": "trusted isolated native test clock fixed to 2026-10-24T12:00:00.000Z; no machine clock changes",
+    "network": "fixture Response streams, actual global network disabled in receiver",
+    "storage": "Fixture cache-object body streams and get-call receipts; actual existing DurableObject SQLite receiving is a separate consumer obligation.",
+    "independence": "These additional receiving case descriptors are not supplied to semantic source provider beyond admitted contract/examples."
+  },
+  "cases": [
+    {
+      "id": "complete-two-sources",
+      "invoke": "prepareIssuerRevenueCohort",
+      "input": "configured two issuers; two HTTP200 UTF8 JSON fixture Responses; canonical now; recorded sleep",
+      "expect": {
+        "fetches": 2,
+        "sleeps": 1,
+        "intervalMs": 1000,
+        "issuerCount": 2,
+        "quarterAndAnnual": true,
+        "rawCarrierNiMatches": true,
+        "originalPacketIdentityMatches": true,
+        "companyfactsAbsentFromOutput": true,
+        "r2Writes": 0
+      }
+    },
+    {
+      "id": "invalid-config-no-effects",
+      "invoke": "prepareIssuerRevenueCohort",
+      "input": "duplicate CIK / issuer count below or above declared profile / UA missing / malformed byte bound",
+      "expect": {
+        "error": "TypeError",
+        "fetches": 0
+      }
+    },
+    {
+      "id": "source-fixed-origin",
+      "invoke": "prepareIssuerRevenueCohort",
+      "input": "ordinary valid fixture configuration",
+      "expect": {
+        "urls": "exact configured CIK-derived data.sec.gov URLs",
+        "headers": "actual configured User-Agent and Accept",
+        "redirect": "error",
+        "signal": "actual AbortSignal"
+      }
+    },
+    {
+      "id": "second-source-rate-refusal",
+      "invoke": "prepareIssuerRevenueCohort",
+      "input": "first source200; second429 with Retry-After60",
+      "expect": {
+        "code": "issuer-revenue-source-unavailable",
+        "status": 503,
+        "retryable": true,
+        "retryAfter": "60",
+        "fetches": 2,
+        "noPartialCohort": true
+      }
+    },
+    {
+      "id": "malformed-source-json",
+      "invoke": "prepareIssuerRevenueCohort",
+      "input": "first source200, malformed JSON bytes",
+      "expect": {
+        "status": 503,
+        "fetches": 1,
+        "noPartialCohort": true
+      }
+    },
+    {
+      "id": "source-cik-mismatch",
+      "invoke": "prepareIssuerRevenueCohort",
+      "input": "first source JSON cik differs from configured",
+      "expect": {
+        "status": 503,
+        "fetches": 1,
+        "noPartialCohort": true
+      }
+    },
+    {
+      "id": "actual-byte-overflow",
+      "invoke": "prepareIssuerRevenueCohort",
+      "input": "streamed bytes exceed configured ceiling despite misleading Content-Length",
+      "expect": {
+        "status": 503,
+        "bodyCancelled": true,
+        "fetches": 1,
+        "noPartialCohort": true
+      }
+    },
+    {
+      "id": "source-timeout",
+      "invoke": "prepareIssuerRevenueCohort",
+      "input": "fixture fetch waits for actual provided signal abort at configured short timeout",
+      "expect": {
+        "status": 503,
+        "retryable": true,
+        "noPartialCohort": true
+      }
+    },
+    {
+      "id": "midnight-source-boundary",
+      "invoke": "prepareIssuerRevenueCohort",
+      "input": "start clock before UTC midnight; first complete source observation after midnight",
+      "expect": {
+        "status": 503,
+        "retryable": true,
+        "reason": "utc-day-changed",
+        "noPartialCohort": true
+      }
+    },
+    {
+      "id": "compact-cohort-bound",
+      "invoke": "prepareIssuerRevenueCohort",
+      "input": "two complete fixture sources, output UTF8 JSON exceeds tiny configured maximumCohortBytes",
+      "expect": {
+        "status": 503,
+        "noPartialCohort": true,
+        "r2Writes": 0
+      }
+    },
+    {
+      "id": "reader-valid-cache",
+      "invoke": "readPreparedIssuerRevenueComparison",
+      "input": "annual body, fresh actual producer output in bounded R2 stream",
+      "expect": {
+        "gets": 1,
+        "key": "issuer-research/current.json",
+        "SECRequests": 0,
+        "returned": "identical selected annual result",
+        "packetIdsUnchanged": true
+      }
+    },
+    {
+      "id": "reader-invalid-body-no-effects",
+      "invoke": "readPreparedIssuerRevenueComparison",
+      "input": "quarter not allowed / body cacheKey or issuer override / extra unknown field",
+      "expect": {
+        "error": "TypeError",
+        "gets": 0,
+        "SECRequests": 0
+      }
+    },
+    {
+      "id": "reader-missing-or-expired",
+      "invoke": "readPreparedIssuerRevenueComparison",
+      "input": "R2 null or cohort older than maximumSnapshotAgeMs",
+      "expect": {
+        "code": "issuer-revenue-unavailable",
+        "status": 503,
+        "SECRequests": 0
+      }
+    },
+    {
+      "id": "reader-cohort-overflow",
+      "invoke": "readPreparedIssuerRevenueComparison",
+      "input": "R2 size/actual streamed bytes beyond configured maximumCohortBytes",
+      "expect": {
+        "code": "issuer-revenue-unavailable",
+        "status": 503,
+        "bodyCancelled": true
+      }
+    },
+    {
+      "id": "reader-unready-period",
+      "invoke": "readPreparedIssuerRevenueComparison",
+      "input": "missing/stale annual / disallowed ambiguity / old conflicting witnesses past maximumAgeDays / mismatched packet citation",
+      "expect": {
+        "code": "issuer-revenue-unavailable",
+        "status": 503,
+        "SECRequests": 0
+      }
+    },
+    {
+      "id": "ordinary-controller-receiving",
+      "invoke": "existing EarningClock tick",
+      "input": "complete/second-source-refused fixtures through actual installed module binding",
+      "expect": {
+        "completeAtomicPuts": 1,
+        "refusedPuts": 0,
+        "oldCompleteCachePreserved": true,
+        "configuredSingleCoordinator": true,
+        "requestBudgetMeasured": true
+      }
+    },
+    {
+      "id": "market-lifecycle-receiving",
+      "invoke": "actual native x402 consumer",
+      "input": "valid/unavailable prepared annual cache through new bound offer without real payment",
+      "expect": {
+        "unavailableStatus": 503,
+        "settlements": 0,
+        "anonymousQuote": "ordinary402",
+        "declaredBodyMatchesValidator": true
+      }
+    },
+    {
+      "id": "real-prepared-public-receiving",
+      "invoke": "actual deployed clock/cache/market read",
+      "input": "two permitted primary SEC reads, actual bounded compact cohort through ordinary deployment",
+      "expect": {
+        "sameSourceAndRuntimeRevision": true,
+        "sourceCPUAndBytesMeasured": true,
+        "quarterTruthful": true,
+        "annualReady": true,
+        "recognizedOutsideRevenue": "separate actual paid acceptance only"
+      }
+    },
+    {
+      "id": "current-value-contradicts-witnesses",
+      "invoke": "selectPreparedIssuerRevenueComparison",
+      "input": "actual prepared annual fixture, all selected witnesses100, mutate current value999",
+      "expect": {
+        "code": "issuer-revenue-unavailable",
+        "status": 503
+      }
+    },
+    {
+      "id": "current-status-hides-latest-conflict",
+      "invoke": "selectPreparedIssuerRevenueComparison",
+      "input": "actual prepared annual fixture with same-date distinct-accession100/200 latest witnesses but current status",
+      "expect": {
+        "code": "issuer-revenue-unavailable",
+        "status": 503
+      }
+    },
+    {
+      "id": "historical-value-change-is-valid",
+      "invoke": "prepare + select",
+      "input": "real fixture producer with annual earlier100 and later125 filing witnesses",
+      "expect": {
+        "value": 125,
+        "revision": "changed-reported-value",
+        "retainedEarlierWitness": 100,
+        "ready": true
+      }
+    },
+    {
+      "id": "source-body-timeout",
+      "invoke": "prepareIssuerRevenueCohort",
+      "input": "HTTP200 headers then body stream never completes; real provided signal must abort",
+      "expect": {
+        "code": "issuer-revenue-source-unavailable",
+        "status": 503,
+        "retryable": true,
+        "noPartialCohort": true
+      }
+    },
+    {
+      "id": "packet-statement-disagrees-with-structure",
+      "invoke": "selectPreparedIssuerRevenueComparison",
+      "input": "valid producer report, mutate only packet statement value100 to999 preserving source citation",
+      "expect": {
+        "code": "issuer-revenue-unavailable",
+        "status": 503,
+        "identityRehash": false
+      }
+    },
+    {
+      "id": "genuine-conflict-is-explicitly-admitted",
+      "invoke": "prepare + select",
+      "input": "same-period same-date latest100/200 distinct-accession observations and allowAmbiguousEvidence true",
+      "expect": {
+        "status": "ambiguous",
+        "value": null,
+        "comparability": "unresolved",
+        "ready": true
+      }
+    },
+    {
+      "id": "original-packet-ticker-normalization",
+      "invoke": "prepareIssuerRevenueCohort + selectPreparedIssuerRevenueComparison",
+      "input": "Valid lowercase configured tickers; ordinary complete fixture source responses",
+      "expect": {
+        "reportTicker": "configured original spelling",
+        "packetTicker": "original constructor uppercase normalization",
+        "selectedResult": "unchanged complete annual result"
+      }
+    }
+  ],
+  "independentSourceReview": {
+    "reviewer": "parent delivery receiver",
+    "sourceSha256": "7b21ee4c4e6b879358e858b149b2fdb6fd70326f88dd4aca73acf543a8103e73",
+    "finding": "current numeric value is not checked against latest witness values; conflicting latest witnesses may be sold as current",
+    "sourceUnchanged": true,
+    "testExecution": "pending native host resource admission",
+    "implementationFile": "data/logs/native-consumer-assay-logs/2026-10-24-prepared-cohort/prepared-cohort-consumer.test.mjs",
+    "intendedActiveTestPath": "test/prepared-cohort-consumer.test.mjs",
+    "activation": "Pending original receiving source; not in active test glob while supplier module is absent."
+  }
+}

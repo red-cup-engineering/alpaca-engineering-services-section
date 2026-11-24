@@ -1,0 +1,249 @@
+{
+  "type": "IssuerRevenueKernelPrimarySourceReceiving",
+  "sourceRevision": "a48f45313af1e7525041d17ac3ff9a7ccdf24580",
+  "runtime": {
+    "node": "v24.18.0",
+    "platform": "Bare Cedar Fog WSL2 native Node; not Cloudflare Worker/DO qualification"
+  },
+  "asOf": "2026-10-24",
+  "userAgent": "561 Group issuer evidence support@561.group",
+  "maximumBytes": 8388608,
+  "timeoutMs": 10000,
+  "spacingMs": 1000,
+  "records": [
+    {
+      "cik": "0000320193",
+      "ticker": "AAPL",
+      "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+      "status": 200,
+      "bytes": 3789099,
+      "observedAt": "2026-10-24T18:58:41.629Z",
+      "sourceAddress": {
+        "kind": "semiotic-content.raw-carrier-address",
+        "version": 1,
+        "algorithm": "sha-256",
+        "size": 3789099,
+        "mediaType": "application/json",
+        "ni": "ni:///sha-256;c6hsau3DH3fKwupN9fgPCzvX5utYu04BRE--3zr7nEM"
+      },
+      "parseMs": 34.10338100000001,
+      "identityMs": 3.7314760000000433,
+      "kernelMs": 5.467876999999987,
+      "parseIdentityKernelCpuMicros": 89751,
+      "elapsedMs": 425.139895,
+      "results": {
+        "quarter": {
+          "type": "IssuerRevenueReconciliation",
+          "version": 1,
+          "cik": "0000320193",
+          "issuer": "Apple Inc.",
+          "asOf": "2026-10-24",
+          "periodKind": "quarter",
+          "status": "current",
+          "unit": "USD",
+          "period": {
+            "start": "2026-03-29",
+            "end": "2026-06-27",
+            "durationDays": 91
+          },
+          "value": 109417000000,
+          "witnesses": [
+            {
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "start": "2026-03-29",
+              "end": "2026-06-27",
+              "durationDays": 91,
+              "value": 109417000000,
+              "unit": "USD",
+              "form": "10-Q",
+              "filed": "2026-07-31",
+              "accession": "0000320193-26-000020"
+            }
+          ],
+          "conceptCoverage": [
+            {
+              "concept": "Revenues",
+              "latestEnd": "2018-09-29",
+              "count": 11
+            },
+            {
+              "concept": "SalesRevenueNet",
+              "latestEnd": "2018-06-30",
+              "count": 188
+            },
+            {
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "latestEnd": "2026-06-27",
+              "count": 117
+            }
+          ],
+          "revision": "none"
+        },
+        "annual": {
+          "type": "IssuerRevenueReconciliation",
+          "version": 1,
+          "cik": "0000320193",
+          "issuer": "Apple Inc.",
+          "asOf": "2026-10-24",
+          "periodKind": "annual",
+          "status": "current",
+          "unit": "USD",
+          "period": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "durationDays": 364
+          },
+          "value": 416161000000,
+          "witnesses": [
+            {
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "start": "2024-09-29",
+              "end": "2025-09-27",
+              "durationDays": 364,
+              "value": 416161000000,
+              "unit": "USD",
+              "form": "10-K",
+              "filed": "2025-10-31",
+              "accession": "0000320193-25-000079"
+            }
+          ],
+          "conceptCoverage": [
+            {
+              "concept": "Revenues",
+              "latestEnd": "2018-09-29",
+              "count": 11
+            },
+            {
+              "concept": "SalesRevenueNet",
+              "latestEnd": "2018-06-30",
+              "count": 188
+            },
+            {
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "latestEnd": "2026-06-27",
+              "count": 117
+            }
+          ],
+          "revision": "none"
+        }
+      }
+    },
+    {
+      "cik": "0000789019",
+      "ticker": "MSFT",
+      "uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+      "status": 200,
+      "bytes": 4888108,
+      "observedAt": "2026-10-24T18:58:42.839Z",
+      "sourceAddress": {
+        "kind": "semiotic-content.raw-carrier-address",
+        "version": 1,
+        "algorithm": "sha-256",
+        "size": 4888108,
+        "mediaType": "application/json",
+        "ni": "ni:///sha-256;3QMIFJqOlkl5ie18aQtaSaAL75zq-7JGOL2kHorpON0"
+      },
+      "parseMs": 48.49259200000006,
+      "identityMs": 3.5711760000001505,
+      "kernelMs": 10.491754000000128,
+      "parseIdentityKernelCpuMicros": 91809,
+      "elapsedMs": 231.01685700000007,
+      "results": {
+        "quarter": {
+          "type": "IssuerRevenueReconciliation",
+          "version": 1,
+          "cik": "0000789019",
+          "issuer": "Microsoft Corporation",
+          "asOf": "2026-10-24",
+          "periodKind": "quarter",
+          "status": "stale",
+          "unit": "USD",
+          "period": {
+            "start": "2026-01-01",
+            "end": "2026-03-31",
+            "durationDays": 90
+          },
+          "value": 82886000000,
+          "witnesses": [
+            {
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "start": "2026-01-01",
+              "end": "2026-03-31",
+              "durationDays": 90,
+              "value": 82886000000,
+              "unit": "USD",
+              "form": "10-Q",
+              "filed": "2026-04-29",
+              "accession": "0001193125-26-191507"
+            }
+          ],
+          "conceptCoverage": [
+            {
+              "concept": "Revenues",
+              "latestEnd": "2010-12-31",
+              "count": 31
+            },
+            {
+              "concept": "SalesRevenueNet",
+              "latestEnd": "2018-03-31",
+              "count": 151
+            },
+            {
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "latestEnd": "2026-06-30",
+              "count": 131
+            }
+          ],
+          "revision": "none"
+        },
+        "annual": {
+          "type": "IssuerRevenueReconciliation",
+          "version": 1,
+          "cik": "0000789019",
+          "issuer": "Microsoft Corporation",
+          "asOf": "2026-10-24",
+          "periodKind": "annual",
+          "status": "current",
+          "unit": "USD",
+          "period": {
+            "start": "2025-07-01",
+            "end": "2026-06-30",
+            "durationDays": 365
+          },
+          "value": 331839000000,
+          "witnesses": [
+            {
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "start": "2025-07-01",
+              "end": "2026-06-30",
+              "durationDays": 365,
+              "value": 331839000000,
+              "unit": "USD",
+              "form": "10-K",
+              "filed": "2026-07-29",
+              "accession": "0001193125-26-323660"
+            }
+          ],
+          "conceptCoverage": [
+            {
+              "concept": "Revenues",
+              "latestEnd": "2010-12-31",
+              "count": 31
+            },
+            {
+              "concept": "SalesRevenueNet",
+              "latestEnd": "2018-03-31",
+              "count": 151
+            },
+            {
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "latestEnd": "2026-06-30",
+              "count": 131
+            }
+          ],
+          "revision": "none"
+        }
+      }
+    }
+  ]
+}

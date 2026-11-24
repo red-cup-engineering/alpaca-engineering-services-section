@@ -1,0 +1,20 @@
+{
+  "outcome": {
+    "isolated": true,
+    "status": 1,
+    "signal": null,
+    "stdout": "TAP version 13\n# file:///home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/bare-cedar-fog-services-section/data/state/fabrication-host/bare-cedar-fog/isolated-module-assay-Ik4Itf/packages/13/src/module-closure.mjs:335\n#       if (!target?.file) throw new TypeError(`JavaScript programme cannot admit ${specifier} from ${key}: ${target?.external ?? \"missing source\"}`);\n#                                ^\n# TypeError: JavaScript programme cannot admit @red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/semantic-content-identity from @561/isolated-module-assay@1.0.0/src/evidence-packet.mjs: unresolved:@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/semantic-content-identity\n#     at captureModuleClosure (file:///home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/bare-cedar-fog-services-section/data/state/fabrication-host/bare-cedar-fog/isolated-module-assay-Ik4Itf/packages/13/src/module-closure.mjs:335:32)\n#     at javascriptProgram (file:///home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/bare-cedar-fog-services-section/data/state/fabrication-host/bare-cedar-fog/isolated-module-assay-Ik4Itf/packages/13/src/module-closure.mjs:374:84)\n#     at file:///home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/bare-cedar-fog-services-section/data/state/fabrication-host/bare-cedar-fog/isolated-module-assay-Ik4Itf/workspace/__561_assay_host__/runner.test.mjs:2:32\n#     at ModuleJob.run (node:internal/modules/esm/module_job:439:25)\n#     at async node:internal/modules/esm/loader:643:26\n#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n# Node.js v24.18.0\n# Subtest: __561_assay_host__/runner.test.mjs\nnot ok 1 - __561_assay_host__/runner.test.mjs\n  ---\n  duration_ms: 5124.931304\n  type: 'test'\n  location: '/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/bare-cedar-fog-services-section/data/state/fabrication-host/bare-cedar-fog/isolated-module-assay-Ik4Itf/workspace/__561_assay_host__/runner.test.mjs:1:1'\n  failureType: 'testCodeFailure'\n  exitCode: 1\n  signal: ~\n  error: 'test failed'\n  code: 'ERR_TEST_FAILURE'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 0\n# fail 1\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 5240.22031\n",
+    "stderr": "",
+    "truncated": false,
+    "timedOut": false
+  },
+  "fieldTypes": {
+    "isolated": "boolean",
+    "status": "number",
+    "signal": "object",
+    "stdout": "string",
+    "stderr": "string",
+    "truncated": "boolean",
+    "timedOut": "boolean"
+  }
+}

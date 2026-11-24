@@ -1,0 +1,30 @@
+{
+  "name": "@red-cup-engineering/recursive-strategy-program-improvement-service",
+  "version": "0.2.2-dev.0",
+  "private": false,
+  "type": "module",
+  "description": "Bounded paper strategy evolution through source-native original Work receiving, not self-awarded experimental scores.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/alpaca-engineering-services-section.git",
+    "directory": "services/recursive-strategy-program-improvement-service"
+  },
+  "exports": {
+    ".": "./src/improve.mjs"
+  },
+  "scripts": {
+    "check": "node --check src/improve.mjs",
+    "verify": "npm run check"
+  },
+  "files": [
+    "package.json",
+    "README*",
+    "LICENSE*",
+    "src"
+  ],
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
+}

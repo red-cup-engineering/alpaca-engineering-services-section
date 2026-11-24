@@ -1,0 +1,31 @@
+{
+  "type": "issuer-revenue-kernel-source-receiving",
+  "sourceSpecification": "ni:///sha-256;kIcXlfmaNu4HYEf4YKlKrIk6x6hjvdfqfE4uA0KJI5s",
+  "nativeFabrication": {
+    "type": "JsnodeModuleProposal",
+    "exitCode": 0,
+    "rawReceipt": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/services/issuer-research-media-service/data/logs/fabrication-logs/2026-10-24-issuer-revenue-kernel/native-fabrication.stdout.json",
+    "sourceBytesAlteredAfterDerivation": false
+  },
+  "nativeMaterializedConsumerAssay": {
+    "file": "test/reconcile-issuer-revenue-facts-examples.test.mjs",
+    "cases": 14,
+    "passed": 14,
+    "exitCode": 0,
+    "reason": "first actual canonical source materialization; not a presentation-only repeat"
+  },
+  "independentSourceReview": {
+    "receiver": "parent engineering coordination session",
+    "sourceSha256": "603fe0d654e3b899f785c51ad9d00c2ca028237ca16988f344aa39e749e9e298",
+    "observed": "complete actual period/crossconcept/fiscal-context/cutoff/witness/revision/staleness logic reviewed; no obvious kernel contract failure",
+    "limits": "actual source benchmark, full cohort composition, public build/deployment and outside commercial acceptance separate"
+  },
+  "sourceCandidate": {
+    "packageVersion": "0.1.4-dev.1",
+    "registryPublication": false
+  },
+  "retainedTranslationCaptures": {
+    "location": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-web-engineering-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-engineering-services-section/services/issuer-research-media-service/data/logs/fabrication-logs/2026-10-24-issuer-revenue-kernel",
+    "reason": "native translation working captures filed under owner data/logs, not duplicate durable source-admission records"
+  }
+}

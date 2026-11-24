@@ -1,0 +1,60 @@
+{
+  "type": "IssuerAssaySelectedClosureMeasurement",
+  "version": 1,
+  "method": "Existing captureModuleClosure and installed resolver; follow only captured imports; no treewalk, copy, package install or inference",
+  "entries": [
+    {
+      "name": "@red-cup-engineering/issuer-research-media-service",
+      "face": ".",
+      "sourceModules": 37,
+      "sourceBytes": 361178,
+      "builtins": [],
+      "closure": "ni:///sha-256;VUvCk7o6nFfVHBFwoCy5qaZdQlBOahWebEitgncAqmA"
+    },
+    {
+      "name": "@red-cup-engineering/issuer-research-media-service",
+      "face": "./revenue-reconciliation",
+      "sourceModules": 1,
+      "sourceBytes": 9376,
+      "builtins": [],
+      "closure": "ni:///sha-256;1S02ctZiyziZauI35OJ2XvpPuXj1BYKjjGbJKcIha9c"
+    },
+    {
+      "name": "@red-cup-engineering/computer-content-address-engineering-services-section",
+      "face": "./content-address",
+      "sourceModules": 4,
+      "sourceBytes": 16570,
+      "builtins": [],
+      "closure": "ni:///sha-256;dmFbwAT3uHzHBGZLNBgyWhWzLSkuknJ5FYS5SnlvJn4"
+    },
+    {
+      "name": "@red-cup-engineering/uri-engineering-services-section",
+      "face": "./ni-uri",
+      "sourceModules": 3,
+      "sourceBytes": 14709,
+      "builtins": [],
+      "closure": "ni:///sha-256;-FhpZARMd3rCbpGorQTjy_DmLp-AoKQC0mJNd39YrZw"
+    },
+    {
+      "name": "native-assay-host-runtime",
+      "face": ".",
+      "sourceModules": 47,
+      "sourceBytes": 211154,
+      "builtins": [
+        "node:crypto",
+        "node:fs",
+        "node:module",
+        "node:path",
+        "node:url"
+      ],
+      "closure": "ni:///sha-256;wdd7Eh0Hlh_vRu1BYQy_PlV1AM8h9EupyInxNT7APd4"
+    }
+  ],
+  "uniqueFilesIncludingManifests": 107,
+  "uniquePackages": 18,
+  "totalBytes": 632769,
+  "maximumPackages": 128,
+  "maximumDependencyBytes": 67108864,
+  "maximumDependencyFiles": 8192,
+  "nodeHeapMiB": 128
+}
