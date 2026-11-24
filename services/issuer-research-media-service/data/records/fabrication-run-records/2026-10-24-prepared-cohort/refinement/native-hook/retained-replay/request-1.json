@@ -3,19 +3,19 @@
   "version": 1,
   "files": [
     {
-      "path": "data/records/schema/plan-issuer-revenue-acquisition.input.schema.json",
+      "path": "data/records/schemas/plan-issuer-revenue-acquisition.input.schema.json",
       "text": "{}\n"
     },
     {
-      "path": "data/records/schema/plan-issuer-revenue-acquisition.output.schema.json",
+      "path": "data/records/schemas/plan-issuer-revenue-acquisition.output.schema.json",
       "text": "{\n  \"type\": \"object\"\n}\n"
     },
     {
-      "path": "data/records/schema/select-prepared-issuer-revenue-comparison.input.schema.json",
+      "path": "data/records/schemas/select-prepared-issuer-revenue-comparison.input.schema.json",
       "text": "{}\n"
     },
     {
-      "path": "data/records/schema/select-prepared-issuer-revenue-comparison.output.schema.json",
+      "path": "data/records/schemas/select-prepared-issuer-revenue-comparison.output.schema.json",
       "text": "{\n  \"type\": \"object\"\n}\n"
     },
     {

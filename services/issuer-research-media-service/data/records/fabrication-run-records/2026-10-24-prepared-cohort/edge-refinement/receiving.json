@@ -64,22 +64,22 @@
     "semanticEdits": false,
     "projected": [
       {
-        "path": "data/records/schema/plan-issuer-revenue-acquisition.input.schema.json",
+        "path": "data/records/schemas/plan-issuer-revenue-acquisition.input.schema.json",
         "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
         "bytes": 3
       },
       {
-        "path": "data/records/schema/plan-issuer-revenue-acquisition.output.schema.json",
+        "path": "data/records/schemas/plan-issuer-revenue-acquisition.output.schema.json",
         "sha256": "59dd9138acc693310fce4722159a02240f995b2be524301ba57548a1aa7b10fa",
         "bytes": 23
       },
       {
-        "path": "data/records/schema/select-prepared-issuer-revenue-comparison.input.schema.json",
+        "path": "data/records/schemas/select-prepared-issuer-revenue-comparison.input.schema.json",
         "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
         "bytes": 3
       },
       {
-        "path": "data/records/schema/select-prepared-issuer-revenue-comparison.output.schema.json",
+        "path": "data/records/schemas/select-prepared-issuer-revenue-comparison.output.schema.json",
         "sha256": "59dd9138acc693310fce4722159a02240f995b2be524301ba57548a1aa7b10fa",
         "bytes": 23
       },
