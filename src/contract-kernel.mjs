@@ -1,6 +1,6 @@
 import { semanticIdOf } from "@red-cup-engineering/computer-code-engine/semiotic-expression-notation/semantic-content-identity";
 
-const digest = (objectKind, value) => semanticIdOf(objectKind)(value);
+const semanticRecordId = (objectKind, value) => semanticIdOf(objectKind)(value);
 const positive = (value, label) => { const number = Number(value); if (!Number.isFinite(number) || number <= 0) throw new TypeError(`${label}-must-be-positive`); return number; };
 const nonnegative = (value, label) => { const number = Number(value); if (!Number.isFinite(number) || number < 0) throw new TypeError(`${label}-must-be-nonnegative`); return number; };
 const text = (value, label) => { if (typeof value !== "string" || value.trim() === "") throw new TypeError(`${label}-required`); return value; };
@@ -55,7 +55,7 @@ export function formPrincipalMandate(input) {
   };
   if (mandate.risk.concentrationLimit > 1) throw new RangeError("concentration-limit-exceeds-one");
   if (mandate.scopes.length === 0) throw new TypeError("at-least-one-scope-required");
-  return Object.freeze({ id: digest("brokerage-control.principal-mandate", mandate), ...mandate });
+  return Object.freeze({ id: semanticRecordId("brokerage-control.principal-mandate", mandate), ...mandate });
 }
 
 export function formWalletRoleGrant(input) {
@@ -71,7 +71,7 @@ export function formWalletRoleGrant(input) {
     validUntil: text(input.validUntil, "valid-until"), revocable: true,
   };
   if (role !== "compute-payment" && (grant.maximumTotalSpend !== 0 || grant.maximumPerRequest !== 0)) throw new TypeError("spend-authority-only-valid-for-compute-payment-wallet");
-  return Object.freeze({ id: digest("brokerage-control.wallet-role-grant", grant), ...grant });
+  return Object.freeze({ id: semanticRecordId("brokerage-control.wallet-role-grant", grant), ...grant });
 }
 
 export function admitMeteredComputePurchase({ walletGrant, quote, alreadySpent = 0 }) {
@@ -80,8 +80,8 @@ export function admitMeteredComputePurchase({ walletGrant, quote, alreadySpent =
   const amount = positive(quote?.price?.amount, "quote-price");
   if (quote.price.asset !== walletGrant.asset || quote.network !== walletGrant.network) throw new TypeError("quote-wallet-rail-mismatch");
   if (amount > walletGrant.maximumPerRequest || amount + nonnegative(alreadySpent, "already-spent") > walletGrant.maximumTotalSpend) throw new RangeError("compute-payment-budget-exceeded");
-  const authorization = { type: "MeteredComputePaymentAuthorization", walletGrant: walletGrant.id, provider: text(quote.provider, "quote-provider"), service: text(quote.service, "quote-service"), amount, asset: quote.price.asset, network: quote.network, quoteDigest: digest("brokerage-control.metered-compute-quote", quote), effect: "authorize-one-payment-payload; no key custody" };
-  return Object.freeze({ id: digest("brokerage-control.metered-compute-payment-authorization", authorization), ...authorization });
+  const authorization = { type: "MeteredComputePaymentAuthorization", walletGrant: walletGrant.id, provider: text(quote.provider, "quote-provider"), service: text(quote.service, "quote-service"), amount, asset: quote.price.asset, network: quote.network, quoteDigest: semanticRecordId("brokerage-control.metered-compute-quote", quote), effect: "authorize-one-payment-payload; no key custody" };
+  return Object.freeze({ id: semanticRecordId("brokerage-control.metered-compute-payment-authorization", authorization), ...authorization });
 }
 
 export function formAggressiveOrderIntent({ mandate, evidence, symbol, side, notional, maximumLoss, thesis, falsifier, liquidityPremise, executionPremise }) {
@@ -93,8 +93,8 @@ export function formAggressiveOrderIntent({ mandate, evidence, symbol, side, not
   if (orderNotional > mandate.risk.maximumOrderNotional || loss > mandate.risk.maximumLossAmount) throw new RangeError("mandate-risk-boundary-exceeded");
   const concentration = orderNotional / mandate.capital.amount;
   if (concentration > mandate.risk.concentrationLimit) throw new RangeError("mandate-concentration-boundary-exceeded");
-  const intent = { type: "AggressiveBrokerageOrderIntent", mandate: mandate.id, effect: "intent-only", symbol: text(symbol, "symbol").toUpperCase(), side: side === "sell" ? "sell" : "buy", notional: orderNotional, currency: mandate.capital.currency, maximumLoss: loss, concentration, thesis: text(thesis, "thesis"), falsifier: text(falsifier, "falsifier"), liquidityPremise: text(liquidityPremise, "liquidity-premise"), executionPremise: text(executionPremise, "execution-premise"), evidenceDigest: digest("brokerage-control.order-evidence-bundle", evidence) };
-  return Object.freeze({ id: digest("brokerage-control.aggressive-order-intent", intent), ...intent });
+  const intent = { type: "AggressiveBrokerageOrderIntent", mandate: mandate.id, effect: "intent-only", symbol: text(symbol, "symbol").toUpperCase(), side: side === "sell" ? "sell" : "buy", notional: orderNotional, currency: mandate.capital.currency, maximumLoss: loss, concentration, thesis: text(thesis, "thesis"), falsifier: text(falsifier, "falsifier"), liquidityPremise: text(liquidityPremise, "liquidity-premise"), executionPremise: text(executionPremise, "execution-premise"), evidenceDigest: semanticRecordId("brokerage-control.order-evidence-bundle", evidence) };
+  return Object.freeze({ id: semanticRecordId("brokerage-control.aggressive-order-intent", intent), ...intent });
 }
 
 export function admitVenueOperation({ mandate, authorityGrant, operation }) {
@@ -107,11 +107,11 @@ export function admitVenueOperation({ mandate, authorityGrant, operation }) {
     const notional = positive(operation.notional, "operation-notional");
     if (notional > mandate.risk.maximumOrderNotional) throw new RangeError("live-order-notional-exceeds-mandate");
   }
-  const admission = { type: "VenueOperationAdmission", mandate: mandate.id, authorityGrant: authorityGrant.id, adapter: authorityGrant.adapter, operationDigest: digest("brokerage-control.venue-operation", operation), credentialReference: text(authorityGrant.credentialReference, "credential-reference"), rule: "reference crosses; credential bytes remain inside venue adapter" };
-  return Object.freeze({ id: digest("brokerage-control.venue-operation-admission", admission), ...admission });
+  const admission = { type: "VenueOperationAdmission", mandate: mandate.id, authorityGrant: authorityGrant.id, adapter: authorityGrant.adapter, operationDigest: semanticRecordId("brokerage-control.venue-operation", operation), credentialReference: text(authorityGrant.credentialReference, "credential-reference"), rule: "reference crosses; credential bytes remain inside venue adapter" };
+  return Object.freeze({ id: semanticRecordId("brokerage-control.venue-operation-admission", admission), ...admission });
 }
 
 export function x402DiscoveryOffer({ service, provider, price, network, inputSchema, outputSchema }) {
   const offer = { type: "PaidBrokerageApiOffer", service: text(service, "service"), provider: text(provider, "provider"), accepts: { scheme: "exact", price: text(price, "price"), network: text(network, "network"), payTo: "runtime-required" }, extensions: { bazaar: { discoverable: true, inputSchema, outputSchema } }, indexingClaim: "none-until-successful-CDP-settlement", settlementEvidenceRequired: true };
-  return Object.freeze({ id: digest("brokerage-control.paid-api-offer", offer), ...offer });
+  return Object.freeze({ id: semanticRecordId("brokerage-control.paid-api-offer", offer), ...offer });
 }

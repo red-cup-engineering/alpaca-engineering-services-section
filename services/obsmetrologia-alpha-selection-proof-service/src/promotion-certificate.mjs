@@ -16,7 +16,7 @@ import {
 } from "@red-cup-engineering/strategy-evaluation-service";
 
 const digestPattern = /^ni:\/\/\/sha-256;[A-Za-z0-9_-]{43}$/u;
-const digest = (value, label) => {
+const niDigestText = (value, label) => {
   if (typeof value !== "string" || !digestPattern.test(value)) {
     throw new TypeError(`${label}-digest-invalid`);
   }
@@ -49,7 +49,7 @@ export function quartetCorner(observations) {
   let refutes = false;
   const seen = new Set();
   for (const observation of observations) {
-    digest(observation.evidenceDigest, "quartet-evidence");
+    niDigestText(observation.evidenceDigest, "quartet-evidence");
     if (seen.has(observation.evidenceDigest)) {
       throw new TypeError("quartet-evidence-duplicate");
     }
@@ -94,9 +94,9 @@ function proofBuild(record, sourceDigest, trustedActorKeys, promotionActor) {
   ) {
     throw new TypeError("proof-build-invalid");
   }
-  digest(build.applicationSourceDigest, "proof-source");
-  digest(build.instanceSourceDigest, "proof-instance-source");
-  digest(build.obsmetrologiaRevision, "obsmetrologia-revision");
+  niDigestText(build.applicationSourceDigest, "proof-source");
+  niDigestText(build.instanceSourceDigest, "proof-instance-source");
+  niDigestText(build.obsmetrologiaRevision, "obsmetrologia-revision");
   return build;
 }
 
@@ -354,8 +354,8 @@ export async function verifyPaperPromotionCertificate({
   ) {
     throw new TypeError("causal-assay-binding-invalid");
   }
-  digest(causalAssay.eventOrderDigest, "causal-event-order");
-  digest(causalAssay.boundaryPresentationDigest, "causal-boundary");
+  niDigestText(causalAssay.eventOrderDigest, "causal-event-order");
+  niDigestText(causalAssay.boundaryPresentationDigest, "causal-boundary");
 
   if (
     entropyAssay.candidate !== candidate.id ||

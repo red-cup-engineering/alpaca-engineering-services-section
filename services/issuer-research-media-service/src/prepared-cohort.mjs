@@ -96,7 +96,7 @@ function day(v) {
   const n = Date.parse(v + 'T00:00:00.000Z');
   return Number.isFinite(n) && new Date(n).toISOString().slice(0,10) === v ? n : NaN;
 }
-function canonical(v) { return typeof v === 'string' && Number.isFinite(instant(v)); }
+function isInstantText(v) { return typeof v === 'string' && Number.isFinite(instant(v)); }
 function unavailable() { return Object.assign(new Error('Issuer revenue unavailable'), {code:'issuer-revenue-unavailable',status:503,retryable:true}); }
 function refused(reason, retryable, retryAfter) {
   const e = Object.assign(new Error('Issuer revenue source unavailable: ' + reason), {code:'issuer-revenue-source-unavailable',status:503,retryable,reason});
@@ -178,7 +178,7 @@ export function selectPreparedIssuerRevenueComparison(input) {
   if (!Number.isFinite(n)) throw new TypeError('Invalid explicit now');
   const c = configuration;
   try {
-    need(isRecord(cohort) && cohort.type === 'IssuerRevenuePreparedCohort' && cohort.version === 1 && canonical(cohort.observedAt));
+    need(isRecord(cohort) && cohort.type === 'IssuerRevenuePreparedCohort' && cohort.version === 1 && isInstantText(cohort.observedAt));
     const observed = instant(cohort.observedAt);
     need(Number.isFinite(day(cohort.asOf)) && cohort.asOf === cohort.observedAt.slice(0,10) && observed <= n && n - observed <= c.maximumSnapshotAgeMs);
     need(isRecord(cohort.results) && Object.hasOwn(cohort.results,'quarter') && Object.hasOwn(cohort.results,'annual'));
@@ -190,7 +190,7 @@ export function selectPreparedIssuerRevenueComparison(input) {
       const i = r.issuers[j], expected = c.issuers[j], p = r.evidencePackets[j];
       need(isRecord(i) && i.type === 'IssuerRevenueReconciliation' && i.version === 1 && i.cik === expected.cik && i.ticker === expected.ticker && i.asOf === r.asOf && i.periodKind === periodKind && text(i.issuer) && i.unit === 'USD');
       const s = i.source;
-      need(isRecord(s) && s.uri === urlFor(expected.cik) && ni(s.digest) && positive(s.bytes) && s.bytes <= c.maximumBytes && canonical(s.observedAt));
+      need(isRecord(s) && s.uri === urlFor(expected.cik) && ni(s.digest) && positive(s.bytes) && s.bytes <= c.maximumBytes && isInstantText(s.observedAt));
       const sn = instant(s.observedAt);
       need(sn <= observed && n-sn <= c.maximumSnapshotAgeMs);
       financial(i,periodKind,c,r.asOf,today);

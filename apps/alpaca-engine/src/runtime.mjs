@@ -1,11 +1,11 @@
-import { sha256Hex } from "@red-cup-engineering/semiotic-content-address-system";
+import { semanticHex, sha256Hex } from "@red-cup-engineering/semiotic-content-address-system";
 import { randomUUID } from 'node:crypto';
 import { constants } from 'node:fs';
 import { open, mkdir, rename, link, unlink, lstat } from 'node:fs/promises';
 import { dirname, join, isAbsolute } from 'node:path';
 import { createPrincipalAlpacaBrokerageSystem } from './system.mjs';
 import { alpacaAssistBindingReference } from './assist-account.mjs';
-const digest = value => sha256Hex(typeof value==='string'?value:JSON.stringify(value));
+const recordIdentity = value => typeof value==='string'?sha256Hex(value):semanticHex(value);
 const reference = value => {if(typeof value!=='string'||!value.trim()||value.length>512)throw new TypeError('record-reference-required');return value;};
 
 /** Bind the existing brokerage system to a production host's private records.
@@ -23,7 +23,7 @@ export function openProductionAlpacaBrokerage({
  }
  const filename=(kind,id)=>{
   if(typeof kind!=='string'||!/^[a-z][a-z0-9-]{0,63}$/.test(kind))throw new TypeError('record-kind-required');
-  return join(stateRoot,kind,digest(reference(id))+'.json');
+  return join(stateRoot,kind,recordIdentity(reference(id))+'.json');
  };
  const ownedDirectory=async(path,create=false)=>{
   if(create)await mkdir(path,{recursive:true,mode:0o700});
@@ -62,11 +62,11 @@ export function openProductionAlpacaBrokerage({
    if(replace){
     try{await readFile(file);}catch(error){if(error.code!=='ENOENT')throw error;}
     await rename(temporary,file);
-   }else try{await link(temporary,file);}catch(error){if(error.code!=='EEXIST')throw error;const prior=await readFile(file);if(digest(prior)!==digest(record))throw new TypeError('record-identity-reused');}
+   }else try{await link(temporary,file);}catch(error){if(error.code!=='EEXIST')throw error;const prior=await readFile(file);if(recordIdentity(prior)!==recordIdentity(record))throw new TypeError('record-identity-reused');}
    const directory=await open(join(stateRoot,kind),'r');try{await directory.sync();}finally{await directory.close();}
   }finally{await handle?.close();await unlink(temporary).catch(error=>{if(error.code!=='ENOENT')throw error;});}return {id};
  };
- const record=async(kind,value)=>{const id=digest(value);return write(kind,id,{...value,id});};
+ const record=async(kind,value)=>{const id=recordIdentity(value);return write(kind,id,{...value,id});};
  const transport=async({method,url,headers,body})=>{
   const response=await fetchImpl(url,{method,headers:{...headers,accept:'application/json',...(body===undefined?{}:{'content-type':'application/json'})},...(body===undefined?{}:{body:JSON.stringify(body)}),redirect:"error",signal:AbortSignal.timeout(15000)});
   const chunks=[];let bytes=0;
@@ -76,18 +76,18 @@ export function openProductionAlpacaBrokerage({
  };
  const system=createPrincipalAlpacaBrokerageSystem({
   authorityCustody: authorityCustody ?? {
-   retrieve:async id=>{try{return await readFile(join(custodyRoot,digest(reference(id))+'.json'),custodyRoot);}catch(error){if(error.code==='ENOENT')return null;throw error;}},
+   retrieve:async id=>{try{return await readFile(join(custodyRoot,recordIdentity(reference(id))+'.json'),custodyRoot);}catch(error){if(error.code==='ENOENT')return null;throw error;}},
    store:async({provider,subject,secret})=>{
     reference(provider);reference(subject);
     if(!secret || typeof secret!=='object')throw new TypeError('private-credential-record-required');
     const id=`urn:authority:${provider}:${subject}:${randomUUID()}`;
     const bytes=encode({...secret,storedAt:clock()});
     await ownedDirectory(custodyRoot,true);
-    const file=await open(join(custodyRoot,digest(id)+'.json'),'wx',0o600);
+    const file=await open(join(custodyRoot,recordIdentity(id)+'.json'),'wx',0o600);
     try{await file.writeFile(bytes);await file.sync();}finally{await file.close();}
     return {reference:id,provider,secretBytesReturned:false};
    },
-   revoke:async id=>{const file=join(custodyRoot,digest(reference(id))+'.json');try{await ownedDirectory(custodyRoot);await rename(file,file+'.revoked-'+randomUUID());return true;}catch(error){if(error.code==='ENOENT')return false;throw error;}},
+   revoke:async id=>{const file=join(custodyRoot,recordIdentity(reference(id))+'.json');try{await ownedDirectory(custodyRoot);await rename(file,file+'.revoked-'+randomUUID());return true;}catch(error){if(error.code==='ENOENT')return false;throw error;}},
   },transport,fetchImpl,clock,
   resolveAuthorityGrant:id=>read('authority-grants',id),
   resolveExecutionRecords:async refs=>{
