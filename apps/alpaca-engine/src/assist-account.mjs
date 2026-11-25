@@ -1,8 +1,8 @@
-import { createHash } from 'node:crypto';
+import { sha256Hex } from "@red-cup-engineering/semiotic-content-address-system";
 
 export function alpacaAssistBindingReference(subject) {
   if (typeof subject !== 'string' || !subject.trim() || subject.length > 512) throw new TypeError('google-person-subject-required');
-  return 'google:' + createHash('sha256').update(subject).digest('hex');
+  return 'google:' + sha256Hex(subject);
 }
 
 /** Resolve a host-maintained brokerage binding for the currently verified Person.

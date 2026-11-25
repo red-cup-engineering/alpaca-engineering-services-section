@@ -1,5 +1,4 @@
-import { createHash } from "node:crypto";
-import { makeNiUri as rawNiUri } from "@red-cup-engineering/uri-engineering-services-section/ni-uri";
+import { makeNiUri, sha256Digest } from "@red-cup-engineering/semiotic-content-address-system";
 import { deflateSync } from "node:zlib";
 import { RECORD_KIND, identify } from "./semantic-content.mjs";
 
@@ -55,17 +54,11 @@ const GLYPHS = Object.freeze({
   Y:["10001","10001","01010","00100","00100","00100","00100"], Z:["11111","00001","00010","00100","01000","10000","11111"],
 });
 
-export const sha256 = rawNiUri;
-
 // The Discord publication boundary (discord-publication.mjs) verifies attachment
 // bytes against `sha256:<hex>` digests -- the house convention used everywhere
 // else in this reporting pipeline (state-reporting.mjs's digest(), the NotebookLM
 // contract's rawDigest()). pngDigest crosses that boundary, so it must be in that
 // format rather than this module's own ni:///sha-256;<base64url> convention.
-function sha256Hex(bytes) {
-  return `sha256:${createHash("sha256").update(bytes).digest("hex")}`;
-}
-
 function finiteText(value, maximum = 512) {
   return typeof value === "string" && value.length > 0 && value.length <= maximum && !value.includes("\0");
 }
@@ -217,7 +210,7 @@ export function rasterizeExactSvg(svgBytes) {
     }
   }
   const header = Buffer.alloc(13); header.writeUInt32BE(width, 0); header.writeUInt32BE(height, 4); header[8] = 8; header[9] = 6;
-  const svgDigest = sha256(svgBytes);
+  const svgDigest = makeNiUri(svgBytes);
   return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]), pngChunk("IHDR", header),
     pngChunk("tEXt", Buffer.from(`rasterized-from-svg-sha256\0${svgDigest}`, "utf8")),
     pngChunk("IDAT", deflateSync(pixels, { level: 9 })), pngChunk("IEND", Buffer.alloc(0))]);
@@ -227,9 +220,9 @@ export function renderDeterministicReportGraphic(packet) {
   try {
     const normalized = normalizeDeltaPacket(packet); const svgBytes = renderSvgBytes(normalized); const pngBytes = rasterizeExactSvg(svgBytes);
     const packetIdentity = identify(normalized, RECORD_KIND);
-    return { type: "DeterministicReportGraphicArtifact", packetDigest: packetIdentity.id, packetBytes: sha256(packetIdentity.bytes),
-      svgProfile: "RFC7996-safe SVG Tiny 1.2 subset", svgDigest: sha256(svgBytes), svgBase64: svgBytes.toString("base64"),
-      pngDigest: sha256Hex(pngBytes), pngBase64: pngBytes.toString("base64"), rasterizedFromExactSvgDigest: sha256(svgBytes) };
+    return { type: "DeterministicReportGraphicArtifact", packetDigest: packetIdentity.id, packetBytes: makeNiUri(packetIdentity.bytes),
+      svgProfile: "RFC7996-safe SVG Tiny 1.2 subset", svgDigest: makeNiUri(svgBytes), svgBase64: svgBytes.toString("base64"),
+      pngDigest: sha256Digest(pngBytes), pngBase64: pngBytes.toString("base64"), rasterizedFromExactSvgDigest: makeNiUri(svgBytes) };
   } catch (error) {
     return { type: "DeterministicReportGraphicRefusal", reason: error instanceof Error ? error.message : String(error), effects: [] };
   }

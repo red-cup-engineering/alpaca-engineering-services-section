@@ -12,15 +12,16 @@
     "src"
   ],
   "dependencies": {
+    "@red-cup-engineering/activitypub-engineering-services-section": "^0.11.13",
+    "@red-cup-engineering/activitypub-server": "^0.2.3",
     "@red-cup-engineering/computer-code-engine": "^0.1.0",
+    "@red-cup-engineering/computer-code-engineering-services-section": "^0.2.1",
     "@red-cup-engineering/computer-content-address-engineering-services-section": "^0.3.0",
+    "@red-cup-engineering/computer-data-engineering-services-section": "^0.7.4",
+    "@red-cup-engineering/computer-engine": "^0.1.2",
     "@red-cup-engineering/cryptographic-computer-data-engineering-services-section": "^0.3.5",
     "@red-cup-engineering/json-engine": "^0.5.1",
-    "@red-cup-engineering/computer-data-engineering-services-section": "^0.7.4",
-    "@red-cup-engineering/computer-code-engineering-services-section": "^0.2.1",
-    "@red-cup-engineering/activitypub-server": "^0.2.3",
-    "@red-cup-engineering/activitypub-engineering-services-section": "^0.11.13",
-    "@red-cup-engineering/computer-engine": "^0.1.2"
+    "@red-cup-engineering/semiotic-content-address-system": "0.1.9"
   },
   "description": "union-brokerage-products-market-border sovereign enterprise",
   "repository": {

@@ -24,16 +24,17 @@
     "./assist-account": "./src/assist-account.mjs"
   },
   "dependencies": {
-    "@red-cup-engineering/computer-code-engine": "0.1.0",
-    "@red-cup-engineering/metrologic": "0.22.1",
-    "@red-cup-engineering/exact-number-codec": "0.1.0",
-    "@red-cup-engineering/computer-content-address-engineering-services-section": "0.3.1",
-    "@red-cup-engineering/computer-data-engineering-services-section": "0.7.5",
     "@red-cup-engineering/alpha-portfolio-order-intent-service": "0.1.12-dev.0 || ^0.1.12",
     "@red-cup-engineering/brokerage-authority-custody-service": "0.1.8-dev.0 || ^0.1.8",
     "@red-cup-engineering/brokerage-execution-transport-service": "0.1.12-dev.0 || ^0.1.12",
-    "@red-cup-engineering/pluggable-venue-adapter-service": "0.1.12",
+    "@red-cup-engineering/computer-code-engine": "0.1.0",
+    "@red-cup-engineering/computer-content-address-engineering-services-section": "0.3.1",
+    "@red-cup-engineering/computer-data-engineering-services-section": "0.7.5",
+    "@red-cup-engineering/exact-number-codec": "0.1.0",
     "@red-cup-engineering/mandate-portfolio-allocation-service": "0.2.6",
+    "@red-cup-engineering/metrologic": "0.22.1",
+    "@red-cup-engineering/pluggable-venue-adapter-service": "0.1.12",
+    "@red-cup-engineering/semiotic-content-address-system": "0.1.9",
     "@red-cup-engineering/stock-brokerage-engine": "0.1.0"
   },
   "softwareKind": "engine",

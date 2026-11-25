@@ -1,10 +1,11 @@
-import { createHash, randomUUID } from 'node:crypto';
+import { sha256Hex } from "@red-cup-engineering/semiotic-content-address-system";
+import { randomUUID } from 'node:crypto';
 import { constants } from 'node:fs';
 import { open, mkdir, rename, link, unlink, lstat } from 'node:fs/promises';
 import { dirname, join, isAbsolute } from 'node:path';
 import { createPrincipalAlpacaBrokerageSystem } from './system.mjs';
 import { alpacaAssistBindingReference } from './assist-account.mjs';
-const digest = value => createHash('sha256').update(typeof value==='string'?value:JSON.stringify(value)).digest('hex');
+const digest = value => sha256Hex(typeof value==='string'?value:JSON.stringify(value));
 const reference = value => {if(typeof value!=='string'||!value.trim()||value.length>512)throw new TypeError('record-reference-required');return value;};
 
 /** Bind the existing brokerage system to a production host's private records.

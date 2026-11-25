@@ -1,4 +1,4 @@
-import { makeNiUri } from "@red-cup-engineering/uri-engineering-services-section/ni-uri";
+import { makeNiUri } from "@red-cup-engineering/semiotic-content-address-system";
 import { parse } from "acorn";
 
 const FORBIDDEN_NODES = new Set(["AwaitExpression", "ImportExpression", "NewExpression", "TaggedTemplateExpression", "WithStatement", "YieldExpression"]);

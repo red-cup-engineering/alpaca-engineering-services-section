@@ -17,8 +17,9 @@
     "src/"
   ],
   "dependencies": {
-    "acorn": "8.15.0",
-    "@red-cup-engineering/uri-engineering-services-section": "^0.1.10-dev.0"
+    "@red-cup-engineering/semiotic-content-address-system": "0.1.9",
+    "@red-cup-engineering/uri-engineering-services-section": "^0.1.10-dev.0",
+    "acorn": "8.15.0"
   },
   "scripts": {
     "check": "node --check src/assay.mjs",
